@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: $bg-green;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25vw;
+  line-height: 120%;
+  color: $black;
+}
+.container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 7.813vw;
+}

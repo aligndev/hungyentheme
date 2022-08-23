@@ -1,0 +1,72 @@
+<?php get_header(); ?>
+<main class="wrapper" data-barba="container" data-barba-namespace="home">
+    <section class="newsDetail pt">
+        <div class="container">
+            <h1 class="h1 newsDetail-h1">
+                <?php the_title(); ?>
+            </h1>
+            <ul class="newsDetail-category">
+                <li class="newsDetail-item newsDetail-time">
+                    AD | <?php echo get_the_date('d M Y'); ?>
+                </li>
+                <?php $post_tags = get_the_tags();
+                if ($post_tags) {
+                    foreach ($post_tags as $tag) {
+                ?>
+                        <li class="newsDetail-item newsDetail-hashtag">
+                            <?php echo '#' . $tag->name; ?>
+                        </li>
+                <?php
+
+                    }
+                } ?>
+            </ul>
+            <div class="newsDetail-hero">
+                <div class="rto-box">
+                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                </div>
+            </div>
+            <?php echo get_the_content(); ?>
+        </div>
+    </section>
+    <section class="news mt">
+        <div class="container">
+            <h1 class="h1 text-uppercase news-title">Hung Yen News</h1>
+            <div class="row">
+                <?php
+                $args = array(
+                    'post_type' => 'post',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 3,
+
+                );
+
+                $loop = new WP_Query($args);
+
+                while ($loop->have_posts()) : $loop->the_post();
+
+
+                ?>
+                    <div class="news-item col-4">
+                        <div class="rto-box news-item__image">
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+                        </div>
+                        <div class="news-item__content">
+                            <h5 class="news-item__title">
+                                <?php print the_title(); ?>
+                            </h5>
+                            <p class="news-item__desc">
+                                <?php echo wp_trim_words(get_the_content(), 50); ?>
+                            </p>
+                        </div>
+                    </div>
+                <?php
+                endwhile;
+
+                wp_reset_postdata();  ?>
+            </div>
+        </div>
+    </section>
+</main>
+
+<?php get_footer(); ?>

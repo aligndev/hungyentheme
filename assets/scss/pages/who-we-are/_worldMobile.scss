@@ -1,0 +1,109 @@
+.worldMobile {
+  padding-top: 8rem;
+  &-accordion {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid $c-button-border;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+    @include max(600px) {
+      width: 100%;
+    }
+    &__heading {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      padding: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      img {
+        max-width: 3rem;
+        object-fit: cover;
+        padding-right: 1.2rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 120%;
+      }
+
+      &::after {
+        position: absolute;
+        content: "\002B";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+      }
+      &.active {
+        &::after {
+          content: "\2212";
+        }
+      }
+    }
+    &__flex {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    &__title,
+    &__number {
+      text-transform: uppercase;
+      font-size: 2.2rem;
+      font-weight: bold;
+      line-height: 120%;
+    }
+    &__body {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.2s ease-out;
+
+      &.active {
+        height: 100%;
+      }
+    }
+  }
+}
+.worldMobile-accordion__chilren {
+  padding: 1rem;
+  margin: 1rem 1rem 2rem;
+  border: 1px solid $c-button-border;
+  border-radius: 8px;
+}
+.accordion-children__heading {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  line-height: 120%;
+  font-weight: bold;
+
+  &::after {
+    position: absolute;
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  &.active {
+    &::after {
+      content: "\2212";
+    }
+  }
+}
+.accordion-children__body {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+  width: 80%;
+
+  li {
+    font-size: 1.6rem;
+    line-height: 120%;
+  }
+}

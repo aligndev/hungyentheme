@@ -1,0 +1,144 @@
+.world {
+  margin-top: 13rem;
+  &-title {
+    padding-bottom: 25rem;
+
+    @include max(1440px) {
+      padding-bottom: 15rem;
+    }
+    @include max(1336px) {
+      padding-bottom: 8rem;
+    }
+    @include max(769px) {
+      padding-bottom: 4rem;
+    }
+  }
+  &-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  svg {
+    transform: scale(1.4);
+    @include max(1440px) {
+      transform: scale(1.2);
+    }
+    @include max(1366px) {
+      transform: scale(1);
+    }
+  }
+  path {
+    fill: #ccd4c6;
+    z-index: 2;
+  }
+  path.active {
+    fill: $green-2;
+    cursor: pointer;
+  }
+
+  text {
+    display: none;
+    user-select: none;
+    pointer-events: none;
+    font-size: 1.2rem;
+    color: $black;
+    font-weight: 600;
+  }
+  text.active {
+    display: block;
+  }
+
+  image.active {
+    display: none;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+
+    &.active {
+      display: block;
+    }
+
+    &-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    &-item {
+      position: absolute;
+      padding: 6rem 3.2rem 4rem;
+      border: 1px solid #000000;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 0.8rem;
+
+      @include max(1440px) {
+        padding: 4rem 2.2rem 2rem;
+      }
+    }
+    &-number {
+      font-size: 4.167vw;
+      font-weight: 800;
+      padding-bottom: 2.5rem;
+    }
+    &-name {
+      font-size: 1.146vw;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    &-one {
+      left: 20%;
+      top: 40%;
+    }
+    &-two {
+      left: 50%;
+      top: 35%;
+    }
+    &-three {
+      left: 70%;
+      top: 45%;
+    }
+  }
+  &-info {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      padding: 0 1.5rem;
+      width: fit-content;
+      img {
+        padding-right: 1rem;
+      }
+      span {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.hide-on-desktop {
+  @include min(1025px) {
+    display: none;
+  }
+}
+.hide-on-mobile {
+  @include max(1024px) {
+    display: none;
+  }
+}

@@ -1,0 +1,107 @@
+.tabsMobile {
+  @include min(769px) {
+    display: none
+  }
+  &-inner {
+    border: 1px solid $dark-blue;
+    border-top: none;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .slider-title {
+      margin-bottom: 2rem;
+    }
+    .tabs-content__slider {
+      padding-bottom: 3.6rem;
+    }
+    .tabs-content__title {
+      margin-bottom: 4rem;
+    }
+    .slider-inner {
+      padding: 4rem 0;
+    }
+    .slider-text {
+      margin-bottom: 0;
+    }
+    .slider-cta {
+      bottom: -2rem;
+    }
+    .tabs-content__icon {
+      padding-bottom: 3rem;
+    }
+    .tabs-content__icon div:nth-child(1) {
+      width: 40%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .tabs-content__icon div:nth-child(2) {
+      width: 80%;
+      display: flex;
+      img {
+        width: 30%;
+        height: 100%;
+        object-fit: contain;
+        &:not(:last-child) {
+          margin-right: 1.2rem;
+        }
+      }
+    }
+    .tabs-content__video {
+      margin-bottom: 7rem;
+    }
+    .materials-row,
+    .materials-block {
+      display: block !important;
+    }
+    .materials-heading {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+    .materials-col {
+      width: 100%;
+    }
+    .materials-title {
+      padding-bottom: 1.5rem;
+    }
+  }
+  &-slide {
+    overflow: hidden;
+  }
+  &-title {
+    position: relative;
+    border-top: 1px solid $black;
+    border-radius: 8px 8px 0 0;
+    padding: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: calc(100% - 4px);
+      top: 4px;
+      right: 99.9%;
+      border-radius: 0 0 8px 0;
+      border-right: 1px solid $dark-blue;
+      border-bottom: 1px solid $dark-blue;
+  }
+  &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: calc(100% - 4px);
+      top: 4px;
+      left: 99.9%;
+      border-radius: 0 0 0 8px;
+      border-left: 1px solid $dark-blue;
+      border-bottom: 1px solid $dark-blue;
+  }
+  }
+  &-materials {
+    &__heading {
+      margin-bottom: 4rem;
+    }
+  }
+}

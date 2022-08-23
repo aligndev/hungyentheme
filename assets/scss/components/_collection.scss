@@ -1,0 +1,119 @@
+.collection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-150%);
+  transition: all 350ms ease-out;
+  &.active {
+    transform: translateY(0%);
+  }
+  .container {
+    height: 100%;
+  }
+  .swiper-wrapper {
+    justify-content: space-between;
+  }
+  .swiper-container {
+    padding-bottom: 6rem;
+  }
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  &-wrapper {
+    position: relative;
+    margin-top: 11rem;
+    height: 90%;
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $bg-green;
+      z-index: -1;
+    }
+  }
+  &-inner {
+    padding: 5.208vw 7.813vw 6.771vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &-cta {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: calc(100% * 9 / 12);
+    align-items: center;
+  }
+  &-button {
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    right: 30px;
+  }
+  &-fabric {
+    &__item {
+      width: 11.458vw;
+      height: 11.458vw;
+      transition: all 150ms ease-out;
+      cursor: pointer;
+      &:hover {
+        background-color: $green-2;
+      }
+    }
+    &__image {
+      border: 2px solid $green-2;
+      padding: 2rem 5.5rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2.8rem;
+      @include max(1440px) {
+        margin-bottom: 2.2rem;
+      }
+      img {
+        width: 100%;
+        max-width: 120px;
+        object-fit: cover;
+      }
+    }
+    &__title {
+      font-size: 1.8rem;
+      text-align: center;
+
+      @include max(1440px) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  &-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &-logo {
+    img {
+      width: 7.5vw;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}

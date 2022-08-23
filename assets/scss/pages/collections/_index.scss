@@ -1,0 +1,318 @@
+.collectionPage {
+  padding-top: 7.5rem;
+  overflow: hidden;
+  @include max(769px) {
+    padding-top: 4rem;
+  }
+  &-title {
+    font-size: 5.625vw;
+    font-weight: 700;
+  }
+  &-heading {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    img {
+      width: 100%;
+      max-width: 7.2rem;
+      object-fit: cover;
+      margin-right: 5rem;
+      @include max(769px) {
+        margin-right: 2rem;
+        max-width: 5rem;
+      }
+    }
+  }
+  &-hero {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    margin-bottom: 14rem;
+    height: 100vh;
+    .rto-box {
+      padding-top: 38.6979166667%;
+
+      @include max(769px) {
+        padding-top: 94%;
+      }
+      @include max(600px) {
+        padding-top: 127.2%;
+      }
+    }
+
+    @include max(1025px) {
+      margin-bottom: 8rem;
+    }
+    &__inner {
+      position: relative;
+      height: 100%;
+    }
+    &__item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-category {
+    display: flex;
+    @include max(1025px) {
+      flex-direction: column;
+    }
+  }
+  &-filter {
+    margin-right: 2.5vw;
+    @include max(1025px) {
+      width: 100%;
+    }
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+      img {
+        margin-right: 2.4rem;
+      }
+    }
+  }
+  &-download {
+    padding: 4rem 0;
+    &__button {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.5rem;
+      position: relative;
+      width: fit-content;
+      &::after {
+        left: 0;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        transform-origin: 100% 50%;
+        transform: scale3d(0, 1, 1);
+        transition: transform 0.4s;
+        background-color: $black;
+      }
+
+      &:hover::after {
+        transform-origin: 0% 50%;
+        transform: scale3d(1, 1, 1);
+      }
+    }
+
+    img {
+      margin-right: 2rem;
+    }
+    p {
+      font-size: 2rem;
+      line-height: 120%;
+      @include max(600px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &-property {
+    padding: 4.8rem 0 4.8rem 4.8rem;
+    border: 1px solid $dark-blue;
+    @include max(1025px) {
+      border: none;
+      padding: 0;
+      margin-bottom: 2rem;
+      max-height: 100px;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out;
+    }
+    .body {
+      color: $black;
+    }
+    &__title {
+      padding-bottom: 2rem;
+      text-transform: uppercase;
+      position: relative;
+      @include max(1025px) {
+        width: 30%;
+        &::after {
+          position: absolute;
+          content: "\002B";
+          font-size: 2rem;
+          position: absolute;
+          right: 1rem;
+        }
+        &.active {
+          &::after {
+            content: "\2212";
+          }
+        }
+      }
+      @include max(769px) {
+        width: 50%;
+      }
+      @include max(600px) {
+        width: 100%;
+      }
+    }
+    &__group {
+      &:not(:last-child) {
+        margin-bottom: 6.5rem;
+        @include max(1025px) {
+          margin-bottom: 4rem;
+        }
+      }
+    }
+    &__item {
+      width: fit-content;
+      display: block;
+      padding-left: 3.2rem;
+      margin-bottom: 2.4rem;
+      position: relative;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 2rem;
+      line-height: 120%;
+      @include max(600px) {
+        font-size: 1.6rem;
+      }
+      input {
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        &:checked {
+          ~ .checkmark {
+            background-color: $black;
+
+            &::after {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .checkmark {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 22px;
+        height: 22px;
+        background-color: $bg-green;
+        border: 2px solid $black;
+        border-radius: 2px;
+        z-index: 2;
+        cursor: pointer;
+
+        &::after {
+          position: absolute;
+          content: "";
+          display: none;
+
+          left: 5px;
+          top: 0;
+          width: 5px;
+          height: 10px;
+          border: solid $white;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+
+      &:hover {
+        input ~ .checkmark {
+          background-color: $black;
+        }
+      }
+    }
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin-right: -2.5vw;
+    @include max(1025px) {
+      width: 100%;
+    }
+  }
+  &-fabric {
+    margin-right: 2.5vw;
+    margin-bottom: 4.5rem;
+    width: calc(50% - 2.5vw);
+    height: fit-content;
+    border: 1px solid $black;
+    cursor: pointer;
+    @include max(600px) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2.5rem;
+    }
+    &__white {
+      > * {
+        color: $white !important;
+      }
+    }
+    &__title {
+      padding: 2.85rem 1.6rem;
+      text-transform: uppercase;
+      border-bottom: 1px solid $black;
+      color: $polyamide-rec-green;
+    }
+    &__image {
+      border-bottom: 1px solid $black;
+      overflow: hidden;
+      img {
+        transition: $transitionImage;
+      }
+      &:hover {
+        img {
+          transform: $transformImage;
+        }
+      }
+    }
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+    }
+    &__desc {
+      width: calc(100% / 3);
+      padding: 1.4rem 1.6rem;
+      color: $white;
+      background-color: $black;
+      font-size: 2.4rem;
+      line-height: 120%;
+      @include max(1440px) {
+        padding: 0.7rem 0.8rem;
+      }
+      @include max(769px) {
+        font-size: 1.6rem;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid $white;
+      }
+    }
+    &__number {
+      padding-bottom: 0.25rem;
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 120%;
+      @include max(769px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

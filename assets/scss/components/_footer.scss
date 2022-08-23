@@ -1,0 +1,107 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 6.5rem;
+}
+.footer-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+@media screen and (min-width: 1023px) {
+    .footer-cta {
+        background-color: $bg-green;
+        border-radius: 20px;
+        backdrop-filter: blur(500px);
+        margin-bottom: 19.3rem;
+    }
+}
+.footer-cta__inner {
+    padding: 93px 80px 76px;
+}
+@media screen and (max-width: 1025px) {
+    .footer-cta__inner {
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .footer-cta__inner {
+        padding: 0;
+        margin-bottom: 13rem;
+    }
+}
+.footer-cta__h1 {
+    margin-bottom: 13rem;
+    font-weight: 600;
+}
+@media screen and (min-width: 1023px) {
+    .footer-cta__h1 {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 769px) {
+    .footer-cta__h1 {
+        margin-bottom: 2.5rem;
+    }
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (min-width: 1023px) {
+    .footer-list {
+        align-items: flex-end;
+    }
+}
+@media screen and (max-width: 769px) {
+    .footer-list {
+        flex-direction: column;
+        height: 35vh;
+    }
+}
+.footer-logo img {
+    width: 100%;
+    max-width: 100%;
+}
+@media screen and (max-width: 769px) {
+    .footer-logo img {
+        max-width: 160px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .footer-logo {
+        margin-bottom: 4rem;
+    }
+}
+.footer-number {
+    display: inline-block;
+}
+.footer-desc {
+    font-size: 1.042vw;
+    color: $dark-blue;
+    font-weight: 400;
+}
+@media screen and (max-width: 769px) {
+    .footer-desc {
+        font-size: 1.6rem;
+        line-height: 119%;
+    }
+}
+@media screen and (min-width: 1023px) {
+    .footer-ml {
+        margin-left: 2.604vw;
+    }
+}
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 16.66667%;
+}
+@media screen and (max-width: 769px) {
+    .footer-social {
+        width: 80%;
+    }
+}

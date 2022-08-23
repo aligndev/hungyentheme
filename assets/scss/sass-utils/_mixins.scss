@@ -1,0 +1,37 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-jc-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-sb-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin lc($value: 3) {
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /*! autoprefixer: on */
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: $value;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@mixin max($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
+@mixin min($value) {
+  @media screen and (min-width: $value) {
+    @content;
+  }
+}
