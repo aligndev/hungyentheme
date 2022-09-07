@@ -1,7 +1,9 @@
 .process {
   position: relative;
-  height: 70vh;
   overflow: hidden;
+  > .swiper-container {
+    height: 100%;
+  }
   .hide-on-mobile {
     @include max(769px) {
       display: none;
@@ -15,25 +17,26 @@
       height: 100%;
     }
   }
-  .col-3 {
+  &-video {
+    position: absolute;
+    width: calc(100% * 5 / 12);
+    top: 0;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
     @include max(1025px) {
-      width: 50%;
+      width: calc(100% * 10 / 12);
     }
-    @include max(767.98px) {
-      width: 100%;
+    @include max(900px) {
+      right: -25%;
+    }
+    @include max(500px) {
+      right: -50%;
     }
   }
-  .rto-box {
-    padding-top: 154.1850220264317%;
-    @include max(1025px) {
-      padding-top: 171%;
-    }
-    @include max(991.98px) {
-      padding-top: 133%;
-    }
-    @include max(767.98px) {
-      padding-top: 108%;
-    }
+  .col-8 {
+    padding: 6.51vw 0;
   }
   &-title {
     margin-bottom: 2.5rem;
@@ -42,21 +45,27 @@
     }
   }
   &-row {
+    position: relative;
+    z-index: 2;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #002d74;
   }
   &-sub {
-    font-size: 0.938vw;
-    line-height: 140%;
     margin-bottom: 2rem;
     max-width: calc(100% * 5 / 12);
+    > p {
+      font-size: 1.4rem;
+      line-height: 110%;
+      @include max(769px) {
+        font-size: 1.6rem;
+      }
+    }
     @include max(991.98px) {
       max-width: 100%;
     }
     &:last-of-type {
-      margin-bottom: 5rem;
+      margin-bottom: 11.3rem;
       @include max(991.98px) {
         margin-bottom: 3rem;
       }
@@ -85,11 +94,6 @@
     background-color: $bg-green;
   }
 }
-// @media screen and (max-width: 1025px) {
-//     .process-sub:last-of-type {
-//         margin-bottom: 6rem;
-//     }
-// }
 @media screen and (max-width: 1025px) {
   .process-sub {
     font-size: 1.6rem;

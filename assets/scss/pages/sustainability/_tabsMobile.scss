@@ -1,6 +1,6 @@
 .tabsMobile {
   @include min(769px) {
-    display: none
+    display: none;
   }
   &-inner {
     border: 1px solid $dark-blue;
@@ -86,8 +86,8 @@
       border-radius: 0 0 8px 0;
       border-right: 1px solid $dark-blue;
       border-bottom: 1px solid $dark-blue;
-  }
-  &::before {
+    }
+    &::before {
       position: absolute;
       content: "";
       width: 100vw;
@@ -97,11 +97,35 @@
       border-radius: 0 0 0 8px;
       border-left: 1px solid $dark-blue;
       border-bottom: 1px solid $dark-blue;
+    }
   }
+  .swiper-mobile-next,
+  .swiper-mobile-prev {
+    top: 30px;
+  }
+  .swiper-mobile-next::after,
+  .swiper-mobile-prev::after {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
   }
   &-materials {
     &__heading {
       margin-bottom: 4rem;
     }
+  }
+  .swiper-container {
+    position: relative;
+  }
+}
+
+.swiper-button-prev {
+  @include max(768px) {
+    left: 0;
+  }
+}
+.swiper-button-next {
+  @include max(768px) {
+    right: 0;
   }
 }

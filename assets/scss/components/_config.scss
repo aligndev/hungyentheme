@@ -1,11 +1,28 @@
 .content-config {
   h1 {
-    font-size: 2.5vw;
+    font-size: 3.333vw;
     line-height: 120%;
     font-weight: 800;
     color: $dark-blue;
     @include max(769px) {
       font-size: 2.4rem;
+    }
+  }
+  h2 {
+    font-size: 2.5vw;
+    line-height: 110%;
+    font-weight: 800;
+    @include max(769px) {
+      font-size: 2.2rem;
+      line-height: 120%;
+    }
+  }
+  h3 {
+    font-size: 1.875vw;
+    line-height: 110%;
+    font-weight: 800;
+    @include max(769px) {
+      font-size: 2rem;
     }
   }
   h4 {
@@ -16,22 +33,12 @@
       font-size: 1.8rem;
     }
   }
-  p, h5 {
+  p,
+  h5 {
     font-size: 1.25vw;
-    font-weight: 400;
-    line-height: 120%;
-    color: $dark-blue;
-    @include max(1025px) {
+    line-height: 110%;
+    @include max(769px) {
       font-size: 1.6rem;
-    }
-  }
-  h2 {
-    font-size: 1.875vw;
-    line-height: 140%;
-    font-weight: 400;
-    @include max(1025px) {
-      font-size: 2.2rem;
-      font-weight: 120%;
     }
   }
   p strong {
@@ -42,8 +49,8 @@
     width: 100%;
     object-fit: contain;
     padding: 0 1.5rem;
-    @include max(1025px) {
-      max-width: 12rem;
+    @include max(1440px) {
+      max-width: 30%;
     }
     @include max(769px) {
       max-width: 8rem;

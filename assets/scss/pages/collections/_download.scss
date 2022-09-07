@@ -28,10 +28,10 @@
   &-inner {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -2.4rem
+    margin: 0 -2.4rem;
   }
   &-item {
-    width: calc(100%*4/12);
+    width: calc(100% * 4 / 12);
     padding: 0 2.4rem;
     cursor: pointer;
 
@@ -46,6 +46,15 @@
     }
     .rto-box {
       padding-top: 158.5365853658537%;
+      overflow: hidden;
+    }
+    img {
+      transition: $transitionImage;
+    }
+    &:hover {
+      img {
+        transform: $transformImage;
+      }
     }
   }
   &-color {
@@ -75,7 +84,7 @@
     &::after {
       position: absolute;
       left: 15px;
-      content: ' ';
+      content: " ";
       height: 33px;
       width: 2px;
       background-color: #333;
@@ -97,7 +106,7 @@
   top: 0;
   left: 0;
   display: none;
-  transition: left .3s ease-in-out;
+  transition: left 0.3s ease-in-out;
   &.active {
     display: block;
   }
@@ -106,5 +115,5 @@
   position: absolute;
   top: 55%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }

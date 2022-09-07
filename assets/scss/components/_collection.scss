@@ -51,13 +51,26 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    @include max(769px) {
+      padding: 10rem 7.813vw 10rem;
+    }
   }
   &-cta {
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
-    width: calc(100% * 9 / 12);
     align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -3.4rem;
+    &__col {
+      padding: 0 3.4rem;
+    }
+    @include max(769px) {
+      &__col {
+        &:not(:last-child) {
+          padding-bottom: 2.5rem;
+        }
+      }
+    }
   }
   &-button {
     position: absolute;
@@ -74,6 +87,10 @@
       &:hover {
         background-color: $green-2;
       }
+      @include max(769px) {
+        width: 12rem;
+        height: 12rem;
+      }
     }
     &__image {
       border: 2px solid $green-2;
@@ -87,15 +104,23 @@
       @include max(1440px) {
         margin-bottom: 2.2rem;
       }
+      @include max(769px) {
+        padding: 1.2rem 1.5rem;
+      }
       img {
         width: 100%;
         max-width: 120px;
         object-fit: cover;
+
+        @include max(769px) {
+          max-width: 6rem;
+        }
       }
     }
     &__title {
       font-size: 1.8rem;
       text-align: center;
+      line-height: 110%;
 
       @include max(1440px) {
         font-size: 1.4rem;
@@ -114,6 +139,9 @@
       width: 7.5vw;
       max-width: 100%;
       object-fit: cover;
+      @include max(769px) {
+        width: 7rem;
+      }
     }
   }
 }

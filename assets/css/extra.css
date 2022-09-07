@@ -1,0 +1,195 @@
+h4 {
+  font-size: 1.667vw;
+  line-height: 120%;
+  font-weight: 800;
+}
+p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* Collection page */
+
+.collectionPage-filter__main,
+.collectionPage-feature {
+  padding: 4.8rem 0 4.8rem 4.8rem;
+  border: 1px solid #000;
+}
+.collectionPage-filter__main .collectionPage-property {
+  padding: 0;
+  border: none;
+}
+.collectionPage-filter__main * {
+  margin-bottom: 3px;
+}
+.collectionPage-list {
+  margin-right: 0;
+}
+.featureTitle {
+  padding-bottom: 3rem;
+}
+/* filter main  */
+
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub:nth-child(1) {
+  display: none;
+}
+#piotnetgrid .fillter-by-collection .piotnetgrid-facet__field-subgroup {
+  width: 100%;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub {
+  display: flex;
+  align-items: center;
+  transition: all 150ms ease-out;
+  width: 100%;
+}
+
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .piotnetgrid-facet__field-sub-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  padding: 1.8rem 0;
+  text-align: center;
+  border: 1px solid #71bf44;
+  border-radius: 4px;
+  color: #000;
+  background-color: transparent;
+  transition: all 150ms ease-out;
+  width: 100%;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .piotnetgrid-facet-field:checked
+  + .piotnetgrid-facet__field-sub-label {
+  border: 1px solid #000;
+  background-color: #000;
+  color: white;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .piotnetgrid-facet-field.polyamide-recycled-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: url(/wp-content/themes/alignvn/assets/images/polyamide-icon.svg)
+    no-repeat;
+  margin-right: 3rem;
+  background-size: contain;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .piotnetgrid-facet-field.polyester-recycled-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: url(/wp-content/themes/alignvn/assets/images/polyester-icon.svg)
+    no-repeat;
+  margin-right: 3rem;
+  background-size: contain;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .piotnetgrid-facet-field.polyamide-virgin-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: url(/wp-content/themes/alignvn/assets/images/polyester-icon.svg)
+    no-repeat;
+  margin-right: 3rem;
+  background-size: contain;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .piotnetgrid-facet-field.polyester-virgin-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: url(/wp-content/themes/alignvn/assets/images/polyester-icon.svg)
+    no-repeat;
+  margin-right: 3rem;
+  background-size: contain;
+}
+
+.polyamide-virgin-logo {
+}
+#piotnetgrid
+  .filter-by-application_wrapper
+  .piotnetgrid-facet__field-subgroup--buttons
+  input,
+#piotnetgrid
+  .filter-by-property_wrapper
+  .piotnetgrid-facet__field-subgroup--buttons
+  input {
+  display: block !important;
+  width: 20px;
+  height: 20px;
+}
+#piotnetgrid .filter-by-application_wrapper .piotnetgrid-facet__field-subgroup,
+#piotnetgrid .filter-by-property_wrapper .piotnetgrid-facet__field-subgroup {
+  display: grid;
+}
+
+#piotnetgrid
+  .filter-by-application_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub,
+#piotnetgrid
+  .filter-by-property_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
+#piotnetgrid
+  .filter-by-application_wrapper
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub-label,
+#piotnetgrid
+  .filter-by-property_wrapper
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub-label {
+  border: none;
+}
+
+/* collection product section  */
+#piotnetgrid .piotnetgrid-card {
+  border: 1px solid #000;
+}
+#piotnetgrid .piotnetgrid-card .piotnetgrid-image__content a {
+  display: grid;
+}
+#piotnetgrid .piotnetgrid-card .piotnetgrid-image__tag {
+  height: 100%;
+  width: 100%;
+}

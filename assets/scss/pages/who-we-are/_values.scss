@@ -12,10 +12,11 @@
     padding-top: 4rem;
   }
   &-title {
-    width: calc(100%*8/12);
+    width: calc(100% * 8 / 12);
     text-transform: uppercase;
     padding-bottom: 10rem;
     @include max(1440px) {
+      width: calc(100% * 10 / 12);
       padding-bottom: 8rem;
     }
     @include max(1280px) {
@@ -34,7 +35,7 @@
     }
   }
   &-item {
-    width: calc(100%*4/12);
+    width: calc(100% * 4 / 12);
     padding: 0 2.4rem;
     @include max(769px) {
       width: 100%;

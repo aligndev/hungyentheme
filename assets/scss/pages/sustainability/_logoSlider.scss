@@ -1,6 +1,5 @@
 .logoSlider-inner {
-  padding-bottom: 2.5rem;
-  margin-top: -2.5rem;
+  padding: 1.5rem 0;
   border-bottom: 1px solid #002d74;
   position: relative;
   @include max(769px) {
@@ -9,13 +8,13 @@
 }
 .logoSlider {
   .hide-on-desktop {
-    @include min(1024px) {
+    @include min(1025px) {
       display: none;
     }
   }
   .process-download {
-    @include max(769px) {
-      margin-top: 4rem;
+    @include max(1024px) {
+      margin: 7rem auto;
     }
   }
   .swiper-container {
@@ -26,7 +25,7 @@
   .swiper-button-prev {
     color: $black;
     position: absolute;
-    top: 65%;
+    top: 70%;
     transform: translateY(-50%);
     &::after {
       font-size: 1.5rem;
@@ -38,15 +37,11 @@
   align-items: center;
 }
 .logoSlider-slide {
-  width: calc(100% * 1.5 / 12);
-  padding: 0 1.5rem;
+  width: calc(100% * 2 / 12);
+  padding: 0 4rem;
 
   @include max(1025px) {
-    width: 25%;
-  }
-
-  @include max(768px) {
-    width: 40%;
+    width: 50%;
   }
 }
 

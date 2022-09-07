@@ -1,8 +1,8 @@
 .discover-item {
-    position: relative;
-    width: 100%;
-    height: 19.948vw;
-    z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 19.948vw;
+  z-index: 1;
   &__heading {
     display: none;
     @include max(768px) {
@@ -14,87 +14,95 @@
   }
 }
 @media screen and (max-width: 769px) {
-    .discover-item {
-        height: 430px;
-        margin-bottom: 4.5rem;
-    }
+  .discover-item {
+    height: 430px;
+    margin-bottom: 4.5rem;
+  }
 }
 @media screen and (max-width: 500px) {
-    .discover-item {
-        height: 230px;
-    }
+  .discover-item {
+    height: 230px;
+  }
 }
 .discover-item:hover .discover-info {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 .discover-center {
-    text-align: center;
+  text-align: center;
 }
 .discover-image,
 .discover-image > img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .discover-image > img {
-    object-fit: cover;
+  object-fit: cover;
 }
 .discover-desc {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  @include max(769px) {
+    margin-bottom: 4.5rem;
+  }
 }
 @media screen and (max-width: 769px) {
-    .discover-heading {
-        display: none;
-    }
+  .discover-heading {
+    display: none;
+  }
 }
 .discover-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
 }
 @media screen and (max-width: 1025px) {
-    .discover-logo {
-        width: 8rem;
-    }
+  .discover-logo {
+    width: 8rem;
+  }
 }
 .discover-title {
-    margin-bottom: 6rem;
+  margin-bottom: 6rem;
+  @include max(769px) {
+    margin-bottom: 1.5rem;
+  }
 }
 @media screen and (min-width: 1023px) {
-    .discover-pl {
-        padding-left: 1.6rem;
-    }
+  .discover-pl {
+    padding-left: 1.6rem;
+  }
 }
 @media screen and (min-width: 1023px) {
-    .discover-pr {
-        padding-right: 1.6rem;
-    }
+  .discover-pr {
+    padding-right: 1.6rem;
+  }
 }
 .discover-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #8cb675;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.15s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease-out;
 }
 .discover-info__inner {
-    display: flex;
-    flex-direction: column;
-    padding: 42px 56px;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 56px;
+  height: 100%;
+  color: $white;
 }
 @media screen and (max-width: 1025px) {
-    .discover-info__inner {
-        padding: 21px 28px;
-    }
+  .discover-info__inner {
+    padding: 21px 28px;
+  }
 }
 .discover-info__inner p {
-    margin-top: auto;
-    color: #000;
-    max-width: 330px;
+  margin-top: auto;
+  color: $white;
+  max-width: 330px;
 }

@@ -13,17 +13,22 @@
             <div class="contact-row">
                 <div class="contact-info col-4">
                     <form action="" class="contact-form">
-                        <input type="text" name="Name" id="Name" placeholder="Name*">
-                        <input type="text" name="Company" id="Company" placeholder="Company*">
-                        <input type="text" name="Country" id="Country" placeholder="Country*">
-                        <input type="email" name="Email" id="Email" placeholder="Email*">
-                        <input type="text" name="Message*" id="Message*" placeholder="Message*">
+                        <span class="contact-text body">Name*</span>
+                        <input type="text" name="Name" id="Name">
+                        <span class="contact-text body">Company*</span>
+                        <input type="text" name="Company" id="Company">
+                        <span class="contact-text body">Country*</span>
+                        <input type="text" name="Country" id="Country">
+                        <span class="contact-text body">Email*</span>
+                        <input type="email" name="Email" id="Email">
+                        <span class="contact-text body">Message*</span>
+                        <textarea></textarea>
                     </form>
                     <a class="btn btn-green col-5">
                         Send
                     </a>
                     <div class="contact-message">
-                        <img src="/src/assets/images/contact-icon.svg" alt="">
+                        <img src="/wp-content/uploads/2022/07/contact-icon.svg" alt="">
                         <div class="contact-text">
                             <h4 class="h4">Contact us</h4>
                             <p class="body">Drop us a message on Whatsapp. We'll rely in 12 hours.</p>

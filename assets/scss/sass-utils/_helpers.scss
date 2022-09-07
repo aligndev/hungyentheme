@@ -101,16 +101,13 @@
 }
 .btn {
   display: block;
-  font-size: 1.25vw;
+  font-size: 1.042vw;
   font-weight: 600;
-  padding: 1.8rem 0;
+  padding: 0.938vw 0;
   text-align: center;
   line-height: 119%;
   @include max(1025px) {
-    font-size: 1.8rem;
-  }
-
-  @include max(769px) {
+    padding: 1.4rem 0;
     font-size: 1.6rem;
   }
 
@@ -120,7 +117,8 @@
     border-radius: 8px;
     transition: all 150ms ease-out;
     &:hover {
-      background-color: $green-2;
+      border: 1px solid $black;
+      background-color: $black;
       color: white;
     }
   }
@@ -133,7 +131,8 @@
     backdrop-filter: blur(150px);
     transition: all 150ms ease-out;
     &:hover {
-      background-color: $green-2;
+      border: 1px solid $black;
+      background-color: $black;
       color: white;
     }
   }

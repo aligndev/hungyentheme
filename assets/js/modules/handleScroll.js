@@ -5,8 +5,8 @@ const handleScroll = () => {
   let heroWrap = document.querySelector(".hero");
   let processSection = gsap.utils.toArray(".process-section");
   let process = document.querySelector(".process");
-  let collections = document.querySelector(".collectionPage-hero");
-  let collectionsSection = gsap.utils.toArray(".collectionPage-hero__item");
+  // let collections = document.querySelector(".collectionPage-hero");
+  // let collectionsSection = gsap.utils.toArray(".collectionPage-hero__item");
   const headerHeight = document
     .querySelector("header")
     .getBoundingClientRect().height;
@@ -15,7 +15,7 @@ const handleScroll = () => {
   });
   let allSECsNotLast1 = heroSection.slice(0, -1);
   let allSECsNotLast2 = processSection.slice(0, -1);
-  let allSECsNotLast3 = collectionsSection.slice(0, -1);
+  // let allSECsNotLast3 = collectionsSection.slice(0, -1);
   if (heroWrap) {
     let action = gsap
       .timeline({ defaults: { ease: "none", stagger: 1 } })
@@ -42,20 +42,6 @@ const handleScroll = () => {
       },
     });
     tl.to(allSECsNotLast2, { autoAlpha: 0, duration: 0 }, 1);
-  }
-  if (collections) {
-    const tl = gsap.timeline({
-      defaults: { ease: "none", stagger: 1 },
-      scrollTrigger: {
-        trigger: collections,
-        pin: true,
-        markers: true,
-        start: `top ${headerHeight}`,
-        end: () => "+=" + collections.offsetHeight,
-        scrub: 1,
-      },
-    });
-    tl.to(allSECsNotLast3, { autoAlpha: 0, duration: 0 }, 1);
   }
   function scrollHeader() {
     const navBar = document.querySelector(".nav-inner");

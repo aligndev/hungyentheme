@@ -2,9 +2,9 @@
 <main class="wrapper" data-barba="container" data-barba-namespace="home">
     <section class="newsDetail pt">
         <div class="container">
-            <h1 class="h1 newsDetail-h1">
+            <h2 class="h2 newsDetail-h1">
                 <?php the_title(); ?>
-            </h1>
+            </h2>
             <ul class="newsDetail-category">
                 <li class="newsDetail-item newsDetail-time">
                     AD | <?php echo get_the_date('d M Y'); ?>
@@ -26,12 +26,14 @@
                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                 </div>
             </div>
-            <?php echo get_the_content(); ?>
+            <div class="content-config">
+              <?php echo get_the_content(); ?>
+            </div>
         </div>
     </section>
     <section class="news mt">
         <div class="container">
-            <h1 class="h1 text-uppercase news-title">Hung Yen News</h1>
+            <h2 class="h2 text-uppercase news-title">More recent news</h2>
             <div class="row">
                 <?php
                 $args = array(

@@ -9,59 +9,60 @@
 
 <main class="wrapper" data-barba="container" data-barba-namespace="home">
     <?php if (have_rows('hero_slider')) : ?>
-        <section class="hero">
+        <section class="hero fadeJs">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <?php
+                  while (have_rows('hero_slider')) : the_row();
+                      $hero_sub = get_sub_field('hero_slider_sub');
+                      $hero_title = get_sub_field('hero_slider_title');
+                      $hero_slider_waves = get_sub_field('hero_slider_waves');
+                      $hero_image = get_sub_field('hero_image');
+                      $hero_body  = get_sub_field('hero_body');
+                      $hero_link = get_sub_field('hero_link');
+                  ?>
+                      <div class="swiper-slide">
+                          <div class="container">
+                              <div class="hero-top">
+                                  <h2 class="h2 hero-sub"><?php echo $hero_sub; ?></h2>
+                                  <h1 class="h1 hero-title"><?php echo $hero_title; ?></h1>
+                              </div>
+                              <div class="hero-bottom">
+                                  <div class="hero-wave">
+                                      <div class="hero-wave__item">
+                                          <img src="<?php echo $hero_slider_waves; ?>" alt="" />
+                                      </div>
+                                  </div>
 
-            <?php
-            $hero_slider_number = 1;
+                                  <div class="hero-image">
+                                      <img src="<?php echo $hero_image['url']; ?>" alt="" />
+                                  </div>
+                                  <div class="hero-cta col-6">
+                                      <p class="hero-desc body">
+                                          <?php echo $hero_body; ?>
+                                      </p>
 
-            while (have_rows('hero_slider')) : the_row();
-                $hero_sub = get_sub_field('hero_slider_sub');
-                $hero_title = get_sub_field('hero_slider_title');
-                $hero_slider_waves = get_sub_field('hero_slider_waves');
-                $hero_image = get_sub_field('hero_image');
-                $hero_body  = get_sub_field('hero_body');
-                $hero_link = get_sub_field('hero_link');
-
-            ?>
-                <div class="hero-section sec-<?php echo $hero_slider_number;
-                                                $hero_slider_number++; ?>">
-                    <div class="container">
-                        <div class="hero-top">
-                            <h1 class="hero-sub"><?php echo $hero_sub; ?></h1>
-                            <h1 class="hero-title"><?php echo $hero_title; ?></h1>
-                        </div>
-                        <div class="hero-bottom">
-                            <div class="hero-wave">
-                                <div class="hero-wave__item">
-                                    <img src="<?php echo $hero_slider_waves; ?>" alt="" />
-                                </div>
-                            </div>
-
-                            <div class="hero-image">
-                                <img src="<?php echo $hero_image['url']; ?>" alt="" />
-                            </div>
-                            <div class="hero-cta col-6">
-                                <p class="hero-desc body">
-                                    <?php echo $hero_body; ?>
-                                </p>
-
-                                <a href="<?php echo $hero_link; ?>" class="col-4 hero-button body">
-                                    Learn More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <?php endwhile; ?>
+                                      <a href="<?php echo $hero_link; ?>" class="col-4 hero-button body">
+                                          Learn More
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  <?php endwhile; ?>
+              </div>
+              <div class="swiper-button-next swiper-button-lg"></div>
+              <div class="swiper-button-prev swiper-button-lg"></div>
+              <div class="swiper-pagination pagination-hide-on-desktop"></div>
+            </div>
         </section>
     <?php endif; ?>
 
     <section class="slider mt">
         <div class="container">
-            <h1 class="h1 col-6 slider-heading">
+            <h2 class="h2 col-6 slider-heading">
                 <?php the_field('home_page_slider_title'); ?>
-            </h1>
+            </h2>
             <?php if (have_rows('home_page_slide')) : ?>
                 <div class="slider-inner row">
                     <div class="slider-wrapper col-5">
@@ -75,9 +76,9 @@
                                 ?>
                                     <div class="swiper-slide slider-slide">
                                         <div class="swiper-slide-container">
-                                            <h1 class="h1 slider-title text-uppercase">
+                                            <h3 class="h3 slider-title text-uppercase">
                                                 <?php echo $home_page_slider_title ?>
-                                            </h1>
+                                            </h3>
                                             <p class="body slider-desc">
                                                 <?php echo $home_page_slider_text; ?>
                                             </p>
@@ -107,6 +108,7 @@
 
                     <div class="swiper-button-next reviewSlider-button-next"></div>
                     <div class="swiper-button-prev reviewSlider-button-prev"></div>
+                    <div class="swiper-pagination hide-on-desktop reviewSlider-pagination"></div>
 
                 </div>
             <?php endif; ?>
@@ -117,18 +119,17 @@
         <div class="container">
             <div class="partner-inner">
                 <div class="partner-content row">
-                    <h1 class="h1 partner-title text-uppercase col-6">
+                    <h2 class="h2 partner-title text-uppercase col-6">
                         <?php the_field('home_page_partner_title') ?>
-                    </h1>
+                    </h2>
                     <p class="body partner-desc col-6">
                         <?php the_field('home_page_partner_text') ?>
                     </p>
                 </div>
                 <div class="partner-logos">
-                    <div class="swiper-default noloop">
+                    <div class="logoJs">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
-
                                 <?php
                                 $images = get_field('home_page_partner_logo');
                                 if ($images) : ?>
@@ -141,6 +142,8 @@
                                 ?>
                             </div>
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                     </div>
                 </div>
             </div>
@@ -150,9 +153,9 @@
     <section class="mt discover">
         <div class="container">
             <div class="discover-block">
-                <h1 class="h1 text-uppercase discover-title">
+                <h2 class="h2 text-uppercase discover-title">
                     <?php the_field('home_page_discover_title') ?>
-                </h1>
+                </h2>
                 <p class="body discover-desc">
                     <?php the_field('home_page_discover_description') ?>
                 </p>
@@ -206,7 +209,7 @@
 
     <section class="news mt">
         <div class="container">
-            <h1 class="h1 text-uppercase news-title">Hung Yen News</h1>
+            <h2 class="h2 text-uppercase news-title">Hung Yen News</h2>
             <div class="row">
                 <?php
                 $args = array(
@@ -227,7 +230,7 @@
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
                         </div>
                         <div class="news-item__content">
-                            <h5 class="news-item__title">
+                            <h5 class="h5 news-item__title">
                                 <?php print the_title(); ?>
                             </h5>
                             <p class="news-item__desc">

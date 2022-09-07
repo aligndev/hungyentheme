@@ -1,0 +1,28 @@
+.fadeJs
+  > .swiper-container
+  > .swiper-wrapper
+  > .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0 !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+.swiper-button-lg {
+  @include max(769px) {
+    display: none;
+  }
+}
+.swiper-button-lg::after,
+.swiper-button-lg::after {
+  font-size: 3rem;
+}
+
+.pagination-hide-on-desktop {
+  display: block;
+  @include min(1025px) {
+    display: none;
+  }
+}

@@ -4,10 +4,10 @@
         <div class="row">
             <div class="footer-cta col-8 mx-auto">
                 <div class="footer-cta__inner">
-                    <h1 class="h1 footer-cta__h1">
+                    <h2 class="h2 footer-cta__h1">
                         We're here to provide the best fabric for your business. <br />
                         Don't hesitate to contact us.
-                    </h1>
+                    </h2>
 
                     <a href="#" class="btn btn-green col-4 mx-auto">
                         Get to know us

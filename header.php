@@ -14,42 +14,42 @@
         <div class="collection-wrapper">
             <img src="<?php echo ASSETS . '/images/close-icon.svg'; ?>" alt="" class="collection-button" />
             <div class="container collection-inner">
-                <div class="swiper-default noloop">
+                <div class="logoJs noloop">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
-                            <a href="/collections/recycle.html" class="swiper-item collection-fabric__item">
+                            <a href="/collection/recycle" class="swiper-slide swiper-item collection-fabric__item">
                                 <div class="collection-fabric__image">
                                     <img src="<?php echo ASSETS . '/images/fabric-icon-3.svg'; ?>" alt="" />
                                 </div>
                                 <div class="collection-fabric__title">Recycled</div>
                             </a>
-                            <div class="swiper-item collection-fabric__item">
+                            <a href="/collection/Virgin" class="swiper-slide swiper-item collection-fabric__item">
                                 <div class="collection-fabric__image">
                                     <img src="<?php echo ASSETS . '/images/fabric-icon-1.svg'; ?>" alt="" />
                                 </div>
                                 <div class="collection-fabric__title">Virgin</div>
-                            </div>
-                            <div class="swiper-item collection-fabric__item">
+                            </a>
+                            <a href="/collection/shiny" class="swiper-slide swiper-item collection-fabric__item">
                                 <div class="collection-fabric__image">
-                                <img src="<?php echo ASSETS . '/images/fabric-icon-2.svg'; ?>" alt="" />
+                                    <img src="<?php echo ASSETS . '/images/fabric-icon-2.svg'; ?>" alt="" />
                                 </div>
                                 <div class="collection-fabric__title">
                                     Recycled & Virgin Shiny
                                 </div>
-                            </div>
-                            <div class="swiper-item collection-fabric__item">
+                            </a>
+                            <a href="/collection/Xlance" class="swiper-slide swiper-item collection-fabric__item">
                                 <div class="collection-fabric__image">
-                                <img src="<?php echo ASSETS . '/images/fabric-icon-6.svg'; ?>" alt="" />
+                                    <img src="<?php echo ASSETS . '/images/fabric-icon-6.svg'; ?>" alt="" />
                                 </div>
                                 <div class="collection-fabric__title">Xlance</div>
-                            </div>
-                            <a href="/collections/digital-print.html" class="swiper-item collection-fabric__item">
+                            </a>
+                            <a href="/collection/digital-print" class="swiper-slide swiper-item collection-fabric__item">
                                 <div class="collection-fabric__image">
-                                <img src="<?php echo ASSETS . '/images/fabric-icon-7.svg'; ?>" alt="" />
+                                    <img src="<?php echo ASSETS . '/images/fabric-icon-7.svg'; ?>" alt="" />
                                 </div>
                                 <div class="collection-fabric__title">Digital Print</div>
                             </a>
-                            <div class="swiper-item collection-fabric__item">
+                            <div class="swiper-slide swiper-item collection-fabric__item">
                                 <div class="collection-fabric__image">
                                     <img src="<?php echo ASSETS . '/images/fabric-icon-5.svg'; ?>" alt="" />
                                 </div>
@@ -60,14 +60,19 @@
                 </div>
 
                 <div class="collection-cta">
-                    <div class="collection-cta__col col-5">
+                    <div class="collection-cta__col col-4">
                         <a href="#" class="btn btn-green collection-cta__text">
                             All fabric Collections
                         </a>
                     </div>
-                    <div class="collection-cta__col col-5">
+                    <div class="collection-cta__col col-4">
                         <a href="#" class="btn btn-green collection-cta__text">
-                            Download Color Cards Collection 2023
+                            Download Our Color Cards 2023
+                        </a>
+                    </div>
+                    <div class="collection-cta__col col-4">
+                        <a href="#" class="btn btn-green collection-cta__text">
+                            Download Our Collection Books
                         </a>
                     </div>
                 </div>
@@ -75,28 +80,28 @@
                 <div class="collection-logo">
                     <div class="collection-row">
                         <div class="collection-logo__item">
-                          <img src="<?php echo ASSETS . '/images/partner-logo-8.svg'; ?>" alt="" class="collection-logo__image"/>
+                            <img src="<?php echo ASSETS . '/images/partner-logo-8.svg'; ?>" alt="" class="collection-logo__image" />
                         </div>
                         <div class="collection-logo__item">
-                          <img src="<?php echo ASSETS . '/images/partner-logo-10.svg'; ?>" alt="" class="collection-logo__image"/>
+                            <img src="<?php echo ASSETS . '/images/partner-logo-10.svg'; ?>" alt="" class="collection-logo__image" />
                         </div>
                         <div class="collection-logo__item">
-                          <img src="<?php echo ASSETS . '/images/partner-logo-11.svg'; ?>" alt="" class="collection-logo__image"/>
+                            <img src="<?php echo ASSETS . '/images/partner-logo-11.svg'; ?>" alt="" class="collection-logo__image" />
                         </div>
                         <div class="collection-logo__item">
-                          <img src="<?php echo ASSETS . '/images/partner-logo-7.svg'; ?>" alt="" class="collection-logo__image"/>
+                            <img src="<?php echo ASSETS . '/images/partner-logo-7.svg'; ?>" alt="" class="collection-logo__image" />
                         </div>
                         <div class="collection-logo__item">
-                          <img src="<?php echo ASSETS . '/images/partner-logo-12.svg'; ?>" alt="" class="collection-logo__image"/>
+                            <img src="<?php echo ASSETS . '/images/partner-logo-12.svg'; ?>" alt="" class="collection-logo__image" />
                         </div>
                         <div class="collection-logo__item">
-                          <img src="<?php echo ASSETS . '/images/partner-logo-13.svg'; ?>" alt="" class="collection-logo__image"/>
+                            <img src="<?php echo ASSETS . '/images/partner-logo-13.svg'; ?>" alt="" class="collection-logo__image" />
                         </div>
                         <div class="collection-logo__item">
-                          <img src="<?php echo ASSETS . '/images/partner-logo-14.svg'; ?>" alt="" class="collection-logo__image"/>
+                            <img src="<?php echo ASSETS . '/images/partner-logo-14.svg'; ?>" alt="" class="collection-logo__image" />
                         </div>
                         <div class="collection-logo__item">
-                          <img src="<?php echo ASSETS . '/images/partner-logo-15.svg'; ?>" alt="" class="collection-logo__image"/>
+                            <img src="<?php echo ASSETS . '/images/partner-logo-15.svg'; ?>" alt="" class="collection-logo__image" />
                         </div>
                     </div>
                 </div>
@@ -120,7 +125,7 @@
                             <a href="<?php echo esc_url(get_page_link('11')); ?>" class="nav-link nav-text">Sustainability</a>
                         </li>
                         <li class="nav-bar__item">
-                            <a href="#" id="fabric-collection" class="nav-link nav-text">Fabric Collection</a>
+                            <a href='javascript:void(0)' id="fabric-collection" class="nav-link nav-text">Fabric Collection</a>
                         </li>
                         <li class="nav-bar__item">
                             <a href="<?php echo esc_url(get_page_link('13')); ?>" class="nav-link nav-text">HY News</a>

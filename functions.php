@@ -75,7 +75,7 @@ function alignvn_style()
 {
   //Jquery
   wp_enqueue_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', '', '', true);
-    //Gsap
+  //Gsap
   wp_enqueue_script('gsap-script', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js',  '', '', true);
   wp_enqueue_script('gsap-scrollTrigger', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js',  '', '', true);
   //Dflip js
@@ -85,8 +85,10 @@ function alignvn_style()
   wp_enqueue_script('barba-script', '//unpkg.com/@barba/core',  '', '', true);
   //ThreeJS
   wp_enqueue_script('threejs-script', '//cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js',  '', '', true);
+  wp_enqueue_script('isotope-script', '//unpkg.com/isotope-layout@3/dist/isotope.pkgd.js',  '', '', true);
+  wp_enqueue_script('extra-hungyen-js', ASSETS . '/js/extra.js', '', '1.0', true);
   //Main script
-  // ]wp_enqueue_script('main-hungyen-js', ASSETS . '/js/main.js', array('jquery'), '1.0', true);
+  // wp_enqueue_script('main-hungyen-js', ASSETS . '/js/main.js', array('jquery'), '1.0', true);
 
   //Adding type module
   // add_filter('script_loader_tag', 'add_type_attribute', 10, 3);
@@ -107,7 +109,27 @@ function alignvn_style()
   wp_enqueue_style('dflip_min_css', ASSETS . '/dflip/css/dflip.min.css', 'all');
   wp_enqueue_style('themify_icons_css', ASSETS . '/dflip/css/themify-icons.min.css', 'all');
   //Main script
-  wp_enqueue_style('hungyen_extra_styles', ASSETS . '/css/extra-style.css', 'all');
   wp_enqueue_style('hungyen_main_styles', ASSETS . '/css/main.css', 'all');
+  wp_enqueue_style('hungyen_extra_styles', ASSETS . '/css/extra-style.css', 'all');
+  wp_enqueue_style('hungyen_extra', ASSETS . '/css/extra.css', 'all');
 }
 add_action('wp_enqueue_scripts', 'alignvn_style');
+
+
+// Shortcode getting collection composizione
+
+function acf_composition_field()
+{
+  if (have_rows('composizione')) :
+    while (have_rows('composizione')) : the_row();
+      $percent = get_sub_field('percentuale');
+      $material = get_sub_field('materiale');
+      echo '<div class="collectionPage-fabric__desc">';
+      echo  '<div class="collectionPage-fabric__number">' .  $percent . '</div>';
+      echo  '<div class="collectionPage-fabric__material">' . $material . '</div>';
+      echo '</div>';
+    endwhile;
+  endif;
+}
+
+add_shortcode('acf-composition', 'acf_composition_field');

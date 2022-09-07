@@ -5,29 +5,59 @@ const handleWorldMap = () => {
     let { x, y, width, height } = country.getBBox();
     let cx = x + width / 2;
     let cy = y + height / 2;
-    let iconMarker = document.createElementNS(
+    let iconMarkerBlue = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "image"
+    );
+    let iconMarkerRed = document.createElementNS(
       "http://www.w3.org/2000/svg",
       "image"
     );
     let name = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    iconMarker.setAttributeNS(null, "height", "15");
-    iconMarker.setAttributeNS(null, "width", "15");
-    iconMarker.classList.add("marker");
-    iconMarker.style.pointerEvents = "none";
+    iconMarkerBlue.setAttributeNS(null, "height", "15");
+    iconMarkerBlue.setAttributeNS(null, "width", "15");
+    iconMarkerRed.setAttributeNS(null, "height", "15");
+    iconMarkerRed.setAttributeNS(null, "width", "15");
+    iconMarkerBlue.classList.add("marker-blue");
+    iconMarkerBlue.style.pointerEvents = "none";
+    iconMarkerRed.style.pointerEvents = "none";
     if (country.id === "USA") {
       name.setAttribute("x", cx + 25);
       name.setAttribute("y", cy + 50);
       name.innerHTML = country.id;
       name.classList.add("north-america");
-      iconMarker.setAttributeNS(
+      iconMarkerBlue.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "https://hungyen.alignlab.com/wp-content/uploads/2022/07/marker-blue.svg"
+        "/wp-content/uploads/2022/07/marker-blue.svg"
       );
-      iconMarker.setAttribute("x", cx + 40);
-      iconMarker.setAttribute("y", cy + 40);
-      country.parentNode.append(iconMarker, name);
+      iconMarkerBlue.setAttribute("x", cx + 40);
+      iconMarkerBlue.setAttribute("y", cy + 40);
+      country.parentNode.append(iconMarkerBlue, name);
     }
+    if (country.id === "Germany") {
+      iconMarkerBlue.classList.add("marker-blue");
+      iconMarkerBlue.setAttributeNS(
+        "http://www.w3.org/1999/xlink",
+        "href",
+        "/wp-content/uploads/2022/07/marker-blue.svg"
+      );
+      iconMarkerBlue.setAttribute("x", cx - 8);
+      iconMarkerBlue.setAttribute("y", cy - 4);
+      country.parentNode.append(iconMarkerBlue);
+    }
+    if (country.id === "Uzbekistan") {
+      iconMarkerBlue.classList.add("marker-blue");
+      iconMarkerBlue.setAttributeNS(
+        "http://www.w3.org/1999/xlink",
+        "href",
+        "/wp-content/uploads/2022/07/marker-blue.svg"
+      );
+      iconMarkerBlue.setAttribute("x", cx - 8);
+      iconMarkerBlue.setAttribute("y", cy - 5);
+      country.parentNode.append(iconMarkerBlue);
+    }
+
     //Caculate positon names of country -- NA
     if (country.id === "Mexico") {
       name.setAttribute("x", cx);
@@ -133,14 +163,15 @@ const handleWorldMap = () => {
     }
     //Caculate postion names of country -- Africa
     if (country.id === "Central African Republic") {
-      iconMarker.setAttributeNS(
+      iconMarkerRed.classList.add("marker");
+      iconMarkerRed.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "https://hungyen.alignlab.com/wp-content/uploads/2022/07/marker.svg"
+        "/wp-content/uploads/2022/07/marker.svg"
       );
-      iconMarker.setAttribute("x", cx - 10);
-      iconMarker.setAttribute("y", cy - 10);
-      country.parentNode.append(iconMarker);
+      iconMarkerRed.setAttribute("x", cx - 10);
+      iconMarkerRed.setAttribute("y", cy - 10);
+      country.parentNode.append(iconMarkerRed);
     }
     if (country.id === "Morocco") {
       name.setAttribute("x", cx - 20);
@@ -179,18 +210,19 @@ const handleWorldMap = () => {
     }
     //Caculate postion names of country -- India
     if (country.id === "India") {
-      iconMarker.setAttributeNS(
+      iconMarkerRed.classList.add("marker");
+      iconMarkerRed.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "https://hungyen.alignlab.com/wp-content/uploads/2022/07/marker.svg"
+        "/wp-content/uploads/2022/07/marker.svg"
       );
-      iconMarker.setAttribute("x", cx - 20);
-      iconMarker.setAttribute("y", cy - 13);
+      iconMarkerRed.setAttribute("x", cx - 20);
+      iconMarkerRed.setAttribute("y", cy - 13);
       name.setAttribute("x", cx - 25);
       name.setAttribute("y", cy);
       name.innerHTML = country.id;
       name.classList.add("india");
-      country.parentNode.append(iconMarker, name);
+      country.parentNode.append(iconMarkerRed, name);
     }
     if (country.id === "Sri Lanka") {
       name.setAttribute("x", cx - 25);
@@ -242,18 +274,19 @@ const handleWorldMap = () => {
     }
     //Caculate postion names of country -- Europe
     if (country.id === "Italy") {
-      iconMarker.setAttributeNS(
+      iconMarkerRed.classList.add("marker");
+      iconMarkerRed.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "https://hungyen.alignlab.com/wp-content/uploads/2022/07/marker.svg"
+        "/wp-content/uploads/2022/07/marker.svg"
       );
-      iconMarker.setAttribute("x", cx - 5);
-      iconMarker.setAttribute("y", cy - 10);
+      iconMarkerRed.setAttribute("x", cx - 5);
+      iconMarkerRed.setAttribute("y", cy - 10);
       name.setAttribute("x", cx - 10);
       name.setAttribute("y", cy);
       name.innerHTML = country.id;
       name.classList.add("europe");
-      country.parentNode.append(iconMarker, name);
+      country.parentNode.append(iconMarkerRed, name);
     }
     if (
       country.id === "Portugal" ||
@@ -286,14 +319,15 @@ const handleWorldMap = () => {
       country.id === "Vietnam" ||
       country.id === "China"
     ) {
-      iconMarker.setAttributeNS(
+      iconMarkerRed.classList.add("marker");
+      iconMarkerRed.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "https://hungyen.alignlab.com/wp-content/uploads/2022/07/marker.svg"
+        "/wp-content/uploads/2022/07/marker.svg"
       );
-      iconMarker.setAttribute("x", cx - 2);
-      iconMarker.setAttribute("y", cy + 3);
-      country.parentNode.append(iconMarker, name);
+      iconMarkerRed.setAttribute("x", cx - 2);
+      iconMarkerRed.setAttribute("y", cy + 3);
+      country.parentNode.append(iconMarkerRed, name);
     }
   });
   //handle hover NA locations
@@ -301,10 +335,10 @@ const handleWorldMap = () => {
     .getElementById("Mexico")
     .addEventListener("mouseenter", function (e) {
       e.preventDefault();
-      const markerInsde = document.querySelectorAll("image.marker");
+      const markerBlue = document.querySelectorAll("image.marker-blue");
       const activeTitleNA = document.querySelectorAll("text.north-america");
       const activeLocationsNA = document.querySelectorAll("path.north-america");
-      markerInsde.forEach((marker) => {
+      markerBlue.forEach((marker) => {
         marker.classList.add("active");
       });
       activeTitleNA.forEach((title) => {
@@ -315,10 +349,10 @@ const handleWorldMap = () => {
       });
     });
   document.getElementById("Mexico").addEventListener("mouseleave", function () {
-    const markerInsde = document.querySelectorAll("image.marker");
+    const markerBlue = document.querySelectorAll("image.marker-blue");
     const activeTitleNA = document.querySelectorAll("text.north-america");
     const activeLocationsNA = document.querySelectorAll("path.north-america");
-    markerInsde.forEach((marker) => {
+    markerBlue.forEach((marker) => {
       marker.classList.remove("active");
     });
     activeTitleNA.forEach((title) => {
@@ -333,10 +367,10 @@ const handleWorldMap = () => {
     .getElementById("Vietnam")
     .addEventListener("mouseenter", function (e) {
       e.preventDefault();
-      const markerInsde = document.querySelectorAll("image.marker");
+      const markerBlue = document.querySelectorAll("image.marker-blue");
       const activeTitleNA = document.querySelectorAll("text.asian");
       const activeLocationsNA = document.querySelectorAll("path.asian");
-      markerInsde.forEach((marker) => {
+      markerBlue.forEach((marker) => {
         marker.classList.add("active");
       });
       activeTitleNA.forEach((title) => {
@@ -349,10 +383,10 @@ const handleWorldMap = () => {
   document
     .getElementById("Vietnam")
     .addEventListener("mouseleave", function () {
-      const markerInsde = document.querySelectorAll("image.marker");
+      const markerBlue = document.querySelectorAll("image.marker-blue");
       const activeTitleNA = document.querySelectorAll("text.asian");
       const activeLocationsNA = document.querySelectorAll("path.asian");
-      markerInsde.forEach((marker) => {
+      markerBlue.forEach((marker) => {
         marker.classList.remove("active");
       });
       activeTitleNA.forEach((title) => {
@@ -367,10 +401,10 @@ const handleWorldMap = () => {
     .getElementById("Central African Republic")
     .addEventListener("mouseenter", function (e) {
       e.preventDefault();
-      const markerInsde = document.querySelectorAll("image.marker");
+      const markerBlue = document.querySelectorAll("image.marker-blue");
       const activeTitleNA = document.querySelectorAll("text.africa");
       const activeLocationsNA = document.querySelectorAll("path.africa");
-      markerInsde.forEach((marker) => {
+      markerBlue.forEach((marker) => {
         marker.classList.add("active");
       });
       activeTitleNA.forEach((title) => {
@@ -383,10 +417,10 @@ const handleWorldMap = () => {
   document
     .getElementById("Central African Republic")
     .addEventListener("mouseleave", function () {
-      const markerInsde = document.querySelectorAll("image.marker");
+      const markerBlue = document.querySelectorAll("image.marker-blue");
       const activeTitleNA = document.querySelectorAll("text.africa");
       const activeLocationsNA = document.querySelectorAll("path.africa");
-      markerInsde.forEach((marker) => {
+      markerBlue.forEach((marker) => {
         marker.classList.remove("active");
       });
       activeTitleNA.forEach((title) => {
@@ -399,10 +433,10 @@ const handleWorldMap = () => {
   //handle hover India locations
   document.getElementById("India").addEventListener("mouseenter", function (e) {
     e.preventDefault();
-    const markerInsde = document.querySelectorAll("image.marker");
+    const markerBlue = document.querySelectorAll("image.marker-blue");
     const activeTitleNA = document.querySelectorAll("text.india");
     const activeLocationsNA = document.querySelectorAll("path.india");
-    markerInsde.forEach((marker) => {
+    markerBlue.forEach((marker) => {
       marker.classList.add("active");
     });
     activeTitleNA.forEach((title) => {
@@ -413,10 +447,10 @@ const handleWorldMap = () => {
     });
   });
   document.getElementById("India").addEventListener("mouseleave", function () {
-    const markerInsde = document.querySelectorAll("image.marker");
+    const markerBlue = document.querySelectorAll("image.marker-blue");
     const activeTitleNA = document.querySelectorAll("text.india");
     const activeLocationsNA = document.querySelectorAll("path.india");
-    markerInsde.forEach((marker) => {
+    markerBlue.forEach((marker) => {
       marker.classList.remove("active");
     });
     activeTitleNA.forEach((title) => {
@@ -429,10 +463,10 @@ const handleWorldMap = () => {
   //handle hover China locations
   document.getElementById("China").addEventListener("mouseenter", function (e) {
     e.preventDefault();
-    const markerInsde = document.querySelectorAll("image.marker");
+    const markerBlue = document.querySelectorAll("image.marker-blue");
     const activeTitleNA = document.querySelectorAll("text.china");
     const activeLocationsNA = document.querySelectorAll("path.china");
-    markerInsde.forEach((marker) => {
+    markerBlue.forEach((marker) => {
       marker.classList.add("active");
     });
     activeTitleNA.forEach((title) => {
@@ -443,10 +477,10 @@ const handleWorldMap = () => {
     });
   });
   document.getElementById("China").addEventListener("mouseleave", function () {
-    const markerInsde = document.querySelectorAll("image.marker");
+    const markerBlue = document.querySelectorAll("image.marker-blue");
     const activeTitleNA = document.querySelectorAll("text.china");
     const activeLocationsNA = document.querySelectorAll("path.china");
-    markerInsde.forEach((marker) => {
+    markerBlue.forEach((marker) => {
       marker.classList.remove("active");
     });
     activeTitleNA.forEach((title) => {
@@ -459,10 +493,10 @@ const handleWorldMap = () => {
   //handle hover Europe locations
   document.getElementById("Italy").addEventListener("mouseenter", function (e) {
     e.preventDefault();
-    const markerInsde = document.querySelectorAll("image.marker");
+    const markerBlue = document.querySelectorAll("image.marker-blue");
     const activeTitleNA = document.querySelectorAll("text.europe");
     const activeLocationsNA = document.querySelectorAll("path.europe");
-    markerInsde.forEach((marker) => {
+    markerBlue.forEach((marker) => {
       marker.classList.add("active");
     });
     activeTitleNA.forEach((title) => {
@@ -473,10 +507,10 @@ const handleWorldMap = () => {
     });
   });
   document.getElementById("Italy").addEventListener("mouseleave", function () {
-    const markerInsde = document.querySelectorAll("image.marker");
+    const markerBlue = document.querySelectorAll("image.marker-blue");
     const activeTitleNA = document.querySelectorAll("text.europe");
     const activeLocationsNA = document.querySelectorAll("path.europe");
-    markerInsde.forEach((marker) => {
+    markerBlue.forEach((marker) => {
       marker.classList.remove("active");
     });
     activeTitleNA.forEach((title) => {
@@ -487,21 +521,35 @@ const handleWorldMap = () => {
     });
   });
   //handle hover display popup
-  document.getElementById("USA").addEventListener("mouseenter", function () {
+  const handlePopupIn = () => {
     const markerInsde = document.querySelectorAll("image.marker");
     const modal = document.getElementById("world");
     modal.classList.add("active");
     markerInsde.forEach((marker) => {
       marker.classList.add("active");
     });
-  });
-  document.getElementById("USA").addEventListener("mouseleave", function () {
+  };
+  const handlePopupOut = () => {
     const markerInsde = document.querySelectorAll("image.marker");
     const modal = document.getElementById("world");
     modal.classList.remove("active");
     markerInsde.forEach((marker) => {
       marker.classList.remove("active");
     });
-  });
+  };
+  document.getElementById("USA").addEventListener("mouseenter", handlePopupIn);
+  document.getElementById("USA").addEventListener("mouseleave", handlePopupOut);
+  document
+    .getElementById("Germany")
+    .addEventListener("mouseenter", handlePopupIn);
+  document
+    .getElementById("Germany")
+    .addEventListener("mouseleave", handlePopupOut);
+  document
+    .getElementById("Uzbekistan")
+    .addEventListener("mouseenter", handlePopupIn);
+  document
+    .getElementById("Uzbekistan")
+    .addEventListener("mouseleave", handlePopupOut);
 };
 export default handleWorldMap;

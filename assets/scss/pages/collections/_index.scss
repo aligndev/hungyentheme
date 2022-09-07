@@ -8,6 +8,9 @@
     font-size: 5.625vw;
     font-weight: 700;
   }
+  &-desc {
+    margin-bottom: 2.5rem;
+  }
   &-heading {
     margin-bottom: 4rem;
     display: flex;
@@ -35,6 +38,10 @@
     margin-left: -50vw;
     margin-bottom: 14rem;
     height: 100vh;
+
+    > .swiper-container {
+      height: 100%;
+    }
     .rto-box {
       padding-top: 38.6979166667%;
 

@@ -16,6 +16,7 @@
 @import "./components/collection";
 @import "./components/transition";
 @import "./components/config";
+@import "./components/fade-slider";
 
 //pages ----- Home
 @import "./pages/home/discover";
@@ -28,6 +29,7 @@
 @import "./pages/sustainability/logoSlider";
 @import "./pages/sustainability/tabs";
 @import "./pages/sustainability/tabsMobile";
+@import "./pages/sustainability/dev";
 
 //pages ----- Collection
 @import "./pages/collections/index";
@@ -36,14 +38,14 @@
 @import "./pages/collections/download";
 
 //pages ----- Who we are
-@import './pages/who-we-are/index';
-@import './pages/who-we-are/world';
-@import './pages/who-we-are/worldMobile';
-@import './pages/who-we-are/values';
-@import './pages/who-we-are/time';
+@import "./pages/who-we-are/index";
+@import "./pages/who-we-are/world";
+@import "./pages/who-we-are/worldMobile";
+@import "./pages/who-we-are/values";
+@import "./pages/who-we-are/time";
 
 //pages ----- News
 @import "./pages/news/news";
 
 //pages ----- Contact
-@import './pages/contact/index';
+@import "./pages/contact/index";
