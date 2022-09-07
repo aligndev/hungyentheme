@@ -2565,6 +2565,7 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid #000000;
   color: #76B82A;
+  margin-bottom: 0;
 }
 .collectionPage-fabric__image {
   border-bottom: 1px solid #000000;
