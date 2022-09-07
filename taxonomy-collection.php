@@ -11,44 +11,42 @@
           </h1>
         </div>
         <h2 class="h2 collectionPage-desc">
-            <?php echo get_field("collection_description", $term); ?>
-          </h2>
-          <p class="body collectionPage-sub">
-            <?php echo get_field("collection_subtitle", $term); ?>
-          </p>
+          <?php echo get_field("collection_description", $term); ?>
+        </h2>
+        <p class="body collectionPage-sub">
+          <?php echo get_field("collection_subtitle", $term); ?>
+        </p>
         <div class="collectionPage-hero fadeJs">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <?php
-                  $collection_imgs = get_field('collection_image', $term);
+              $collection_imgs = get_field('collection_image', $term);
 
-                                if ($collection_imgs) : ?>
-                                    <?php foreach ($collection_imgs as $collection_img) :
-                                    ?>
+              if ($collection_imgs) : ?>
+                <?php foreach ($collection_imgs as $collection_img) :
+                ?>
 
-                                        <div class="collectionPage-hero__item swiper-slide">
-                                            <div class="rto-box">
-                                              <img src="<?php echo $collection_img; ?>" />
-                                            </div>
-                                        </div>
-                                    <?php endforeach; ?>
-                                <?php endif;
-                                ?>
+                  <div class="collectionPage-hero__item swiper-slide">
+                    <div class="rto-box">
+                      <img src="<?php echo $collection_img; ?>" />
+                    </div>
+                  </div>
+                <?php endforeach; ?>
+              <?php endif;
+              ?>
             </div>
             <div class="swiper-button-next swiper-button-lg"></div>
             <div class="swiper-button-prev swiper-button-lg"></div>
             <div class="swiper-pagination pagination-hide-on-desktop"></div>
           </div>
-            </div>
-          </div>
         </div>
-        <?php
-        $termid = $term->term_id;
-        if ($termid == 17) {
-          get_template_part('template-parts/block', 'xlance');
-        } ?>
       </div>
 
+      <?php
+      $termid = $term->term_id;
+      if ($termid == 17) {
+        get_template_part('template-parts/block', 'xlance');
+      } ?>
 
       <div class="collectionPage-category">
         <div class="collectionPage-filter col-4">
@@ -57,15 +55,16 @@
           <?php
 
           $postid = get_term_by('slug', 'polyamide-recycled', 'collection');
-          //var_dump($postid);
           ?>
 
           <!-- <div class="collectionPage-filter__button btn btn-black">
-            <img src="<?php echo ASSETS . "/images/polyamide-icon.svg" ?>" />
+            <img src="<?php //echo ASSETS . "/images/polyamide-icon.svg" 
+                      ?>" />
             <p>Polyamide Recycled</p>
           </div>
           <div class="collectionPage-filter__button btn btn-black">
-            <img src="<?php echo ASSETS . "/images/polyester-icon.svg" ?>" />
+            <img src="<?php //echo ASSETS . "/images/polyester-icon.svg" 
+                      ?>" />
             <p>Polyester Recycled</p>
           </div> -->
           <div class="collectionPage-download">
@@ -99,32 +98,18 @@
               if ($applications) {
                 foreach ($applications['choices'] as $key => $value) {
               ?>
-                  <div class="collectionPage-property__item">
                     <?php echo $value; ?>
-                    <input type="checkbox" name="texturized yarn" id="texturized yarn" />
-                    <label for="texturized yarn" class="checkmark"> </label>
-                  </div>
               <?php
                 }
               }
               ?>
 
-            </div>
-            <div class="collectionPage-property">
-              <h4 class="collectionPage-property__title h4">
-                Filter by Properties
-              </h4>
-              <a href="" class="body" id="clear-all" onclick="return false;"> Clear all filter</a>
               <?php
               $properties = get_field_object('property');
               if ($properties) {
                 foreach ($properties['choices'] as $key => $value) {
               ?>
-                  <div class="collectionPage-property__item">
                     <?php echo $value; ?>
-                    <input type="checkbox" name="texturized yarn" id="texturized yarn" />
-                    <label for="texturized yarn" class="checkmark"> </label>
-                  </div>
               <?php
                 }
               }
