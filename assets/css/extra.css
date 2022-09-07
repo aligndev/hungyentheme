@@ -2,7 +2,7 @@ h1 {
   font-size: 6.4rem;
   font-weight: 800;
 }
-h2{
+h2 {
   font-size: 4.8rem;
   font-weight: 800;
 }
@@ -79,8 +79,9 @@ p {
   background-color: transparent;
   transition: all 150ms ease-out;
   width: 100%;
-  font-weight: 300;
+  font-weight: 700;
   text-transform: capitalize;
+  font-size: 2.4rem;
 }
 #piotnetgrid
   .fillter-by-collection
@@ -152,7 +153,24 @@ p {
   margin-right: 3rem;
   background-size: contain;
 }
+#piotnetgrid
+  .filter-by-application_wrapper
+  label.piotnetgrid-facet__label::before,
+#piotnetgrid .filter-by-property_wrapper label.piotnetgrid-facet__label:before {
+  background: url(/wp-content/uploads/2022/09/filter-logo.png) no-repeat;
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  margin-right: 1rem;
+  background-size: contain;
+}
 
+#piotnetgrid .piotnetgrid-facet__label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 #piotnetgrid
   .filter-by-application_wrapper
   .piotnetgrid-facet__field-subgroup--buttons
@@ -168,6 +186,7 @@ p {
 #piotnetgrid .filter-by-application_wrapper .piotnetgrid-facet__field-subgroup,
 #piotnetgrid .filter-by-property_wrapper .piotnetgrid-facet__field-subgroup {
   display: grid;
+  width: 100%;
 }
 
 #piotnetgrid
@@ -179,8 +198,54 @@ p {
   .piotnetgrid-facet__field-subgroup
   .piotnetgrid-facet__field-sub {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 8fr;
   align-items: center;
+}
+#piotnetgrid
+  .filter-by-application_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub.disable,
+#piotnetgrid
+  .filter-by-property_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub.disable {
+    display: none;
+}
+#piotnetgrid
+  .filter-by-application_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub:nth-child(1),
+#piotnetgrid
+  .filter-by-property_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub:nth-child(1) {
+  padding: 0;
+  margin-bottom: 4rem;
+  display: block;
+}
+#piotnetgrid
+  .filter-by-application_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub:nth-child(1)
+  label,
+#piotnetgrid
+  .filter-by-property_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub:nth-child(1)
+  label {
+  padding: 0;
+}
+#piotnetgrid
+  .filter-by-application_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub:nth-child(1)
+  input,
+#piotnetgrid
+  .filter-by-property_wrapper
+  .piotnetgrid-facet__field-subgroup
+  .piotnetgrid-facet__field-sub:nth-child(1)
+  input {
+  display: none !important;
 }
 #piotnetgrid
   .filter-by-application_wrapper

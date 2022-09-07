@@ -2,8 +2,9 @@
 <?php $term = get_queried_object(); ?>
 <main class="wrapper" data-barba="container" data-barba-namespace="recycle">
   <section class="collectionPage">
-    <div class="container">
-      <div class="collectionPage--top">
+
+    <div class="collectionPage--top">
+      <div class="container">
         <div class="collectionPage-heading">
           <img src="<?php echo get_field('collection_logo', $term); ?>" class="collectionPage-logo" />
           <h1 class="h1 collectionPage-title">
@@ -16,38 +17,45 @@
         <p class="body collectionPage-sub">
           <?php echo get_field("collection_subtitle", $term); ?>
         </p>
-        <div class="collectionPage-hero fadeJs">
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <?php
-              $collection_imgs = get_field('collection_image', $term);
+      </div>
+      <div class="collectionPage-hero fadeJs">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <?php
+            $collection_imgs = get_field('collection_image', $term);
 
-              if ($collection_imgs) : ?>
-                <?php foreach ($collection_imgs as $collection_img) :
-                ?>
-
-                  <div class="collectionPage-hero__item swiper-slide">
-                    <div class="rto-box">
-                      <img src="<?php echo $collection_img; ?>" />
-                    </div>
-                  </div>
-                <?php endforeach; ?>
-              <?php endif;
+            if ($collection_imgs) : ?>
+              <?php foreach ($collection_imgs as $collection_img) :
               ?>
-            </div>
-            <div class="swiper-button-next swiper-button-lg"></div>
-            <div class="swiper-button-prev swiper-button-lg"></div>
-            <div class="swiper-pagination pagination-hide-on-desktop"></div>
+
+                <div class="collectionPage-hero__item swiper-slide">
+                  <div class="rto-box">
+                    <img src="<?php echo $collection_img; ?>" />
+                  </div>
+                </div>
+              <?php endforeach; ?>
+            <?php endif;
+            ?>
           </div>
+          <div class="swiper-button-next swiper-button-lg"></div>
+          <div class="swiper-button-prev swiper-button-lg"></div>
+          <div class="swiper-pagination pagination-hide-on-desktop"></div>
         </div>
       </div>
+    </div>
+    </div>
+  </section>
 
-      <?php
-      $termid = $term->term_id;
-      if ($termid == 17) {
-        get_template_part('template-parts/block', 'xlance');
-      } ?>
+  <?php
+  $termid = $term->term_id;
+  if ($termid == 17) {
+    echo '<section class="collectionExtra">';
+    get_template_part('template-parts/block', 'xlance');
+    echo '</section>';
+  } ?>
 
+  <section class="collectionMain">
+    <div class="container">
       <div class="collectionPage-category">
         <div class="collectionPage-filter col-4">
           <?php echo do_shortcode('[piotnetgrid id=3306 type=facet grid=3304]'); ?>
@@ -126,8 +134,9 @@
         </div>
       </div>
     </div>
-
-    </div>
   </section>
+
+
+
 </main>
 <?php get_footer(); ?>

@@ -1,0 +1,51 @@
+body .a-owl > * + * {
+  margin-top: 2rem;
+}
+body .a-owl-s > * + * {
+  margin-top: 1rem;
+}
+
+.collectionPage-feature {
+  .featureList {
+    .feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      &::before {
+        content: "";
+        width: 3rem;
+        height: 3rem;
+        display: block;
+        margin-right: 1rem;
+      }
+    }
+
+    .feature:nth-child(1)::before {
+      background: url("/wp-content/uploads/2022/07/features-image-3.svg") center
+        no-repeat;
+      background-size: contain;
+    }
+    .feature:nth-child(2)::before {
+      background: url("/wp-content/uploads/2022/07/features-image-1.svg");
+      background-size: contain;
+    }
+    .feature:nth-child(3)::before {
+      background: url("/wp-content/uploads/2022/07/features-image-2.svg");
+      background-size: contain;
+    }
+    .feature:nth-child(4)::before {
+      background: url("/wp-content/uploads/2022/07/features-image-4.svg");
+      background-size: contain;
+    }
+  }
+}
+
+//xLance Collection
+.collectionExtra {
+  margin-bottom: 5rem;
+  .block-xlance-info-wrapper {
+    .l-bloc {
+      padding: 4rem 0;
+    }
+  }
+}
