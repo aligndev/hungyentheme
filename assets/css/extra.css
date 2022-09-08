@@ -49,26 +49,7 @@ p {
 }
 
 
-/* Collection page */
 
-.collectionPage-filter__main,
-.collectionPage-feature {
-  padding: 4.8rem 0 4.8rem 4.8rem;
-  border: 1px solid #000;
-}
-.collectionPage-filter__main .collectionPage-property {
-  padding: 0;
-  border: none;
-}
-.collectionPage-filter__main * {
-  margin-bottom: 3px;
-}
-.collectionPage-list {
-  margin-right: 0;
-}
-.featureTitle {
-  padding-bottom: 3rem;
-}
 /* filter main  */
 
 #piotnetgrid
@@ -132,8 +113,9 @@ p {
   height: 60px;
   display: block;
   background: url(/wp-content/themes/alignvn/assets/images/polyamide-icon.svg)
-    no-repeat;
-  margin-right: 3rem;
+    no-repeat center;
+  margin-right: 2rem;
+  margin-left: 2rem;
   background-size: contain;
 }
 #piotnetgrid
@@ -147,8 +129,9 @@ p {
   height: 60px;
   display: block;
   background: url(/wp-content/themes/alignvn/assets/images/polyester-icon.svg)
-    no-repeat;
-  margin-right: 3rem;
+    no-repeat center;
+    margin-right: 2rem;
+    margin-left: 2rem;
   background-size: contain;
 }
 #piotnetgrid

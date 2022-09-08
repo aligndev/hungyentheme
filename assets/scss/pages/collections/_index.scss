@@ -91,6 +91,9 @@
   }
   &-download {
     padding: 4rem 0;
+    @include max(768px) {
+      padding: 2rem 0;
+    }
     &__button {
       display: flex;
       align-items: center;

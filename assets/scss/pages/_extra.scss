@@ -40,6 +40,41 @@ body .a-owl-s > * + * {
   }
 }
 
+/* Collection page */
+
+.collectionPage-filter__main,
+.collectionPage-feature {
+  padding: 4.8rem 0 4.8rem 4.8rem;
+  border: 1px solid #000;
+  @include max(769px) {
+    margin-top: 2rem;
+  }
+}
+.collectionPage-filter__main {
+  @include max(769px) {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .collectionPage-property {
+    padding: 0;
+    border: none;
+  }
+  * {
+    margin-bottom: 3px;
+  }
+  #piotnetgrid{
+    .piotnetgrid-button-wrapper {
+      justify-content: center;
+    }
+  } 
+}
+.collectionPage-list {
+  margin-right: 0;
+}
+.featureTitle {
+  padding-bottom: 3rem;
+}
+
 //xLance Collection
 .collectionExtra {
   margin-bottom: 5rem;
@@ -49,3 +84,6 @@ body .a-owl-s > * + * {
     }
   }
 }
+
+
+//Responsive
