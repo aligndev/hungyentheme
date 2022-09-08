@@ -42,16 +42,22 @@ body .a-owl-s > * + * {
 
 /* Collection page */
 
-.collectionPage-filter__main,
+.collectionPage-filter__main {
+  padding: 4.8rem 0 4.8rem 4.8rem;
+  border: 1px solid #000;
+  @include max(767px) {
+    margin-top: 2rem;
+  }
+}
 .collectionPage-feature {
   padding: 4.8rem 0 4.8rem 4.8rem;
   border: 1px solid #000;
-  @include max(769px) {
+  @include max(767px) {
     margin-top: 2rem;
   }
 }
 .collectionPage-filter__main {
-  @include max(769px) {
+  @include max(767px) {
     padding: 0;
     margin-bottom: 2rem;
   }
