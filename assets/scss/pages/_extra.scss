@@ -40,11 +40,20 @@ body .a-owl-s > * + * {
   }
 }
 
+.collectionPage-filter__main,
+.collectionPage-feature  {
+  padding: 4.8rem 0 4.8rem 4.8rem;
+  border: 1px solid #000;
+   @include max(767px) {
+    margin-top: 2rem;
+   } 
+}
+
 .collectionPage-filter__main {
-  // @include max(767px) {
-  //   padding: 0;
-  //   margin-bottom: 2rem;
-  // }
+  @include max(767px) {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
   .collectionPage-property {
     padding: 0;
     border: none;
@@ -52,11 +61,11 @@ body .a-owl-s > * + * {
   * {
     margin-bottom: 3px;
   }
-  #piotnetgrid{
+  #piotnetgrid {
     .piotnetgrid-button-wrapper {
       justify-content: center;
     }
-  } 
+  }
 }
 .collectionPage-list {
   margin-right: 0;
@@ -74,6 +83,5 @@ body .a-owl-s > * + * {
     }
   }
 }
-
 
 //Responsive
