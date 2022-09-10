@@ -4064,6 +4064,10 @@ body .a-owl-s > * + * {
   margin-top: 1rem;
 }
 
+body {
+  background-color: red;
+}
+
 .collectionPage-feature .featureList .feature {
   display: flex;
   align-items: center;
