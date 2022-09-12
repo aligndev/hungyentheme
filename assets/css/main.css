@@ -1608,21 +1608,6 @@ body {
     position: relative;
   }
 }
-.reviewSlider-button-next {
-  right: 0;
-}
-
-.reviewSlider-button-prev {
-  left: 0;
-}
-
-@media screen and (max-width: 769px) {
-  .reviewSlider-button-next,
-.reviewSlider-button-prev {
-    display: none;
-  }
-}
-
 .slider-text {
   margin-bottom: 7.3rem;
 }
@@ -4062,6 +4047,43 @@ body .a-owl > * + * {
 
 body .a-owl-s > * + * {
   margin-top: 1rem;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #fcfff5;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border: 2px solid #fff;
+  margin-right: 5px;
+}
+
+.reviewSlider-button-next {
+  justify-content: right;
+}
+@media screen and (max-width: 769px) {
+  .reviewSlider-button-next {
+    right: -20px;
+  }
+}
+
+.reviewSlider-button-prev {
+  justify-content: left;
+}
+@media screen and (max-width: 769px) {
+  .reviewSlider-button-prev {
+    left: -20px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .discover-block {
+    display: grid;
+    margin-top: 2rem;
+  }
 }
 
 .collectionPage-feature .featureList .feature {

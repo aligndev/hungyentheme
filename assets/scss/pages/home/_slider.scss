@@ -34,16 +34,11 @@
     position: relative;
   }
 }
-.reviewSlider-button-next {
-  right: 0;
-}
-.reviewSlider-button-prev {
-  left: 0;
-}
+
 .reviewSlider-button-next,
 .reviewSlider-button-prev {
   @include max(769px) {
-    display: none;
+    //display: none;
   }
 }
 .slider-text {

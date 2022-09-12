@@ -5,6 +5,45 @@ body .a-owl-s > * + * {
   margin-top: 1rem;
 }
 
+//nav Link
+.nav-link {
+  &:hover,
+  &:focus {
+    color: #fcfff5;
+  }
+}
+
+//slider 
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border: 2px solid #fff;
+  margin-right: 5px;
+}
+.reviewSlider-button-next {
+  justify-content: right;
+  @include max(769px) {
+    right: -20px;
+  }
+}
+.reviewSlider-button-prev {
+  justify-content: left;
+  @include max(769px) {
+    left: -20px;
+  }
+}
+
+//Homepage
+
+.discover-block {
+  @include max(769px) { 
+    display: grid;
+    margin-top: 2rem;
+  }
+
+}
+
 .collectionPage-feature {
   .featureList {
     .feature {

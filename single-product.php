@@ -161,17 +161,20 @@ $compositions = get_field('composizione');
         <div class="collectionTreatments-col">
           <ul class="collectionTreatments-list collectionFeatures-row">
             <?php
+
             $certificates = get_the_terms($post->ID, 'certificates');
             foreach ($certificates as $certificate) { ?>
               <li class="collectionTreatments-item collectionFeatures-item">
-                <img src="<?php $certificate_logo = get_field('certificates_logo', $certificate);
+                <img src="<?php $certificate_logo = get_field('certificate_logo', $certificate);
                           if ($certificate_logo) {
                             echo $certificate_logo;
                           } else {
                             echo '/wp-content/uploads/2022/07/partner-logo-9-1.svg';
-                          } //echo $avaiable_treatments_image
+                          }
                           ?>" alt="">
-                <!-- <p class="body"><?php //echo $certificate->name
+
+                <!-- <p class="body"><?php //echo $certificate->name;
+                                      //var_dump($certificate_logo);
                                       ?></p> -->
               </li>
             <?php } ?>
