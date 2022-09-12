@@ -142,7 +142,8 @@ $compositions = get_field('composizione');
             $treatments = get_the_terms($post->ID, 'treatments');
             foreach ($treatments as $treatment) { ?>
               <?php
-              $logo = get_field('treatment_logo', $feature);
+              $logo = get_field('treatment_logo', $treatment);
+              //var_dump($treatmentlogo);
               ?>
               <li class="collectionTreatments-item collectionFeatures-item">
                 <img src="<?php if ($logo) {
@@ -163,7 +164,7 @@ $compositions = get_field('composizione');
             $certificates = get_the_terms($post->ID, 'certificates');
             foreach ($certificates as $certificate) { ?>
               <li class="collectionTreatments-item collectionFeatures-item">
-                <img src="<?php $certificate_logo = get_field('certificates_logo');
+                <img src="<?php $certificate_logo = get_field('certificates_logo', $certificate);
                           if ($certificate_logo) {
                             echo $certificate_logo;
                           } else {
