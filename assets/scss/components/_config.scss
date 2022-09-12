@@ -42,17 +42,26 @@
   }
   p strong {
     font-weight: bold;
-  }
-  p img {
-    max-width: 15rem;
-    width: 100%;
-    object-fit: contain;
-    padding: 0 1.5rem;
-    @include max(1440px) {
-      max-width: 30%;
-    }
     @include max(769px) {
-      max-width: 8rem;
+      margin-right: 1rem;
+    }
+  }
+  p {
+    display: inline-flex;
+    img {
+      width: 100%;
+      -o-object-fit: contain;
+      object-fit: contain;
+      padding: 0 1.5rem;
+      max-height: 6rem;
+      margin: 2rem 0;
+      
+      @include max(1440px) {
+        max-width: 30%;
+      }
+      @include max(769px) {
+        max-width: 8rem;
+      }
     }
   }
 }

@@ -70,6 +70,7 @@
       }
       h4 {
         padding-bottom: 2.5rem;
+        text-transform: uppercase;
       }
     }
     &__bold {
@@ -112,11 +113,15 @@
       padding: 0;
     }
     img {
-      width: 10rem;
+      //width: 10rem;
       object-fit: cover;
       padding-bottom: 1.5rem;
+      width: auto;
+      max-height: 7.5rem;
       @include max(769px) {
-        width: 8rem;
+        //width: 8rem;
+        width: auto;
+        max-height: 6rem;
       }
       @include max(600px) {
         width: 100%;

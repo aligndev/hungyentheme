@@ -280,3 +280,15 @@ p {
   height: 100%;
   width: 100%;
 }
+
+
+
+@media screen and (max-width: 769px) {
+  #piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .piotnetgrid-facet__field-sub-label {
+    font-size: 1.8rem;
+  }
+}

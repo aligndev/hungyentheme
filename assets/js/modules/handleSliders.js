@@ -54,13 +54,14 @@ const handleSliders = () => {
         slidesPerView: "auto",
         loop: loop,
         speed: 1200,
+        slidesPerView: 5,
         autoplay: {
           delay: 5000,
         },
-        watchOverflow: true,
-        observer: true,
-        observeParents: true,
-        observeSlideChildren: true,
+         watchOverflow: true,
+        // observer: true,
+        // observeParents: true,
+        // observeSlideChildren: true,
         navigation: {
           nextEl: next,
           prevEl: prev,

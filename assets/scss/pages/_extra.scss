@@ -13,8 +13,10 @@ body .a-owl-s > * + * {
   }
 }
 
-//slider 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+//slider
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: #000;
@@ -37,11 +39,10 @@ body .a-owl-s > * + * {
 //Homepage
 
 .discover-block {
-  @include max(769px) { 
+  @include max(769px) {
     display: grid;
     margin-top: 2rem;
   }
-
 }
 
 .collectionPage-feature {
@@ -80,17 +81,17 @@ body .a-owl-s > * + * {
 }
 
 .collectionPage-filter__main,
-.collectionPage-feature  {
+.collectionPage-feature {
   padding: 4.8rem 0 4.8rem 4.8rem;
   border: 1px solid #000;
-   @include max(767px) {
+  @include max(767px) {
     margin-top: 2rem;
-   } 
+    padding: 2rem;
+  }
 }
 
 .collectionPage-filter__main {
   @include max(767px) {
-    padding: 0;
     margin-bottom: 2rem;
   }
   .collectionPage-property {
@@ -111,6 +112,22 @@ body .a-owl-s > * + * {
 }
 .featureTitle {
   padding-bottom: 3rem;
+}
+
+.recycle-collection {
+  .collectionPage-fabric__title {
+    color: #76b82a;
+  }
+}
+.shiny-collection {
+  .collectionPage-fabric__title {
+    color: blueviolet;
+  }
+}
+.virgin-collection {
+  .collectionPage-fabric__title {
+    color:aqua;
+  }
 }
 
 //xLance Collection

@@ -29,6 +29,7 @@
     text-align: center;
     color: $white;
     background-color: $black;
+    height: 25rem;
     &:not(:last-child) {
       margin-right: 4.8rem;
     }
@@ -117,7 +118,7 @@
     }
     &__video {
       max-width: 100%;
-      aspect-ratio: 16/8;
+      //aspect-ratio: 16/8;
       margin-bottom: 24rem;
 
       @include max(1440px) {
@@ -321,4 +322,18 @@
 
 .materials > .h2 {
   padding-bottom: 10rem;
+}
+
+
+.imageSlider {
+  .rto-box {
+    padding-top: 0;
+    height: auto;
+    text-align: center;
+    & > img, & > video {
+      position: relative;
+      height: auto;
+      width: auto;
+    }
+  }
 }

@@ -26,12 +26,22 @@ function hideEmptyChoose() {
   });
 }
 
+function addingCollectionClass () {
+  let collectionGrid = document.querySelector(".collectionPage-list .piotnetgrid-grid");
+  let collectValue = JSON.parse(collectionGrid.dataset.piotnetgridGridCurrentQuery);
+  let collectionClass = collectValue.collection;
+  collectionGrid.classList.add(collectionClass.replace(/\s/g, "").toLowerCase() + "-collection");
+  console.log(collectionClass);
+}
+
+addingCollectionClass();
 addingClass();
 hideEmptyChoose();
 
 jQuery(document).ajaxComplete(function () {
   addingClass();
   hideEmptyChoose();
+  addingCollectionClass();
 });
 
 
