@@ -403,7 +403,7 @@
         </div>
       </div>
       <div class="world-info">
-        <div class="world-info__item">
+        <div class="world-info__item" id="final-buyers-point">
           <img src="<?php echo ASSETS . '/images/marker-blue.svg'; ?>" alt="">
           <span class="h5">Final Buyers</span>
         </div>

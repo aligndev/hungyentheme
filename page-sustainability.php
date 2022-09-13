@@ -24,7 +24,7 @@
                                             <div class="body process-sub content-config">
                                                 <?php echo $process_sub; ?>
                                             </div>
-                                            <ul class="process-icon">
+                                            <ul class="process-icon mobile-hidden">
                                                 <?php foreach ($process_icons as $process_icon) : ?>
                                                     <li>
                                                         <a href="#circle"><img src="<?php echo $process_icon['url']; ?>" alt=""></a>
@@ -39,6 +39,13 @@
                                     <video autoplay playinlines muted loop class="process-video">
                                         <source src="<?php echo $process_video ?>" type="video/mp4" />
                                     </video>
+                                    <ul class="process-icon desktop-hidden">
+                                        <?php foreach ($process_icons as $process_icon) : ?>
+                                            <li>
+                                                <a href="#circle"><img src="<?php echo $process_icon['url']; ?>" alt=""></a>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

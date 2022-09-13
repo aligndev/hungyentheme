@@ -14,6 +14,7 @@ const handleMenu = () => {
   });
 
   const openFabric = document.getElementById("fabric-collection");
+  //const openFabric = document.getElementsByClassName("fabric-collection");
   const fabricCollection = document.querySelector(".collection");
   document.addEventListener("click", handleFabric);
   function handleFabric(e) {

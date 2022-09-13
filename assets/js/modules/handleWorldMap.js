@@ -7,11 +7,11 @@ const handleWorldMap = () => {
     let cy = y + height / 2;
     let iconMarkerBlue = document.createElementNS(
       "http://www.w3.org/2000/svg",
-      "image"
+      "image",
     );
     let iconMarkerRed = document.createElementNS(
       "http://www.w3.org/2000/svg",
-      "image"
+      "image",
     );
     let name = document.createElementNS("http://www.w3.org/2000/svg", "text");
     iconMarkerBlue.setAttributeNS(null, "height", "15");
@@ -29,7 +29,7 @@ const handleWorldMap = () => {
       iconMarkerBlue.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "/wp-content/uploads/2022/07/marker-blue.svg"
+        "/wp-content/uploads/2022/07/marker-blue.svg",
       );
       iconMarkerBlue.setAttribute("x", cx + 40);
       iconMarkerBlue.setAttribute("y", cy + 40);
@@ -40,7 +40,7 @@ const handleWorldMap = () => {
       iconMarkerBlue.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "/wp-content/uploads/2022/07/marker-blue.svg"
+        "/wp-content/uploads/2022/07/marker-blue.svg",
       );
       iconMarkerBlue.setAttribute("x", cx - 8);
       iconMarkerBlue.setAttribute("y", cy - 4);
@@ -51,7 +51,7 @@ const handleWorldMap = () => {
       iconMarkerBlue.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "/wp-content/uploads/2022/07/marker-blue.svg"
+        "/wp-content/uploads/2022/07/marker-blue.svg",
       );
       iconMarkerBlue.setAttribute("x", cx - 8);
       iconMarkerBlue.setAttribute("y", cy - 5);
@@ -167,7 +167,7 @@ const handleWorldMap = () => {
       iconMarkerRed.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "/wp-content/uploads/2022/07/marker.svg"
+        "/wp-content/uploads/2022/07/marker.svg",
       );
       iconMarkerRed.setAttribute("x", cx - 10);
       iconMarkerRed.setAttribute("y", cy - 10);
@@ -214,7 +214,7 @@ const handleWorldMap = () => {
       iconMarkerRed.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "/wp-content/uploads/2022/07/marker.svg"
+        "/wp-content/uploads/2022/07/marker.svg",
       );
       iconMarkerRed.setAttribute("x", cx - 20);
       iconMarkerRed.setAttribute("y", cy - 13);
@@ -278,7 +278,7 @@ const handleWorldMap = () => {
       iconMarkerRed.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "/wp-content/uploads/2022/07/marker.svg"
+        "/wp-content/uploads/2022/07/marker.svg",
       );
       iconMarkerRed.setAttribute("x", cx - 5);
       iconMarkerRed.setAttribute("y", cy - 10);
@@ -323,7 +323,7 @@ const handleWorldMap = () => {
       iconMarkerRed.setAttributeNS(
         "http://www.w3.org/1999/xlink",
         "href",
-        "/wp-content/uploads/2022/07/marker.svg"
+        "/wp-content/uploads/2022/07/marker.svg",
       );
       iconMarkerRed.setAttribute("x", cx - 2);
       iconMarkerRed.setAttribute("y", cy + 3);
@@ -550,6 +550,12 @@ const handleWorldMap = () => {
     .addEventListener("mouseenter", handlePopupIn);
   document
     .getElementById("Uzbekistan")
+    .addEventListener("mouseleave", handlePopupOut);
+  document
+    .getElementById("final-buyers-point")
+    .addEventListener("mouseenter", handlePopupIn);
+  document
+    .getElementById("final-buyers-point")
     .addEventListener("mouseleave", handlePopupOut);
 };
 export default handleWorldMap;

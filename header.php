@@ -118,20 +118,30 @@
                 <div class="nav-bar">
 
                     <ul class="nav-bar__inner">
+                        <?php
+                        // wp_nav_menu(array(
+                        //     'theme_location' => 'primary_menu',
+                        //     'container_class' => 'primary-menu'
+                        // ));
+                        ?>
                         <li class="nav-bar__item">
-                            <a href="<?php echo esc_url(get_page_link('9')); ?>" class="nav-link nav-text">Who we are</a>
+                            <a href="<?php echo esc_url(get_page_link('9'));
+                                        ?>" class="nav-link nav-text">Who we are</a>
                         </li>
                         <li class="nav-bar__item">
-                            <a href="<?php echo esc_url(get_page_link('11')); ?>" class="nav-link nav-text">Sustainability</a>
+                            <a href="<?php echo esc_url(get_page_link('11'));
+                                        ?>" class="nav-link nav-text">Sustainability</a>
                         </li>
                         <li class="nav-bar__item">
                             <a href='javascript:void(0)' id="fabric-collection" class="nav-link nav-text">Fabric Collection</a>
                         </li>
                         <li class="nav-bar__item">
-                            <a href="<?php echo esc_url(get_page_link('13')); ?>" class="nav-link nav-text">HY News</a>
+                            <a href="<?php echo esc_url(get_page_link('13'));
+                                        ?>" class="nav-link nav-text">HY News</a>
                         </li>
                         <li class="nav-bar__item">
-                            <a href="<?php echo esc_url(get_page_link('20')); ?>" class="nav-link nav-text">Contact</a>
+                            <a href="<?php echo esc_url(get_page_link('20'));
+                                        ?>" class="nav-link nav-text">Contact</a>
                         </li>
                     </ul>
                     <?php //wp_nav_menu(array('theme_location' => 'primary_menu', 'menu_class' => 'nav-bar__inner', 'add_li_class'  => 'nav-bar__item'));

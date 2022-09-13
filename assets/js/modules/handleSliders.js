@@ -26,6 +26,17 @@ const handleSliders = () => {
         // Default
         slidesPerView: "auto",
         speed: 1200,
+        slidesPerView: 2,
+        //spaceBetween: 20,
+
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 640px
+          769: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
         // Disabled if not enough slide
         watchOverflow: true,
         // For parents or childs hide/show
@@ -54,11 +65,20 @@ const handleSliders = () => {
         slidesPerView: "auto",
         loop: loop,
         speed: 1200,
-        slidesPerView: 5,
+        slidesPerView: 2,
+        //spaceBetween: 20,
         autoplay: {
           delay: 5000,
         },
-         watchOverflow: true,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 640px
+          769: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        },
+        watchOverflow: true,
         // observer: true,
         // observeParents: true,
         // observeSlideChildren: true,

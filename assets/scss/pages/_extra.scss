@@ -191,4 +191,17 @@ body .a-owl-s > * + * {
   }
 }
 
+
+//Sustainability
+.desktop-hidden {
+  display: none !important;
+  @include max(769px) {
+    display: block !important;
+  }
+}
+.mobile-hidden {
+  @include max(769px) {
+    display: none !important;
+  }
+}
 //Responsive

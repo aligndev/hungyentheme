@@ -28,20 +28,39 @@ function hideEmptyChoose() {
 
 function addingCollectionClass () {
   let collectionGrid = document.querySelector(".collectionPage-list .piotnetgrid-grid");
-  let collectValue = JSON.parse(collectionGrid.dataset.piotnetgridGridCurrentQuery);
-  let collectionClass = collectValue.collection;
-  collectionGrid.classList.add(collectionClass.replace(/\s/g, "").toLowerCase() + "-collection");
-  console.log(collectionClass);
+  if(collectionGrid) {
+    let collectValue = JSON.parse(collectionGrid.dataset.piotnetgridGridCurrentQuery);
+    let collectionClass = collectValue.collection;
+    collectionGrid.classList.add(collectionClass.replace(/\s/g, "").toLowerCase() + "-collection");
+  }
+
+  //console.log(collectionClass);
 }
 
 addingCollectionClass();
 addingClass();
 hideEmptyChoose();
 
+addingActiveMenu();
+
+
+function addingActiveMenu() {
+  const path = window.location.href;
+ 
+  (jQuery)('ul li a').each(function() {
+     if (this.href === path) {
+        (jQuery)(this).addClass('active');
+     }
+  });
+}
+
+
 jQuery(document).ajaxComplete(function () {
   addingClass();
   hideEmptyChoose();
   addingCollectionClass();
+
+
 });
 
 

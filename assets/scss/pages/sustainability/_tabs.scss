@@ -149,6 +149,7 @@
     &__content,
     &__banner {
       width: 50%;
+      padding: 0;
       @include max(768px) {
         width: 100%;
       }
