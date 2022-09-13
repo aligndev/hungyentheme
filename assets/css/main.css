@@ -2320,6 +2320,9 @@ body {
     padding-top: 4rem;
   }
 }
+.collectionPage .collectionPage--top .container {
+  margin-bottom: 3rem;
+}
 .collectionPage-title {
   font-weight: 700;
 }
@@ -2363,11 +2366,6 @@ body {
 @media screen and (max-width: 769px) {
   .collectionPage-hero .rto-box {
     padding-top: 94%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .collectionPage-hero .rto-box {
-    padding-top: 127.2%;
   }
 }
 @media screen and (max-width: 1025px) {
