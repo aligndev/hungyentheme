@@ -1063,6 +1063,11 @@ body {
   font-weight: bold;
   margin-right: 1rem;
 }
+@media screen and (max-width: 769px) {
+  .content-config p strong {
+    margin-right: 0;
+  }
+}
 .content-config p {
   display: inline-flex;
 }
@@ -1452,6 +1457,11 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 769px) {
+  .process .swiper-horizontal > .swiper-pagination-bullets, .process .swiper-pagination-bullets.swiper-pagination-horizontal, .process .swiper-pagination-custom, .process .swiper-pagination-fraction {
+    bottom: 9rem;
+  }
+}
 @media screen and (max-width: 1025px) {
   .process {
     height: auto;
@@ -1484,13 +1494,13 @@ body {
     right: -25%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .process-video {
     position: relative;
     width: 180px;
-    height: 200px;
     right: auto;
-    top: -3rem;
+    top: -4rem;
+    height: 32rem;
   }
 }
 .process .col-8 {
@@ -1518,6 +1528,11 @@ body {
   align-items: center;
   border-bottom: 1px solid #002d74;
 }
+@media screen and (max-width: 769px) {
+  .process-row {
+    border-bottom: none;
+  }
+}
 .process-sub {
   margin-bottom: 2rem;
   max-width: 41.6666666667%;
@@ -1529,6 +1544,7 @@ body {
 @media screen and (max-width: 769px) {
   .process-sub > p {
     font-size: 1.6rem;
+    display: block;
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -1561,6 +1577,11 @@ body {
 }
 .process-icon li {
   padding: 0 0.5rem;
+}
+@media screen and (max-width: 769px) {
+  .process-icon li {
+    text-align: center;
+  }
 }
 .process-section {
   position: absolute;
@@ -4279,6 +4300,11 @@ body .a-owl-s > * + * {
 @media screen and (max-width: 769px) {
   .desktop-hidden {
     display: block !important;
+    position: relative;
+    bottom: 1rem;
+    border-top: 1px solid;
+    width: 100%;
+    padding-top: 2rem;
   }
 }
 

@@ -197,6 +197,11 @@ body .a-owl-s > * + * {
   display: none !important;
   @include max(769px) {
     display: block !important;
+    position: relative;
+        bottom: 1rem;
+        border-top: 1px solid;
+        width: 100%;
+        padding-top: 2rem;
   }
 }
 .mobile-hidden {
