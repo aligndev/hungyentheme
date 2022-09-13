@@ -21,9 +21,9 @@
               <div class="swiper-slide">
                 <div class="container">
                   <div class="hero-top who-flex">
-                    <h1 class="hero-title h1 who-title">
+                    <h2 class="hero-title h1 who-title">
                       <?php echo $title; ?>
-                    </h1>
+                    </h2>
                     <p class="body who-sub">
                       <?php echo $description; ?>
                     </p>
@@ -518,7 +518,7 @@
         </p>
       </div>
       <div class="time-video">
-        <video playsinline muted loop>
+        <video autoplay playsinline muted loop controls>
           <source src="<?php the_field('through_time_video') ?>" />
         </video>
       </div>

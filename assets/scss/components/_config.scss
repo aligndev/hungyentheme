@@ -42,8 +42,9 @@
   }
   p strong {
     font-weight: bold;
+    margin-right: 1rem;
     @include max(769px) {
-      margin-right: 1rem;
+      
     }
   }
   p {
