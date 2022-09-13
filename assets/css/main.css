@@ -1497,7 +1497,7 @@ body {
 @media screen and (max-width: 769px) {
   .process-video {
     position: relative;
-    width: 180px;
+    width: 70vw;
     right: auto;
     top: -4rem;
     height: 32rem;
