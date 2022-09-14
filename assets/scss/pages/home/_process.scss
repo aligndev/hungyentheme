@@ -9,7 +9,10 @@
       display: none;
     }
   }
-  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
     @include max(769px) {
       bottom: 9rem;
     }
@@ -78,11 +81,11 @@
     margin-bottom: 2rem;
     max-width: calc(100% * 5 / 12);
     > p {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       line-height: 110%;
+      display: block;
       @include max(769px) {
         font-size: 1.6rem;
-        display: block;
       }
     }
     @include max(991.98px) {
@@ -111,7 +114,7 @@
     li {
       padding: 0 0.5rem;
       @include max(769px) {
-        text-align:center
+        text-align: center;
       }
     }
   }

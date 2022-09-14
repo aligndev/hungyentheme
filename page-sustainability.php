@@ -377,6 +377,10 @@
                                             $materials_core_reverse = get_sub_field('materials_core_reverse');
                                             $materials_core_image = get_sub_field('materials_core_image');
                                             $materials_core_video = get_sub_field("materials_core_video");
+                                            $materials_core_sub = get_sub_field('materials_core_sub');
+                                            $materials_cover_link_text = get_sub_field("materials_core_link_text");
+                                            $materials_cover_link = get_sub_field("materials_core_link");
+
                                     ?>
                                             <div class="material-block <?php if ($materials_core_reverse) {
                                                                             echo 'material-rev';
@@ -424,6 +428,12 @@
                                                     <p class="materials-sub">
                                                         <?php echo $materials_core_description ?>
                                                     </p>
+                                                    <div class="materials-desc content-config">
+                                                        <?php echo $materials_core_sub ?>
+                                                    </div>
+                                                    <a class="materials-link" href="<?php echo $materials_cover_link ?> ">
+                                                        <?php echo $materials_cover_link_text ?>
+                                                    </a>
                                                 </div>
                                             </div>
                                     <?php

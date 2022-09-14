@@ -1,7 +1,7 @@
 const handleRenderCircle = () => {
   function renderCircle() {
     gsap.from(".circle-inner__item", 1.25, {
-      opacity: 0,
+      opacity: 1,
       stagger: 0.025,
       ease: Power1.easeInOut,
       scrollTrigger: {
@@ -25,6 +25,6 @@ const handleRenderCircle = () => {
   }
   renderCircle();
 
-  window.addEventListener("resize", renderCircle);
+  //window.addEventListener("resize", renderCircle);
 };
 export default handleRenderCircle;

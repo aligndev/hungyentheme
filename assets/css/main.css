@@ -1061,12 +1061,6 @@ body {
 }
 .content-config p strong {
   font-weight: bold;
-  margin-right: 1rem;
-}
-@media screen and (max-width: 769px) {
-  .content-config p strong {
-    margin-right: 0;
-  }
 }
 .content-config p {
   display: inline-flex;
@@ -1458,7 +1452,10 @@ body {
   }
 }
 @media screen and (max-width: 769px) {
-  .process .swiper-horizontal > .swiper-pagination-bullets, .process .swiper-pagination-bullets.swiper-pagination-horizontal, .process .swiper-pagination-custom, .process .swiper-pagination-fraction {
+  .process .swiper-horizontal > .swiper-pagination-bullets,
+.process .swiper-pagination-bullets.swiper-pagination-horizontal,
+.process .swiper-pagination-custom,
+.process .swiper-pagination-fraction {
     bottom: 9rem;
   }
 }
@@ -1538,13 +1535,13 @@ body {
   max-width: 41.6666666667%;
 }
 .process-sub > p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 110%;
+  display: block;
 }
 @media screen and (max-width: 769px) {
   .process-sub > p {
     font-size: 1.6rem;
-    display: block;
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -2324,6 +2321,8 @@ body {
   width: 15%;
   height: 15%;
   margin: -7.5%;
+  transition: 0.9s ease-in-out;
+  opacity: 1;
 }
 .circle-inner__item img {
   width: 100%;
