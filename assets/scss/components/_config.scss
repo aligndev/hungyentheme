@@ -55,7 +55,7 @@
       padding: 0 1.5rem;
       max-height: 6rem;
       margin: 2rem 0;
-      
+      padding-left: 0;
       @include max(1440px) {
         max-width: 30%;
       }

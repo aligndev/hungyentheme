@@ -108,9 +108,9 @@ $compositions = get_field('composizione');
   </section>
   <section class="collectionFeatures">
     <div class="container">
-      <div class="collectionDetail-title h1">
+      <h2 class="collectionDetail-title h2">
         technical features
-      </div>
+      </h2>
       <ul class="collectionFeatures-row">
 
         <?php
@@ -139,9 +139,9 @@ $compositions = get_field('composizione');
   </section>
   <section class="collectionTreatments">
     <div class="container">
-      <div class="collectionDetail-title h1">
+      <h2 class="collectionDetail-title h2">
         technical features
-      </div>
+      </h2>
       <div class="collectionTreatments-row">
         <div class="collectionTreatments-col">
           <ul class="collectionTreatments-list collectionFeatures-row">
@@ -189,9 +189,15 @@ $compositions = get_field('composizione');
           </ul>
         </div>
       </div>
-      <a href="<?php echo the_field("collection_technical_sheet"); ?>" download class="btn btn-green col-3">
-        Download Technical Sheet
-      </a>
+      <div class="collectionDownload-wrapper">
+        <a href="<?php echo the_field("collection_technical_sheet"); ?>" download class="btn btn-green col-3">
+          Download Technical Sheet
+        </a>
+        <a href="<?php echo the_field("collection_technical_sheet"); ?>" download class="btn btn-green col-3">
+          Download Article page
+        </a>
+      </div>
+
     </div>
   </section>
   <section class="collectionRelated">

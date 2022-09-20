@@ -87,13 +87,13 @@
         <div class="container">
             <div class="row tabs-tab">
                 <ul class="tabs-list">
-                    <li class="tabs-item col-4 active" data-tab-target="#<?php the_field('sustainability_tab_id_one') ?>">
+                    <li class="tabs-item active" data-tab-target="#<?php the_field('sustainability_tab_id_one') ?>">
                         <span class="h4 tabs-title"><?php the_field('materials_tab_title') ?> </span>
                     </li>
-                    <li class="tabs-item col-4" data-tab-target="#<?php the_field('sustainability_tab_id_two') ?>">
+                    <li class="tabs-item" data-tab-target="#<?php the_field('sustainability_tab_id_two') ?>">
                         <span class="h4 tabs-title"><?php the_field('sustainability_through_efficiency_tab_title') ?> </span>
                     </li>
-                    <li class="tabs-item col-4" data-tab-target="#<?php the_field('sustainability_tab_id_three') ?>">
+                    <li class="tabs-item" data-tab-target="#<?php the_field('sustainability_tab_id_three') ?>">
                         <span class="h4 tabs-title"><?php the_field('corporate_social_responsibility_tab_title') ?></span>
                     </li>
                 </ul>

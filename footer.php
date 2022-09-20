@@ -17,19 +17,20 @@
         </div>
 
         <div class="footer-list row">
-            <div class="col-2">
+            <div class="">
                 <a href="#" class="footer-logo">
                     <img src="<?php echo ASSETS . '/images/footer-logo.svg' ?>" alt="" />
                 </a>
             </div>
-            <div class="col-3">
+            <div class="">
                 <p class="footer-desc">
                     Pho Noi Textile and Garment Industrial Park,Nghia Hiep commune,Yen
                     My district, Hung Yen province 162930, Viet Nam
                 </p>
             </div>
-            <div class="col-2">
+            <div class="">
                 <div class="footer-desc">
+                    <a href="#" class="footer-carrer">Carrer</a>
                     <a href="" class="footer-number">+84 221 6273 535</a>
                     <a href="" class="footer-mail"> info@hungyen-kd.com</a>
                 </div>

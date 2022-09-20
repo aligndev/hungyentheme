@@ -15,7 +15,7 @@
               $title = get_sub_field('who_we_are_slide_title');
               $description = get_sub_field('who_we_are_slide_description');
               $image = get_sub_field('who_we_are_slide_image');
-              $logos = get_sub_field('who_we_are_slide_logos');
+              
               $types = get_sub_field('who_we_are_slide_type');
             ?>
               <div class="swiper-slide">
@@ -44,7 +44,9 @@
         <div class="who-image__logo logoJs">
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <?php if ($logos) : ?>
+              <?php
+              $logos = get_field('who_we_are_slide_logos');
+              if ($logos) : ?>
                 <?php foreach ($logos as $logo) : ?>
                   <div class="swiper-slide who-image__item">
                     <img src="<?php echo $logo; ?>" />

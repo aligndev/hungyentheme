@@ -96,6 +96,8 @@ body .a-owl-s > * + * {
   }
 }
 
+
+//Collection page
 .collectionPage-feature {
   .featureList {
     .feature {
@@ -190,7 +192,15 @@ body .a-owl-s > * + * {
     }
   }
 }
+//Single product page
 
+.collectionDownload-wrapper {
+  display: flex;
+  @include max(768px) {
+    display: grid;
+    grid-gap: 2rem;
+  }
+}
 
 //Sustainability
 .desktop-hidden {
