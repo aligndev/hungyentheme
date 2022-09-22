@@ -1901,7 +1901,6 @@ body {
 @media screen and (max-width: 768px) {
   .tabs-info .row {
     border: none;
-    flex-direction: column-reverse;
   }
 }
 .tabs-info__reverse {
@@ -2946,9 +2945,6 @@ body {
     display: none;
   }
 }
-.collectionTreatments-col {
-  width: 40%;
-}
 @media screen and (max-width: 769px) {
   .collectionTreatments-col {
     width: 100%;
@@ -3257,17 +3253,11 @@ body {
   z-index: 10;
   color: #ffffff;
 }
-.who-title {
-  width: 30%;
-}
 @media screen and (max-width: 768px) {
   .who-title {
     width: 100%;
     padding-bottom: 2.5rem;
   }
-}
-.who-sub {
-  width: 60%;
 }
 @media screen and (max-width: 768px) {
   .who-sub {
@@ -4297,6 +4287,13 @@ body .a-owl-s > * + * {
 }
 .collectionExtra .block-xlance-info-wrapper .l-bloc {
   padding: 4rem 0;
+}
+
+.collectionTreatments .collectionTreatments-row {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20rem;
 }
 
 .collectionDownload-wrapper {

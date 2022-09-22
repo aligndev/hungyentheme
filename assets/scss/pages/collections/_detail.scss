@@ -170,7 +170,7 @@
     }
   }
   &-col {
-    width: 40%;
+    //width: 40%;
     @include max(769px) {
       width: 100%;
       &:not(:last-child) {

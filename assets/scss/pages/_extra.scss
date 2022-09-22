@@ -194,6 +194,14 @@ body .a-owl-s > * + * {
 }
 //Single product page
 
+.collectionTreatments {
+  .collectionTreatments-row {
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20rem;
+  }
+}
 .collectionDownload-wrapper {
   display: flex;
   @include max(768px) {

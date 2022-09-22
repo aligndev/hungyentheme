@@ -143,7 +143,7 @@
 
       @include max(768px) {
         border: none;
-        flex-direction: column-reverse;
+        //flex-direction: column-reverse;
       }
     }
     &__reverse {
