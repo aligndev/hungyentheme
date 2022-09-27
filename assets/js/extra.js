@@ -59,7 +59,10 @@ function addingCollectionClass () {
   let collectionGrid = document.querySelectorAll(".collectionPage-list .piotnetgrid-grid .piotnetgrid-card");
   if(collectionGrid) {
     collectionGrid.forEach((n)=>{
-      let collectValue = n.querySelector(".collectionPage-term").innerHTML;
+      let string = n.querySelector(".collectionPage-term").innerHTML
+      let collectValues = string.split(" ");
+      let collectValue = collectValues[0];
+      //let collectValue = n.querySelector(".collectionPage-term").innerHTML;
       n.classList.add(collectValue);
     })
   }
