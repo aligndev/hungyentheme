@@ -15,7 +15,7 @@ function addingClass() {
 //function scrollTop when click on filter
 function scrollTopFilter () {
   let filters = document.querySelectorAll('.piotnetgrid-facet__field-sub');
-  resetFilters = document.querySelector('.piotnetgrid-facet-reset-button');
+  let resetFilters = document.querySelector('.piotnetgrid-facet-reset-button');
   let category = document.querySelector('.collectionPage-category');
   if(filters) {
     filters.forEach((x)=>{
@@ -24,6 +24,9 @@ function scrollTopFilter () {
         document.body.scrollTop = category.offsetTop; // For Safari
       })
     })
+
+  }
+  if (resetFilters) {
     resetFilters.addEventListener('click', ()=>{
       document.documentElement.scrollTop = category.offsetTop;
         document.body.scrollTop = category.offsetTop; 

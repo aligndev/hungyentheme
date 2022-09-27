@@ -4338,11 +4338,27 @@ body .a-owl-s > * + * {
 .collectionPage-category .collectionPage-filter .collectionPage-download p {
   font-size: 1.8rem;
 }
+@media screen and (max-width: 1440px) {
+  .collectionPage-category .collectionPage-filter #piotnetgrid .fillter-by-collection .piotnetgrid-facet__field-subgroup--buttons .piotnetgrid-facet__field-sub .piotnetgrid-facet__field-sub-label::before {
+    width: 4rem !important;
+    height: 4rem !important;
+    margin-right: 1rem !important;
+    margin-left: 0rem !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .collectionPage-category .collectionPage-filter #piotnetgrid .fillter-by-collection .piotnetgrid-facet__field-subgroup--buttons .piotnetgrid-facet__field-sub .piotnetgrid-facet__field-sub-label {
+    font-size: 1.8rem !important;
+  }
+}
 .collectionPage-category .collectionPage-list {
   margin-right: 0;
 }
-.collectionPage-category .collectionPage-list .collectionPage-term {
+.collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .collectionPage-term {
   display: none;
+}
+.collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .collectionPage-fabric__title a:hover {
+  color: #000;
 }
 .collectionPage-category .collectionPage-list .polyamide-recycled-collection .collectionPage-fabric__title {
   color: #76b82a;
@@ -4464,13 +4480,23 @@ body .a-owl-s > * + * {
 .search-header-wrapper .container {
   text-align: center;
 }
-.search-header-wrapper .container input[type=search] {
+.search-header-wrapper .container .search-wrapper {
+  position: relative;
+}
+.search-header-wrapper .container .search-wrapper input[type=search] {
   width: 50%;
   height: 50px;
   padding: 20px;
   border-radius: 30px;
   border: 1px solid #000;
   margin-top: 3rem;
+  outline: none;
+}
+.search-header-wrapper .container .search-wrapper i {
+  font-size: 24px;
+  position: absolute;
+  top: 4rem;
+  right: 24vw;
 }
 
 .catalog-list .catalog-list-wrap {

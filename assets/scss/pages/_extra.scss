@@ -157,10 +157,10 @@ body .a-owl-s > * + * {
             margin-right: 1rem;
           }
         }
-    
+
         .feature:nth-child(1)::before {
-          background: url("/wp-content/uploads/2022/07/features-image-3.svg") center
-            no-repeat;
+          background: url("/wp-content/uploads/2022/07/features-image-3.svg")
+            center no-repeat;
           background-size: contain;
         }
         .feature:nth-child(2)::before {
@@ -211,14 +211,42 @@ body .a-owl-s > * + * {
         font-size: 1.8rem;
       }
     }
-    
-
+    #piotnetgrid {
+      .fillter-by-collection {
+        .piotnetgrid-facet__field-subgroup--buttons {
+          .piotnetgrid-facet__field-sub {
+            .piotnetgrid-facet__field-sub-label::before {
+              @include max(1440px) {
+                width: 4rem !important;
+                height: 4rem !important;
+                margin-right: 1rem !important;
+                margin-left: 0rem !important;
+              }
+            }
+            .piotnetgrid-facet__field-sub-label {
+@include max(1440px) {
+  font-size: 1.8rem !important;
+}
+            }
+          }
+        }
+      }
+    }
   }
   .collectionPage-list {
     margin-right: 0;
-    .collectionPage-term {
-      display: none;
+
+    .piotnetgrid-grid__posts {
+      .collectionPage-term {
+        display: none;
+      }
+      .collectionPage-fabric__title {
+        a:hover {
+          color: #000;
+        }
+      }
     }
+
     .polyamide-recycled-collection {
       .collectionPage-fabric__title {
         color: #76b82a;
@@ -383,14 +411,25 @@ body .a-owl-s > * + * {
   padding: 5rem 0;
   .container {
     text-align: center;
-    input[type="search"] {
-      width: 50%;
-      height: 50px;
-      padding: 20px;
-      border-radius: 30px;
-      border: 1px solid #000;
-      margin-top: 3rem;
+    .search-wrapper {
+      position: relative;
+      input[type="search"] {
+        width: 50%;
+        height: 50px;
+        padding: 20px;
+        border-radius: 30px;
+        border: 1px solid #000;
+        margin-top: 3rem;
+        outline: none;
+      }
+      i {
+        font-size: 24px;
+        position: absolute;
+        top: 4rem;
+        right: 24vw;
+      }
     }
+
   }
 }
 .catalog-list {

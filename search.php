@@ -7,13 +7,17 @@
             Result for: "<?php global $wp_query;
                             echo $wp_query->query['s']; ?>"
         </h1>
-        <form class="search" action="<?php echo esc_url(home_url('/')); ?>">
-            <input type="search" name="s" placeholder="Find your fabric">
-            <input type="hidden" name="post_type[]" value="product" />
-            <!-- <input type="hidden" name="post_type[]" value="post" /> -->
-        </form>
-        <img class="nav-icon" src="<?php echo ASSETS . '/images/search-icon.svg';
-                                    ?>" alt="" />
+        <div class="search-wrapper">
+            <form class="search" action="<?php echo esc_url(home_url('/')); ?>">
+                <input type="search" name="s" placeholder="Find your fabric">
+                <input type="hidden" name="post_type[]" value="product" />
+                <!-- <input type="hidden" name="post_type[]" value="post" /> -->
+            </form>
+            <i class="fa fa-search"></i>
+            <!-- <img class="nav-icon" src="<?php //echo ASSETS . '/images/search-icon.svg';
+                                            ?>" alt="" /> -->
+        </div>
+
     </div>
 </div>
 

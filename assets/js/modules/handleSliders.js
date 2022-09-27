@@ -86,6 +86,7 @@ const handleSliders = () => {
           prevEl: prev,
         },
       });
+      
     });
   }
   const menuCats = document.querySelectorAll(".menuCats");

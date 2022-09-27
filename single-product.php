@@ -203,6 +203,78 @@ $compositions = get_field('composizione');
   <section class="collectionRelated">
     <div class="container">
       <div class="collectionRelated-row collectionDetail-row">
+        <?php
+        $terms = get_the_terms($post_id, 'collection');
+        $term_ids = wp_list_pluck($terms, 'term_id');
+        $products = new WP_Query(array(
+          'post_type' => 'product',
+          'tax_query' => array(
+            array(
+              'taxonomy' => 'collection',
+              'field' => 'id',
+              'terms' => $term_ids,
+              'operator' => 'IN' //Or 'AND' or 'NOT IN'
+            )
+          ),
+          'posts_per_page' => 4,
+          'ignore_sticky_posts' => 1,
+          'orderby' => 'date',
+          'post__not_in' => array($post->ID)
+        ));
+        ?>
+
+        <?php
+        while ($products->have_posts()) :
+          $products->the_post();
+        ?>
+          <a href="<?php echo get_permalink(); ?>" class="collectionPage-fabric">
+            <div class="collectionPage-fabric__title h4">
+              <?php the_title(); ?>
+            </div>
+            <div class="collectionPage-fabric__image rto-box">
+              <img src="<?php echo get_the_post_thumbnail_url();; ?>" alt="" />
+            </div>
+            <div class="collectionPage-fabric__bottom">
+              <?php // Check rows existexists.
+              if (have_rows('composizione')) :
+
+                // Loop through rows.
+                while (have_rows('composizione')) : the_row();
+
+                  // Load sub field value.
+                  $percent = get_sub_field('percentuale');
+                  $material = get_sub_field('materiale');
+                  // Do something...
+              ?>
+                  <div class="collectionPage-fabric__desc">
+                    <div class="collectionPage-fabric__number"><?php echo $percent ?></div>
+                    <div class="collectionPage-fabric__material"><?php echo $material ?></div>
+                  </div>
+              <?php
+                // End loop.
+                endwhile;
+              endif;
+              ?>
+            </div>
+          </a>
+          <!-- <div class="collectionRelated-item">
+            <div class="collectionRelated-title h4">
+              <?php //the_title(); 
+              ?>
+            </div>
+            <div class="collectionRelated-image">
+              <div class="rto-box">
+                <img src="<?php //echo get_the_post_thumbnail_url(); 
+                          ?>" alt="">
+              </div>
+            </div>
+          </div> -->
+        <?php
+        endwhile;
+        wp_reset_query();
+        ?>
+        <!-- </div> -->
+        <!-- 
         <div class="collectionRelated-item">
           <div class="collectionRelated-title h4">
             n212 sand rec
@@ -222,7 +294,8 @@ $compositions = get_field('composizione');
               <img src="/src/assets/images/related-image-1.png" alt="">
             </div>
           </div>
-        </div>
+        </div> -->
+
       </div>
     </div>
   </section>
