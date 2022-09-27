@@ -190,10 +190,10 @@ $compositions = get_field('composizione');
         </div>
       </div>
       <div class="collectionDownload-wrapper">
-        <a href="<?php echo the_field("collection_technical_sheet"); ?>" download class="btn btn-green col-3">
+        <a href="<?php echo the_field("technical_sheet"); ?>" download class="btn btn-green col-3">
           Download Technical Sheet
         </a>
-        <a href="<?php echo the_field("collection_technical_sheet"); ?>" download class="btn btn-green col-3">
+        <a href="<?php echo the_field("color_card"); ?>" download class="btn btn-green col-3">
           Download Article page
         </a>
       </div>
