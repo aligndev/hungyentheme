@@ -293,3 +293,30 @@ body .a-owl-s > * + * {
     z-index: 9;
   }
 }
+
+//Search Product
+.search-header-wrapper {
+  padding: 5rem 0;
+  .container {
+    text-align: center;
+    input[type=search] {
+      width: 50%;
+      height: 50px;
+      padding: 20px;
+      border-radius: 30px;
+      border: 1px solid #000;
+      margin-top: 3rem;
+    }
+  }
+}
+.catalog-list {
+  .catalog-list-wrap {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    .collectionPage-fabric {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

@@ -4402,4 +4402,29 @@ body .a-owl-s > * + * {
 .world .world-info {
   position: relative;
   z-index: 9;
+}
+
+.search-header-wrapper {
+  padding: 5rem 0;
+}
+.search-header-wrapper .container {
+  text-align: center;
+}
+.search-header-wrapper .container input[type=search] {
+  width: 50%;
+  height: 50px;
+  padding: 20px;
+  border-radius: 30px;
+  border: 1px solid #000;
+  margin-top: 3rem;
+}
+
+.catalog-list .catalog-list-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.catalog-list .catalog-list-wrap .collectionPage-fabric {
+  margin: 0;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
