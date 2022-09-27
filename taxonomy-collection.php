@@ -59,31 +59,26 @@
       <div class="collectionPage-category">
         <div class="collectionPage-filter col-4">
           <?php echo do_shortcode('[piotnetgrid id=3306 type=facet grid=3304]'); ?>
-
           <?php
-
           $postid = get_term_by('slug', 'polyamide-recycled', 'collection');
           ?>
+          <div class="collectionPage-filter__main">
+            <?php echo do_shortcode('[piotnetgrid id=3305 type=facet grid=3304]'); ?>
+            <?php
+            // $applications = get_field_object('application');
+            // if ($applications) {
+            //   foreach ($applications['choices'] as $key => $value) {
+            //     echo $value;
+            //   }
+            // }
+            // $properties = get_field_object('property');
+            // if ($properties) {
+            //   foreach ($properties['choices'] as $key => $value) {
+            //     echo $value;
+            //   }
+            // }
+            ?>
 
-          <!-- <div class="collectionPage-filter__button btn btn-black">
-            <img src="<?php //echo ASSETS . "/images/polyamide-icon.svg" 
-                      ?>" />
-            <p>Polyamide Recycled</p>
-          </div>
-          <div class="collectionPage-filter__button btn btn-black">
-            <img src="<?php //echo ASSETS . "/images/polyester-icon.svg" 
-                      ?>" />
-            <p>Polyester Recycled</p>
-          </div> -->
-          <div class="collectionPage-download">
-            <a href="#" download class="collectionPage-download__button">
-              <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg" ?>" />
-              <p>Download Polyamide Color Card 2023</p>
-            </a>
-            <a href="#" download class="collectionPage-download__button">
-              <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg" ?>" />
-              <p>Download Polyester Color Card 2023</p>
-            </a>
           </div>
           <div class="collectionPage-feature">
             <h4 class="featureTitle">GENERAL FEATURES</h4>
@@ -94,39 +89,17 @@
               <p class="feature">Comfort fit</p>
             </div>
           </div>
-          <div class="collectionPage-filter__main">
-            <?php echo do_shortcode('[piotnetgrid id=3305 type=facet grid=3304]'); ?>
-            <!-- <div class="collectionPage-application">
-              <h4 class="collectionPage-property__title h4">
-                Filter by Application
-              </h4>
-              <a href="" class="body" id="clear-all" onclick="return false;"> Clear all filter</a>
-              <?php
-              $applications = get_field_object('application');
-              if ($applications) {
-                foreach ($applications['choices'] as $key => $value) {
-              ?>
-                    <?php echo $value; ?>
-              <?php
-                }
-              }
-              ?>
-
-              <?php
-              $properties = get_field_object('property');
-              if ($properties) {
-                foreach ($properties['choices'] as $key => $value) {
-              ?>
-                    <?php echo $value; ?>
-              <?php
-                }
-              }
-              ?>
-
-
-            </div> -->
-
+          <div class="collectionPage-download">
+            <a href="#" download class="collectionPage-download__button">
+              <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg" ?>" />
+              <p>Download Polyamide Color Card 2023</p>
+            </a>
+            <a href="#" download class="collectionPage-download__button">
+              <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg" ?>" />
+              <p>Download Polyester Color Card 2023</p>
+            </a>
           </div>
+
 
         </div>
         <div class="collectionPage-list col-8">

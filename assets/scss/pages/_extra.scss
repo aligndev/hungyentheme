@@ -68,6 +68,9 @@ body .a-owl-s > * + * {
     color: #fcfff5;
   }
 }
+.nav.sticky {
+  background-color: rgb(0 0 0 / 70%);
+}
 
 //slider
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -92,98 +95,165 @@ body .a-owl-s > * + * {
   }
 }
 
-//Homepage
+//Menu
+.collection-wrapper {
+  .collection-inner {
+    .menuCats {
+      .collection-fabric__item {
+        .collection-fabric__image {
+          img {
+            max-height: 60%;
+            object-fit: contain;
+            -o-object-fit: contain;
+            // max-width: none;
+          }
+        }
+        &:hover {
+          background-color: #000;
+          .collection-fabric__title {
+            color: #000;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .collection-logo {
+      img {
+        object-fit: contain;
+        max-height: 60%;
+        width: auto;
+      }
+    }
+  }
+}
 
+//Slider
+.logoJs {
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+}
+//Homepage
 .discover-block {
   @include max(769px) {
     display: grid;
     margin-top: 2rem;
   }
 }
-
 //Collection page
-.collectionPage-feature {
-  .featureList {
-    .feature {
-      display: flex;
-      align-items: center;
-      margin-bottom: 2rem;
-      &::before {
-        content: "";
-        width: 3rem;
-        height: 3rem;
-        display: block;
-        margin-right: 1rem;
+.collectionPage-category {
+  .collectionPage-filter {
+    .collectionPage-feature {
+      .featureList {
+        .feature {
+          display: flex;
+          align-items: center;
+          margin-bottom: 2rem;
+          &::before {
+            content: "";
+            width: 4rem;
+            height: 4rem;
+            display: block;
+            margin-right: 1rem;
+          }
+        }
+    
+        .feature:nth-child(1)::before {
+          background: url("/wp-content/uploads/2022/07/features-image-3.svg") center
+            no-repeat;
+          background-size: contain;
+        }
+        .feature:nth-child(2)::before {
+          background: url("/wp-content/uploads/2022/07/features-image-1.svg");
+          background-size: contain;
+        }
+        .feature:nth-child(3)::before {
+          background: url("/wp-content/uploads/2022/07/features-image-2.svg");
+          background-size: contain;
+        }
+        .feature:nth-child(4)::before {
+          background: url("/wp-content/uploads/2022/07/features-image-4.svg");
+          background-size: contain;
+        }
+      }
+      .featureTitle {
+        padding-bottom: 3rem;
       }
     }
+    .collectionPage-filter__main,
+    .collectionPage-feature {
+      padding: 2rem;
+      border: 1px solid #000;
+      @include max(767px) {
+        margin-top: 2rem;
+        padding: 2rem;
+      }
+    }
+    .collectionPage-filter__main {
+      @include max(767px) {
+        margin-bottom: 2rem;
+      }
+      .collectionPage-property {
+        padding: 0;
+        border: none;
+      }
+      * {
+        margin-bottom: 3px;
+      }
+      #piotnetgrid {
+        .piotnetgrid-button-wrapper {
+          justify-content: center;
+        }
+      }
+    }
+    .collectionPage-download {
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    
 
-    .feature:nth-child(1)::before {
-      background: url("/wp-content/uploads/2022/07/features-image-3.svg") center
-        no-repeat;
-      background-size: contain;
+  }
+  .collectionPage-list {
+    margin-right: 0;
+    .collectionPage-term {
+      display: none;
     }
-    .feature:nth-child(2)::before {
-      background: url("/wp-content/uploads/2022/07/features-image-1.svg");
-      background-size: contain;
+    .polyamide-recycled-collection {
+      .collectionPage-fabric__title {
+        color: #76b82a;
+      }
     }
-    .feature:nth-child(3)::before {
-      background: url("/wp-content/uploads/2022/07/features-image-2.svg");
-      background-size: contain;
+    .polyester-recycled-collection {
+      .collectionPage-fabric__title {
+        color: #00983a;
+      }
     }
-    .feature:nth-child(4)::before {
-      background: url("/wp-content/uploads/2022/07/features-image-4.svg");
-      background-size: contain;
+    .polyamide-virgin-collection {
+      .collectionPage-fabric__title {
+        color: #009fdd;
+      }
     }
-  }
-}
-
-.collectionPage-filter__main,
-.collectionPage-feature {
-  padding: 2rem;
-  border: 1px solid #000;
-  @include max(767px) {
-    margin-top: 2rem;
-    padding: 2rem;
-  }
-}
-
-.collectionPage-filter__main {
-  @include max(767px) {
-    margin-bottom: 2rem;
-  }
-  .collectionPage-property {
-    padding: 0;
-    border: none;
-  }
-  * {
-    margin-bottom: 3px;
-  }
-  #piotnetgrid {
-    .piotnetgrid-button-wrapper {
-      justify-content: center;
+    .polyester-virgin-collection {
+      .collectionPage-fabric__title {
+        color: #e84f3e;
+      }
     }
-  }
-}
-.collectionPage-list {
-  margin-right: 0;
-}
-.featureTitle {
-  padding-bottom: 3rem;
-}
-
-.recycle-collection {
-  .collectionPage-fabric__title {
-    color: #76b82a;
-  }
-}
-.shiny-collection {
-  .collectionPage-fabric__title {
-    color: blueviolet;
-  }
-}
-.virgin-collection {
-  .collectionPage-fabric__title {
-    color: aqua;
+    .polyamide-shiny-collection {
+      .collectionPage-fabric__title {
+        color: #69dbf4;
+      }
+    }
+    .polyester-shiny-collection {
+      .collectionPage-fabric__title {
+        color: #ef7fb0;
+      }
+    }
+    .xlance-collection {
+      .collectionPage-fabric__title {
+        color: #e3d100;
+      }
+    }
   }
 }
 
@@ -224,6 +294,23 @@ body .a-owl-s > * + * {
 }
 
 //Sustainability
+.materials-block {
+  .material-block {
+    .materials-image {
+      overflow: hidden;
+      img,
+      video {
+        transition: all 0.4s;
+      }
+      &:hover {
+        img,
+        video {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
 .desktop-hidden {
   display: none !important;
   @include max(769px) {
@@ -240,8 +327,6 @@ body .a-owl-s > * + * {
     display: none !important;
   }
 }
-//Responsive
-
 //Career
 .career-content__wrapper {
   .container {
@@ -259,7 +344,6 @@ body .a-owl-s > * + * {
 }
 
 //Who we are page
-
 .world {
   .world-inner {
     .modal {
@@ -299,7 +383,7 @@ body .a-owl-s > * + * {
   padding: 5rem 0;
   .container {
     text-align: center;
-    input[type=search] {
+    input[type="search"] {
       width: 50%;
       height: 50px;
       padding: 20px;
@@ -312,7 +396,7 @@ body .a-owl-s > * + * {
 .catalog-list {
   .catalog-list-wrap {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     .collectionPage-fabric {
       margin: 0;

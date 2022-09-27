@@ -14,17 +14,24 @@ const handleMenu = () => {
   });
 
   const openFabric = document.getElementById("fabric-collection");
+  const closeFabric = document.querySelector(".collection-button");
   //const openFabric = document.getElementsByClassName("fabric-collection");
   const fabricCollection = document.querySelector(".collection");
-  document.addEventListener("click", handleFabric);
-  function handleFabric(e) {
+  openFabric.addEventListener("click", (()=>{
     fabricCollection.classList.add("active");
-    if (e.target !== openFabric) {
-      fabricCollection.classList.remove("active");
-    } else {
-      fabricCollection.classList.add("active");
-    }
-  }
+  }))
+  closeFabric.addEventListener("click", (()=>{
+    fabricCollection.classList.remove("active");
+  }))
+  // document.addEventListener("click", handleFabric);
+  // function handleFabric(e) {
+  //   fabricCollection.classList.add("active");
+  //   if (e.target !== openFabric) {
+  //     fabricCollection.classList.remove("active");
+  //   } else {
+  //     fabricCollection.classList.add("active");
+  //   }
+  // }
 };
 
 export default handleMenu;

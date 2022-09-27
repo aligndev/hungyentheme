@@ -62,28 +62,54 @@ const handleSliders = () => {
       let loop;
       item.classList.contains("noloop") ? (loop = false) : (loop = true);
       let logoSwiper = new Swiper(container, {
-        slidesPerView: "auto",
+        // slidesPerView: "auto",
         loop: loop,
-        speed: 5000,
         slidesPerView: 2,
-        freeMode: true,
-        //spaceBetween: 20,
-        // autoplay: {
-        //   delay: 5000,
-        // },
         autoplay: {
           delay: 0,
           disableOnInteraction: false
         },
+        // freeMode: true,
+        speed: 5000,
+        grabCursor: true,
+        mousewheelControl: true,
+        keyboardControl: true,
         // Responsive breakpoints
         breakpoints: {
-          // when window width is >= 640px
           769: {
             slidesPerView: 5,
             spaceBetween: 20,
           },
         },
+        navigation: {
+          nextEl: next,
+          prevEl: prev,
+        },
+      });
+    });
+  }
+  const menuCats = document.querySelectorAll(".menuCats");
+  if (menuCats) {
+    menuCats.forEach((item) => {
+      let container = item.querySelector(".swiper-container");
+      let next = item.querySelector(".swiper-button-next");
+      let prev = item.querySelector(".swiper-button-prev");
+      let loop;
+      item.classList.contains("noloop") ? (loop = false) : (loop = true);
+      let menuSwiper = new Swiper(container, {
+        slidesPerView: "auto",
+
+        slidesPerView: 2,
+        freeMode: true,
+        breakpoints: {
+          769: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+          },
+        },
         watchOverflow: true,
+        preventClicksPropagation: false,
+        preventClicks: false,
         // observer: true,
         // observeParents: true,
         // observeSlideChildren: true,
@@ -94,6 +120,8 @@ const handleSliders = () => {
       });
     });
   }
+  
+  
 
   /* Home Slider */
   const slider = document.querySelector(".slider");
