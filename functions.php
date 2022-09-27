@@ -136,7 +136,7 @@ function get_collection_terms()
   // var_dump($terms);
   // echo '<div class="';
   foreach ($terms as $term) {
-    echo $term->slug . '-collection';
+    echo $term->slug . '-collection ';
   }
   // echo '"></div>';
 
