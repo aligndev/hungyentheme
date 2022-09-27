@@ -44,15 +44,27 @@
         <div class="who-image__logo logoJs">
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <?php
-              $logos = get_field('who_we_are_slide_logos');
-              if ($logos) : ?>
-                <?php foreach ($logos as $logo) : ?>
-                  <div class="swiper-slide who-image__item">
-                    <img src="<?php echo $logo; ?>" />
-                  </div>
-                  <?php endforeach; ?>
-              <?php endif; ?>
+            <?php
+                if (have_rows('who_we_are_logos')) :
+                    while (have_rows('who_we_are_logos')) : the_row();
+                        $logoImg = get_sub_field('who_we_are_logo_image');
+                        $logoLink = get_sub_field('who_we_are_logo_link');
+                ?>
+                        <div class="swiper-slide who-image__item">
+                            <a href="<?php if ($logoLink) {
+                                            echo $logoLink;
+                                        } else {
+                                            echo "#";
+                                        } ?>">
+                                <img src="<?php echo $logoImg; ?>" alt="" />
+                            </a>
+                        </div>
+                <?php
+
+                    endwhile;
+                endif;
+                ?>
+
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -409,7 +421,7 @@
           <img src="<?php echo ASSETS . '/images/marker-blue.svg'; ?>" alt="">
           <span class="h5">Final Buyers</span>
         </div>
-        <div class="world-info__item">
+        <div class="world-info__item" if="shipments-to-regions">
           <img src="<?php echo ASSETS . '/images/marker.svg'; ?>" alt="">
           <span class="h5">Shipments to Regions</span>
         </div>

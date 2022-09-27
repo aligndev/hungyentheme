@@ -14,7 +14,7 @@
         <div class="collection-wrapper">
             <img src="<?php echo ASSETS . '/images/close-icon.svg'; ?>" alt="" class="collection-button" />
             <div class="container collection-inner">
-                <div class="logoJs noloop">
+                <div class="logoJs">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <a href="/collection/recycle" class="swiper-slide swiper-item collection-fabric__item">
@@ -61,12 +61,12 @@
 
                 <div class="collection-cta">
                     <div class="collection-cta__col col-4">
-                        <a href="#" class="btn btn-green collection-cta__text">
+                        <a href="/download-fabric-collections/" class="btn btn-green collection-cta__text">
                             All fabric Collections
                         </a>
                     </div>
                     <div class="collection-cta__col col-4">
-                        <a href="#" class="btn btn-green collection-cta__text">
+                        <a href="/download-color-card/" class="btn btn-green collection-cta__text">
                             Download Our Color Cards 2023
                         </a>
                     </div>
@@ -119,10 +119,6 @@
 
                     <ul class="nav-bar__inner">
                         <?php
-                        // wp_nav_menu(array(
-                        //     'theme_location' => 'primary_menu',
-                        //     'container_class' => 'primary-menu'
-                        // ));
                         ?>
                         <li class="nav-bar__item">
                             <a href="<?php echo esc_url(get_page_link('9'));
@@ -156,8 +152,14 @@
 
                 <div class="nav-search hide-on-mobile">
                     <div class="nav-search__inner">
-                        <input type="text" placeholder="Find your fabric" />
-                        <img class="nav-icon" src="<?php echo ASSETS . '/images/search-icon.svg'; ?>" alt="" />
+                        <form class="search" action="<?php echo esc_url(home_url('/')); ?>">
+                            <input type="search" name="s" placeholder="Find your fabric">
+                            <input type="hidden" name="post_type[]" value="product" />
+                            <input type="hidden" name="post_type[]" value="post" />
+                        </form>
+                        <img class="nav-icon" src="<?php echo ASSETS . '/images/search-icon.svg';
+                                                    ?>" alt="" />
+
                     </div>
                 </div>
 

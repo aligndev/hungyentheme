@@ -80,9 +80,13 @@
     }
   }
   &-filter {
-    margin-right: 2.5vw;
+    //margin-right: 2.5vw;
+    padding-right: 2.5vw;
     @include max(1025px) {
       width: 100%;
+    }
+    @include max(768px) {
+      padding-right: 0;
     }
     &__button {
       display: flex;

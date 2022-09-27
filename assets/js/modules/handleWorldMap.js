@@ -521,41 +521,45 @@ const handleWorldMap = () => {
     });
   });
   //handle hover display popup
-  const handlePopupIn = () => {
+  function handlePopupIn(n) {
     const markerInsde = document.querySelectorAll("image.marker");
     const modal = document.getElementById("world");
     modal.classList.add("active");
+    modal.classList.add("modal-" + n);
     markerInsde.forEach((marker) => {
       marker.classList.add("active");
     });
-  };
-  const handlePopupOut = () => {
+  }
+  function handlePopupOut(n) {
     const markerInsde = document.querySelectorAll("image.marker");
     const modal = document.getElementById("world");
     modal.classList.remove("active");
+    modal.classList.remove("modal-" + n);
     markerInsde.forEach((marker) => {
       marker.classList.remove("active");
     });
   };
-  document.getElementById("USA").addEventListener("mouseenter", handlePopupIn);
-  document.getElementById("USA").addEventListener("mouseleave", handlePopupOut);
+  document
+    .getElementById("USA")
+    .addEventListener("mouseenter", ()=> {handlePopupIn(1);});
+  document.getElementById("USA").addEventListener("mouseleave", ()=> {handlePopupOut(1);});
   document
     .getElementById("Germany")
-    .addEventListener("mouseenter", handlePopupIn);
+    .addEventListener("mouseenter", ()=> {handlePopupIn(2);});
   document
     .getElementById("Germany")
-    .addEventListener("mouseleave", handlePopupOut);
+    .addEventListener("mouseleave", ()=> {handlePopupOut(2);});
   document
     .getElementById("Uzbekistan")
-    .addEventListener("mouseenter", handlePopupIn);
+    .addEventListener("mouseenter", ()=> {handlePopupIn(3);});
   document
     .getElementById("Uzbekistan")
-    .addEventListener("mouseleave", handlePopupOut);
+    .addEventListener("mouseleave", ()=> {handlePopupOut(3);});
   document
     .getElementById("final-buyers-point")
-    .addEventListener("mouseenter", handlePopupIn);
+    .addEventListener("mouseenter", ()=> {handlePopupIn(4);});
   document
     .getElementById("final-buyers-point")
-    .addEventListener("mouseleave", handlePopupOut);
+    .addEventListener("mouseleave", ()=> {handlePopupOut(4);});
 };
 export default handleWorldMap;

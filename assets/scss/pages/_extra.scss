@@ -15,8 +15,13 @@ h4 {
   line-height: 120%;
   font-weight: 800;
 }
+h5 {
+  font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.769rem) * 1.9569)), 2.4rem);
+  line-height: 120%;
+  font-weight: 800;
+}
 p {
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.769rem) * 0.0332)), 1.8rem);
   font-weight: 300;
   line-height: 140%;
 }
@@ -96,7 +101,6 @@ body .a-owl-s > * + * {
   }
 }
 
-
 //Collection page
 .collectionPage-feature {
   .featureList {
@@ -135,7 +139,7 @@ body .a-owl-s > * + * {
 
 .collectionPage-filter__main,
 .collectionPage-feature {
-  padding: 4.8rem 0 4.8rem 4.8rem;
+  padding: 2rem;
   border: 1px solid #000;
   @include max(767px) {
     margin-top: 2rem;
@@ -179,7 +183,7 @@ body .a-owl-s > * + * {
 }
 .virgin-collection {
   .collectionPage-fabric__title {
-    color:aqua;
+    color: aqua;
   }
 }
 
@@ -193,7 +197,16 @@ body .a-owl-s > * + * {
   }
 }
 //Single product page
-
+.collectionDetail-row {
+  .collectionDetail-desc {
+    font-size: clamp(
+      1.4rem,
+      calc(1.4rem + ((1vw - 0.769rem) * 0.0332)),
+      1.8rem
+    );
+    font-weight: 300;
+  }
+}
 .collectionTreatments {
   .collectionTreatments-row {
     margin-bottom: 5rem;
@@ -216,10 +229,10 @@ body .a-owl-s > * + * {
   @include max(769px) {
     display: block !important;
     position: relative;
-        bottom: 1rem;
-        border-top: 1px solid;
-        width: 100%;
-        padding-top: 2rem;
+    bottom: 1rem;
+    border-top: 1px solid;
+    width: 100%;
+    padding-top: 2rem;
   }
 }
 .mobile-hidden {
@@ -228,3 +241,55 @@ body .a-owl-s > * + * {
   }
 }
 //Responsive
+
+//Career
+.career-content__wrapper {
+  .container {
+    h4 {
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+    }
+    .career-date {
+      margin-bottom: 1rem;
+    }
+    h5 {
+      font-weight: 500;
+    }
+  }
+}
+
+//Who we are page
+
+.world {
+  .world-inner {
+    .modal {
+      .modal-item {
+        display: none;
+      }
+      &.modal-1 {
+        .modal-one {
+          display: block;
+        }
+      }
+      &.modal-2 {
+        .modal-two {
+          display: block;
+        }
+      }
+      &.modal-3 {
+        .modal-three {
+          display: block;
+        }
+      }
+      &.modal-4 {
+        .modal-item {
+          display: block;
+        }
+      }
+    }
+  }
+  .world-info {
+    position: relative;
+    z-index: 9;
+  }
+}

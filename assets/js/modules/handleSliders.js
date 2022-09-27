@@ -64,11 +64,16 @@ const handleSliders = () => {
       let logoSwiper = new Swiper(container, {
         slidesPerView: "auto",
         loop: loop,
-        speed: 1200,
+        speed: 5000,
         slidesPerView: 2,
+        freeMode: true,
         //spaceBetween: 20,
+        // autoplay: {
+        //   delay: 5000,
+        // },
         autoplay: {
-          delay: 5000,
+          delay: 0,
+          disableOnInteraction: false
         },
         // Responsive breakpoints
         breakpoints: {

@@ -67,14 +67,26 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <?php
-                            $logos = get_field('sustainability_page_logo_slide');
-                            if ($logos) : ?>
-                                <?php foreach ($logos as $logo) : ?>
+                            if (have_rows('sustainability_logo_slider')) :
+                                while (have_rows('sustainability_logo_slider')) : the_row();
+
+                                    $logoImg = get_sub_field('sustainability_logo_slider_image');
+                                    $logoLink = get_sub_field('sustainability_logo_slider_link');
+                            ?>
                                     <div class="swiper-slide logoSlider-slide">
-                                        <img src="<?php echo $logo; ?>" alt="" />
+                                        <a href="<?php if ($logoLink) {
+                                                        echo $logoLink;
+                                                    } else {
+                                                        echo "#";
+                                                    } ?>">
+                                            <img src="<?php echo $logoImg; ?>" alt="" />
+                                        </a>
                                     </div>
-                                <?php endforeach; ?>
-                            <?php endif; ?>
+                            <?php
+
+                                endwhile;
+                            endif;
+                            ?>
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>

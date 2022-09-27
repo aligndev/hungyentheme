@@ -53,7 +53,15 @@
     height: 100%;
     @include max(769px) {
       padding: 10rem 7.813vw 10rem;
+      .logoJs {
+        overflow: hidden;
+        .swiper-container {
+          width: 80%;
+          overflow: visible;
+        }
+      }
     }
+
   }
   &-cta {
     display: flex;
@@ -88,7 +96,7 @@
         background-color: $green-2;
       }
       @include max(769px) {
-        width: 12rem;
+        //width: 16rem !important;
         height: 12rem;
       }
     }

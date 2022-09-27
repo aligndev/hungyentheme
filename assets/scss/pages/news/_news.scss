@@ -90,6 +90,10 @@
 
     @include max(769px) {
       flex-direction: column;
+      .desktop-hidden {
+        position: static;
+        margin-top: 3rem;
+      }
     }
   }
   &-content {

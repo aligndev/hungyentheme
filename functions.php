@@ -35,9 +35,13 @@ if (!function_exists('alignvn_theme_setup')) {
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
     add_theme_support('automatic-feed-links');
+
+    //add_theme_support('wp-block-styles');
+    //add_editor_style('style.css');
   };
 
   add_action('init', 'alignvn_theme_setup');
+  add_action('after_setup_theme', 'alignvn_theme_setup');
 }
 
 /**
@@ -82,7 +86,7 @@ function alignvn_style()
   wp_enqueue_script('dflip-js', ASSETS . '/dflip/js/dflip.min.js', '', '', true);
   wp_enqueue_script('swiper-js', '//unpkg.com/swiper@8/swiper-bundle.min.js', '', '', true);
   //Barba js
-  wp_enqueue_script('barba-script', '//unpkg.com/@barba/core',  '', '', true);
+  wp_enqueue_script('barba-script', '//cdn.jsdelivr.net/npm/@barba/core',  '', '', true);
   //ThreeJS
   wp_enqueue_script('threejs-script', '//cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js',  '', '', true);
   wp_enqueue_script('isotope-script', '//unpkg.com/isotope-layout@3/dist/isotope.pkgd.js',  '', '', true);
@@ -90,21 +94,6 @@ function alignvn_style()
   wp_enqueue_script('bootstrap-script', '//cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js',  '', '', true);
 
   wp_enqueue_script('extra-hungyen-js', ASSETS . '/js/extra.js', '', '1.0', true);
-  //Main script
-  // wp_enqueue_script('main-hungyen-js', ASSETS . '/js/main.js', array('jquery'), '1.0', true);
-
-  //Adding type module
-  // add_filter('script_loader_tag', 'add_type_attribute', 10, 3);
-  // function add_type_attribute($tag, $handle, $src)
-  // {
-  //   // if not your script, do nothing and return original $tag
-  //   if ('main-hungyen-js' !== $handle) {
-  //     return $tag;
-  //   }
-  //   // change the script tag by adding type="module" and return it.
-  //   $tag = '<script type="module" src="' . esc_url($src) . '"></script>';
-  //   return $tag;
-  // }
 
   //Swiper style
   wp_enqueue_style('swiper-bundle', '//unpkg.com/swiper@8/swiper-bundle.min.css');

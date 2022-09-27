@@ -1,6 +1,5 @@
 
 /* filter main  */
-
 #piotnetgrid
   .fillter-by-collection
   .piotnetgrid-facet__field-subgroup--buttons
@@ -93,7 +92,7 @@
   width: 60px;
   height: 60px;
   display: block;
-  background: url(/wp-content/themes/alignvn/assets/images/polyester-icon.svg)
+  background: url(/wp-content/uploads/2022/09/virgin-logo-2.png)
     no-repeat;
   margin-right: 3rem;
   background-size: contain;
@@ -108,7 +107,7 @@
   width: 60px;
   height: 60px;
   display: block;
-  background: url(/wp-content/themes/alignvn/assets/images/polyester-icon.svg)
+  background: url(/wp-content/uploads/2022/09/virgin-logo.png)
     no-repeat;
   margin-right: 3rem;
   background-size: contain;
@@ -171,7 +170,25 @@
   .piotnetgrid-facet__field-sub.disable {
     display: none;
 }
-#piotnetgrid
+#piotnetgrid .filter-by-application_wrapper .piotnetgrid-facet__field-wrapper,
+#piotnetgrid .filter-by-property_wrapper .piotnetgrid-facet__field-wrapper {
+margin-top: 3rem;
+}
+#piotnetgrid .piotnetgrid-facet-reset-button .piotnetgrid-button {
+  background-color: transparent;
+  color: #000;
+  padding-left: 0;
+}
+#piotnetgrid .piotnetgrid-button--collapse-section.piotnetgrid-button i.fas.fa-filter:before {
+  background: url(/wp-content/uploads/2022/09/filter-logo.png) no-repeat;
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  margin-right: 1rem;
+  background-size: contain;
+}
+/* #piotnetgrid
   .filter-by-application_wrapper
   .piotnetgrid-facet__field-subgroup
   .piotnetgrid-facet__field-sub:nth-child(1),
@@ -206,7 +223,7 @@
   .piotnetgrid-facet__field-sub:nth-child(1)
   input {
   display: none !important;
-}
+} */
 #piotnetgrid
   .filter-by-application_wrapper
   .piotnetgrid-facet__field-subgroup--buttons
@@ -240,4 +257,8 @@
   .piotnetgrid-facet__field-sub-label {
     font-size: 1.8rem;
   }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  z-index: 1;
 }

@@ -48,7 +48,7 @@ $compositions = get_field('composizione');
               <?php
               foreach ($applications as $application) {
 
-                echo '<p class="h5">' . $application . '</p>';
+                echo '<p class="">' . $application . '</p>';
               }
               ?>
             </div>
@@ -84,7 +84,7 @@ $compositions = get_field('composizione');
                 $last_row_name = $last_row['materiale'];
               }
               ?>
-              <p class="h5 collectionDetail-info__bold"><?php echo $last_row_number; ?></p>
+              <p class="collectionDetail-info__bold"><?php echo $last_row_number; ?></p>
               <p class="body"><?php echo $last_row_name; ?></p>
 
             </div>
@@ -140,7 +140,7 @@ $compositions = get_field('composizione');
   <section class="collectionTreatments">
     <div class="container">
       <h2 class="collectionDetail-title h2">
-        technical features
+        Available treatment
       </h2>
       <div class="collectionTreatments-row">
         <div class="collectionTreatments-col">

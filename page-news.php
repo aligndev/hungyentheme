@@ -25,7 +25,7 @@
             <div class="mainNews-desc body">
               <?php echo wp_trim_words(get_the_content(), 70); ?>
             </div>
-            <a href="<?php echo get_permalink(); ?>" class="btn btn-green col-8">
+            <a href="<?php echo get_permalink(); ?>" class="btn btn-green col-8 mobile-hidden">
               Read more
             </a>
         </div>
@@ -33,6 +33,9 @@
           <div class="rto-box">
             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
           </div>
+          <a href="<?php echo get_permalink(); ?>" class="btn btn-green col-8 desktop-hidden">
+            Read more
+          </a>
         </div>
 
       <?php
