@@ -61,6 +61,12 @@ body .a-owl-s > * + * {
   margin-top: 1rem;
 }
 
+a{
+  &:hover {
+    color: #000;
+    // font-weight: 400;
+  }
+}
 //nav Link
 .nav-link {
   &:hover,
@@ -120,6 +126,7 @@ body .a-owl-s > * + * {
     .collection-cta {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      margin-bottom: 5rem;
     }
     .collection-logo {
       .collection-row {

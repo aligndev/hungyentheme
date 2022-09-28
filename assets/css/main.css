@@ -1185,8 +1185,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 35%;
-  max-height: 35%;
+  width: 40%;
+  max-height: 40%;
 }
 
 @media screen and (max-width: 1025px) {
@@ -2272,6 +2272,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9;
+  background-color: #fff;
 }
 @media screen and (max-width: 768px) {
   .circle-inner__center {
@@ -3178,7 +3180,6 @@ body {
   margin: 0 -7.813vw;
   height: 38.698vw;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 1025px) {
   .who-image {
@@ -3284,6 +3285,7 @@ body {
   right: 7.813vw;
   z-index: 10;
   color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
 }
 @media screen and (max-width: 768px) {
   .who-title {
@@ -4207,6 +4209,10 @@ body .a-owl-s > * + * {
   margin-top: 1rem;
 }
 
+a:hover {
+  color: #000;
+}
+
 .nav-link:hover, .nav-link:focus {
   color: #fcfff5;
 }
@@ -4257,6 +4263,7 @@ body .a-owl-s > * + * {
 .collection-wrapper .collection-inner .collection-cta {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
 }
 .collection-wrapper .collection-inner .collection-logo .collection-row .collection-logo__item {
   justify-content: center;

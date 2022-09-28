@@ -35,7 +35,7 @@
                                     <img src="<?php echo ASSETS . '/images/fabric-icon-2.svg'; ?>" alt="" />
                                 </div>
                                 <div class="collection-fabric__title">
-                                    Recycled & Virgin Shiny
+                                    Shiny
                                 </div>
                             </a>
                             <a href="/collection/Xlance" class="swiper-slide swiper-item collection-fabric__item">
@@ -63,11 +63,6 @@
                 </div>
 
                 <div class="collection-cta">
-                    <!-- <div class="collection-cta__col col-4">
-                        <a href="/download-fabric-collections/" class="btn btn-green collection-cta__text">
-                            All fabric Collections
-                        </a>
-                    </div> -->
                     <div class="collection-cta__col">
                         <a href="/download-color-card/" class="btn btn-green collection-cta__text">
                             Download Our Color Cards 2023

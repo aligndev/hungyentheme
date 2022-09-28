@@ -13,7 +13,8 @@ $compositions = get_field('composizione');
     <div class="container">
       <div class="collectionPage-heading collectionDetail-heading">
         <?php $terms = get_the_terms($post->ID, 'collection');
-        if (count($terms) > 1) {
+        // print_r($terms);
+        if ($terms->count > 1) {
           foreach ($terms as $term) {
             if ($term->parent == 0) { ?>
               <img src="<?php $logo = get_field('collection_logo', $term);

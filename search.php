@@ -14,8 +14,6 @@
                 <!-- <input type="hidden" name="post_type[]" value="post" /> -->
             </form>
             <i class="fa fa-search"></i>
-            <!-- <img class="nav-icon" src="<?php //echo ASSETS . '/images/search-icon.svg';
-                                            ?>" alt="" /> -->
         </div>
 
     </div>

@@ -138,18 +138,6 @@ function get_collection_terms()
   foreach ($terms as $term) {
     echo $term->slug . '-collection ';
   }
-  // echo '"></div>';
-
-  // if (have_rows('composizione')) :
-  //   while (have_rows('composizione')) : the_row();
-  //     $percent = get_sub_field('percentuale');
-  //     $material = get_sub_field('materiale');
-  //     echo '<div class="collectionPage-fabric__desc">';
-  //     echo  '<div class="collectionPage-fabric__number">' .  $percent . '</div>';
-  //     echo  '<div class="collectionPage-fabric__material">' . $material . '</div>';
-  //     echo '</div>';
-  //   endwhile;
-  // endif;
 }
 
 add_shortcode('get-collection-terms', 'get_collection_terms');
