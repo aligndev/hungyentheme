@@ -804,7 +804,6 @@ body {
 .footer-desc {
   color: #000000;
   font-weight: 400;
-  font-size: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -1081,11 +1080,6 @@ body {
   margin: 2rem 0;
   padding-left: 0;
 }
-@media screen and (max-width: 1440px) {
-  .content-config p img {
-    max-width: 30%;
-  }
-}
 @media screen and (max-width: 769px) {
   .content-config p img {
     max-width: 8rem;
@@ -1191,7 +1185,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 25%;
+  width: 35%;
+  max-height: 35%;
 }
 
 @media screen and (max-width: 1025px) {
@@ -4259,6 +4254,16 @@ body .a-owl-s > * + * {
   color: #000;
   font-weight: 700;
 }
+.collection-wrapper .collection-inner .collection-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.collection-wrapper .collection-inner .collection-logo .collection-row .collection-logo__item {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
 .collection-wrapper .collection-inner .collection-logo img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -4270,11 +4275,29 @@ body .a-owl-s > * + * {
   transition-timing-function: linear;
 }
 
+.menuCats .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
 @media screen and (max-width: 769px) {
   .discover-block {
     display: grid;
     margin-top: 2rem;
   }
+}
+
+.collectionPage .collectionPage-text {
+  position: absolute;
+  top: 20%;
+  display: block;
+  z-index: 9;
+  left: 0;
+  padding: 0 7.813vw;
+}
+.collectionPage .collectionPage-text * {
+  margin-bottom: 3rem;
+  color: #fff;
+  font-weight: 600;
 }
 
 .collectionPage-category .collectionPage-filter .collectionPage-feature .featureList .feature {
@@ -4372,10 +4395,10 @@ body .a-owl-s > * + * {
 .collectionPage-category .collectionPage-list .polyester-virgin-collection .collectionPage-fabric__title {
   color: #e84f3e;
 }
-.collectionPage-category .collectionPage-list .polyamide-shiny-collection .collectionPage-fabric__title {
+.collectionPage-category .collectionPage-list .polyamide-virgin-shiny-collection .collectionPage-fabric__title {
   color: #69dbf4;
 }
-.collectionPage-category .collectionPage-list .polyester-shiny-collection .collectionPage-fabric__title {
+.collectionPage-category .collectionPage-list .polyester-virgin-shiny-collection .collectionPage-fabric__title {
   color: #ef7fb0;
 }
 .collectionPage-category .collectionPage-list .xlance-collection .collectionPage-fabric__title {
@@ -4472,6 +4495,14 @@ body .a-owl-s > * + * {
 .world .world-info {
   position: relative;
   z-index: 9;
+}
+
+.hero.who .fadeJs .swiper-button-next, .hero.who .fadeJs .swiper-button-prev {
+  top: 60%;
+}
+.hero.who .fadeJs .swiper-button-next::after, .hero.who .fadeJs .swiper-button-prev::after {
+  color: #fff;
+  font-size: 5rem;
 }
 
 .search-header-wrapper {

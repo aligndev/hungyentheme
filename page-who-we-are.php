@@ -38,6 +38,8 @@
               </div>
             <?php endwhile; ?>
           </div>
+          <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
       </div>
       <div class="who-image__outter">
@@ -421,7 +423,7 @@
           <img src="<?php echo ASSETS . '/images/marker-blue.svg'; ?>" alt="">
           <span class="h5">Final Buyers</span>
         </div>
-        <div class="world-info__item" if="shipments-to-regions">
+        <div class="world-info__item" id="shipments-to-regions">
           <img src="<?php echo ASSETS . '/images/marker.svg'; ?>" alt="">
           <span class="h5">Shipments to Regions</span>
         </div>

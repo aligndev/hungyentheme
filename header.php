@@ -68,43 +68,45 @@
                             All fabric Collections
                         </a>
                     </div> -->
-                    <div class="collection-cta__col col-4">
+                    <div class="collection-cta__col">
                         <a href="/download-color-card/" class="btn btn-green collection-cta__text">
                             Download Our Color Cards 2023
                         </a>
                     </div>
-                    <div class="collection-cta__col col-4">
+                    <div class="collection-cta__col">
                         <a href="#" class="btn btn-green collection-cta__text">
                             Download Our Collection Books
                         </a>
                     </div>
                 </div>
 
-                <div class="collection-logo">
-                    <div class="collection-row">
-                        <div class="collection-logo__item">
-                            <img src="<?php echo ASSETS . '/images/partner-logo-8.svg'; ?>" alt="" class="collection-logo__image" />
-                        </div>
-                        <div class="collection-logo__item">
-                            <img src="<?php echo ASSETS . '/images/partner-logo-10.svg'; ?>" alt="" class="collection-logo__image" />
-                        </div>
-                        <div class="collection-logo__item">
-                            <img src="<?php echo ASSETS . '/images/partner-logo-11.svg'; ?>" alt="" class="collection-logo__image" />
-                        </div>
-                        <div class="collection-logo__item">
-                            <img src="<?php echo ASSETS . '/images/partner-logo-7.svg'; ?>" alt="" class="collection-logo__image" />
-                        </div>
-                        <div class="collection-logo__item">
-                            <img src="<?php echo ASSETS . '/images/partner-logo-12.svg'; ?>" alt="" class="collection-logo__image" />
-                        </div>
-                        <div class="collection-logo__item">
-                            <img src="<?php echo ASSETS . '/images/partner-logo-13.svg'; ?>" alt="" class="collection-logo__image" />
-                        </div>
-                        <div class="collection-logo__item">
-                            <img src="<?php echo ASSETS . '/images/partner-logo-14.svg'; ?>" alt="" class="collection-logo__image" />
-                        </div>
-                        <div class="collection-logo__item">
-                            <img src="<?php echo ASSETS . '/images/partner-logo-15.svg'; ?>" alt="" class="collection-logo__image" />
+                <div class="collection-logo logoJs">
+                    <div class="collection-row swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php echo ASSETS . '/images/partner-logo-8.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php echo ASSETS . '/images/partner-logo-10.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php echo ASSETS . '/images/partner-logo-11.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php echo ASSETS . '/images/partner-logo-7.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php echo ASSETS . '/images/partner-logo-12.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src=" <?php echo ASSETS . '/images/partner-logo-13.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php echo ASSETS . '/images/partner-logo-14.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php echo ASSETS . '/images/partner-logo-15.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
                         </div>
                     </div>
                 </div>

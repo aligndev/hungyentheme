@@ -117,7 +117,20 @@ body .a-owl-s > * + * {
         }
       }
     }
+    .collection-cta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
     .collection-logo {
+      .collection-row {
+        .collection-logo__item {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin: auto;
+        }
+      }
+
       img {
         object-fit: contain;
         max-height: 60%;
@@ -125,10 +138,16 @@ body .a-owl-s > * + * {
       }
     }
   }
+
 }
 
 //Slider
 .logoJs {
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+}
+.menuCats {
   .swiper-wrapper {
     transition-timing-function: linear;
   }
@@ -141,7 +160,24 @@ body .a-owl-s > * + * {
   }
 }
 //Collection page
+.collectionPage {
+  .collectionPage-text {
+    position: absolute;
+    top: 20%;
+    display: block;
+    z-index: 9;
+    left: 0;
+    padding: 0 7.813vw;
+    & * {
+      margin-bottom: 3rem;
+      color: #fff;
+      font-weight: 600;
+  }
+}
+
+}
 .collectionPage-category {
+
   .collectionPage-filter {
     .collectionPage-feature {
       .featureList {
@@ -267,12 +303,12 @@ body .a-owl-s > * + * {
         color: #e84f3e;
       }
     }
-    .polyamide-shiny-collection {
+    .polyamide-virgin-shiny-collection {
       .collectionPage-fabric__title {
         color: #69dbf4;
       }
     }
-    .polyester-shiny-collection {
+    .polyester-virgin-shiny-collection {
       .collectionPage-fabric__title {
         color: #ef7fb0;
       }
@@ -404,6 +440,19 @@ body .a-owl-s > * + * {
     position: relative;
     z-index: 9;
   }
+}
+.hero.who{
+  .fadeJs {
+    .swiper-button-next, .swiper-button-prev {
+      top: 60%;
+      &::after{
+        color: #fff;
+        font-size: 5rem;
+            }
+    }
+
+  }
+
 }
 
 //Search Product

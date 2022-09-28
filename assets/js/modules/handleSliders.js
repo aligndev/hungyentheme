@@ -62,7 +62,7 @@ const handleSliders = () => {
       let loop;
       item.classList.contains("noloop") ? (loop = false) : (loop = true);
       let logoSwiper = new Swiper(container, {
-        // slidesPerView: "auto",
+        slidesPerView: "auto",
         loop: loop,
         slidesPerView: 2,
         autoplay: {
@@ -70,7 +70,7 @@ const handleSliders = () => {
           disableOnInteraction: false
         },
         // freeMode: true,
-        speed: 5000,
+        speed: 7000,
         grabCursor: true,
         mousewheelControl: true,
         keyboardControl: true,
@@ -98,14 +98,24 @@ const handleSliders = () => {
       let loop;
       item.classList.contains("noloop") ? (loop = false) : (loop = true);
       let menuSwiper = new Swiper(container, {
-        slidesPerView: "auto",
-
         slidesPerView: 2,
+        loop:true,
         freeMode: true,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false
+        },
+        speed: 7000,
         breakpoints: {
           769: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+
+          },
+          1440: {
             slidesPerView: 6,
             spaceBetween: 10,
+            loop:false
           },
         },
         watchOverflow: true,

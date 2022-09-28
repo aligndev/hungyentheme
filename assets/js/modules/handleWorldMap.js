@@ -538,28 +538,76 @@ const handleWorldMap = () => {
     markerInsde.forEach((marker) => {
       marker.classList.remove("active");
     });
-  };
-  document
-    .getElementById("USA")
-    .addEventListener("mouseenter", ()=> {handlePopupIn(1);});
-  document.getElementById("USA").addEventListener("mouseleave", ()=> {handlePopupOut(1);});
-  document
-    .getElementById("Germany")
-    .addEventListener("mouseenter", ()=> {handlePopupIn(2);});
-  document
-    .getElementById("Germany")
-    .addEventListener("mouseleave", ()=> {handlePopupOut(2);});
-  document
-    .getElementById("Uzbekistan")
-    .addEventListener("mouseenter", ()=> {handlePopupIn(3);});
-  document
-    .getElementById("Uzbekistan")
-    .addEventListener("mouseleave", ()=> {handlePopupOut(3);});
+  }
+  document.getElementById("USA").addEventListener("mouseenter", () => {
+    handlePopupIn(1);
+  });
+  document.getElementById("USA").addEventListener("mouseleave", () => {
+    handlePopupOut(1);
+  });
+  document.getElementById("Germany").addEventListener("mouseenter", () => {
+    handlePopupIn(2);
+  });
+  document.getElementById("Germany").addEventListener("mouseleave", () => {
+    handlePopupOut(2);
+  });
+  document.getElementById("Uzbekistan").addEventListener("mouseenter", () => {
+    handlePopupIn(3);
+  });
+  document.getElementById("Uzbekistan").addEventListener("mouseleave", () => {
+    handlePopupOut(3);
+  });
   document
     .getElementById("final-buyers-point")
-    .addEventListener("mouseenter", ()=> {handlePopupIn(4);});
+    .addEventListener("mouseenter", () => {
+      handlePopupIn(4);
+    });
   document
     .getElementById("final-buyers-point")
-    .addEventListener("mouseleave", ()=> {handlePopupOut(4);});
+    .addEventListener("mouseleave", () => {
+      handlePopupOut(4);
+    });
+
+  document
+    .getElementById("shipments-to-regions")
+    .addEventListener("mouseenter", (e) => {
+      e.preventDefault();
+      const markerBlue = document.querySelectorAll("image.marker-blue");
+      const activeTitleNA = document.querySelectorAll(
+        "text.north-america, text.asian, text.africa, text.india,text.china, text.europe ",
+      );
+      const activeLocationsNA = document.querySelectorAll(
+        "path.north-america, path.asian, path.africa, path.india, path.china,path.europe",
+      );
+      markerBlue.forEach((marker) => {
+        marker.classList.add("active");
+      });
+      activeTitleNA.forEach((title) => {
+        title.classList.add("active");
+      });
+      activeLocationsNA.forEach((location) => {
+        location.classList.add("active");
+      });
+    });
+  document
+    .getElementById("shipments-to-regions")
+    .addEventListener("mouseleave", function () {
+      const markerBlue = document.querySelectorAll("image.marker-blue");
+      const activeTitleNA = document.querySelectorAll(
+        "text.north-america, text.asian, text.africa, text.india,text.china, text.europe ",
+      );
+      const activeLocationsNA = document.querySelectorAll(
+        "path.north-america, path.asian, path.africa, path.india, path.china,path.europe",
+      );
+      markerBlue.forEach((marker) => {
+        marker.classList.remove("active");
+      });
+      activeTitleNA.forEach((title) => {
+        title.classList.remove("active");
+      });
+      activeLocationsNA.forEach((location) => {
+        location.classList.remove("active");
+      });
+    });
 };
 export default handleWorldMap;

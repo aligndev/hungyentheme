@@ -37,6 +37,13 @@
             <?php endif;
             ?>
           </div>
+          <div class="collectionPage-text">
+            <?php $collection_text = get_field('collection_text', $term);
+            if ($collection_text) {
+              echo $collection_text;
+            }
+            ?>
+          </div>
           <div class="swiper-button-next swiper-button-lg"></div>
           <div class="swiper-button-prev swiper-button-lg"></div>
           <div class="swiper-pagination pagination-hide-on-desktop"></div>
