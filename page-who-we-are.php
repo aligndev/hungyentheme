@@ -500,9 +500,9 @@
     </div>
   </section>
   <section class="values">
-  <?php echo do_shortcode("[wp_reusable_render id='3620']"); ?>
+  <?php echo do_shortcode("[wp_reusable_render id='3787']"); ?>
   </section>
-
+<!-- 
   <section class="values">
     <div class="container">
       <h2 class="values-title h2">
@@ -526,7 +526,7 @@
         </div>
       <?php endif; ?>
     </div>
-  </section>
+  </section> -->
   <section class="time">
     <div class="container">
       <div class="time-heading">
