@@ -204,7 +204,7 @@ margin-top: 0;
   border: 1px solid #000;
 }
 #piotnetgrid .piotnetgrid-card .collectionPage-fabric__image {
-  max-height: 40rem;
+  max-height: 30rem;
 }
 #piotnetgrid .piotnetgrid-card .piotnetgrid-image__content a {
   display: grid;
