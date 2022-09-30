@@ -26,7 +26,7 @@
   .piotnetgrid-facet__field-sub-label {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   margin-bottom: 2.5rem;
   padding: 1.8rem 0;
   text-align: center;
@@ -38,7 +38,7 @@
   width: 100%;
   font-weight: 700;
   text-transform: capitalize;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 #piotnetgrid
   .fillter-by-collection
@@ -57,8 +57,8 @@
   .piotnetgrid-facet-field.polyamide-recycled-logo
   + .piotnetgrid-facet__field-sub-label::before {
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 5rem;
+  height: 5rem;
   display: block;
   background: url(/wp-content/themes/alignvn/assets/images/polyamide-icon.svg)
     no-repeat center;
@@ -73,8 +73,8 @@
   .piotnetgrid-facet-field.polyester-recycled-logo
   + .piotnetgrid-facet__field-sub-label::before {
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 5rem;
+  height: 5rem;
   display: block;
   background: url(/wp-content/themes/alignvn/assets/images/polyester-icon.svg)
     no-repeat center;
@@ -89,8 +89,8 @@
   .piotnetgrid-facet-field.polyamide-virgin-logo
   + .piotnetgrid-facet__field-sub-label::before {
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 5rem;
+  height: 5rem;
   display: block;
   background: url(/wp-content/uploads/2022/09/virgin-logo-2.png)
     no-repeat;
@@ -172,7 +172,7 @@
 }
 #piotnetgrid .filter-by-application_wrapper .piotnetgrid-facet__field-wrapper,
 #piotnetgrid .filter-by-property_wrapper .piotnetgrid-facet__field-wrapper {
-margin-top: 3rem;
+margin-top: 0;
 }
 #piotnetgrid .piotnetgrid-facet-reset-button .piotnetgrid-button {
   background-color: transparent;

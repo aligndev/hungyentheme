@@ -159,6 +159,11 @@
     }
     &__content {
       padding: 60px;
+      // &__item {
+      //   &:last-child {
+      //     font-weight: 800;
+      //   }
+      // }
       @include max(768px) {
         padding: 30px;
       }
@@ -182,6 +187,9 @@
         text-transform: uppercase;
         font-weight: bold;
         padding-left: 3.125vw;
+        .body {
+          font-weight: 800;
+        }
 
         @include max(768px) {
           padding-left: 0;
@@ -195,6 +203,8 @@
       margin-right: 3.2rem;
     }
     &__banner {
+      display: flex;
+      justify-content: center;
       img {
         max-width: 100%;
         object-fit: cover;

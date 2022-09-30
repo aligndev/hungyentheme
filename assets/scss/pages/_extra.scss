@@ -140,8 +140,8 @@ a{
 
       img {
         object-fit: contain;
-        max-height: 60%;
-        width: auto;
+        max-height: 110px;
+        width: 70%;
       }
     }
   }
@@ -160,6 +160,10 @@ a{
   }
 }
 //Homepage
+.partner-logos {
+  display: flex;
+  align-items: center; 
+}
 .discover-block {
   @include max(769px) {
     display: grid;
@@ -241,7 +245,7 @@ a{
         border: none;
       }
       * {
-        margin-bottom: 3px;
+        // margin-bottom: 3px;
       }
       #piotnetgrid {
         .piotnetgrid-button-wrapper {

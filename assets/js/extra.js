@@ -34,6 +34,7 @@ function scrollTopFilter () {
   }
 
 }
+
 //Hide option
 // function hideEmptyChoose() {
 //   let facetProducts = document.querySelectorAll(
@@ -65,7 +66,6 @@ function addingCollectionClass () {
       let string = n.querySelector(".collectionPage-term").innerHTML
       let collectValues = string.split(" ");
       let collectValue = collectValues[0];
-      //let collectValue = n.querySelector(".collectionPage-term").innerHTML;
       n.classList.add(collectValue);
     })
   }
@@ -80,10 +80,25 @@ function addingActiveMenu() {
   });
 }
 
-addingCollectionClass();
-addingClass();
-addingActiveMenu();
-scrollTopFilter();
+// function editingMenusize() {
+//   let menuslides = document.querySelectorAll(".collection-fabric__item");
+
+//   menuslides.forEach((n)=> {
+//     n.style.height = n.offsetWidth + 'px';
+//   })
+// }
+
+jQuery(document).ready(function() { 
+  addingCollectionClass();
+  addingClass();
+  addingActiveMenu();
+  scrollTopFilter();
+  // editingMenusize();
+});
+
+// window.addEventListener('resize', function(event) {
+//   editingMenusize();
+// }, true);
 
 
 jQuery(document).ajaxComplete(function () {
@@ -91,6 +106,7 @@ jQuery(document).ajaxComplete(function () {
   // hideEmptyChoose();
   addingCollectionClass();
   scrollTopFilter();
+  editingMenusize();
 });
 
 // When the user scrolls the page, execute myFunction

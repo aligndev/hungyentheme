@@ -64,7 +64,7 @@
   <section class="collectionMain">
     <div class="container">
       <div class="collectionPage-category">
-        <div class="collectionPage-filter col-4">
+        <div class="collectionPage-filter col-3">
           <?php echo do_shortcode('[piotnetgrid id=3306 type=facet grid=3304]'); ?>
           <?php
           $postid = get_term_by('slug', 'polyamide-recycled', 'collection');
@@ -109,7 +109,7 @@
 
 
         </div>
-        <div class="collectionPage-list col-8">
+        <div class="collectionPage-list col-9">
           <?php echo do_shortcode('[piotnetgrid id=3304 type=grid]'); ?>
         </div>
       </div>

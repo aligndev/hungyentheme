@@ -11,49 +11,49 @@
     <?php if (have_rows('hero_slider')) : ?>
         <section class="hero fadeJs">
             <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <?php
-                  while (have_rows('hero_slider')) : the_row();
-                      $hero_sub = get_sub_field('hero_slider_sub');
-                      $hero_title = get_sub_field('hero_slider_title');
-                      $hero_slider_waves = get_sub_field('hero_slider_waves');
-                      $hero_image = get_sub_field('hero_image');
-                      $hero_body  = get_sub_field('hero_body');
-                      $hero_link = get_sub_field('hero_link');
-                  ?>
-                      <div class="swiper-slide">
-                          <div class="container">
-                              <div class="hero-top">
-                                  <h2 class="h2 hero-sub"><?php echo $hero_sub; ?></h2>
-                                  <h1 class="h1 hero-title"><?php echo $hero_title; ?></h1>
-                              </div>
-                              <div class="hero-bottom">
-                                  <div class="hero-wave">
-                                      <div class="hero-wave__item">
-                                          <img src="<?php echo $hero_slider_waves; ?>" alt="" />
-                                      </div>
-                                  </div>
+                <div class="swiper-wrapper">
+                    <?php
+                    while (have_rows('hero_slider')) : the_row();
+                        $hero_sub = get_sub_field('hero_slider_sub');
+                        $hero_title = get_sub_field('hero_slider_title');
+                        $hero_slider_waves = get_sub_field('hero_slider_waves');
+                        $hero_image = get_sub_field('hero_image');
+                        $hero_body  = get_sub_field('hero_body');
+                        $hero_link = get_sub_field('hero_link');
+                    ?>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="hero-top">
+                                    <h2 class="h2 hero-sub"><?php echo $hero_sub; ?></h2>
+                                    <h1 class="h1 hero-title"><?php echo $hero_title; ?></h1>
+                                </div>
+                                <div class="hero-bottom">
+                                    <div class="hero-wave">
+                                        <div class="hero-wave__item">
+                                            <img src="<?php echo $hero_slider_waves; ?>" alt="" />
+                                        </div>
+                                    </div>
 
-                                  <div class="hero-image">
-                                      <img src="<?php echo $hero_image['url']; ?>" alt="" />
-                                  </div>
-                                  <div class="hero-cta col-6">
-                                      <p class="hero-desc body">
-                                          <?php echo $hero_body; ?>
-                                      </p>
+                                    <div class="hero-image">
+                                        <img src="<?php echo $hero_image['url']; ?>" alt="" />
+                                    </div>
+                                    <div class="hero-cta col-6">
+                                        <p class="hero-desc body">
+                                            <?php echo $hero_body; ?>
+                                        </p>
 
-                                      <a href="<?php echo $hero_link; ?>" class="col-4 hero-button body">
-                                          Learn More
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  <?php endwhile; ?>
-              </div>
-              <div class="swiper-button-next swiper-button-lg"></div>
-              <div class="swiper-button-prev swiper-button-lg"></div>
-              <div class="swiper-pagination pagination-hide-on-desktop"></div>
+                                        <a href="<?php echo $hero_link; ?>" class="col-4 hero-button body">
+                                            Learn More
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
+                <div class="swiper-button-next swiper-button-lg"></div>
+                <div class="swiper-button-prev swiper-button-lg"></div>
+                <div class="swiper-pagination pagination-hide-on-desktop"></div>
             </div>
         </section>
     <?php endif; ?>
@@ -127,24 +127,24 @@
                     </p>
                 </div>
                 <div class="partner-logos">
-                    <div class="logoJs">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <?php
-                                $images = get_field('home_page_partner_logo');
-                                if ($images) : ?>
-                                    <?php foreach ($images as $image) : ?>
-                                        <div class="swiper-slide partner-item">
-                                            <img src="<?php echo $image; ?>" />
-                                        </div>
-                                    <?php endforeach; ?>
-                                <?php endif;
-                                ?>
+                    <!-- <div class=""> -->
+                    <!-- <div class="swiper-container"> -->
+                    <!-- <div class="swiper-wrapper"> -->
+                    <?php
+                    $images = get_field('home_page_partner_logo');
+                    if ($images) : ?>
+                        <?php foreach ($images as $image) : ?>
+                            <div class=" partner-item">
+                                <img src="<?php echo $image; ?>" />
                             </div>
+                        <?php endforeach; ?>
+                    <?php endif;
+                    ?>
+                    <!-- </div>
                         </div>
                         <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
+                        <div class="swiper-button-prev"></div> -->
+                    <!-- </div> -->
                 </div>
             </div>
         </div>

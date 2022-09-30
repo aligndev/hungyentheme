@@ -500,6 +500,10 @@
     </div>
   </section>
   <section class="values">
+  <?php echo do_shortcode("[wp_reusable_render id='3620']"); ?>
+  </section>
+
+  <section class="values">
     <div class="container">
       <h2 class="values-title h2">
         <?php the_field('values_title') ?>

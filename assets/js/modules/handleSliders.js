@@ -188,6 +188,7 @@ const handleSliders = () => {
         autoplay: {
           delay: 5000,
         },
+        loop:true,
         watchOverflow: true,
         observer: true,
         observeParents: true,

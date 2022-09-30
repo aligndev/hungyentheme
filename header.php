@@ -79,19 +79,13 @@
                     <div class="collection-row swiper-container">
                         <div class="swiper-wrapper">
                             <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="<?php echo ASSETS . '/images/partner-logo-8.svg'; ?>" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="<?php echo ASSETS . '/images/partner-logo-10.svg'; ?>" alt="" class="collection-logo__image" />
+                                <img src="<?php echo ASSETS . '/images/partner-logo-7.svg'; ?>" alt="" class="collection-logo__image" />
                             </div>
                             <div class="collection-logo__item swiper-slide swiper-item">
                                 <img src="<?php echo ASSETS . '/images/partner-logo-11.svg'; ?>" alt="" class="collection-logo__image" />
                             </div>
                             <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="<?php echo ASSETS . '/images/partner-logo-7.svg'; ?>" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="<?php echo ASSETS . '/images/partner-logo-12.svg'; ?>" alt="" class="collection-logo__image" />
+                                <img src="<?php echo ASSETS . '/images/partner-logo-10.svg'; ?>" alt="" class="collection-logo__image" />
                             </div>
                             <div class="collection-logo__item swiper-slide swiper-item">
                                 <img src=" <?php echo ASSETS . '/images/partner-logo-13.svg'; ?>" alt="" class="collection-logo__image" />
@@ -100,8 +94,16 @@
                                 <img src="<?php echo ASSETS . '/images/partner-logo-14.svg'; ?>" alt="" class="collection-logo__image" />
                             </div>
                             <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php echo ASSETS . '/images/partner-logo-12.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
                                 <img src="<?php echo ASSETS . '/images/partner-logo-15.svg'; ?>" alt="" class="collection-logo__image" />
                             </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php echo ASSETS . '/images/partner-logo-8.svg'; ?>" alt="" class="collection-logo__image" />
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
