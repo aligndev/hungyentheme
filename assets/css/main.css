@@ -4425,12 +4425,25 @@ a:hover {
   z-index: 9;
 }
 
-.hero.who .fadeJs .swiper-button-next, .hero.who .fadeJs .swiper-button-prev {
+.hero.who .fadeJs .swiper-button-next,
+.hero.who .fadeJs .swiper-button-prev {
   top: 60%;
 }
-.hero.who .fadeJs .swiper-button-next::after, .hero.who .fadeJs .swiper-button-prev::after {
+.hero.who .fadeJs .swiper-button-next::after,
+.hero.who .fadeJs .swiper-button-prev::after {
   color: #fff;
   font-size: 5rem;
+}
+
+.values .values-item .values-content.content-config p img {
+  max-height: 8rem;
+  margin: 1rem 0;
+  padding-left: 0;
+  max-width: 25%;
+}
+.values .values-item .values-content.content-config p:nth-child(4) img {
+  max-width: 40%;
+  max-height: 10rem;
 }
 
 .search-header-wrapper {
