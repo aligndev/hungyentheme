@@ -835,9 +835,14 @@ body {
 .collection-fabric__item:hover {
   background-color: #8cb675;
 }
+@media screen and (max-width: 1440px) {
+  .collection-fabric__item {
+    height: 20vw;
+  }
+}
 @media screen and (max-width: 769px) {
   .collection-fabric__item {
-    height: 12rem;
+    height: 40vw;
   }
 }
 .collection-fabric__image {
@@ -4183,6 +4188,11 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .collection-wrapper .collection-inner .collection-cta .collection-cta__col {
+    padding: 0;
+  }
 }
 .collection-wrapper .collection-inner .collection-logo .collection-row .collection-logo__item {
   justify-content: center;

@@ -95,9 +95,12 @@
       &:hover {
         background-color: $green-2;
       }
+      @include max(1440px) {
+        height: 20vw;
+      }
       @include max(769px) {
         //width: 16rem !important;
-        height: 12rem;
+        height: 40vw;;
       }
     }
     &__image {

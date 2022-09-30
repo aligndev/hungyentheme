@@ -127,6 +127,11 @@ a {
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-bottom: 5rem;
+      @include max(768px) {
+        .collection-cta__col {
+          padding: 0;
+        }
+      }
     }
     .collection-logo {
       .collection-row {
