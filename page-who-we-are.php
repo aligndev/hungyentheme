@@ -513,16 +513,32 @@
           <?php while (have_rows('values_item')) : the_row();
             $values_image = get_sub_field('values_item_image');
             $values_content = get_sub_field('values_item_content');
+            $n = 1;
           ?>
             <div class="values-item">
               <div class="values-image rto-box">
-                <img src="<?php echo $values_image; ?>" alt="">
+                <?php  if( $n == 1) { 
+                  ?>
+                  <video playsinline muted autoplay loop controls>
+                            <source src="<?php echo $values_image; ?>" />
+                  </video>
+                  <?php
+                } 
+                else {
+                  ?>
+                  <img src="<?php echo $values_image; ?>" alt="">
+                  <?php
+                }
+                ?>
+
               </div>
               <div class="values-content content-config">
                 <?php echo $values_content; ?>
               </div>
             </div>
-          <?php endwhile; ?>
+          <?php 
+        $n = n + 1;
+        endwhile; ?>
         </div>
       <?php endif; ?>
     </div>
