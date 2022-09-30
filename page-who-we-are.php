@@ -538,7 +538,7 @@
               </div>
             </div>
           <?php 
-        $n = n + 1;
+        $n = $n +1;
         endwhile; ?>
         </div>
       <?php endif; ?>
