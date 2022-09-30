@@ -112,7 +112,7 @@ const handleSliders = () => {
             spaceBetween: 10,
 
           },
-          1440: {
+          1441: {
             slidesPerView: 6,
             spaceBetween: 10,
             loop:false
