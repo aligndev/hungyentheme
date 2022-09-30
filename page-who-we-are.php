@@ -508,12 +508,13 @@
       <h2 class="values-title h2">
         <?php the_field('values_title') ?>
       </h2>
-      <?php if (have_rows('values_item')) : ?>
+      <?php if (have_rows('values_item')) : 
+                    $n = 1;?>
         <div class="values-row">
           <?php while (have_rows('values_item')) : the_row();
             $values_image = get_sub_field('values_item_image');
             $values_content = get_sub_field('values_item_content');
-            $n = 1;
+
           ?>
             <div class="values-item">
               <div class="values-image rto-box">
