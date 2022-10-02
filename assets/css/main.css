@@ -4303,10 +4303,10 @@ a:hover {
 }
 @media screen and (max-width: 1440px) {
   .collectionPage-category .collectionPage-filter #piotnetgrid .fillter-by-collection .piotnetgrid-facet__field-subgroup--buttons .piotnetgrid-facet__field-sub .piotnetgrid-facet__field-sub-label::before {
-    width: 4rem !important;
-    height: 4rem !important;
+    width: 3rem !important;
+    height: 3rem !important;
     margin-right: 1rem !important;
-    margin-left: 0rem !important;
+    margin-left: 1rem !important;
   }
 }
 @media screen and (max-width: 1440px) {
