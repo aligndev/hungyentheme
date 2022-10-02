@@ -62,37 +62,35 @@
             <a href="<?php echo $process_button_download_url; ?>" class="process-download btn btn-green col-9 hide-on-desktop">
                 <?php echo $process_button_text; ?>
             </a>
-            <div class="logoSlider-inner">
+            <!-- <div class="logoSlider-inner">
                 <div class="logoJs">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <?php
-                            if (have_rows('sustainability_logo_slider')) :
-                                while (have_rows('sustainability_logo_slider')) : the_row();
+                            // if (have_rows('sustainability_logo_slider')) :
+                            //     while (have_rows('sustainability_logo_slider')) : the_row();
 
-                                    $logoImg = get_sub_field('sustainability_logo_slider_image');
-                                    $logoLink = get_sub_field('sustainability_logo_slider_link');
+                            //         $logoImg = get_sub_field('sustainability_logo_slider_image');
+                            //         $logoLink = get_sub_field('sustainability_logo_slider_link');
                             ?>
                                     <div class="swiper-slide logoSlider-slide">
-                                        <a href="<?php if ($logoLink) {
-                                                        echo $logoLink;
-                                                    } else {
-                                                        echo "#";
-                                                    } ?>">
-                                            <img src="<?php echo $logoImg; ?>" alt="" />
+                                        <a href="<? php // if ($logoLink) { echo $logoLink;} else { echo "#";} 
+                                                    ?>">
+                                            <img src="<? php // echo $logoImg; 
+                                                        ?>" alt="" />
                                         </a>
                                     </div>
                             <?php
 
-                                endwhile;
-                            endif;
+                            //     endwhile;
+                            // endif;
                             ?>
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="tabs">

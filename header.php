@@ -32,7 +32,7 @@
                             </a>
                             <a href="/collection/shiny" class="swiper-slide swiper-item collection-fabric__item">
                                 <div class="collection-fabric__image">
-                                    <img src="<?php echo ASSETS . '/images/fabric-icon-2.svg'; ?>" alt="" />
+                                    <img src="/wp-content/uploads/2022/09/Shiny-logo.svg" alt="" />
                                 </div>
                                 <div class="collection-fabric__title">
                                     Shiny
@@ -99,6 +99,10 @@
                             <div class="collection-logo__item swiper-slide swiper-item">
                                 <img src="<?php echo ASSETS . '/images/partner-logo-15.svg'; ?>" alt="" class="collection-logo__image" />
                             </div>
+                            <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="/wp-content/uploads/2022/09/Mipan-regen-ocean.svg" alt="" class="collection-logo__image" />
+                            </div>
+
                             <div class="collection-logo__item swiper-slide swiper-item">
                                 <img src="<?php echo ASSETS . '/images/partner-logo-8.svg'; ?>" alt="" class="collection-logo__image" />
                             </div>

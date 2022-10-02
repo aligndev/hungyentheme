@@ -94,7 +94,8 @@
   display: block;
   background: url(/wp-content/uploads/2022/09/virgin-logo-2.png)
     no-repeat;
-  margin-right: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   background-size: contain;
 }
 #piotnetgrid
@@ -109,9 +110,43 @@
   display: block;
   background: url(/wp-content/uploads/2022/09/virgin-logo.png)
     no-repeat;
-  margin-right: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   background-size: contain;
 }
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .piotnetgrid-facet-field.polyamide-recycled-shiny-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  display: block;
+  background: url(/wp-content/uploads/2022/09/shiny-logo.svg)
+    no-repeat;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  background-size: contain;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .piotnetgrid-facet-field.polyamide-virgin-shiny-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  display: block;
+  background: url(/wp-content/uploads/2022/09/Shiny-plus-logo.svg)
+    no-repeat;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  background-size: contain;
+}
+
 #piotnetgrid
   .filter-by-application_wrapper
   label.piotnetgrid-facet__label::before,

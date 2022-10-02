@@ -145,7 +145,7 @@ a {
 
       img {
         object-fit: contain;
-        max-height: 110px;
+        max-height: 9rem;
         width: 70%;
       }
     }
@@ -167,6 +167,7 @@ a {
 .partner-logos {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .discover-block {
   @include max(769px) {

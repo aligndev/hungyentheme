@@ -3181,6 +3181,7 @@ body {
   width: 14.2857142857%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1025px) {
   .who-image__item {
@@ -4203,7 +4204,7 @@ a:hover {
 .collection-wrapper .collection-inner .collection-logo img {
   -o-object-fit: contain;
      object-fit: contain;
-  max-height: 110px;
+  max-height: 9rem;
   width: 70%;
 }
 
@@ -4218,6 +4219,7 @@ a:hover {
 .partner-logos {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 769px) {
