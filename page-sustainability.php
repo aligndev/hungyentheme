@@ -312,9 +312,9 @@
                                                             <?php echo $corporate_social_responsibility_slider_description; ?>
                                                         </p>
 
-                                                        <a href="#" class="btn btn-green col-7">
+                                                        <!-- <a href="#" class="btn btn-green col-7">
                                                             Find out more
-                                                        </a>
+                                                        </a> -->
                                                     </div>
                                                 </div>
                                             <?php endwhile; ?>

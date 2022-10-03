@@ -3,7 +3,7 @@ const handleTabs = () => {
     const tags = document.querySelectorAll('[data-tab-target]');
     const tagsContent = document.querySelectorAll('[data-tab-content]')
     tags.forEach(tag => {
-        tag.addEventListener('click', () => {
+        tag.addEventListener('mouseenter', () => {
             const target = document.querySelector(tag.dataset.tabTarget);
             tagsContent.forEach(tagContent => {
                 tagContent.classList.remove('active')

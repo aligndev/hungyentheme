@@ -1,3 +1,5 @@
+<div class="scrollTopbtn" onclick="window.scrollTo(0, 0);"><i class="fa fa-arrow-up"></i></div>
+
 <footer class="footer mt">
     <img src="<?php echo ASSETS . '/images/pattern-footer.svg' ?>" alt="" class="footer-pattern" />
     <div class="container">

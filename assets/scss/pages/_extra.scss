@@ -67,6 +67,27 @@ a {
     // font-weight: 400;
   }
 }
+
+.scrollTopbtn {
+  height: 5rem;
+  width: 5rem;
+  display: none;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  text-align: center;
+  border: 2px solid #000;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 99;
+  i {
+    font-size: 2rem;
+  }
+  &.active {
+    display: flex;
+  }
+}
 //nav Link
 .nav-link {
   &:hover,
@@ -314,12 +335,12 @@ a {
         color: #e84f3e;
       }
     }
-    .polyamide-virgin-shiny-collection {
+    .polyamide-recycled-shiny-collection {
       .collectionPage-fabric__title {
         color: #69dbf4;
       }
     }
-    .polyester-virgin-shiny-collection {
+    .polyester-recycled-shiny-collection {
       .collectionPage-fabric__title {
         color: #ef7fb0;
       }

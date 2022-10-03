@@ -111,12 +111,17 @@ jQuery(document).ajaxComplete(function () {
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {menunav()};
-var navbar = document.querySelector(".nav");
-var sticky = navbar.offsetTop + 50;
+
+let navbar = document.querySelector(".nav");
+let scrollTopbtn = document.querySelector(".scrollTopbtn")
+let sticky = navbar.offsetTop + 50;
+
 function menunav() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
+    scrollTopbtn.classList.add("active");
   } else {
     navbar.classList.remove("sticky");
+    scrollTopbtn.classList.remove("active");
   }
 }
