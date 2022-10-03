@@ -217,7 +217,7 @@ $compositions = get_field('composizione');
               'operator' => 'IN' //Or 'AND' or 'NOT IN'
             )
           ),
-          'posts_per_page' => 4,
+          'posts_per_page' => 2,
           'ignore_sticky_posts' => 1,
           'orderby' => 'date',
           'post__not_in' => array($post->ID)
