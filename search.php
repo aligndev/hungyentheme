@@ -74,7 +74,7 @@
             <?php
                 endwhile;
             } else {
-                echo '<h1> Not Found </h1>';
+                echo '<h1>This Search Is Not Found </h1>';
             }
             ?>
         </div>
