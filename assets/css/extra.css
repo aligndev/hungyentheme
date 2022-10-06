@@ -201,6 +201,33 @@
   + .piotnetgrid-facet__field-sub-label{
     display: none;
 }
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .polyester-recycled-xlance-logo
+  + .piotnetgrid-facet__field-sub-label{
+    display: none;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .polyester-recycled-xlance-logo
+  + .piotnetgrid-facet__field-sub-label{
+    display: none;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .polyester-virgin-xlance-logo
+  + .piotnetgrid-facet__field-sub-label{
+    display: none;
+}
+
+
+
 
 
 #piotnetgrid

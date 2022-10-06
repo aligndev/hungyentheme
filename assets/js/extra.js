@@ -106,7 +106,7 @@ jQuery(document).ajaxComplete(function () {
   // hideEmptyChoose();
   addingCollectionClass();
   scrollTopFilter();
-  editingMenusize();
+  // editingMenusize();
 });
 
 // When the user scrolls the page, execute myFunction
