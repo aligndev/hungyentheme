@@ -147,7 +147,7 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .polyamide-recycled-digital-collection-logo
-  + .piotnetgrid-facet__field-sub-label::before {
+  + .piotnetgrid-facet__field-sub-label {
   display: none;
 }
 #piotnetgrid
@@ -155,7 +155,7 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .polyamide-virgin-digital-collection-logo
-  + .piotnetgrid-facet__field-sub-label::before {
+  + .piotnetgrid-facet__field-sub-label {
   display: none;
 }
 #piotnetgrid
@@ -163,7 +163,7 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .polyamide-virgin-shiny-digital-collection-logo
-  + .piotnetgrid-facet__field-sub-label::before {
+  + .piotnetgrid-facet__field-sub-label {
   display: none;
 }
 #piotnetgrid
@@ -171,7 +171,7 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .recycle-logo
-  + .piotnetgrid-facet__field-sub-label::before {
+  + .piotnetgrid-facet__field-sub-label {
   display: none;
 }
 
@@ -180,7 +180,7 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .shiny-logo
-  + .piotnetgrid-facet__field-sub-label::before {
+  + .piotnetgrid-facet__field-sub-label {
   display: none;
 }
 #piotnetgrid
@@ -188,8 +188,8 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .virgin-logo
-  + .piotnetgrid-facet__field-sub-label::before {
-  display: none;
+  + .piotnetgrid-facet__field-sub-label{
+    display: none;
 }
 
 #piotnetgrid
