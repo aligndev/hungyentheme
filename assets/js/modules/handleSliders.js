@@ -63,7 +63,7 @@ const handleSliders = () => {
       item.classList.contains("noloop") ? (loop = false) : (loop = true);
       let logoSwiper = new Swiper(container, {
         slidesPerView: "auto",
-        loop: loop,
+        loop: true,
         slidesPerView: 2,
         autoplay: {
           delay: 0,
@@ -85,6 +85,7 @@ const handleSliders = () => {
           nextEl: next,
           prevEl: prev,
         },
+        
       });
       
     });

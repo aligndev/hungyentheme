@@ -165,25 +165,25 @@
                         <?php the_field('home_page_partner_text') ?>
                     </p>
                 </div>
-                <div class="partner-logos">
-                    <div class="logoJs">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <?php
-                                $images = get_field('home_page_partner_logo');
-                                if ($images) : ?>
-                                    <?php foreach ($images as $image) : ?>
-                                        <div class=" partner-item swiper-slide">
-                                            <img src="<?php echo $image; ?>" />
-                                        </div>
-                                    <?php endforeach; ?>
-                                <?php endif;
-                                ?>
-                            </div>
+                <div class="partner-logos logoJs">
+                    <!-- <div class="logoJs"> -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php
+                            $images = get_field('home_page_partner_logo');
+                            if ($images) : ?>
+                                <?php foreach ($images as $image) : ?>
+                                    <div class=" partner-item swiper-slide">
+                                        <img src="<?php echo $image; ?>" />
+                                    </div>
+                                <?php endforeach; ?>
+                            <?php endif;
+                            ?>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>

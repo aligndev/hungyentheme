@@ -232,6 +232,9 @@ a {
       @include max(769px) {
         grid-template-columns: 1fr;
         min-height: auto;
+        .left-content-wrapper {
+          padding: 3rem;
+        }
         .right-content-wrapper  {
           grid-row: 1;
         }
