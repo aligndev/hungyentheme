@@ -127,6 +127,17 @@ a {
   .collection-inner {
     .menuCats {
       .collection-fabric__item {
+        width: 11.458vw;
+        height: 14vw;
+        transition: all 150ms ease-out;
+        cursor: pointer;
+        @include max(1440px) {
+          height: 20vw;
+        }
+        @include max(769px) {
+          //width: 16rem !important;
+          height: 40vw;;
+        }
         .collection-fabric__image {
           img {
             max-height: 60%;
@@ -167,9 +178,21 @@ a {
       img {
         object-fit: contain;
         max-height: 10rem;
-        width: 70%;
+        width: 85%;
       }
     }
+    // .header-menu-block {
+    //   .gspb_image {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-content: center;
+    //     img {
+    //       max-width: 90%;
+    //       max-height: 100px !important;
+    //       object-fit: contain;
+    //     }
+    //   }
+    // }
   }
 }
 

@@ -74,8 +74,8 @@
                         </a>
                     </div>
                 </div>
-
-                <div class="collection-logo logoJs">
+                <?php if (is_active_sidebar('header-menu-logo-wrapper')) dynamic_sidebar('header-menu-logo-wrapper');  ?>
+                <!-- <div class="collection-logo logoJs">
                     <div class="collection-row swiper-container">
                         <div class="swiper-wrapper">
                             <div class="collection-logo__item swiper-slide swiper-item">
@@ -112,7 +112,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

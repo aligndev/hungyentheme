@@ -991,6 +991,7 @@ body {
 }
 .content-config p {
   display: flex;
+  flex-direction: column;
 }
 .content-config p img {
   width: 100%;
@@ -4195,6 +4196,22 @@ a:hover {
   }
 }
 
+.collection-wrapper .collection-inner .menuCats .collection-fabric__item {
+  width: 11.458vw;
+  height: 14vw;
+  transition: all 150ms ease-out;
+  cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  .collection-wrapper .collection-inner .menuCats .collection-fabric__item {
+    height: 20vw;
+  }
+}
+@media screen and (max-width: 769px) {
+  .collection-wrapper .collection-inner .menuCats .collection-fabric__item {
+    height: 40vw;
+  }
+}
 .collection-wrapper .collection-inner .menuCats .collection-fabric__item .collection-fabric__image img {
   max-height: 60%;
   object-fit: contain;
@@ -4227,7 +4244,7 @@ a:hover {
   -o-object-fit: contain;
      object-fit: contain;
   max-height: 10rem;
-  width: 70%;
+  width: 85%;
 }
 
 .logoJs .swiper-wrapper {

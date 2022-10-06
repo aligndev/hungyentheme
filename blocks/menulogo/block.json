@@ -1,0 +1,14 @@
+{
+    "name": "acf/quote",
+    "title": "Menu Logo Block",
+    "description": "A custom menu logo block.",
+    "style": [ "file:./menuLogo.css" ],
+    "category": "formatting",
+    "icon": "",
+    "keywords": ["menu", "logo"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "menuLogo.php"
+    },
+    "align": "full"
+}

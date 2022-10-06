@@ -115,9 +115,29 @@ function alignvn_style()
 }
 add_action('wp_enqueue_scripts', 'alignvn_style');
 
+add_action('widgets_init', 'align_register_sidebars');
+function align_register_sidebars()
+{
+  register_sidebar(array(
+    'id' => 'header-menu-logo-wrapper',
+    'name' => __('Header Menu Logo Wrapper'),
+    'description' => __('This is where to change header menu Logo.', 'Align sidebar'),
+    'class' => 'header-menu-wrapper',
+    'before_widget' => '<div class="header-menu-block">',
+    'after_widget' => '</div>',
+  ));
+}
+
+// GUTENBERG BLOCKS //
+add_action('init', 'register_acf_blocks');
+function register_acf_blocks()
+{
+  register_block_type(__DIR__ . '/blocks/menulogo');
+}
+
+
 
 // Shortcode getting collection composizione
-
 function acf_composition_field()
 {
   if (have_rows('composizione')) :

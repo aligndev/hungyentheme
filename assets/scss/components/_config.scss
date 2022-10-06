@@ -51,6 +51,7 @@
   }
   p {
     display: flex;
+    flex-direction: column;
     img {
       width: 100%;
       -o-object-fit: contain;
