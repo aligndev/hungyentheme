@@ -1,4 +1,3 @@
-
 /* filter main  */
 #piotnetgrid
   .fillter-by-collection
@@ -78,8 +77,8 @@
   display: block;
   background: url(/wp-content/themes/alignvn/assets/images/polyester-icon.svg)
     no-repeat center;
-    margin-right: 2rem;
-    margin-left: 2rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   background-size: contain;
 }
 #piotnetgrid
@@ -92,11 +91,9 @@
   width: 5rem;
   height: 5rem;
   display: block;
-  background: url(/wp-content/uploads/2022/09/virgin-logo.png)
-
-    no-repeat;
-    margin-right: 2rem;
-    margin-left: 2rem;
+  background: url(/wp-content/uploads/2022/09/virgin-logo.png) no-repeat;
+  margin-right: 2rem;
+  margin-left: 2rem;
   background-size: contain;
 }
 #piotnetgrid
@@ -109,10 +106,9 @@
   width: 60px;
   height: 60px;
   display: block;
-  background: url(/wp-content/uploads/2022/09/virgin-logo-2.png)
-    no-repeat;
-    margin-right: 2rem;
-    margin-left: 2rem;
+  background: url(/wp-content/uploads/2022/09/virgin-logo-2.png) no-repeat;
+  margin-right: 2rem;
+  margin-left: 2rem;
   background-size: contain;
 }
 #piotnetgrid
@@ -125,10 +121,9 @@
   width: 5rem;
   height: 5rem;
   display: block;
-  background: url(/wp-content/uploads/2022/09/shiny-logo.svg)
-    no-repeat;
-    margin-right: 2rem;
-    margin-left: 2rem;
+  background: url(/wp-content/uploads/2022/09/shiny-logo.svg) no-repeat;
+  margin-right: 2rem;
+  margin-left: 2rem;
   background-size: contain;
 }
 #piotnetgrid
@@ -141,11 +136,60 @@
   width: 5rem;
   height: 5rem;
   display: block;
-  background: url(/wp-content/uploads/2022/09/Shiny-plus-logo.svg)
-    no-repeat;
-    margin-right: 2rem;
-    margin-left: 2rem;
+  background: url(/wp-content/uploads/2022/09/Shiny-plus-logo.svg) no-repeat;
+  margin-right: 2rem;
+  margin-left: 2rem;
   background-size: contain;
+}
+
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .polyamide-recycled-digital-collection-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  display: none;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .polyamide-virgin-digital-collection-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  display: none;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .polyamide-virgin-shiny-digital-collection-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  display: none;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .recycle-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  display: none;
+}
+
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .shiny-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  display: none;
+}
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .virgin-logo
+  + .piotnetgrid-facet__field-sub-label::before {
+  display: none;
 }
 
 #piotnetgrid
@@ -204,18 +248,20 @@
   .filter-by-property_wrapper
   .piotnetgrid-facet__field-subgroup
   .piotnetgrid-facet__field-sub.disable {
-    display: none;
+  display: none;
 }
 #piotnetgrid .filter-by-application_wrapper .piotnetgrid-facet__field-wrapper,
 #piotnetgrid .filter-by-property_wrapper .piotnetgrid-facet__field-wrapper {
-margin-top: 0;
+  margin-top: 0;
 }
 #piotnetgrid .piotnetgrid-facet-reset-button .piotnetgrid-button {
   background-color: transparent;
   color: #000;
   padding-left: 0;
 }
-#piotnetgrid .piotnetgrid-button--collapse-section.piotnetgrid-button i.fas.fa-filter:before {
+#piotnetgrid
+  .piotnetgrid-button--collapse-section.piotnetgrid-button
+  i.fas.fa-filter:before {
   background: url(/wp-content/uploads/2022/09/filter-logo.png) no-repeat;
   content: "";
   width: 2.5rem;
@@ -235,21 +281,20 @@ margin-top: 0;
   border: none;
 }
 
-
-
-
-
 @media screen and (max-width: 769px) {
   #piotnetgrid
-  .fillter-by-collection
-  .piotnetgrid-facet__field-subgroup--buttons
-  .piotnetgrid-facet__field-sub
-  .piotnetgrid-facet__field-sub-label {
+    .fillter-by-collection
+    .piotnetgrid-facet__field-subgroup--buttons
+    .piotnetgrid-facet__field-sub
+    .piotnetgrid-facet__field-sub-label {
     font-size: 1.8rem;
     justify-content: space-evenly;
   }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   z-index: 1;
 }
