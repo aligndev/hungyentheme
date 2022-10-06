@@ -14,6 +14,7 @@
 }
 .materials-block .material-block .materials-col {
   width: 50%;
+  border: 1px solid rgba(0, 45, 116, 0.2);
 }
 .tabs-content__block .tabs-info .row:nth-child(2) {
   flex-direction: row-reverse;
