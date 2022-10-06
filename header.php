@@ -69,7 +69,7 @@
                         </a>
                     </div>
                     <div class="collection-cta__col">
-                        <a href="#" class="btn btn-green collection-cta__text">
+                        <a href="/download-fabric-collections/" class="btn btn-green collection-cta__text">
                             Download Our Collection Books
                         </a>
                     </div>

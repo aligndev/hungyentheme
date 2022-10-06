@@ -17,16 +17,18 @@
               $download_button_text = get_sub_field('download_item_button_text');
               $download_link = get_sub_field('download_item_link_pdf');
             ?>
-              <div class="download-item">
-                <div class="download-image download-color">
-                  <div class="rto-box">
+              <a href="<?php echo $download_link; ?>">
+                <div class="download-item">
+                  <div class="download-image download-color">
+                    <!-- <div class="rto-box"> -->
                     <img src="<?php echo $download_poster; ?>" alt="">
+                    <!-- </div> -->
                   </div>
+                  <a href="<?php echo $download_link; ?>" class="download-button body">
+                    <?php echo $download_button_text; ?>
+                  </a>
                 </div>
-                <a href="<?php echo $download_link; ?>" class="download-button body">
-                  <?php echo $download_button_text; ?>
-                </a>
-              </div>
+              </a>
             <?php endwhile; ?>
           </div>
         <?php endif; ?>

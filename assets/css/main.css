@@ -3009,18 +3009,12 @@ body {
     padding-bottom: 2.5rem;
   }
 }
-.download-image .rto-box {
-  padding-top: 158.5365853659%;
-  overflow: hidden;
-}
 .download-image img {
   transition: transform 0.4s cubic-bezier(0.61, 1, 0.88, 1);
+  width: 100%;
 }
 .download-image:hover img {
   transform: scale(1.1) rotate(4deg);
-}
-.download-color .rto-box {
-  padding-top: 196.7391304348%;
 }
 .download-button {
   display: block;
@@ -4591,6 +4585,7 @@ a:hover {
 .job-card-list .piotnetgrid-card {
   border-radius: 8px;
   padding: 3rem 6rem;
+  border: 1px solid #000;
 }
 .job-card-list .piotnetgrid-card .job-card-wrapper {
   padding: 0;
