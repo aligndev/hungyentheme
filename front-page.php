@@ -57,13 +57,14 @@
             </div>
         </section>
     <?php endif; ?>
-
+    <!-- 
     <section class="slider mt">
         <div class="container">
             <h2 class="h2 col-6 slider-heading">
                 <?php the_field('home_page_slider_title'); ?>
             </h2>
             <?php if (have_rows('home_page_slide')) : ?>
+
                 <div class="slider-inner row">
                     <div class="slider-wrapper col-5">
                         <div class="reviewSlider slider-text">
@@ -77,12 +78,15 @@
                                     <div class="swiper-slide slider-slide">
                                         <div class="swiper-slide-container">
                                             <h3 class="h3 slider-title text-uppercase">
-                                                <?php echo $home_page_slider_title ?>
+                                                <?php //echo $home_page_slider_title 
+                                                ?>
                                             </h3>
                                             <p class="body slider-desc">
-                                                <?php echo $home_page_slider_text; ?>
+                                                <?php //echo $home_page_slider_text; 
+                                                ?>
                                             </p>
-                                            <a href="<?php echo $home_page_slider_link; ?>" class="btn btn-green col-7">
+                                            <a href="<?php //echo $home_page_slider_link; 
+                                                        ?>" class="btn btn-green col-7">
                                                 Find out more
                                             </a>
                                         </div>
@@ -112,6 +116,41 @@
 
                 </div>
             <?php endif; ?>
+        </div>
+    </section> -->
+    <section class="homepage-sustainability-wrapper mt ">
+        <div class="container">
+            <h2 class="title">
+                <?php the_field('home_page_slider_title'); ?>
+            </h2>
+            <div class="content-wrapper panel-type-content">
+                <?php if (have_rows('home_page_slide')) : ?>
+                    <?php while (have_rows('home_page_slide')) : the_row();
+                        $home_page_slider_title = get_sub_field('home_page_slider_title');
+                        $home_page_slider_text = get_sub_field('home_page_slider_text');
+                        $home_page_slider_link = get_sub_field('home_page_slider_link');
+                        $home_page_slider_image = get_sub_field('home_page_slider_image');
+                    ?>
+                        <div class="item-wrapper">
+                            <div class="left-content-wrapper">
+                                <h3 class="h3 slider-title text-uppercase">
+                                    <?php echo $home_page_slider_title ?>
+                                </h3>
+                                <p class="body slider-desc">
+                                    <?php echo $home_page_slider_text; ?>
+                                </p>
+                                <a href="<?php echo $home_page_slider_link; ?>" class="btn btn-green col-7">
+                                    Find out more
+                                </a>
+                            </div>
+
+                            <div class="right-content-wrapper">
+                                <img src=" <?php echo $home_page_slider_image; ?>" alt="" />
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+            </div>
         </div>
     </section>
 

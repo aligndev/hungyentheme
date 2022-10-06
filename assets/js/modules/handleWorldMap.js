@@ -72,13 +72,13 @@ const handleWorldMap = () => {
       name.classList.add("north-america");
       country.parentNode.append(name);
     }
-    if (country.id === "Nicaragua") {
-      name.setAttribute("x", cx - 40);
-      name.setAttribute("y", cy + 5);
-      name.innerHTML = country.id;
-      name.classList.add("north-america");
-      country.parentNode.append(name);
-    }
+    // if (country.id === "Nicaragua") {
+    //   name.setAttribute("x", cx - 40);
+    //   name.setAttribute("y", cy + 5);
+    //   name.innerHTML = country.id;
+    //   name.classList.add("north-america");
+    //   country.parentNode.append(name);
+    // }
     if (country.id === "Colombia") {
       name.setAttribute("x", cx - 10);
       name.setAttribute("y", cy + 8);
@@ -88,7 +88,7 @@ const handleWorldMap = () => {
     }
     if (
       country.id === "Dominican Republic" ||
-      country.id === "Guatemala" ||
+      //country.id === "Guatemala" ||
       country.id === "Venezuela"
     ) {
       name.setAttribute("x", cx);
@@ -180,6 +180,13 @@ const handleWorldMap = () => {
       name.classList.add("africa");
       country.parentNode.append(name);
     }
+    if (country.id === "Mauritius") {
+      name.setAttribute("x", cx);
+      name.setAttribute("y", cy + 5);
+      name.innerHTML = country.id;
+      name.classList.add("africa");
+      country.parentNode.append(name);
+    }
     if (country.id === "Tunisia") {
       name.setAttribute("x", cx);
       name.setAttribute("y", cy);
@@ -232,13 +239,22 @@ const handleWorldMap = () => {
       country.parentNode.append(name);
     }
     if (
-      country.id === "Bangladesh" ||
       country.id === "UAE" ||
-      country.id === "Pakistan" ||
-      country.id === "Jordan"
+      country.id === "Pakistan" 
+      // country.id === "Jordan"
     ) {
       name.setAttribute("x", cx);
       name.setAttribute("y", cy);
+      name.innerHTML = country.id;
+      name.classList.add("india");
+      country.parentNode.append(name);
+    }
+    if (
+      country.id === "Bangladesh" 
+      // country.id === "Jordan"
+    ) {
+      name.setAttribute("x", cx);
+      name.setAttribute("y", cy - 15);
       name.innerHTML = country.id;
       name.classList.add("india");
       country.parentNode.append(name);
@@ -254,6 +270,13 @@ const handleWorldMap = () => {
     if (country.id === "China") {
       name.setAttribute("x", cx - 15);
       name.setAttribute("y", cy + 15);
+      name.innerHTML = country.id;
+      name.classList.add("china");
+      country.parentNode.append(name);
+    }
+    if (country.id === "Taiwan") {
+      name.setAttribute("x", cx + 10);
+      name.setAttribute("y", cy + 0);
       name.innerHTML = country.id;
       name.classList.add("china");
       country.parentNode.append(name);
@@ -594,10 +617,10 @@ const handleWorldMap = () => {
     .addEventListener("mouseleave", function () {
       const markerBlue = document.querySelectorAll("image.marker-blue");
       const activeTitleNA = document.querySelectorAll(
-        "text.north-america, text.asian, text.africa, text.india,text.china, text.europe ",
+        "text.north-america, text.asian, text.africa, text.india, text.china, text.europe ",
       );
       const activeLocationsNA = document.querySelectorAll(
-        "path.north-america, path.asian, path.africa, path.india, path.china,path.europe",
+        "path.north-america, path.asian, path.africa, path.india, path.china, path.europe",
       );
       markerBlue.forEach((marker) => {
         marker.classList.remove("active");

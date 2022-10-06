@@ -5,18 +5,25 @@
 
     <div class="collectionPage--top">
       <div class="container">
-        <div class="collectionPage-heading">
-          <img src="<?php echo get_field('collection_logo', $term); ?>" class="collectionPage-logo" />
-          <h1 class="h1 collectionPage-title">
-            <?php echo $term->name;  ?>
-          </h1>
+        <div class="collectionPage-heading-wrapper">
+          <div class="collectionPage-heading">
+            <img src="<?php echo get_field('collection_logo', $term); ?>" class="collectionPage-logo" />
+            <h1 class="h1 collectionPage-title">
+              <?php echo $term->name;  ?>
+            </h1>
+          </div>
+          <?php $description = get_field("collection_description", $term);
+          if ($description) { ?>
+            <h2 class="h2 collectionPage-desc">
+              <?php echo get_field("collection_description", $term); ?>
+            </h2>
+          <?php } ?>
+          <p class="body collectionPage-sub">
+            <?php echo get_field("collection_subtitle", $term); ?>
+          </p>
+
         </div>
-        <h2 class="h2 collectionPage-desc">
-          <?php echo get_field("collection_description", $term); ?>
-        </h2>
-        <p class="body collectionPage-sub">
-          <?php echo get_field("collection_subtitle", $term); ?>
-        </p>
+
       </div>
       <div class="collectionPage-hero fadeJs">
         <div class="swiper-container">

@@ -5,14 +5,14 @@
 
 <body data-barba="wrapper">
   <main data-barba="container" data-barba-namespace="contact">
-  <section class="download">
+    <section class="download">
       <div class="container">
         <h1 class="download-title h1">
-          <?php the_field('download_title')?>
+          <?php the_field('download_title') ?>
         </h1>
-        <?php if(have_rows('download_item')) : ?>
+        <?php if (have_rows('download_item')) : ?>
           <div class="download-inner">
-            <?php while(have_rows('download_item')) : the_row();
+            <?php while (have_rows('download_item')) : the_row();
               $download_poster = get_sub_field('download_item_poster');
               $download_button_text = get_sub_field('download_item_button_text');
               $download_link = get_sub_field('download_item_link_pdf');
@@ -31,20 +31,28 @@
           </div>
         <?php endif; ?>
       </div>
-      <?php if(have_rows('download_item')) : ?>
-        <?php while(have_rows('download_item')) : the_row();
+      <?php if (have_rows('download_item')) : ?>
+        <?php while (have_rows('download_item')) : the_row();
           $download_type = get_sub_field('download_item_type');
           $download_link = get_sub_field('download_item_link_pdf');
         ?>
-          <div class="flipbookContainer flip-book-container" id="<?php echo $download_type ?>"
-          data-src="<?php echo $download_link ?>">
-          <a class="download-close">
-          </a>
-      </div>
+          <div class="flipbookContainer flip-book-container" id="<?php echo $download_type ?>" data-src="<?php echo $download_link ?>">
+            <a class="download-close">
+            </a>
+          </div>
         <?php endwhile; ?>
       <?php endif; ?>
     </section>
+    <?php
+    // if (have_posts()) : while (have_posts()) : the_post();
+    //     the_content();
+    //   endwhile;
+    // endif; 
+    ?>
+
+
   </main>
+
   <?php get_footer(); ?>
 </body>
 

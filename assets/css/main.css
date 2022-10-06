@@ -3210,7 +3210,9 @@ body {
   right: 7.813vw;
   z-index: 10;
   color: #ffffff;
-  text-shadow: 3px 0px 7px rgba(0, 0, 0, 0.8), -3px 0px 7px rgba(0, 0, 0, 0.8), 0px 4px 7px rgba(0, 0, 0, 0.8);
+  background-color: #000;
+  padding: 5px 15px;
+  border-radius: 20px;
 }
 @media screen and (max-width: 768px) {
   .who-title {
@@ -4088,9 +4090,8 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(1.4rem, 1.4rem + (1vw - 0.769rem) * 1.9569, 2.4rem);
+  font-size: clamp(1.4rem, 1.4rem + (1vw - 0.769rem) * 0.8396, 2.4rem);
   line-height: 120%;
-  font-weight: 800;
 }
 
 p {
@@ -4225,7 +4226,7 @@ a:hover {
 .collection-wrapper .collection-inner .collection-logo img {
   -o-object-fit: contain;
      object-fit: contain;
-  max-height: 9rem;
+  max-height: 8rem;
   width: 70%;
 }
 
@@ -4250,6 +4251,39 @@ a:hover {
   }
 }
 
+.homepage-sustainability-wrapper .title {
+  text-transform: uppercase;
+  margin: 0 auto 12.5rem;
+}
+
+.panel-type-content.content-wrapper {
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 1280px) {
+  .panel-type-content.content-wrapper {
+    width: 100%;
+  }
+}
+.panel-type-content.content-wrapper .item-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid;
+  min-height: 45rem;
+}
+.panel-type-content.content-wrapper .item-wrapper .left-content-wrapper {
+  padding: 5rem;
+}
+.panel-type-content.content-wrapper .item-wrapper .right-content-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.panel-type-content.content-wrapper .item-wrapper:nth-child(even) .right-content-wrapper {
+  grid-row: 1;
+}
+
 .collectionPage .collectionPage-text {
   position: absolute;
   top: 20%;
@@ -4262,6 +4296,14 @@ a:hover {
   margin-bottom: 3rem;
   color: #fff;
   font-weight: 600;
+}
+.collectionPage .collectionPage--top .collectionPage-heading-wrapper {
+  width: 60vw;
+}
+@media screen and (max-width: 769px) {
+  .collectionPage .collectionPage--top .collectionPage-heading-wrapper {
+    width: 100%;
+  }
 }
 
 .collectionPage-category .collectionPage-filter .collectionPage-feature .featureList .feature {
@@ -4337,6 +4379,7 @@ a:hover {
 }
 .collectionPage-category .collectionPage-list {
   margin-right: 0;
+  /* collection product section  */
 }
 .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .collectionPage-term {
   display: none;
@@ -4344,26 +4387,53 @@ a:hover {
 .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .collectionPage-fabric__title a:hover {
   color: #000;
 }
-.collectionPage-category .collectionPage-list .polyamide-recycled-collection .collectionPage-fabric__title {
+.collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-recycled-collection .collectionPage-fabric__title {
   color: #76b82a;
 }
-.collectionPage-category .collectionPage-list .polyester-recycled-collection .collectionPage-fabric__title {
+.collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyester-recycled-collection .collectionPage-fabric__title {
   color: #00983a;
 }
-.collectionPage-category .collectionPage-list .polyamide-virgin-collection .collectionPage-fabric__title {
+.collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-virgin-collection .collectionPage-fabric__title {
   color: #009fdd;
 }
-.collectionPage-category .collectionPage-list .polyester-virgin-collection .collectionPage-fabric__title {
+.collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyester-virgin-collection .collectionPage-fabric__title {
   color: #e84f3e;
 }
-.collectionPage-category .collectionPage-list .polyamide-recycled-shiny-collection .collectionPage-fabric__title {
+.collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-recycled-shiny-collection .collectionPage-fabric__title {
   color: #69dbf4;
 }
-.collectionPage-category .collectionPage-list .polyester-recycled-shiny-collection .collectionPage-fabric__title {
+.collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyester-recycled-shiny-collection .collectionPage-fabric__title {
   color: #ef7fb0;
 }
-.collectionPage-category .collectionPage-list .xlance-collection .collectionPage-fabric__title {
+.collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .xlance-collection .collectionPage-fabric__title {
   color: #e3d100;
+}
+.collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card {
+  border: 1px solid #000;
+}
+.collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .piotnetgrid {
+  height: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__image {
+  max-height: 30rem;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__image .piotnetgrid-image__content {
+  height: 100%;
+}
+.collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__image .piotnetgrid-image__content a {
+  display: grid;
+  height: 100%;
+}
+.collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__image .piotnetgrid-image__content a .piotnetgrid-image__tag {
+  height: 100%;
+  width: 100%;
+}
+.collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__bottom {
+  max-height: 90px;
 }
 
 .collectionExtra {
@@ -4405,6 +4475,10 @@ a:hover {
 .materials-block .material-block .materials-image:hover img,
 .materials-block .material-block .materials-image:hover video {
   transform: scale(1.2);
+}
+
+.video-wrapper .process-video {
+  height: 95%;
 }
 
 .desktop-hidden {
@@ -4512,4 +4586,31 @@ a:hover {
 .catalog-list .catalog-list-wrap .collectionPage-fabric {
   margin: 0;
   width: 100%;
+}
+
+.job-card-list .piotnetgrid-card {
+  border-radius: 8px;
+  padding: 3rem 6rem;
+}
+.job-card-list .piotnetgrid-card .job-card-wrapper {
+  padding: 0;
+}
+.job-card-list .piotnetgrid-card .job-card-wrapper .piotnetgrid-column {
+  padding: 0;
+}
+.job-card-list .piotnetgrid-card .job-card-wrapper .piotnetgrid-column .piotnetgrid-column__inner * {
+  margin-bottom: 1rem;
+}
+.job-card-list .piotnetgrid-card .job-card-wrapper .piotnetgrid-column .piotnetgrid-column__inner .piotnetgrid-section .piotnetgrid-column__inner {
+  display: flex;
+  flex-direction: row;
+}
+.job-card-list .piotnetgrid-card .job-card-wrapper .piotnetgrid-column .piotnetgrid-column__inner .piotnetgrid-section .piotnetgrid-column__inner * {
+  width: auto;
+}
+.job-card-list .piotnetgrid-card .job-card-wrapper .piotnetgrid-column .piotnetgrid-column__inner .piotnetgrid-section .piotnetgrid-column__inner *.piotnetgrid-icon__item {
+  margin-right: 1rem;
+}
+.job-card-list .piotnetgrid-card .job-card-wrapper .piotnetgrid-column .piotnetgrid-column__inner h5 {
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

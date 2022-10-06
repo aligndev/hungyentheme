@@ -112,7 +112,10 @@
     right: 7.813vw;
     z-index: 10;
     color: $white;
-    text-shadow: 3px 0px 7px rgb(0 0 0 / 80%), -3px 0px 7px rgb(0 0 0 / 80%), 0px 4px 7px rgb(0 0 0 / 80%);
+    // text-shadow: 3px 0px 7px rgb(0 0 0 / 80%), -3px 0px 7px rgb(0 0 0 / 80%), 0px 4px 7px rgb(0 0 0 / 80%);
+    background-color: #000;
+    padding: 5px 15px;
+    border-radius: 20px;
   }
   &-title {
     @include max(768px) {

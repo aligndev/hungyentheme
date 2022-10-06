@@ -93,9 +93,10 @@
                             <div class="collection-logo__item swiper-slide swiper-item">
                                 <img src="<?php echo ASSETS . '/images/partner-logo-14.svg'; ?>" alt="" class="collection-logo__image" />
                             </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="<?php echo ASSETS . '/images/partner-logo-12.svg'; ?>" alt="" class="collection-logo__image" />
-                            </div>
+                            <!-- <div class="collection-logo__item swiper-slide swiper-item">
+                                <img src="<?php //echo ASSETS . '/images/partner-logo-12.svg'; 
+                                            ?>" alt="" class="collection-logo__image" />
+                            </div> -->
                             <div class="collection-logo__item swiper-slide swiper-item">
                                 <img src="<?php echo ASSETS . '/images/partner-logo-15.svg'; ?>" alt="" class="collection-logo__image" />
                             </div>
@@ -126,6 +127,10 @@
                     <ul class="nav-bar__inner">
                         <?php
                         ?>
+                        <li class="nav-bar__item">
+                            <a href="<?php echo esc_url(get_home_url());
+                                        ?>" class="nav-link nav-text">Home</a>
+                        </li>
                         <li class="nav-bar__item">
                             <a href="<?php echo esc_url(get_page_link('9'));
                                         ?>" class="nav-link nav-text">Who we are</a>

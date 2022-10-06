@@ -75,7 +75,7 @@ const handlePopup = () => {
       if (getUrlVideo) {
         swiperOutter.innerHTML += `<div class="swiper-slide materials-slide">
               <div class="rto-box">
-                <video controls playinline muted loop>
+                <video controls playinline muted loop autoplay>
                   <source src="${getUrlVideo}" type="video/mp4">
                 </video>
               </div>

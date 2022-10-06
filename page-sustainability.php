@@ -36,9 +36,12 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <video autoplay playinlines muted loop class="process-video">
-                                        <source src="<?php echo $process_video ?>" type="video/mp4" />
-                                    </video>
+                                    <div class="video-wrapper">
+                                        <video autoplay playinlines muted loop class="process-video">
+                                            <source src="<?php echo $process_video ?>" type="video/mp4" />
+                                        </video>
+                                    </div>
+
                                     <ul class="process-icon desktop-hidden">
                                         <?php foreach ($process_icons as $process_icon) : ?>
                                             <li>
@@ -139,48 +142,49 @@
                                 $materials_core_year = get_sub_field('materials_core_year');
                                 $materials_core_description = get_sub_field('materials_core_description');
                                 $materials_core_sub = get_sub_field('materials_core_sub');
+                                $materials_core_for_video = get_sub_field("materials_core_popup_for_video");
                                 $materials_core_image = get_sub_field('materials_core_image');
                                 $materials_core_video = get_sub_field("materials_core_video");
                                 $materials_core_logos = get_sub_field('materials_core_logos');
-                                $materials_core_reverse = get_sub_field('materials_core_reverse');
-                                $materials_core_for_image = get_sub_field("materials_core_popup_image");
-                                $materials_core_for_video = get_sub_field("materials_core_popup_video");
+                                // $materials_core_reverse = get_sub_field('materials_core_reverse');
+                                // $materials_core_for_image = get_sub_field("materials_core_popup_image");
+
                                 $materials_cover_link_text = get_sub_field("materials_core_link_text");
                                 $materials_cover_link = get_sub_field("materials_core_link");
                         ?>
-                                <div class="material-block <?php if ($materials_core_reverse) {
-                                                                echo 'material-rev ';
-                                                            }
-                                                            if ($materials_core_for_image || $materials_core_for_video) {
-                                                                echo 'material-popup';
-                                                            } ?>" <?php if ($materials_core_for_image) {
-                                                                        echo 'data-url-image = " ';
-                                                                        foreach ($materials_core_for_image as $key => $image) {
-                                                                            if ($key != 0) {
-                                                                                echo ",";
-                                                                            };
-                                                                            echo  $image;
-                                                                        }
-                                                                        echo '"';
-                                                                    } else if ($materials_core_for_video) {
-                                                                        echo 'data-url-video = " ' . $materials_core_for_video . ' " ';
-                                                                    } ?>>
+                                <div class="material-block <?php
+                                                            // if ($materials_core_reverse) {
+                                                            //                                 echo 'material-rev ';
+                                                            //                             }
+                                                            // if ($materials_core_for_image || $materials_core_for_video) {
+                                                            //     //echo 'material-popup';
+                                                            // } 
+                                                            ?>" <?php //if ($materials_core_for_image) {
+                                                                //             echo 'data-url-image = " ';
+                                                                //             foreach ($materials_core_for_image as $key => $image) {
+                                                                //                 if ($key != 0) {
+                                                                //                     echo ",";
+                                                                //                 };
+                                                                //                 echo  $image;
+                                                                //             }
+                                                                //             echo '"';
+                                                                //         } else if ($materials_core_for_video) {
+                                                                //             echo 'data-url-video = " ' . $materials_core_for_video . ' " ';
+                                                                //         } 
+                                                                ?>>
                                     <?php
 
-                                    if ($materials_core_video) {
-                                        echo '<div class="materials-col materials-image">
+                                    if ($materials_core_for_video) {
+                                        echo '<div class="materials-col materials-image material-popup" data-url-video = " ' . $materials_core_video . ' ">
                                                 <video autoplay playinlines loop muted>
                                                   <source src=" ' . $materials_core_video . ' " type="video/mp4" >
                                                 </video>
                                               </div>';
-                                    } elseif ($materials_core_video == 'null'); {
-                                        if (!empty($materials_core_image)) : ?>
-                                            <div class="materials-col materials-image">
-                                                <img src="<?php echo $materials_core_image['url'] ?>" alt="" />
-                                            </div>
-                                    <?php endif;
-                                    }
-                                    ?>
+                                    } else { ?>
+                                        <div class="materials-col materials-image material-popup" data-url-image="<?php echo $materials_core_image['url'] ?>">
+                                            <img src="<?php echo $materials_core_image['url'] ?>" alt="" />
+                                        </div>
+                                    <?php } ?>
                                     <div class="materials-col materials-text materials-border">
                                         <h2 class="materials-title h2"><?php echo $materials_core_year ?></h2>
                                         <p class="materials-sub h5">
@@ -211,7 +215,7 @@
                                         <div class="materials-desc content-config">
                                             <?php echo $materials_core_sub ?>
                                         </div>
-                                        <a class="materials-link" href="<?php echo $materials_cover_link ?> ">
+                                        <a onclick="event.preventDefault();" class="materials-link material-popup" data-url-video="<?php echo $materials_cover_link; ?>" href="<?php echo $materials_cover_link ?> ">
                                             <?php echo $materials_cover_link_text ?>
                                         </a>
                                     </div>
@@ -293,7 +297,38 @@
                         <?php the_field('corporate_social_responsibility_heading'); ?>
                     </h2>
 
-                    <div class="slider tabs-content__slider">
+                    <div class="content-wrapper panel-type-content">
+                        <?php if (have_rows('corporate_social_responsibility_slider')) : ?>
+                            <?php while (have_rows('corporate_social_responsibility_slider')) : the_row();
+                                $corporate_social_responsibility_slider_title = get_sub_field('corporate_social_responsibility_slider_title');
+                                $corporate_social_responsibility_slider_description = get_sub_field('corporate_social_responsibility_slider_description');
+                                $corporate_social_responsibility_slider_image = get_sub_field('corporate_social_responsibility_slider_image');
+                                $corporate_social_responsibility_link = get_sub_field('corporate_social_responsibility_link');
+
+                            ?>
+                                <div class="item-wrapper">
+                                    <div class="left-content-wrapper">
+                                        <h3 class="h3 slider-title text-uppercase">
+                                            <?php echo $corporate_social_responsibility_slider_title; ?>
+                                        </h3>
+                                        <p class="body slider-desc">
+                                            <?php echo $corporate_social_responsibility_slider_description; ?>
+                                        </p>
+                                        <?php if ($corporate_social_responsibility_link) : ?>
+                                            <a href="<?php echo $corporate_social_responsibility_link; ?>" class="btn btn-green col-7">
+                                                Find out more
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
+
+                                    <div class="right-content-wrapper">
+                                        <img src="<?php echo $corporate_social_responsibility_slider_image['url']; ?>" alt="" />
+                                    </div>
+                                </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
+                    </div>
+                    <!-- <div class="slider tabs-content__slider">
                         <?php if (have_rows('corporate_social_responsibility_slider')) : ?>
                             <div class="slider-inner row">
                                 <div class="slider-wrapper col-5">
@@ -306,15 +341,15 @@
                                                 <div class="swiper-slide slider-slide">
                                                     <div class="swiper-slide-container">
                                                         <h3 class="h3 slider-title text-uppercase">
-                                                            <?php echo $corporate_social_responsibility_slider_title; ?>
+                                                            <?php //echo $corporate_social_responsibility_slider_title; 
+                                                            ?>
                                                         </h3>
                                                         <p class="body slider-desc">
-                                                            <?php echo $corporate_social_responsibility_slider_description; ?>
+                                                            <?php //echo $corporate_social_responsibility_slider_description; 
+                                                            ?>
                                                         </p>
 
-                                                        <!-- <a href="#" class="btn btn-green col-7">
-                                                            Find out more
-                                                        </a> -->
+ 
                                                     </div>
                                                 </div>
                                             <?php endwhile; ?>
@@ -329,7 +364,8 @@
                                         ?>
                                             <div class="swiper-slide slider-slide">
                                                 <div class="rto-box">
-                                                    <img src="<?php echo $corporate_social_responsibility_slider_image['url']; ?>" alt="" />
+                                                    <img src="<?php //echo $corporate_social_responsibility_slider_image['url']; 
+                                                                ?>" alt="" />
                                                 </div>
                                             </div>
                                         <?php endwhile; ?>
@@ -340,7 +376,7 @@
                                 <div class="swiper-button-prev reviewSlider-button-prev"></div>
                             </div>
                         <?php endif; ?>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
