@@ -64,9 +64,15 @@ function addingCollectionClass () {
   if(collectionGrid) {
     collectionGrid.forEach((n)=>{
       let string = n.querySelector(".collectionPage-term").innerHTML
-      let collectValues = string.split(" ");
-      let collectValue = collectValues[0];
-      n.classList.add(collectValue);
+      let collectValues = string.split(" ").filter(element => element);
+      // console.log(collectValues);
+      collectValues.forEach((x)=>{
+        n.classList.add(x);
+        //  console.log(n.classList);
+        // console.log(x);
+      })
+      // let collectValue = collectValues[0];
+      // n.classList.add(collectValue);
     })
   }
 }

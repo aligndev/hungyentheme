@@ -213,7 +213,7 @@
   .fillter-by-collection
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
-  .polyester-recycled-xlance-logo
+  .polyester-virgin-xlance-logo
   + .piotnetgrid-facet__field-sub-label{
     display: none;
 }
@@ -221,7 +221,7 @@
   .fillter-by-collection
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
-  .polyester-virgin-xlance
+  .xlance-logo
   + .piotnetgrid-facet__field-sub-label{
     display: none;
 }
