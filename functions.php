@@ -157,7 +157,7 @@ add_shortcode('acf-composition', 'acf_composition_field');
 
 function get_collection_terms()
 {
-  $terms = get_the_terms($post->ID, 'collection', array('order' => 'DESC'));
+  $terms = get_the_terms($post->ID, 'collection', array('orderby' => 'date', 'order' => 'DESC'));
   // var_dump($terms);
   // echo '<div class="';
   foreach ($terms as $term) {
