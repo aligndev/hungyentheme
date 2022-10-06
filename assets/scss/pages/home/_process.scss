@@ -54,8 +54,10 @@
     }
   }
   .col-8 {
-    padding: 6.51vw 0;
-    min-height: clamp(60rem, calc(60rem + ((1vw - 0.77rem) * 11.7647)), 70rem);
+    padding: 4.51vw 0;
+    min-height: clamp(50rem, calc(50rem + ((1vw - 0.76rem) * 8.3333)), 60rem);
+    // min-height: clamp(60rem, calc(60rem + ((1vw - 0.77rem) * 11.7647)), 70rem);
+    
     @include max(769px) {
       padding: 2rem 0;
       min-height: 20rem;

@@ -32,9 +32,10 @@
     text-align: center;
     color: $white;
     background-color: $black;
-    height: 24rem;
+    // height: 24rem;
     align-items: center;
     display: flex;
+    height: 12vw;
     &:not(:last-child) {
       margin-right: 4.8rem;
     }

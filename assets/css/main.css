@@ -1425,8 +1425,8 @@ body {
   }
 }
 .process .col-8 {
-  padding: 6.51vw 0;
-  min-height: clamp(60rem, 60rem + (1vw - 0.77rem) * 11.7647, 70rem);
+  padding: 4.51vw 0;
+  min-height: clamp(50rem, 50rem + (1vw - 0.76rem) * 8.3333, 60rem);
 }
 @media screen and (max-width: 769px) {
   .process .col-8 {
@@ -1723,9 +1723,9 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #000000;
-  height: 24rem;
   align-items: center;
   display: flex;
+  height: 12vw;
 }
 .tabs-item:not(:last-child) {
   margin-right: 4.8rem;
@@ -4487,10 +4487,6 @@ a:hover {
 .materials-block .material-block .materials-image:hover img,
 .materials-block .material-block .materials-image:hover video {
   transform: scale(1.2);
-}
-
-.video-wrapper .process-video {
-  height: 95%;
 }
 
 .desktop-hidden {
