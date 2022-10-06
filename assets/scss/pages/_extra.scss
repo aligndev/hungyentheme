@@ -166,7 +166,7 @@ a {
 
       img {
         object-fit: contain;
-        max-height: 8rem;
+        max-height: 10rem;
         width: 70%;
       }
     }
@@ -203,7 +203,6 @@ a {
   }
 }
 .panel-type-content {
-
   &.content-wrapper {
     width: 80%;
     margin: auto;
@@ -227,6 +226,13 @@ a {
       }
       &:nth-child(even) {
         .right-content-wrapper {
+          grid-row: 1;
+        }
+      }
+      @include max(769px) {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        .right-content-wrapper  {
           grid-row: 1;
         }
       }
@@ -428,8 +434,6 @@ a {
     }
   }
 }
-
-
 
 
 //xLance Collection

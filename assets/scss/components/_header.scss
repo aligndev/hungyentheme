@@ -6,6 +6,10 @@
   z-index: 10;
   border-bottom: 1px solid $dark-blue;
   background-color: $black;
+  height: 11rem;
+  @include max(769px) {
+    height: 9rem;
+  }
 }
 .nav-inner {
   padding: 2.4rem 7.813vw;
