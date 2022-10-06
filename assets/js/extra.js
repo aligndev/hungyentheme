@@ -68,11 +68,7 @@ function addingCollectionClass () {
       // console.log(collectValues);
       collectValues.forEach((x)=>{
         n.classList.add(x);
-        //  console.log(n.classList);
-        // console.log(x);
       })
-      // let collectValue = collectValues[0];
-      // n.classList.add(collectValue);
     })
   }
 }
