@@ -7,6 +7,7 @@
 }
 #piotnetgrid .fillter-by-collection .piotnetgrid-facet__field-subgroup {
   width: 100%;
+  margin: 0;
 }
 #piotnetgrid
   .fillter-by-collection
@@ -16,6 +17,7 @@
   align-items: center;
   transition: all 150ms ease-out;
   width: 100%;
+  padding: 0;
 }
 
 #piotnetgrid
@@ -191,6 +193,15 @@
   + .piotnetgrid-facet__field-sub-label{
     display: none;
 }
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .digital-collection-logo
+  + .piotnetgrid-facet__field-sub-label{
+    display: none;
+}
+
 
 #piotnetgrid
   .filter-by-application_wrapper
