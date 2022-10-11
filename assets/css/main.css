@@ -4523,34 +4523,34 @@ a:hover {
   padding-top: 7.5rem;
 }
 
-.xlance-info-section .gspb_container .gspb_container .gspb_container {
+.xlance-info-section .gspb_container .gspb_container {
   padding-top: 12rem;
   padding-bottom: 12rem;
 }
-.xlance-info-section .gspb_container .gspb_row {
+.xlance-info-section .gspb_row {
   gap: 5rem;
   flex-direction: row;
   flex-wrap: inherit;
 }
 @media screen and (max-width: 769px) {
-  .xlance-info-section .gspb_container .gspb_row {
+  .xlance-info-section .gspb_row {
     flex-wrap: wrap;
   }
 }
-.xlance-info-section .gspb_container .gspb_row .gspb_row__col--6 * {
+.xlance-info-section .gspb_row .gspb_row__col--6 * {
   margin-top: 3rem;
 }
-.xlance-info-section .gspb_container .gspb_row .gspb_row__col--6 *:first-child {
+.xlance-info-section .gspb_row .gspb_row__col--6 *:first-child {
   margin-top: 0;
 }
-.xlance-info-section .gspb_container .gspb_row .gspb_row__col--6 ul li {
+.xlance-info-section .gspb_row .gspb_row__col--6 ul li {
   margin-top: 0.5rem;
 }
-.xlance-info-section .gspb_container .gspb_row ol,
-.xlance-info-section .gspb_container .gspb_row ul {
+.xlance-info-section .gspb_row ol,
+.xlance-info-section .gspb_row ul {
   list-style: disc;
 }
-.xlance-info-section .gspb_container img {
+.xlance-info-section img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
