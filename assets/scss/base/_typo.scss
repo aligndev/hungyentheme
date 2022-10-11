@@ -43,7 +43,7 @@
   }
 }
 .body {
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.769rem) * 0.3359)), 1.8rem);
   font-weight: 400;
   line-height: 140%;
   color: $dark-blue;

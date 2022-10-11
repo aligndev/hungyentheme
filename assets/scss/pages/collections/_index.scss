@@ -1,6 +1,7 @@
 .collectionPage {
   padding-top: 7.5rem;
   overflow: hidden;
+  padding-bottom: 0;
   @include max(769px) {
     padding-top: 4rem;
   }

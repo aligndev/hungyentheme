@@ -363,7 +363,7 @@ body {
 }
 
 .body {
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 1.4rem + (1vw - 0.769rem) * 0.3359, 1.8rem);
   font-weight: 400;
   line-height: 140%;
   color: #000000;
@@ -782,6 +782,7 @@ body {
   margin-top: 11rem;
   height: 90%;
   width: 100%;
+  background-color: #fff;
 }
 .collection-wrapper::after {
   position: absolute;
@@ -1726,10 +1727,16 @@ body {
   background-color: #000000;
   align-items: center;
   display: flex;
-  height: 12vw;
+  height: 14vw;
+  max-height: 270px;
 }
 .tabs-item:not(:last-child) {
   margin-right: 4.8rem;
+}
+@media screen and (max-width: 1280px) {
+  .tabs-item:not(:last-child) {
+    margin-right: 3rem;
+  }
 }
 .tabs-item span {
   text-transform: uppercase;
@@ -2291,6 +2298,7 @@ body {
 .collectionPage {
   padding-top: 7.5rem;
   overflow: hidden;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 769px) {
   .collectionPage {
@@ -4096,7 +4104,7 @@ h5 {
 }
 
 p {
-  font-size: clamp(1.4rem, 1.4rem + (1vw - 0.769rem) * 0.0332, 1.8rem);
+  font-size: clamp(1.4rem, 1.4rem + (1vw - 0.769rem) * 0.3359, 1.8rem);
   font-weight: 300;
   line-height: 140%;
 }
@@ -4202,7 +4210,7 @@ a:hover {
   transition: all 150ms ease-out;
   cursor: pointer;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1280px) {
   .collection-wrapper .collection-inner .menuCats .collection-fabric__item {
     height: 20vw;
   }
@@ -4423,16 +4431,16 @@ a:hover {
   color: #00983a;
 }
 .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-virgin-shiny-collection .collectionPage-fabric__title {
-  color: #69F4BA;
+  color: #ef7fb0;
 }
 .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-recycled-shiny-collection .collectionPage-fabric__title {
-  color: #ef7fb0;
+  color: #69f4ba;
 }
 .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-virgin-collection .collectionPage-fabric__title {
   color: #e84f3e;
 }
 .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyester-virgin-collection .collectionPage-fabric__title {
-  color: #009FDD;
+  color: #009fdd;
 }
 .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .xlance-collection .collectionPage-fabric__title {
   color: #e3d100;
@@ -4463,6 +4471,87 @@ a:hover {
 }
 .collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__bottom {
   max-height: 90px;
+}
+
+.tax-collection section {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+@media screen and (max-width: 769px) {
+  .tax-collection section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+.tax-collection .collectionPage {
+  padding-bottom: 0;
+  padding-top: 7.5rem;
+}
+
+.gspb_row .gspb_row__col--24,
+.gspb_row .gspb_row__col--12,
+.gspb_row .gspb_row__col--11,
+.gspb_row .gspb_row__col--10,
+.gspb_row .gspb_row__col--9,
+.gspb_row .gspb_row__col--8,
+.gspb_row .gspb_row__col--7,
+.gspb_row .gspb_row__col--6,
+.gspb_row .gspb_row__col--5,
+.gspb_row .gspb_row__col--4,
+.gspb_row .gspb_row__col--3,
+.gspb_row .gspb_row__col--2,
+.gspb_row .gspb_row__col--1 {
+  padding: 0;
+}
+
+.gspb_container .gspb_container .gspb_container {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.gspb_container .gspb_row {
+  gap: 5rem;
+  flex-direction: row;
+  flex-wrap: inherit;
+}
+@media screen and (max-width: 769px) {
+  .gspb_container .gspb_row {
+    flex-wrap: wrap;
+  }
+}
+.gspb_container .gspb_row .gspb_row__col--6 * {
+  margin-top: 3rem;
+}
+.gspb_container .gspb_row .gspb_row__col--6 *:first-child {
+  margin-top: 0;
+}
+.gspb_container .gspb_row .gspb_row__col--6 ul li {
+  margin-top: 0.5rem;
+}
+.gspb_container .gspb_row ol,
+.gspb_container .gspb_row ul {
+  list-style: disc;
+}
+.gspb_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.digital-print-icon-wrapper {
+  width: 7rem;
+  height: 7rem;
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  min-width: 7rem;
+  flex-wrap: wrap;
+}
+.digital-print-icon-wrapper img {
+  width: 5rem;
+  height: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .collectionExtra {

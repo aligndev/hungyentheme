@@ -37,6 +37,8 @@ if (!function_exists('alignvn_theme_setup')) {
     add_theme_support('automatic-feed-links');
     add_theme_support('align-wide');
     add_theme_support('widgets');
+    add_theme_support('editor-styles');
+    add_editor_style('core/block-editor.css');
     // add_theme_support('widgets-block-editor');
 
 

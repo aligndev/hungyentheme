@@ -44,7 +44,7 @@
                                 </div>
                                 <div class="collection-fabric__title">Xlance</div>
                             </a>
-                            <a href="/collection/digital-collection" class="swiper-slide swiper-item collection-fabric__item">
+                            <a href="/collection/digital-print" class="swiper-slide swiper-item collection-fabric__item">
                                 <div class="collection-fabric__image">
                                     <img src="<?php echo ASSETS . '/images/fabric-icon-7.svg'; ?>" alt="" />
                                 </div>

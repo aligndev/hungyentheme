@@ -63,9 +63,9 @@
   <?php
   $termid = $term->term_id;
   if ($termid == 17) {
-    echo '<section class="collectionExtra">';
-    get_template_part('template-parts/block', 'xlance');
-    echo '</section>';
+    echo do_shortcode("[wp_reusable_render id='4038']");
+  } elseif ($termid == 46) {
+    echo do_shortcode("[wp_reusable_render id='4037']");
   } ?>
 
   <section class="collectionMain">

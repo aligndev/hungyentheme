@@ -40,6 +40,8 @@
   font-weight: 700;
   text-transform: capitalize;
   font-size: 2rem;
+  text-align: left;
+  line-height: 120%;
 }
 #piotnetgrid
   .fillter-by-collection
@@ -123,7 +125,7 @@
   width: 5rem;
   height: 5rem;
   display: block;
-  background: url(/wp-content/uploads/2022/09/shiny-logo.svg) no-repeat;
+  background: url(/wp-content/uploads/2022/09/Shiny-plus-logo.svg) no-repeat;
   margin-right: 2rem;
   margin-left: 2rem;
   background-size: contain;
@@ -138,7 +140,8 @@
   width: 5rem;
   height: 5rem;
   display: block;
-  background: url(/wp-content/uploads/2022/09/Shiny-plus-logo.svg) no-repeat;
+  
+  background: url(/wp-content/uploads/2022/09/shiny-logo.svg) no-repeat;
   margin-right: 2rem;
   margin-left: 2rem;
   background-size: contain;
@@ -148,7 +151,7 @@
   .fillter-by-collection
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
-  .polyamide-recycled-digital-collection-logo
+  .polyamide-recycled-digital-print-logo
   + .piotnetgrid-facet__field-sub-label {
   display: none;
 }
