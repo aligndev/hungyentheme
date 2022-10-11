@@ -465,21 +465,6 @@ a {
 }
 
 //GreenShift container style
-.tax-collection {
-  section {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-    @include max(769px) {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
-    }
-  }
-  .collectionPage {
-    padding-bottom: 0;
-    padding-top: 7.5rem;
-  }
-}
-
 .gspb_row {
   .gspb_row__col--24,
   .gspb_row__col--12,
@@ -498,44 +483,68 @@ a {
   }
 }
 .gspb_container {
-  .gspb_container {
-    .gspb_container {
-      padding-top: 12rem;
-      padding-bottom: 12rem;
-    }
-  }
-
-  .gspb_row {
-    gap: 5rem;
-    flex-direction: row;
-    flex-wrap: inherit;
-    @include max(769px) {
-      flex-wrap: wrap;
-    }
-    .gspb_row__col--6 {
-      * {
-        margin-top: 3rem;
-        &:first-child {
-          margin-top: 0;
-        }
-      }
-      ul {
-        li {
-          margin-top: 0.5rem;
-        }
-      }
-    }
-    ol,
-    ul {
-      list-style: disc;
-    }
-  }
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
+.tax-collection {
+  section {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    @include max(769px) {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+  .collectionPage {
+    padding-bottom: 0;
+    padding-top: 7.5rem;
+  }
+}
+.xlance-info-section {
+  .gspb_container {
+    .gspb_container {
+      .gspb_container {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+      }
+    }
+
+    .gspb_row {
+      gap: 5rem;
+      flex-direction: row;
+      flex-wrap: inherit;
+      @include max(769px) {
+        flex-wrap: wrap;
+      }
+      .gspb_row__col--6 {
+        * {
+          margin-top: 3rem;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        ul {
+          li {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+      ol,
+      ul {
+        list-style: disc;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
 //Digital Print
 .digital-print-icon-wrapper {
   width: 7rem;
@@ -604,11 +613,6 @@ a {
         }
       }
     }
-  }
-}
-.video-wrapper {
-  .process-video {
-    // height: 95%;
   }
 }
 .desktop-hidden {
@@ -689,26 +693,13 @@ a {
     }
   }
 }
-.values {
-  .values-item {
-    .values-content.content-config {
-      p {
-        img {
-          // max-height: 8rem;
-          // margin: 1rem 0;
-          // padding-left: 0;
-          // max-width: 25%;
-        }
-        &:nth-child(4) {
-          img {
-            // max-width: 40%;
-            // max-height: 10rem;
-          }
-        }
-      }
-    }
-  }
-}
+// .values {
+//   .values-item {
+//     .values-content.content-config {
+
+//     }
+//   }
+// }
 
 //Search Product
 .search-header-wrapper {

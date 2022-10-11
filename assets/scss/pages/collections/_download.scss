@@ -49,10 +49,10 @@
     @include max(500px) {
       padding-bottom: 2.5rem;
     }
-    .rto-box {
-      // padding-top: 158.5365853658537%;
-      // overflow: hidden;
-    }
+    // .rto-box {
+    //   // padding-top: 158.5365853658537%;
+    //   // overflow: hidden;
+    // }
     img {
       // transition: $transitionImage;
       width: 100%;
@@ -77,16 +77,13 @@ transform: translateX(100%);
       .secondary-poster {
         transform: translateX(0);
       }
-      img {
-        // transform: $transformImage;
-      }
     }
   }
-  &-color {
-    .rto-box {
-      // padding-top: 196.7391304347826%;
-    }
-  }
+  // &-color {
+  //   // .rto-box {
+  //   //   // padding-top: 196.7391304347826%;
+  //   // }
+  // }
   &-button {
     display: block;
     text-align: center;

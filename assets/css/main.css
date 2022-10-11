@@ -4493,21 +4493,6 @@ a:hover {
   max-height: 90px;
 }
 
-.tax-collection section {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-}
-@media screen and (max-width: 769px) {
-  .tax-collection section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-.tax-collection .collectionPage {
-  padding-bottom: 0;
-  padding-top: 7.5rem;
-}
-
 .gspb_row .gspb_row__col--24,
 .gspb_row .gspb_row__col--12,
 .gspb_row .gspb_row__col--11,
@@ -4524,34 +4509,56 @@ a:hover {
   padding: 0;
 }
 
-.gspb_container .gspb_container .gspb_container {
+.gspb_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tax-collection section {
   padding-top: 12rem;
   padding-bottom: 12rem;
 }
-.gspb_container .gspb_row {
+@media screen and (max-width: 769px) {
+  .tax-collection section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+.tax-collection .collectionPage {
+  padding-bottom: 0;
+  padding-top: 7.5rem;
+}
+
+.xlance-info-section .gspb_container .gspb_container .gspb_container {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.xlance-info-section .gspb_container .gspb_row {
   gap: 5rem;
   flex-direction: row;
   flex-wrap: inherit;
 }
 @media screen and (max-width: 769px) {
-  .gspb_container .gspb_row {
+  .xlance-info-section .gspb_container .gspb_row {
     flex-wrap: wrap;
   }
 }
-.gspb_container .gspb_row .gspb_row__col--6 * {
+.xlance-info-section .gspb_container .gspb_row .gspb_row__col--6 * {
   margin-top: 3rem;
 }
-.gspb_container .gspb_row .gspb_row__col--6 *:first-child {
+.xlance-info-section .gspb_container .gspb_row .gspb_row__col--6 *:first-child {
   margin-top: 0;
 }
-.gspb_container .gspb_row .gspb_row__col--6 ul li {
+.xlance-info-section .gspb_container .gspb_row .gspb_row__col--6 ul li {
   margin-top: 0.5rem;
 }
-.gspb_container .gspb_row ol,
-.gspb_container .gspb_row ul {
+.xlance-info-section .gspb_container .gspb_row ol,
+.xlance-info-section .gspb_container .gspb_row ul {
   list-style: disc;
 }
-.gspb_container img {
+.xlance-info-section .gspb_container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
