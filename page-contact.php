@@ -27,12 +27,22 @@
                     <a class="btn btn-green col-5">
                         Send
                     </a>
-                    <div class="contact-message">
+                    <!-- <div class="contact-message">
                         <img src="/wp-content/uploads/2022/07/contact-icon.svg" alt="">
                         <div class="contact-text">
                             <h4 class="h4">Contact us</h4>
                             <p class="body">Drop us a message on Whatsapp. We'll rely in 12 hours.</p>
                         </div>
+                    </div> -->
+                    <div class="contact-wrapper">
+                        <a href="mailto:info@hungyen-kd.com" class="contact-email-wrapper">
+                            <i class="far fa-envelope"></i>
+                            Email contact
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=02216273535" class="contact-whatsapp-wrapper">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            Whatsapp contact
+                        </a>
                     </div>
                 </div>
                 <div class="contact-map col-7">

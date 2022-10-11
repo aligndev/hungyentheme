@@ -125,11 +125,6 @@
         width: auto;
         max-height: 6rem;
       }
-      @include max(600px) {
-        width: 100%;
-        max-width: 4.5rem;
-        object-fit: contain;
-      }
     }
   }
 }

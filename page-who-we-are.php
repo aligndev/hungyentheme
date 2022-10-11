@@ -531,7 +531,7 @@ get_header(); ?>
               <div class="values-image rto-box">
                 <?php  if( $n == 1) { 
                   ?>
-                  <video playsinline muted autoplay loop controls>
+                  <video playsinline muted autoplay loop>
                             <source src="<?php echo $values_image; ?>" />
                   </video>
                   <?php

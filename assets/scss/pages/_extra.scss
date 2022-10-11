@@ -587,6 +587,15 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20rem;
+    @include max(769px) {
+      grid-template-columns: 1fr;
+    }
+    .collectionFeatures-row {
+      @include max(769px) {
+        gap: 0;
+        padding-left: 0;
+      }
+    }
   }
 }
 .collectionDownload-wrapper {
@@ -693,13 +702,6 @@ a {
     }
   }
 }
-// .values {
-//   .values-item {
-//     .values-content.content-config {
-
-//     }
-//   }
-// }
 
 //Search Product
 .search-header-wrapper {
@@ -742,8 +744,11 @@ a {
 .job-card-list {
   .piotnetgrid-card {
     border-radius: 8px;
-    padding: 3rem 6rem;
+    padding: 3rem 2vw;
     border: 1px solid #000;
+    @include max(769px) {
+      padding: 3rem 4rem;
+    }
     .job-card-wrapper {
       padding: 0;
       .piotnetgrid-column {
@@ -769,6 +774,24 @@ a {
           }
         }
       }
+    }
+  }
+}
+
+
+//Contact page
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  a {
+    align-items: center;
+    display: flex;
+    i {
+      font-size: 4rem;
+      margin-right: 1rem;
     }
   }
 }

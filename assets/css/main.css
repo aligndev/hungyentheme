@@ -2863,14 +2863,6 @@ body {
     max-height: 6rem;
   }
 }
-@media screen and (max-width: 600px) {
-  .collectionFeatures-item img {
-    width: 100%;
-    max-width: 4.5rem;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-}
 
 .collectionTreatments .btn {
   margin: 0 auto;
@@ -4599,6 +4591,17 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20rem;
 }
+@media screen and (max-width: 769px) {
+  .collectionTreatments .collectionTreatments-row {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 769px) {
+  .collectionTreatments .collectionTreatments-row .collectionFeatures-row {
+    gap: 0;
+    padding-left: 0;
+  }
+}
 
 .collectionDownload-wrapper {
   display: flex;
@@ -4720,8 +4723,13 @@ a:hover {
 
 .job-card-list .piotnetgrid-card {
   border-radius: 8px;
-  padding: 3rem 6rem;
+  padding: 3rem 2vw;
   border: 1px solid #000;
+}
+@media screen and (max-width: 769px) {
+  .job-card-list .piotnetgrid-card {
+    padding: 3rem 4rem;
+  }
 }
 .job-card-list .piotnetgrid-card .job-card-wrapper {
   padding: 0;
@@ -4744,4 +4752,19 @@ a:hover {
 }
 .job-card-list .piotnetgrid-card .job-card-wrapper .piotnetgrid-column .piotnetgrid-column__inner h5 {
   font-weight: 600;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  font-size: 1.8rem;
+}
+.contact-wrapper a {
+  align-items: center;
+  display: flex;
+}
+.contact-wrapper a i {
+  font-size: 4rem;
+  margin-right: 1rem;
 }/*# sourceMappingURL=main.css.map */
