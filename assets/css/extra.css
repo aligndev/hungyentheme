@@ -151,7 +151,7 @@
   .fillter-by-collection
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
-  .polyamide-recycled-digital-print-logo
+  .polyamide-recycled-digital-collection-logo
   + .piotnetgrid-facet__field-sub-label {
   display: none;
 }
@@ -200,7 +200,7 @@
   .fillter-by-collection
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
-  .digital-collection-logo
+  .digital-print-logo
   + .piotnetgrid-facet__field-sub-label{
     display: none;
 }
