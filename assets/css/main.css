@@ -4508,6 +4508,16 @@ a:hover {
      object-fit: cover;
 }
 
+body .gspb_row {
+  gap: 4rem;
+  flex-wrap: inherit;
+}
+@media screen and (max-width: 769px) {
+  body .gspb_row {
+    flex-wrap: wrap;
+  }
+}
+
 .tax-collection section {
   padding-top: 12rem;
   padding-bottom: 12rem;

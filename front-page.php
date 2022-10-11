@@ -269,7 +269,7 @@
                             <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
                         </div>
                         <div class="news-item__content">
-                            <h5 class="h5 news-item__title">
+                            <h5 class="news-item__title">
                                 <?php print the_title(); ?>
                             </h5>
                             <p class="news-item__desc">

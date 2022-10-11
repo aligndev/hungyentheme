@@ -8,4 +8,10 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 
 
-<?php get_footer(); ?>
+<?php
+if (is_page('career')) {
+    get_footer('secondary');
+} else {
+    get_footer();
+}
+?>

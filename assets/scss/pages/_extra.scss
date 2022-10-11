@@ -489,6 +489,16 @@ a {
     object-fit: cover;
   }
 }
+body {
+  .gspb_row {
+    gap: 4rem;
+    flex-wrap: inherit;
+    @include max(769px) {
+      flex-wrap: wrap;
+    } 
+  }
+}
+
 .tax-collection {
   section {
     padding-top: 12rem;
