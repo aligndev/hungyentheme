@@ -14,6 +14,7 @@
           <div class="download-inner">
             <?php while (have_rows('download_item')) : the_row();
               $download_poster = get_sub_field('download_item_poster');
+              $download_poster_secondary = get_sub_field('download_item_poster_secondary');
               $download_button_text = get_sub_field('download_item_button_text');
               $download_link = get_sub_field('download_item_link_pdf');
             ?>
@@ -21,7 +22,8 @@
                 <div class="download-item">
                   <div class="download-image download-color">
                     <!-- <div class="rto-box"> -->
-                    <img src="<?php echo $download_poster; ?>" alt="">
+                    <img src="<?php echo $download_poster; ?>" class="first-poster" alt="">
+                    <img src="<?php echo $download_poster_secondary; ?>" class="secondary-poster" alt="">
                     <!-- </div> -->
                   </div>
                   <a href="<?php echo $download_link; ?>" class="download-button body">

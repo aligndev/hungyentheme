@@ -64,7 +64,7 @@
   $termid = $term->term_id;
   if ($termid == 17) {
     echo do_shortcode("[wp_reusable_render id='4038']");
-  } elseif ($termid == 46) {
+  } elseif ($termid == 51) {
     echo do_shortcode("[wp_reusable_render id='4037']");
   } ?>
 
