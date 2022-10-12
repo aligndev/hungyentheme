@@ -25,39 +25,105 @@
         </div>
 
       </div>
-      <div class="collectionPage-hero fadeJs">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <?php
-            $collection_imgs = get_field('collection_image', $term);
+      <?php
+      $collection_imgs = get_field('collection_image', $term);
+      $collection_mobile_imgs = get_field('collection_image_mobile', $term);
 
-            if ($collection_imgs) : ?>
-              <?php foreach ($collection_imgs as $collection_img) :
-              ?>
+      if ($collection_mobile_imgs) {
+        if ($collection_imgs) { ?>
+          <div class="collectionPage-hero mobile-hidden fadeJs">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
 
-                <div class="collectionPage-hero__item swiper-slide">
-                  <div class="rto-box">
-                    <img src="<?php echo $collection_img; ?>" />
+                <?php foreach ($collection_imgs as $collection_img) :
+                ?>
+
+                  <div class="collectionPage-hero__item swiper-slide">
+                    <div class="rto-box">
+                      <img src="<?php echo $collection_img; ?>" />
+                    </div>
                   </div>
-                </div>
-              <?php endforeach; ?>
-            <?php endif;
-            ?>
+                <?php endforeach; ?>
+
+              </div>
+              <div class="collectionPage-text">
+                <?php $collection_text = get_field('collection_text', $term);
+                if ($collection_text) {
+                  echo $collection_text;
+                }
+                ?>
+              </div>
+              <div class="swiper-button-next swiper-button-lg"></div>
+              <div class="swiper-button-prev swiper-button-lg"></div>
+              <div class="swiper-pagination pagination-hide-on-desktop"></div>
+            </div>
           </div>
-          <div class="collectionPage-text">
-            <?php $collection_text = get_field('collection_text', $term);
-            if ($collection_text) {
-              echo $collection_text;
-            }
-            ?>
+        <?php }
+        ?>
+        <?php
+        if ($collection_mobile_imgs) { ?>
+          <div class="collectionPage-hero desktop-hidden fadeJs">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                <?php foreach ($collection_mobile_imgs as $collection_mobile_img) :
+                ?>
+
+                  <div class="collectionPage-hero__item swiper-slide">
+                    <div class="rto-box">
+                      <img src="<?php echo $collection_mobile_img; ?>" />
+                    </div>
+                  </div>
+                <?php endforeach; ?>
+
+              </div>
+              <div class="collectionPage-text">
+                <?php $collection_text = get_field('collection_text', $term);
+                if ($collection_text) {
+                  echo $collection_text;
+                }
+                ?>
+              </div>
+              <div class="swiper-button-next swiper-button-lg"></div>
+              <div class="swiper-button-prev swiper-button-lg"></div>
+              <div class="swiper-pagination pagination-hide-on-desktop"></div>
+            </div>
           </div>
-          <div class="swiper-button-next swiper-button-lg"></div>
-          <div class="swiper-button-prev swiper-button-lg"></div>
-          <div class="swiper-pagination pagination-hide-on-desktop"></div>
-        </div>
-      </div>
+        <?php }
+      } else {
+        if ($collection_imgs) { ?>
+          <div class="collectionPage-hero fadeJs">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                <?php foreach ($collection_imgs as $collection_img) :
+                ?>
+
+                  <div class="collectionPage-hero__item swiper-slide">
+                    <div class="rto-box">
+                      <img src="<?php echo $collection_img; ?>" />
+                    </div>
+                  </div>
+                <?php endforeach; ?>
+
+              </div>
+              <div class="collectionPage-text">
+                <?php $collection_text = get_field('collection_text', $term);
+                if ($collection_text) {
+                  echo $collection_text;
+                }
+                ?>
+              </div>
+              <div class="swiper-button-next swiper-button-lg"></div>
+              <div class="swiper-button-prev swiper-button-lg"></div>
+              <div class="swiper-pagination pagination-hide-on-desktop"></div>
+            </div>
+          </div>
+      <?php }
+      }
+      ?>
     </div>
-    </div>
+
   </section>
 
   <?php
@@ -104,14 +170,22 @@
             </div>
           </div>
           <div class="collectionPage-download">
-            <a href="#" download class="collectionPage-download__button">
-              <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg" ?>" />
-              <p>Download Polyamide Color Card 2023</p>
-            </a>
-            <a href="#" download class="collectionPage-download__button">
-              <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg" ?>" />
-              <p>Download Polyester Color Card 2023</p>
-            </a>
+            <?php
+            if (have_rows('collection_download_section', $term)) :
+              while (have_rows('collection_download_section', $term)) : the_row();
+                $text = get_sub_field('collection_download_name', $term);
+                $file = get_sub_field('collection_download_file', $term);
+            ?>
+
+                <a href="<?php echo $file; ?>" download class="collectionPage-download__button">
+                  <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
+                  <p><?php echo $text; ?></p>
+                </a>
+            <?php
+
+              endwhile;
+            endif;
+            ?>
           </div>
 
 
