@@ -79,17 +79,17 @@ const handleWorldMap = () => {
     //   name.classList.add("north-america");
     //   country.parentNode.append(name);
     // }
-    if (country.id === "Colombia") {
-      name.setAttribute("x", cx - 10);
-      name.setAttribute("y", cy + 8);
-      name.innerHTML = country.id;
-      name.classList.add("north-america");
-      country.parentNode.append(name);
-    }
+    // if (country.id === "Colombia") {
+    //   name.setAttribute("x", cx - 10);
+    //   name.setAttribute("y", cy + 8);
+    //   name.innerHTML = country.id;
+    //   name.classList.add("north-america");
+    //   country.parentNode.append(name);
+    // }
     if (
-      country.id === "Dominican Republic" ||
+      country.id === "Dominican Republic" 
       //country.id === "Guatemala" ||
-      country.id === "Venezuela"
+      // country.id === "Venezuela"
     ) {
       name.setAttribute("x", cx);
       name.setAttribute("y", cy);
@@ -277,6 +277,13 @@ const handleWorldMap = () => {
     if (country.id === "Taiwan") {
       name.setAttribute("x", cx + 10);
       name.setAttribute("y", cy + 0);
+      name.innerHTML = country.id;
+      name.classList.add("china");
+      country.parentNode.append(name);
+    }
+    if (country.id === "HongKong") {
+      name.setAttribute("x", cx - 10);
+      name.setAttribute("y", cy + 15);
       name.innerHTML = country.id;
       name.classList.add("china");
       country.parentNode.append(name);
