@@ -2185,7 +2185,7 @@ body {
 }
 
 .circle {
-  width: 66.6666666667%;
+  width: 50%;
   margin: 0 auto;
 }
 @media screen and (max-width: 1024px) {
@@ -3081,6 +3081,10 @@ body {
 }
 .download-close::after {
   transform: rotate(-45deg);
+}
+
+.collectionTreatments .btn .download-item {
+  width: 100%;
 }
 
 .flipbookContainer {
