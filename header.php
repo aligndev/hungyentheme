@@ -50,12 +50,13 @@
                                 </div>
                                 <div class="collection-fabric__title">Digital Print</div>
                             </a>
-                            <div class="swiper-slide swiper-item collection-fabric__item">
+
+                            <a href="/collection/eco-and-circularity" class="swiper-slide swiper-item collection-fabric__item">
                                 <div class="collection-fabric__image">
                                     <img src="<?php echo ASSETS . '/images/fabric-icon-5.svg'; ?>" alt="" />
                                 </div>
                                 <div class="collection-fabric__title">Eco & Circularity</div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <!-- </div> -->

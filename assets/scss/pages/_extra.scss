@@ -792,37 +792,43 @@ body {
 }
 
 //Single product page
-.collectionDetail-row {
-  .collectionDetail-desc {
-    font-size: clamp(
-      1.4rem,
-      calc(1.4rem + ((1vw - 0.769rem) * 0.0332)),
-      1.8rem
-    );
-    font-weight: 300;
+.single-product {
+  p {
+    font-size: clamp(1.4rem, calc(1.4rem + ((1vw - 0.769rem) * 0.5213)), 2rem);
   }
-}
-.collectionTreatments {
-  .collectionTreatments-row {
-    margin-bottom: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20rem;
-    @include max(769px) {
-      grid-template-columns: 1fr;
+  .collectionDetail-row {
+    .collectionDetail-desc {
+      font-size: clamp(
+        1.4rem,
+        calc(1.4rem + ((1vw - 0.769rem) * 0.0332)),
+        1.8rem
+      );
+      font-weight: 300;
     }
-    .collectionFeatures-row {
+  }
+  .collectionTreatments {
+    .collectionTreatments-row {
+      margin-bottom: 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20rem;
       @include max(769px) {
-        gap: 0;
-        padding-left: 0;
+        grid-template-columns: 1fr;
+      }
+      .collectionFeatures-row {
+        @include max(769px) {
+          gap: 0;
+          padding-left: 0;
+        }
       }
     }
   }
-}
-.collectionDownload-wrapper {
-  display: flex;
-  @include max(768px) {
-    display: grid;
-    grid-gap: 2rem;
+  .collectionDownload-wrapper {
+    display: flex;
+    @include max(768px) {
+      display: grid;
+      grid-gap: 2rem;
+    }
   }
+  
 }

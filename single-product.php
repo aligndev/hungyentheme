@@ -68,7 +68,7 @@ $compositions = get_field('composizione');
                     }
                   ?>
                     <div>
-                      <p class="h5 collectionDetail-info__bold"><?php echo $composition_number; ?></p>
+                      <p class=" collectionDetail-info__bold"><?php echo $composition_number; ?></p>
                       <p class="body"><?php echo $composition_name; ?></p>
                     </div>
                   <?php endwhile; ?>
