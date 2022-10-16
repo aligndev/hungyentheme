@@ -12,7 +12,7 @@ const initJsModule = () => {
   handleTabs();
   handleSliders();
   handleWorldMap();
-  // handleFlipBook();
+  handleFlipBook();
   handleAccordion();
   handlePopup();
   handleRenderCircle();

@@ -18,7 +18,8 @@
               $download_button_text = get_sub_field('download_item_button_text');
               $download_link = get_sub_field('download_item_link_pdf');
             ?>
-              <a href="<?php echo $download_link; ?>">
+              <a href="javascript:event.preventDefault();<?php //echo $download_link; 
+                                                          ?>">
                 <div class="download-item">
                   <div class="download-image download-color">
                     <!-- <div class="rto-box"> -->
