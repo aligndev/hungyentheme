@@ -17,20 +17,20 @@ $compositions = get_field('composizione');
         if ($terms->count > 1) {
           foreach ($terms as $term) {
             if ($term->parent == 0) { ?>
-              <img src="<?php $logo = get_field('collection_logo', $term);
-                        if ($logo) {
-                          echo $logo;
-                        } ?>" class="collectionPage-logo" />
-          <?php
+              <?php $logo = get_field('collection_logo', $term);
+              if ($logo) { ?>
+                <img src="<?php echo $logo; ?>" class="collectionPage-logo" />
+            <?php
+              }
             }
           }
         } else {
-          $term = $terms[0]; ?>
-          <img src="<?php $logo = get_field('collection_logo', $term);
-                    if ($logo) {
-                      echo $logo;
-                    } ?>" class="collectionPage-logo" />
+          $term = $terms[0];
+          $logo = get_field('collection_logo', $term);
+          if ($logo) { ?>
+            <img src="<?php echo $logo; ?>" class="collectionPage-logo" />
         <?php
+          }
         }
         ?>
 

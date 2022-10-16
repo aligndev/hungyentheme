@@ -4766,6 +4766,10 @@ body .container .gspb_row {
   padding: 4rem 0;
 }
 
+.term-55 .collectionMain {
+  display: none !important;
+}
+
 .collectionDetail-row .collectionDetail-desc {
   font-size: clamp(1.4rem, 1.4rem + (1vw - 0.769rem) * 0.0332, 1.8rem);
   font-weight: 300;

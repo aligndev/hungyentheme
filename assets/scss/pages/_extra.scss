@@ -774,7 +774,6 @@ body {
     object-fit: contain;
   }
 }
-
 //xLance Collection
 .collectionExtra {
   margin-bottom: 5rem;
@@ -784,6 +783,14 @@ body {
     }
   }
 }
+
+//Eco page
+.term-55 {
+  .collectionMain {
+    display: none !important;
+  }
+}
+
 //Single product page
 .collectionDetail-row {
   .collectionDetail-desc {
