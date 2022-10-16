@@ -228,12 +228,15 @@ $compositions = get_field('composizione');
         while ($products->have_posts()) :
           $products->the_post();
         ?>
-          <a href="<?php echo get_permalink(); ?>" class="collectionPage-fabric">
-            <div class="collectionPage-fabric__title h4">
+          <a href="<?php echo get_permalink(); ?>" class="collectionPage-fabric <?php $terms = get_the_terms($post->ID, 'collection');
+                                                                                foreach ($terms as $term) {
+                                                                                  echo $term->slug . '-collection ';
+                                                                                } ?>">
+            <div class="collectionPage-fabric__title h4 ">
               <?php the_title(); ?>
             </div>
             <div class="collectionPage-fabric__image rto-box">
-              <img src="<?php echo get_the_post_thumbnail_url();; ?>" alt="" />
+              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
             </div>
             <div class="collectionPage-fabric__bottom">
               <?php // Check rows existexists.
@@ -257,6 +260,7 @@ $compositions = get_field('composizione');
               endif;
               ?>
             </div>
+
           </a>
           <!-- <div class="collectionRelated-item">
             <div class="collectionRelated-title h4">

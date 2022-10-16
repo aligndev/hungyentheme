@@ -4605,27 +4605,6 @@ a:hover {
 .collectionMain .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .collectionPage-fabric__title a:hover {
   color: #000;
 }
-.collectionMain .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-recycled-collection .collectionPage-fabric__title {
-  color: #76b82a;
-}
-.collectionMain .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyester-recycled-collection .collectionPage-fabric__title {
-  color: #00983a;
-}
-.collectionMain .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-virgin-shiny-collection .collectionPage-fabric__title {
-  color: #ef7fb0;
-}
-.collectionMain .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-recycled-shiny-collection .collectionPage-fabric__title {
-  color: #69f4ba;
-}
-.collectionMain .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyamide-virgin-collection .collectionPage-fabric__title {
-  color: #e84f3e;
-}
-.collectionMain .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .polyester-virgin-collection .collectionPage-fabric__title {
-  color: #009fdd;
-}
-.collectionMain .collectionPage-category .collectionPage-list .piotnetgrid-grid__posts .xlance-collection .collectionPage-fabric__title {
-  color: #e3d100;
-}
 .collectionMain .collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card {
   border: 1px solid #000;
 }
@@ -4652,6 +4631,34 @@ a:hover {
 }
 .collectionMain .collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__bottom {
   max-height: 90px;
+}
+
+.polyamide-recycled-collection .collectionPage-fabric__title {
+  color: #76b82a;
+}
+
+.polyester-recycled-collection .collectionPage-fabric__title {
+  color: #00983a;
+}
+
+.polyamide-virgin-shiny-collection .collectionPage-fabric__title {
+  color: #ef7fb0;
+}
+
+.polyamide-recycled-shiny-collection .collectionPage-fabric__title {
+  color: #69f4ba;
+}
+
+.polyamide-virgin-collection .collectionPage-fabric__title {
+  color: #e84f3e;
+}
+
+.polyester-virgin-collection .collectionPage-fabric__title {
+  color: #009fdd;
+}
+
+.xlance-collection .collectionPage-fabric__title {
+  color: #e3d100;
 }
 
 .gspb_row .gspb_row__col--24,

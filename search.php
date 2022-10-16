@@ -36,7 +36,10 @@
 
                     if ($posttype == 'product') {
                     ?>
-                        <a href="<?php echo get_permalink(); ?>" class="collectionPage-fabric">
+                        <a href="<?php echo get_permalink(); ?>" class="collectionPage-fabric <?php $terms = get_the_terms($post->ID, 'collection');
+                                                                                                foreach ($terms as $term) {
+                                                                                                    echo $term->slug . '-collection ';
+                                                                                                } ?>">
                             <div class="collectionPage-fabric__title h4">
                                 <?php the_title(); ?>
                             </div>
