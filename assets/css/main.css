@@ -4684,12 +4684,12 @@ a:hover {
      object-fit: cover;
 }
 
-body .gspb_row {
+body .container .gspb_row {
   gap: 4rem;
   flex-wrap: inherit;
 }
 @media screen and (max-width: 769px) {
-  body .gspb_row {
+  body .container .gspb_row {
     flex-wrap: wrap;
   }
 }

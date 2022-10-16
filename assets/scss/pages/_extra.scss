@@ -694,6 +694,7 @@ a {
   }
 }
 body {
+  .container {
   .gspb_row {
     gap: 4rem;
     flex-wrap: inherit;
@@ -701,6 +702,7 @@ body {
       flex-wrap: wrap;
     }
   }
+}
 }
 
 .tax-collection {

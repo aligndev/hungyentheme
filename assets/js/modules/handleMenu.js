@@ -14,16 +14,21 @@ const handleMenu = () => {
   });
 
   const openFabric = document.getElementById("fabric-collection");
-  const closeFabric = document.querySelector(".collection-button");
-  //const openFabric = document.getElementsByClassName("fabric-collection");
+  // const closeFabric = document.querySelector(".collection-button");
+  const collectionMenu = document.querySelector(".collection-wrapper");
   const fabricCollection = document.querySelector(".collection");
-  openFabric.addEventListener("click", (()=>{
+  openFabric.addEventListener("click", () => {
     fabricCollection.classList.add("active");
-  }))
-  closeFabric.addEventListener("click", (()=>{
+  });
+  // closeFabric.addEventListener("click", (()=>{
+  //   fabricCollection.classList.remove("active");
+  // }))
+  collectionMenu.addEventListener("click", () => {
     fabricCollection.classList.remove("active");
-  }))
-  // document.addEventListener("click", handleFabric);
+  });
+  window.addEventListener('scroll',() => {
+    fabricCollection.classList.remove("active");
+  });
   // function handleFabric(e) {
   //   fabricCollection.classList.add("active");
   //   if (e.target !== openFabric) {
