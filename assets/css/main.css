@@ -4674,7 +4674,7 @@ a:hover {
 .gspb_row .gspb_row__col--3,
 .gspb_row .gspb_row__col--2,
 .gspb_row .gspb_row__col--1 {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .gspb_container img {
@@ -4686,11 +4686,11 @@ a:hover {
 
 body .container .gspb_row {
   gap: 4rem;
-  flex-wrap: inherit;
+  flex-wrap: inherit !important;
 }
 @media screen and (max-width: 769px) {
   body .container .gspb_row {
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   }
 }
 

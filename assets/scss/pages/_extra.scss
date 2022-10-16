@@ -683,7 +683,7 @@ a {
   .gspb_row__col--3,
   .gspb_row__col--2,
   .gspb_row__col--1 {
-    padding: 0;
+    padding: 0 !important;
   }
 }
 .gspb_container {
@@ -697,9 +697,9 @@ body {
   .container {
   .gspb_row {
     gap: 4rem;
-    flex-wrap: inherit;
+    flex-wrap: inherit !important;
     @include max(769px) {
-      flex-wrap: wrap;
+      flex-wrap: wrap !important;
     }
   }
 }
