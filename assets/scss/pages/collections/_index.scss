@@ -28,12 +28,14 @@
 
     img {
       width: 100%;
-      max-width: 7.2rem;
-      object-fit: cover;
+      max-width: 10rem;
+      object-fit: contain;
       margin-right: 5rem;
+      max-height: 9rem;
       @include max(769px) {
         margin-right: 2rem;
         max-width: 5rem;
+        max-height: 5rem;
       }
     }
   }
