@@ -171,16 +171,23 @@
           </div>
           <div class="collectionPage-download">
             <?php
+            $x = 0;
             if (have_rows('collection_download_section', $term)) :
               while (have_rows('collection_download_section', $term)) : the_row();
                 $text = get_sub_field('collection_download_name', $term);
                 $file = get_sub_field('collection_download_file', $term);
+                $x++;
             ?>
-
-                <a href="<?php echo $file; ?>" download class="collectionPage-download__button">
-                  <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
-                  <p><?php echo $text; ?></p>
-                </a>
+                <div class="download-item">
+                  <a href="<?php echo $file; ?>" download class="collectionPage-download__button">
+                    <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
+                    <p><?php echo $text; ?></p>
+                  </a>
+                </div>
+                <div class="flipbookContainer flip-book-container" id="<?php echo "flipbook-" . $x ?>" data-src="<?php echo $file ?>">
+                  <a class="download-close">
+                  </a>
+                </div>
             <?php
 
               endwhile;

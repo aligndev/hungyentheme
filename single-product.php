@@ -200,16 +200,7 @@ $compositions = get_field('composizione');
           <div class="download-item">
             Download Article page
           </div>
-
         </a>
-        <!-- <a href="<?php //echo the_field("technical_sheet"); 
-                      ?>" download class="btn btn-green col-3">
-          
-        </a>
-        <a href="<?php //echo the_field("color_card"); 
-                  ?>" download class="btn btn-green col-3">
-          Download Article page
-        </a> -->
       </div>
       <div class="flipbookContainer flip-book-container" id="technical-sheet" data-src="<?php echo the_field("technical_sheet"); ?>">
         <a class="download-close">

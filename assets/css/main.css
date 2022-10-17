@@ -4581,6 +4581,10 @@ a:hover {
 .collectionMain .collectionPage-category .collectionPage-filter .collectionPage-filter__main #piotnetgrid .piotnetgrid-button-wrapper {
   justify-content: center;
 }
+.collectionMain .collectionPage-category .collectionPage-filter .collectionPage-download .download-item {
+  width: 100%;
+  padding: 0;
+}
 .collectionMain .collectionPage-category .collectionPage-filter .collectionPage-download p {
   font-size: 1.8rem;
   margin-bottom: 0;
