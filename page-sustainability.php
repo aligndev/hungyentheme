@@ -65,6 +65,10 @@
             <a href="<?php echo $process_button_download_url; ?>" class="process-download btn btn-green col-9 hide-on-desktop">
                 <?php echo $process_button_text; ?>
             </a>
+            <div class="flipbookContainer flip-book-container" id="hy-sustainability-strategy" data-src="<?php echo $process_button_download_url;  ?>">
+                <a class="download-close">
+                </a>
+            </div>
             <!-- <div class="logoSlider-inner">
                 <div class="logoJs">
                     <div class="swiper-container">

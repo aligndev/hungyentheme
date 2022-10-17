@@ -664,8 +664,9 @@ body {
 }
 @media screen and (max-width: 769px) {
   .footer-cta__inner {
-    padding: 0;
+    padding: 2rem;
     margin-bottom: 13rem;
+    text-align: center;
   }
 }
 .footer-cta__h1 {
@@ -2276,6 +2277,7 @@ body {
     width: 60%;
     height: 60%;
     top: 22%;
+    z-index: 10;
   }
 }
 .circle-inner__item {
