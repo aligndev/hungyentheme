@@ -2326,16 +2326,17 @@ body {
 }
 .collectionPage-heading img {
   width: 100%;
-  max-width: 10rem;
+  max-width: 15rem;
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 5rem;
   max-height: 9rem;
+  width: auto;
 }
 @media screen and (max-width: 769px) {
   .collectionPage-heading img {
     margin-right: 2rem;
-    max-width: 5rem;
+    max-width: 8rem;
     max-height: 5rem;
   }
 }
@@ -4659,11 +4660,11 @@ a:hover {
 }
 
 .polyamide-virgin-collection .collectionPage-fabric__title {
-  color: #e84f3e;
+  color: #009fdd;
 }
 
 .polyester-virgin-collection .collectionPage-fabric__title {
-  color: #009fdd;
+  color: #e84f3e;
 }
 
 .xlance-collection .collectionPage-fabric__title {

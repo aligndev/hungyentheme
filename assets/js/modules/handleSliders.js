@@ -198,6 +198,10 @@ const handleSliders = () => {
           nextEl: nextBtn,
           prevEl: prevBtn,
         },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false
+        },
         pagination: {
           el: pagination,
           clickable: true,

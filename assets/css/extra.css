@@ -39,7 +39,7 @@
   width: 100%;
   font-weight: 700;
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: left;
   line-height: 120%;
 }
@@ -95,7 +95,8 @@
   width: 5rem;
   height: 5rem;
   display: block;
-  background: url(/wp-content/uploads/2022/09/virgin-logo.png) no-repeat;
+
+  background: url(/wp-content/uploads/2022/09/virgin-logo-2.png) no-repeat;
   margin-right: 2rem;
   margin-left: 2rem;
   background-size: contain;
@@ -107,10 +108,10 @@
   .piotnetgrid-facet-field.polyester-virgin-logo
   + .piotnetgrid-facet__field-sub-label::before {
   content: "";
-  width: 60px;
-  height: 60px;
+  width: 5rem;
+  height: 5rem;
   display: block;
-  background: url(/wp-content/uploads/2022/09/virgin-logo-2.png) no-repeat;
+  background: url(/wp-content/uploads/2022/09/virgin-logo.png) no-repeat;
   margin-right: 2rem;
   margin-left: 2rem;
   background-size: contain;

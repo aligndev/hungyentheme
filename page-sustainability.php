@@ -5,13 +5,15 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <?php
+                    $x = 0;
                     while (have_rows('sustainability_page_hero_slide')) : the_row();
                         $process_title = get_sub_field('hero_slide_title');
                         $process_sub = get_sub_field('hero_slide_sub');
                         $process_icons = get_sub_field('hero_slide_icons');
                         $process_button_download_url = get_sub_field('hero_slide_button_download_link');
                         $process_button_text = get_sub_field('hero_slide_button_text');
-                        $process_video = get_sub_field('hero_slide_video')
+                        $process_video = get_sub_field('hero_slide_video');
+                        $x++;
                     ?>
                         <div class="swiper-slide">
                             <div class="container">
@@ -31,9 +33,16 @@
                                                     </li>
                                                 <?php endforeach; ?>
                                             </ul>
-                                            <a href="<?php echo $process_button_download_url; ?>" download class="process-download btn btn-green col-6 hide-on-mobile">
-                                                <?php echo $process_button_text; ?>
-                                            </a>
+                                            <div class="download-item">
+                                                <a href="<?php echo $process_button_download_url; ?>" download class="process-download btn btn-green col-6 hide-on-mobile">
+                                                    <?php echo $process_button_text; ?>
+                                                </a>
+                                            </div>
+
+                                            <div class="flipbookContainer flip-book-container" id="<?php echo "flipbook-" . $x ?>" data-src="<?php echo $file ?>">
+                                                <a class="download-close">
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="video-wrapper">
@@ -62,9 +71,11 @@
     <?php endif; ?>
     <section class="logoSlider">
         <div class="container">
-            <a href="<?php echo $process_button_download_url; ?>" class="process-download btn btn-green col-9 hide-on-desktop">
-                <?php echo $process_button_text; ?>
-            </a>
+            <div class="download-item">
+                <a href="<?php echo $process_button_download_url; ?>" class="process-download btn btn-green col-9 hide-on-desktop">
+                    <?php echo $process_button_text; ?>
+                </a>
+            </div>
             <div class="flipbookContainer flip-book-container" id="hy-sustainability-strategy" data-src="<?php echo $process_button_download_url;  ?>">
                 <a class="download-close">
                 </a>
