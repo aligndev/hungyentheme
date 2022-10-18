@@ -170,11 +170,11 @@
             </div>
           </div>
           <div class="collectionPage-download">
-            <a href="/download-color-card/" download class="collectionPage-download__button">
+            <a href="/download-color-card/" class="collectionPage-download__button">
               <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
               <p>Download color card</p>
             </a>
-            <a href="/download-fabric-collections/" download class="collectionPage-download__button">
+            <a href="/download-fabric-collections/" class="collectionPage-download__button">
               <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
               <p>Download fabric collections</p>
             </a>

@@ -4598,6 +4598,7 @@ a:hover {
     height: 3rem !important;
     margin-right: 1rem !important;
     margin-left: 1rem !important;
+    min-width: 3rem;
   }
 }
 @media screen and (max-width: 1440px) {
