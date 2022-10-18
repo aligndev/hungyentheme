@@ -170,6 +170,14 @@
             </div>
           </div>
           <div class="collectionPage-download">
+            <a href="/download-color-card/" download class="collectionPage-download__button">
+              <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
+              <p>Download color card</p>
+            </a>
+            <a href="/download-fabric-collections/" download class="collectionPage-download__button">
+              <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
+              <p>Download fabric collections</p>
+            </a>
             <?php
             $x = 0;
             if (have_rows('collection_download_section', $term)) :
@@ -178,29 +186,34 @@
                 $file = get_sub_field('collection_download_file', $term);
                 $x++;
             ?>
-                <div class="download-item">
-                  <a href="<?php echo $file; ?>" download class="collectionPage-download__button">
-                    <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
-                    <p><?php echo $text; ?></p>
+                <!-- <div class="download-item">
+                  <a href="<?php //echo $file; 
+                            ?>" download class="collectionPage-download__button">
+                    <img src="<?php //echo ASSETS . "/images/arrow-down-circle.svg"; 
+                              ?>" />
+                    <p><?php //echo $text; 
+                        ?></p>
                   </a>
                 </div>
-                <div class="flipbookContainer flip-book-container" id="<?php echo "flipbook-" . $x ?>" data-src="<?php echo $file ?>">
+                <div class="flipbookContainer flip-book-container" id="<?php //echo "flipbook-" . $x 
+                                                                        ?>" data-src="<?php //echo $file 
+                                                                                      ?>">
                   <a class="download-close">
-                  </a>
-                </div>
-            <?php
+                  </a> -->
+          </div>
+      <?php
 
               endwhile;
             endif;
-            ?>
-          </div>
+      ?>
+        </div>
 
 
-        </div>
-        <div class="collectionPage-list col-9">
-          <?php echo do_shortcode('[piotnetgrid id=3304 type=grid]'); ?>
-        </div>
       </div>
+      <div class="collectionPage-list col-9">
+        <?php echo do_shortcode('[piotnetgrid id=3304 type=grid]'); ?>
+      </div>
+    </div>
     </div>
   </section>
 

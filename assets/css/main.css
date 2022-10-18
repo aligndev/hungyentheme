@@ -4643,6 +4643,10 @@ a:hover {
   max-height: 90px;
 }
 
+.collectionPage-fabric {
+  position: relative;
+}
+
 .collectionPage-newArticle {
   position: absolute;
   right: 0;
@@ -4731,6 +4735,9 @@ body .container .gspb_row {
   padding-top: 7.5rem;
 }
 
+.xlance-info-section {
+  padding-top: 0;
+}
 .xlance-info-section .gspb_container .gspb_container {
   padding-top: 12rem;
   padding-bottom: 12rem;

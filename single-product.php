@@ -245,9 +245,12 @@ $compositions = get_field('composizione');
                                                                                 foreach ($terms as $term) {
                                                                                   echo $term->slug . '-collection ';
                                                                                 } ?>">
-            <div class="collectionPage-fabric__title h4 ">
+            <h5 class="collectionPage-fabric__title ">
               <?php the_title(); ?>
-            </div>
+            </h5>
+            <?php if (get_field('product_new_arrive')) { ?>
+              <p class="collectionPage-newArticle"> New article</p>
+            <?php } ?>
             <div class="collectionPage-fabric__image rto-box">
               <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
             </div>
