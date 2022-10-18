@@ -739,11 +739,18 @@ body {
   }
 }
 .xlance-info-section {
-  padding-top: 0;
+  padding-top: 0 !important;
   .gspb_container {
     .gspb_container {
       padding-top: 12rem;
       padding-bottom: 12rem;
+      @include max(768px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+      &:nth-child(1) {
+        padding-top: 0;
+      }
     }
   }
 

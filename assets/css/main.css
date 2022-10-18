@@ -4737,11 +4737,20 @@ body .container .gspb_row {
 }
 
 .xlance-info-section {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 .xlance-info-section .gspb_container .gspb_container {
   padding-top: 12rem;
   padding-bottom: 12rem;
+}
+@media screen and (max-width: 768px) {
+  .xlance-info-section .gspb_container .gspb_container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+.xlance-info-section .gspb_container .gspb_container:nth-child(1) {
+  padding-top: 0;
 }
 .xlance-info-section .gspb_row {
   gap: 5rem;
