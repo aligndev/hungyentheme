@@ -4643,6 +4643,18 @@ a:hover {
   max-height: 90px;
 }
 
+.collectionPage-newArticle {
+  position: absolute;
+  right: 0;
+  width: auto !important;
+  top: 10rem;
+  z-index: 1;
+  background-color: #FFF042;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
 .polyamide-recycled-collection .collectionPage-fabric__title {
   color: #76b82a;
 }

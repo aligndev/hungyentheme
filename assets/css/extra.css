@@ -160,6 +160,16 @@
   .fillter-by-collection
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
+  .recycled-shiny-digital-collection-logo
+  + .piotnetgrid-facet__field-sub-label {
+  display: none;
+}
+
+
+#piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
   .polyamide-virgin-digital-collection-logo
   + .piotnetgrid-facet__field-sub-label {
   display: none;
