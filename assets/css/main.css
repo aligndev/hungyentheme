@@ -2016,6 +2016,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.materials-popup__inner .rto-box > img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .materials-desc {
   padding-bottom: 0.8rem;
 }

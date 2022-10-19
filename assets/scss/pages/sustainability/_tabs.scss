@@ -325,6 +325,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      .rto-box {
+        & > img {
+          object-fit: contain;
+        }
+      }
     }
   }
   &-desc {
