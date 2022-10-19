@@ -144,20 +144,6 @@
           ?>
           <div class="collectionPage-filter__main">
             <?php echo do_shortcode('[piotnetgrid id=3305 type=facet grid=3304]'); ?>
-            <?php
-            // $applications = get_field_object('application');
-            // if ($applications) {
-            //   foreach ($applications['choices'] as $key => $value) {
-            //     echo $value;
-            //   }
-            // }
-            // $properties = get_field_object('property');
-            // if ($properties) {
-            //   foreach ($properties['choices'] as $key => $value) {
-            //     echo $value;
-            //   }
-            // }
-            ?>
 
           </div>
           <div class="collectionPage-feature">
@@ -201,15 +187,9 @@
                   <a class="download-close">
                   </a> -->
           </div>
-      <?php
-
-              endwhile;
-            endif;
-      ?>
         </div>
 
 
-      </div>
       <div class="collectionPage-list col-9">
         <?php echo do_shortcode('[piotnetgrid id=3304 type=grid]'); ?>
       </div>
