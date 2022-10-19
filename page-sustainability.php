@@ -33,16 +33,16 @@
                                                     </li>
                                                 <?php endforeach; ?>
                                             </ul>
-                                            <div class="download-item">
-                                                <a href="<?php echo $process_button_download_url; ?>" download class="process-download btn btn-green col-6 hide-on-mobile">
-                                                    <?php echo $process_button_text; ?>
-                                                </a>
-                                            </div>
+                                            <!-- <div class="download-item"> -->
+                                            <a href="<?php echo $process_button_download_url; ?>" download class="process-download btn btn-green col-6 hide-on-mobile">
+                                                <?php echo $process_button_text; ?>
+                                            </a>
+                                            <!-- </div> -->
 
-                                            <div class="flipbookContainer flip-book-container" id="<?php echo "flipbook-" . $x ?>" data-src="<?php echo $file ?>">
+                                            <!-- <div class="flipbookContainer flip-book-container" id="<?php echo "flipbook-" . $x ?>" data-src="<?php echo $file ?>">
                                                 <a class="download-close">
                                                 </a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                     <div class="video-wrapper">
