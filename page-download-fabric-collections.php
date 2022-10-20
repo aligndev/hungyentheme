@@ -22,12 +22,10 @@
                                                           ?>">
                 <div class="download-item">
                   <div class="download-image download-color">
-                    <!-- <div class="rto-box"> -->
                     <img src="<?php echo $download_poster; ?>" class="first-poster" alt="">
                     <img src="<?php echo $download_poster_secondary; ?>" class="secondary-poster" alt="">
-                    <!-- </div> -->
                   </div>
-                  <a href="<?php echo $download_link; ?>" download class="download-button body">
+                  <a href="<?php echo $download_link; ?>" class="download-button body">
                     <?php echo $download_button_text; ?>
                   </a>
                 </div>
@@ -54,8 +52,6 @@
     //   endwhile;
     // endif; 
     ?>
-
-
   </main>
 
   <?php get_footer(); ?>

@@ -27,7 +27,7 @@
                     <img src="<?php echo $download_poster_secondary; ?>" class="secondary-poster" alt="">
                     <!-- </div> -->
                   </div>
-                  <a href="<?php echo $download_link; ?>" download class="download-button body">
+                  <a href="<?php echo $download_link; ?>" class="download-button body">
                     <?php echo $download_button_text; ?>
                   </a>
 

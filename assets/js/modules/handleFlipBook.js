@@ -6,6 +6,8 @@ const handleFlipBook = () => {
     // const closeButton = document.querySelectorAll('.download-close')
     const downloadItems = document.querySelectorAll('.download-item')
     const modalsFlipBooks = document.querySelectorAll('.flipbookContainer')
+    var options = {enableDownload: false,}
+    
 
     pdfLinks.forEach((link, index) => {
       const closeButton = link.querySelector('.download-close');
@@ -13,7 +15,7 @@ const handleFlipBook = () => {
         document.querySelector("body").classList.remove('disable-scroll')
         modalsFlipBooks[index].classList.remove('active')
       })
-      const flipBook = $(`#${link.id}`).flipBook(link.dataset.src);
+      const flipBook = $(`#${link.id}`).flipBook(link.dataset.src, options);
     })
     downloadItems.forEach((item, index) => {
       item.addEventListener('click', function () {
