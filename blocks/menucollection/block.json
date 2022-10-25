@@ -1,0 +1,14 @@
+{
+    "name": "acf/quote",
+    "title": "Menu Collection Block",
+    "description": "A custom menu logo block.",
+    "style": [ "file:./menuCollection.css" ],
+    "category": "formatting",
+    "icon": "",
+    "keywords": ["menu", "collection"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "menuCollection.php"
+    },
+    "align": "full"
+}

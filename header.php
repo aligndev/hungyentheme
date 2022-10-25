@@ -15,7 +15,7 @@
             <img src="<?php echo ASSETS . '/images/close-icon.svg'; ?>" alt="" class="collection-button" />
             <div class="container collection-inner">
                 <!-- <div class="logoJs"> -->
-                <div class="menuCats">
+                <!-- <div class="menuCats">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <a href="/collection/recycle" class="swiper-slide swiper-item collection-fabric__item">
@@ -59,10 +59,7 @@
                             </a>
                         </div>
                     </div>
-                    <!-- </div> -->
-
                 </div>
-
                 <div class="collection-cta">
                     <div class="collection-cta__col">
                         <a href="/download-color-card/" class="btn btn-green collection-cta__text">
@@ -74,7 +71,7 @@
                             Review Our Collection Books
                         </a>
                     </div>
-                </div>
+                </div> -->
                 <?php if (is_active_sidebar('header-menu-logo-wrapper')) dynamic_sidebar('header-menu-logo-wrapper');  ?>
                 <!-- <div class="collection-logo logoJs">
                     <div class="collection-row swiper-container">

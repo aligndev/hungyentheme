@@ -126,6 +126,7 @@ a {
 .collection-wrapper {
   .collection-inner {
     .menuCats {
+      padding-bottom: 3rem;
       .collection-fabric__item {
         width: 11.458vw;
         height: 14vw;
@@ -134,8 +135,8 @@ a {
         // @include max(1440px) {
         //   height: 20vw;
         // }
-        @include max(1280px) {
-          height: 20vw;
+        @include max(1180px) {
+          height: 14vw;
         }
         @include max(769px) {
           //width: 16rem !important;
@@ -155,6 +156,17 @@ a {
             color: #000;
             font-weight: 700;
           }
+        }
+        p.collection-notify {
+          background-color: #fff042;
+          font-weight: 700;
+          position: absolute;
+          left: 35%;
+          top: 1rem;
+          padding: 0.5rem 1rem;
+          font-size: 1.5rem;
+          font-weight: 600;
+          z-index: 1;
         }
       }
     }
@@ -645,16 +657,17 @@ a {
 
 .collectionPage-newArticle {
   position: absolute;
-    right: 0;
-    width: auto !important;
-    top: 10rem;
-    z-index: 1;
-    background-color: #FFF042;
-    padding: 0.5rem 1rem;
-    font-weight: 600;
-    font-size: 1.5rem;
+  right: 0;
+  width: auto !important;
+  top: 10rem;
+  z-index: 1;
+  background-color: #fff042;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
-.polyamide-recycled-collection, .polyamide-recycled-digital-collection-collection {
+.polyamide-recycled-collection,
+.polyamide-recycled-digital-collection-collection {
   .collectionPage-fabric__title {
     color: #76b82a;
   }
@@ -664,24 +677,26 @@ a {
     color: #00983a;
   }
 }
-.polyamide-virgin-shiny-collection, .polyamide-virgin-shiny-digital-collection-collection {
+.polyamide-virgin-shiny-collection,
+.polyamide-virgin-shiny-digital-collection-collection {
   .collectionPage-fabric__title {
     color: #ef7fb0;
   }
 }
-.polyamide-recycled-shiny-collection, .recycled-shiny-digital-collection-collection {
+.polyamide-recycled-shiny-collection,
+.recycled-shiny-digital-collection-collection {
   .collectionPage-fabric__title {
     color: #69f4ba;
   }
 }
-.polyamide-virgin-collection, .polyamide-virgin-digital-collection-collection {
+.polyamide-virgin-collection,
+.polyamide-virgin-digital-collection-collection {
   .collectionPage-fabric__title {
     color: #009fdd;
   }
 }
 .polyester-virgin-collection {
   .collectionPage-fabric__title {
-
     color: #e84f3e;
   }
 }
