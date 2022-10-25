@@ -2223,6 +2223,11 @@ body {
   z-index: 9;
   background-color: #fff;
 }
+@media screen and (max-width: 1440px) {
+  .circle-inner__center {
+    z-index: 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .circle-inner__center {
     width: 100%;
