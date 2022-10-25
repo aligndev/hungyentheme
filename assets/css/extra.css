@@ -58,6 +58,11 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .piotnetgrid-facet-field.polyamide-recycled-logo
+  + .piotnetgrid-facet__field-sub-label::before, #piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .polyamide-recycled-digital-collection-logo
   + .piotnetgrid-facet__field-sub-label::before {
   content: "";
   width: 5rem;
@@ -90,12 +95,16 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .piotnetgrid-facet-field.polyamide-virgin-logo
+  + .piotnetgrid-facet__field-sub-label::before, #piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .polyamide-virgin-digital-collection-logo
   + .piotnetgrid-facet__field-sub-label::before {
   content: "";
   width: 5rem;
   height: 5rem;
   display: block;
-
   background: url(/wp-content/uploads/2022/09/virgin-logo-2.png) no-repeat;
   margin-right: 2rem;
   margin-left: 2rem;
@@ -121,6 +130,11 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .piotnetgrid-facet-field.polyamide-recycled-shiny-logo
+  + .piotnetgrid-facet__field-sub-label::before, #piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .recycled-shiny-digital-collection-logo
   + .piotnetgrid-facet__field-sub-label::before {
   content: "";
   width: 5rem;
@@ -136,6 +150,11 @@
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
   .piotnetgrid-facet-field.polyamide-virgin-shiny-logo
+  + .piotnetgrid-facet__field-sub-label::before, #piotnetgrid
+  .fillter-by-collection
+  .piotnetgrid-facet__field-subgroup--buttons
+  .piotnetgrid-facet__field-sub
+  .polyamide-virgin-shiny-digital-collection-logo
   + .piotnetgrid-facet__field-sub-label::before {
   content: "";
   width: 5rem;
@@ -163,8 +182,6 @@
   + .piotnetgrid-facet__field-sub-label {
   display: none;
 }
-
-
 #piotnetgrid
   .fillter-by-collection
   .piotnetgrid-facet__field-subgroup--buttons
