@@ -141,14 +141,13 @@
   width: 5rem;
   height: 5rem;
   display: block;
-  
   background: url(/wp-content/uploads/2022/09/shiny-logo.svg) no-repeat;
   margin-right: 2rem;
   margin-left: 2rem;
   background-size: contain;
 }
 
-#piotnetgrid
+/* #piotnetgrid
   .fillter-by-collection
   .piotnetgrid-facet__field-subgroup--buttons
   .piotnetgrid-facet__field-sub
@@ -238,7 +237,7 @@
   .xlance-logo
   + .piotnetgrid-facet__field-sub-label{
     display: none;
-}
+} */
 
 
 

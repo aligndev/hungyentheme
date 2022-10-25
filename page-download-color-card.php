@@ -19,7 +19,7 @@
               $download_link = get_sub_field('download_item_link_pdf');
             ?>
               <a href="<?php echo $download_link;
-                        ?>" download>
+                        ?>">
                 <div class="download-item">
                   <div class="download-image download-color">
                     <!-- <div class="rto-box"> -->
