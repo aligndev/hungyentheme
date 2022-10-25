@@ -66,12 +66,12 @@
                 <div class="collection-cta">
                     <div class="collection-cta__col">
                         <a href="/download-color-card/" class="btn btn-green collection-cta__text">
-                            Download Our Color Cards 2023
+                            Review Our Color Cards 2023
                         </a>
                     </div>
                     <div class="collection-cta__col">
                         <a href="/download-fabric-collections/" class="btn btn-green collection-cta__text">
-                            Download Our Collection Books
+                            Review Our Collection Books
                         </a>
                     </div>
                 </div>
@@ -168,10 +168,11 @@
                         <form class="search" action="<?php echo esc_url(home_url('/')); ?>">
                             <input type="search" name="s" placeholder="Find your fabric">
                             <input type="hidden" name="post_type[]" value="product" />
+                            <button type="submit"><img class="nav-icon" src="<?php echo ASSETS . '/images/search-icon.svg';
+                                                                                ?>" alt="" /></button>
                             <!-- <input type="hidden" name="post_type[]" value="post" /> -->
                         </form>
-                        <img class="nav-icon" src="<?php echo ASSETS . '/images/search-icon.svg';
-                                                    ?>" alt="" />
+
 
                     </div>
                 </div>

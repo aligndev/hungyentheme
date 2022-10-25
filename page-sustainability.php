@@ -660,6 +660,12 @@
                 <?php endif; ?>
             </div>
         </div>
+        <div class="button-container" style="display: flex;justify-content: center;">
+            <a href="https://sdgs.un.org/goals" class="process-download btn btn-green col-6">
+                Find out more
+            </a>
+        </div>
+
     </section>
 
     <div class="materials-popup">

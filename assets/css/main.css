@@ -527,6 +527,13 @@ body {
   justify-content: center;
   padding: 8.5px 1.823vw;
 }
+.nav-search__inner form {
+  display: flex;
+}
+.nav-search__inner form button {
+  background: none;
+  border: none;
+}
 
 .nav-search__inner input {
   width: 100%;
@@ -2639,6 +2646,7 @@ body {
 }
 .collectionPage-fabric__desc .collectionPage-fabric__material {
   font-size: 1.4rem;
+  line-height: 110%;
 }
 .collectionPage-fabric__number {
   padding-bottom: 0.25rem;
@@ -4607,7 +4615,7 @@ a:hover {
 }
 @media screen and (max-width: 1440px) {
   .collectionMain .collectionPage-category .collectionPage-filter #piotnetgrid .fillter-by-collection .piotnetgrid-facet__field-subgroup--buttons .piotnetgrid-facet__field-sub .piotnetgrid-facet__field-sub-label {
-    font-size: 1.8rem !important;
+    font-size: 1.3rem !important;
   }
 }
 .collectionMain .collectionPage-category .collectionPage-list {
@@ -4632,6 +4640,10 @@ a:hover {
   max-height: 30rem;
   align-self: stretch;
   flex-grow: 1;
+  height: 15vw;
+}
+body.term-digital-print .collectionMain .collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__image {
+  display: none;
 }
 .collectionMain .collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__image .piotnetgrid-image__content {
   height: 100%;
@@ -4664,7 +4676,7 @@ a:hover {
   font-size: 1.5rem;
 }
 
-.polyamide-recycled-collection .collectionPage-fabric__title {
+.polyamide-recycled-collection .collectionPage-fabric__title, .polyamide-recycled-digital-collection-collection .collectionPage-fabric__title {
   color: #76b82a;
 }
 
@@ -4672,15 +4684,15 @@ a:hover {
   color: #00983a;
 }
 
-.polyamide-virgin-shiny-collection .collectionPage-fabric__title {
+.polyamide-virgin-shiny-collection .collectionPage-fabric__title, .polyamide-virgin-shiny-digital-collection-collection .collectionPage-fabric__title {
   color: #ef7fb0;
 }
 
-.polyamide-recycled-shiny-collection .collectionPage-fabric__title {
+.polyamide-recycled-shiny-collection .collectionPage-fabric__title, .recycled-shiny-digital-collection-collection .collectionPage-fabric__title {
   color: #69f4ba;
 }
 
-.polyamide-virgin-collection .collectionPage-fabric__title {
+.polyamide-virgin-collection .collectionPage-fabric__title, .polyamide-virgin-digital-collection-collection .collectionPage-fabric__title {
   color: #009fdd;
 }
 
@@ -4739,9 +4751,13 @@ body .container .gspb_row {
   padding-bottom: 0;
   padding-top: 7.5rem;
 }
+.tax-collection.term-digital-print section.gspb_container {
+  padding-top: 0;
+}
 
 .xlance-info-section {
   padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 .xlance-info-section .gspb_container .gspb_container {
   padding-top: 12rem;

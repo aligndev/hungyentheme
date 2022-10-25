@@ -581,7 +581,7 @@ a {
               }
               .piotnetgrid-facet__field-sub-label {
                 @include max(1440px) {
-                  font-size: 1.8rem !important;
+                  font-size: 1.3rem !important;
                 }
               }
             }
@@ -615,6 +615,10 @@ a {
             max-height: 30rem;
             align-self: stretch;
             flex-grow: 1;
+            height: 15vw;
+            body.term-digital-print & {
+              display: none;
+            }
             .piotnetgrid-image__content {
               height: 100%;
               a {
@@ -736,6 +740,11 @@ body {
   .collectionPage {
     padding-bottom: 0;
     padding-top: 7.5rem;
+  }
+  &.term-digital-print {
+    section.gspb_container {
+      padding-top: 0;
+    }
   }
 }
 .xlance-info-section {
