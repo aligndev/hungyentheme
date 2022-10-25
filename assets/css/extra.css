@@ -181,66 +181,63 @@
   + .piotnetgrid-facet__field-sub-label {
   display: none;
 }
-#piotnetgrid
-  .fillter-by-collection
-  .piotnetgrid-facet__field-subgroup--buttons
-  .piotnetgrid-facet__field-sub
-  .recycle-logo
-  + .piotnetgrid-facet__field-sub-label {
-  display: none;
-}
-
-#piotnetgrid
-  .fillter-by-collection
-  .piotnetgrid-facet__field-subgroup--buttons
-  .piotnetgrid-facet__field-sub
-  .shiny-logo
-  + .piotnetgrid-facet__field-sub-label {
-  display: none;
+ */
+ #piotnetgrid
+ .fillter-by-collection
+ .piotnetgrid-facet__field-subgroup--buttons
+ .piotnetgrid-facet__field-sub
+ .polyester-recycled-xlance-logo
+ + .piotnetgrid-facet__field-sub-label{
+   display: none;
 }
 #piotnetgrid
-  .fillter-by-collection
-  .piotnetgrid-facet__field-subgroup--buttons
-  .piotnetgrid-facet__field-sub
-  .virgin-logo
-  + .piotnetgrid-facet__field-sub-label{
-    display: none;
+ .fillter-by-collection
+ .piotnetgrid-facet__field-subgroup--buttons
+ .piotnetgrid-facet__field-sub
+ .polyester-virgin-xlance-logo
+ + .piotnetgrid-facet__field-sub-label{
+   display: none;
+}
+ #piotnetgrid
+ .fillter-by-collection
+ .piotnetgrid-facet__field-subgroup--buttons
+ .piotnetgrid-facet__field-sub
+ .recycle-logo
+ + .piotnetgrid-facet__field-sub-label {
+ display: none;
 }
 #piotnetgrid
-  .fillter-by-collection
-  .piotnetgrid-facet__field-subgroup--buttons
-  .piotnetgrid-facet__field-sub
-  .digital-print-logo
-  + .piotnetgrid-facet__field-sub-label{
-    display: none;
+ .fillter-by-collection
+ .piotnetgrid-facet__field-subgroup--buttons
+ .piotnetgrid-facet__field-sub
+ .shiny-logo
+ + .piotnetgrid-facet__field-sub-label {
+ display: none;
 }
 #piotnetgrid
-  .fillter-by-collection
-  .piotnetgrid-facet__field-subgroup--buttons
-  .piotnetgrid-facet__field-sub
-  .polyester-recycled-xlance-logo
-  + .piotnetgrid-facet__field-sub-label{
-    display: none;
+ .fillter-by-collection
+ .piotnetgrid-facet__field-subgroup--buttons
+ .piotnetgrid-facet__field-sub
+ .virgin-logo
+ + .piotnetgrid-facet__field-sub-label{
+   display: none;
 }
 #piotnetgrid
-  .fillter-by-collection
-  .piotnetgrid-facet__field-subgroup--buttons
-  .piotnetgrid-facet__field-sub
-  .polyester-virgin-xlance-logo
-  + .piotnetgrid-facet__field-sub-label{
-    display: none;
+ .fillter-by-collection
+ .piotnetgrid-facet__field-subgroup--buttons
+ .piotnetgrid-facet__field-sub
+ .digital-print-logo
+ + .piotnetgrid-facet__field-sub-label{
+   display: none;
 }
-#piotnetgrid
-  .fillter-by-collection
-  .piotnetgrid-facet__field-subgroup--buttons
-  .piotnetgrid-facet__field-sub
-  .xlance-logo
-  + .piotnetgrid-facet__field-sub-label{
-    display: none;
-} */
-
-
-
+ #piotnetgrid
+ .fillter-by-collection
+ .piotnetgrid-facet__field-subgroup--buttons
+ .piotnetgrid-facet__field-sub
+ .xlance-logo
+ + .piotnetgrid-facet__field-sub-label{
+   display: none;
+}
 
 
 #piotnetgrid
