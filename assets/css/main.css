@@ -4480,7 +4480,8 @@ a:hover {
   margin: 0;
   width: 100%;
 }
-.catalog-list .catalog-list-wrap .digital-print-collection .collectionPage-fabric__image {
+
+.digital-print-collection .collectionPage-fabric__image {
   display: none;
 }
 
