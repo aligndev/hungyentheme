@@ -4691,12 +4691,12 @@ body.term-digital-print .collectionMain .collectionPage-category .collectionPage
   position: absolute;
   right: 0;
   width: auto !important;
-  top: 10rem;
+  top: 0;
   z-index: 1;
   background-color: #fff042;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .polyamide-recycled-collection .collectionPage-fabric__title,

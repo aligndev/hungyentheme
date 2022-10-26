@@ -47,7 +47,7 @@ if (!empty($block['align'])) {
                         <div class="collection-fabric__title"><?php echo $title_collection; ?></div>
                         <?php if ($isShow_collection) {
                         ?>
-                            <p class="collection-notify">update</p>
+                            <p class="collection-notify">updated</p>
                         <?php
                         } ?>
                     </a>
