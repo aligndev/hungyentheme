@@ -19,13 +19,13 @@
               $download_link = get_sub_field('download_item_link_pdf');
             ?>
               <a href="javascript:event.preventDefault(); <?php //echo $download_link; 
-                                                          ?>">
+                                                          ?>" download>
                 <div class="download-item">
                   <div class="download-image download-color">
                     <img src="<?php echo $download_poster; ?>" class="first-poster" alt="">
                     <img src="<?php echo $download_poster_secondary; ?>" class="secondary-poster" alt="">
                   </div>
-                  <a href="<?php echo $download_link; ?>" class="download-button body">
+                  <a href="javascript:event.preventDefault();   <?php echo $download_link; ?>" download class="download-button body">
                     <?php echo $download_button_text; ?>
                   </a>
                 </div>

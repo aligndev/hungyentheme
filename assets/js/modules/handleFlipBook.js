@@ -2,6 +2,7 @@ const handleFlipBook = () => {
   jQuery(document).ready(function ($) {
     //uses source from online(make sure the file has CORS access enabled if used in cross domain)
     const pdfLinks = document.querySelectorAll(".flipbookContainer");
+    const pdfLinksNoDownload = document.querySelectorAll(".flipbookContainer.NoDownload");
     if (!pdfLinks) return;
     // const closeButton = document.querySelectorAll('.download-close')
     const downloadItems = document.querySelectorAll('.download-item')
@@ -10,6 +11,14 @@ const handleFlipBook = () => {
     
 
     pdfLinks.forEach((link, index) => {
+      const closeButton = link.querySelector('.download-close');
+      closeButton.addEventListener("click", function () {
+        document.querySelector("body").classList.remove('disable-scroll')
+        modalsFlipBooks[index].classList.remove('active')
+      })
+      const flipBook = $(`#${link.id}`).flipBook(link.dataset.src);
+    })
+    pdfLinksNoDownload.forEach((link, index) => {
       const closeButton = link.querySelector('.download-close');
       closeButton.addEventListener("click", function () {
         document.querySelector("body").classList.remove('disable-scroll')

@@ -18,8 +18,8 @@
               $download_button_text = get_sub_field('download_item_button_text');
               $download_link = get_sub_field('download_item_link_pdf');
             ?>
-              <a href="<?php echo $download_link;
-                        ?>">
+              <a href="javascript:event.preventDefault(); <?php echo $download_link;
+                                                          ?>">
                 <div class="download-item">
                   <div class="download-image download-color">
                     <!-- <div class="rto-box"> -->
@@ -27,7 +27,7 @@
                     <img src="<?php echo $download_poster_secondary; ?>" class="secondary-poster" alt="">
                     <!-- </div> -->
                   </div>
-                  <a href="<?php echo $download_link; ?>" class="download-button body">
+                  <a href="javascript:event.preventDefault();  <?php echo $download_link; ?>" class="download-button body">
                     <?php echo $download_button_text; ?>
                   </a>
 
@@ -42,7 +42,7 @@
           $download_type = get_sub_field('download_item_type');
           $download_link = get_sub_field('download_item_link_pdf');
         ?>
-          <div class="flipbookContainer flip-book-container" id="<?php echo $download_type ?>" data-src="<?php echo $download_link ?>">
+          <div class="flipbookContainer flip-book-container NoDownload" id="<?php echo $download_type ?>" data-src="<?php echo $download_link ?>">
             <a class="download-close">
             </a>
           </div>
