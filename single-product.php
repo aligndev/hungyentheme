@@ -93,15 +93,13 @@ $compositions = get_field('composizione');
         </div>
         <div class="collectionDetail-image">
           <div class="rto-box">
-            <?php //echo the_post_thumbnail_url(); 
+            <?php
+            $productimg = get_the_post_thumbnail_url();
+            if ($productimg) {
             ?>
-            <img src="<?php $productimg = get_the_post_thumbnail_url();
-                      if ($productimg) {
-                        echo $productimg;
-                      } else {
-                        echo ASSETS . '/images/demo-collection-img.png';
-                      }  //the_field("collection_image")
-                      ?>" alt="">
+              <img src="<?php echo $productimg; ?>" alt="">
+            <?php } ?>
+
           </div>
         </div>
       </div>
