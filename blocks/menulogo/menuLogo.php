@@ -103,12 +103,12 @@ if (!empty($block['align'])) {
 <div class="collection-cta">
     <div class="collection-cta__col">
         <a href="/download-color-card/" class="btn btn-green collection-cta__text">
-            Review Our Color Cards 2023
+            Color Card Preview
         </a>
     </div>
     <div class="collection-cta__col">
         <a href="/download-fabric-collections/" class="btn btn-green collection-cta__text">
-            Review Our Collection Books
+            Collection Book Preview
         </a>
     </div>
 </div>

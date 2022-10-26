@@ -26,6 +26,7 @@
       }
       @include max(768px) {
         width: 100%;
+        top: 48vw;
       }
     }
     &__image {
@@ -58,7 +59,7 @@
         @include lc(3);
         overflow: auto;
         -webkit-line-clamp: unset;
-        padding-top: 7rem;
+        padding-top: 10rem;
       }
     }
 

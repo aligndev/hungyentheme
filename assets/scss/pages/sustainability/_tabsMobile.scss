@@ -76,6 +76,12 @@
     padding: 2.5rem;
     text-align: center;
     text-transform: uppercase;
+    @include max(769px) {
+      min-height: 92px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
     &::after {
       position: absolute;
       content: "";

@@ -238,6 +238,9 @@ a {
   .title {
     text-transform: uppercase;
     margin: 0 auto 12.5rem;
+    @include max(769px) {
+      margin-bottom: 3rem;
+    }
   }
 }
 .panel-type-content {

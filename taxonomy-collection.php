@@ -158,11 +158,11 @@
           <div class="collectionPage-download">
             <a href="/download-color-card/" class="collectionPage-download__button">
               <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
-              <p>Review color card</p>
+              <p>Color Card Preview</p>
             </a>
             <a href="/download-fabric-collections/" class="collectionPage-download__button">
               <img src="<?php echo ASSETS . "/images/arrow-down-circle.svg"; ?>" />
-              <p>Review fabric collections</p>
+              <p>Collection Book Preview</p>
             </a>
           </div>
         </div>

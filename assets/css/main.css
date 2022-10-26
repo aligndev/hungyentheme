@@ -2142,6 +2142,14 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (max-width: 769px) {
+  .tabsMobile-title {
+    min-height: 92px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
 .tabsMobile-title::after {
   position: absolute;
   content: "";
@@ -2231,6 +2239,7 @@ body {
 @media screen and (max-width: 768px) {
   .circle-inner__center {
     width: 100%;
+    top: 48vw;
   }
 }
 .circle-inner__image {
@@ -2276,7 +2285,7 @@ body {
     text-overflow: ellipsis;
     overflow: auto;
     -webkit-line-clamp: unset;
-    padding-top: 7rem;
+    padding-top: 10rem;
   }
 }
 .circle-inner__list {
@@ -4331,6 +4340,11 @@ a:hover {
 .homepage-sustainability-wrapper .title {
   text-transform: uppercase;
   margin: 0 auto 12.5rem;
+}
+@media screen and (max-width: 769px) {
+  .homepage-sustainability-wrapper .title {
+    margin-bottom: 3rem;
+  }
 }
 
 .panel-type-content.content-wrapper {
