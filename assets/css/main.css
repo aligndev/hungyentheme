@@ -4308,11 +4308,24 @@ a:hover {
   background-color: #fff042;
   font-weight: 700;
   position: absolute;
+  left: 35%;
   top: 1rem;
   padding: 0.5rem 1rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   z-index: 1;
+}
+@media screen and (max-width: 1440px) {
+  .collection-wrapper .collection-inner .menuCats .collection-fabric__item p.collection-notify {
+    left: 28%;
+    font-size: 1.3rem;
+    padding: 0.2rem 1rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .collection-wrapper .collection-inner .menuCats .collection-fabric__item p.collection-notify {
+    left: 25%;
+  }
 }
 .collection-wrapper .collection-inner .collection-cta {
   display: grid;
