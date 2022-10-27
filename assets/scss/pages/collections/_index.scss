@@ -320,19 +320,21 @@
       font-size: 2.4rem;
       line-height: 120%;
       text-align: center;
-      @include max(1440px) {
-        padding: 0.7rem 0.8rem;
-        font-size: 2rem;
-      }
-      @include max(1080px) {
-        font-size: 1.8rem;
-      }
-      
-      @include max(769px) {
-        font-size: 1.6rem;
-      }
+
       &:not(:last-child) {
         border-right: 1px solid $white;
+      }
+      .collectionPage-fabric__number {
+        @include max(1440px) {
+          padding: 0.7rem 0.8rem;
+          font-size: 2rem;
+        }
+        @include max(1080px) {
+          font-size: 1.8rem;
+        }
+        @include max(769px) {
+          font-size: 1.6rem;
+        }
       }
       .collectionPage-fabric__material {
         font-size: 1.4rem;

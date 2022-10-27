@@ -2651,24 +2651,24 @@ body {
   line-height: 120%;
   text-align: center;
 }
+.collectionPage-fabric__desc:not(:last-child) {
+  border-right: 1px solid #ffffff;
+}
 @media screen and (max-width: 1440px) {
-  .collectionPage-fabric__desc {
+  .collectionPage-fabric__desc .collectionPage-fabric__number {
     padding: 0.7rem 0.8rem;
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 1080px) {
-  .collectionPage-fabric__desc {
+  .collectionPage-fabric__desc .collectionPage-fabric__number {
     font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 769px) {
-  .collectionPage-fabric__desc {
+  .collectionPage-fabric__desc .collectionPage-fabric__number {
     font-size: 1.6rem;
   }
-}
-.collectionPage-fabric__desc:not(:last-child) {
-  border-right: 1px solid #ffffff;
 }
 .collectionPage-fabric__desc .collectionPage-fabric__material {
   font-size: 1.4rem;
