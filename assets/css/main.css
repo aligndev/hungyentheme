@@ -2648,6 +2648,12 @@ body {
 @media screen and (max-width: 1440px) {
   .collectionPage-fabric__desc {
     padding: 0.7rem 0.8rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .collectionPage-fabric__desc {
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 769px) {
@@ -2661,6 +2667,16 @@ body {
 .collectionPage-fabric__desc .collectionPage-fabric__material {
   font-size: 1.4rem;
   line-height: 110%;
+}
+@media screen and (max-width: 1440px) {
+  .collectionPage-fabric__desc .collectionPage-fabric__material {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .collectionPage-fabric__desc .collectionPage-fabric__material {
+    font-size: 1.1rem;
+  }
 }
 .collectionPage-fabric__number {
   padding-bottom: 0.25rem;
@@ -3055,8 +3071,8 @@ body {
 .download-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   position: absolute;
   transition: all 500ms ease;
   -o-object-position: top;
@@ -3088,8 +3104,8 @@ body {
 }
 .download-close {
   position: absolute;
-  top: 13%;
-  right: 15%;
+  top: 10%;
+  right: 10%;
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -3117,7 +3133,7 @@ body {
 
 .flipbookContainer {
   position: fixed !important;
-  z-index: 9;
+  z-index: 99;
   width: 100%;
   height: 100% !important;
   top: 0;
@@ -4652,7 +4668,12 @@ a:hover {
 }
 @media screen and (max-width: 1440px) {
   .collectionMain .collectionPage-category .collectionPage-filter #piotnetgrid .fillter-by-collection .piotnetgrid-facet__field-subgroup--buttons .piotnetgrid-facet__field-sub .piotnetgrid-facet__field-sub-label {
-    font-size: 1.3rem !important;
+    font-size: 1.4rem !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .collectionMain .collectionPage-category .collectionPage-filter #piotnetgrid .fillter-by-collection .piotnetgrid-facet__field-subgroup--buttons .piotnetgrid-facet__field-sub .piotnetgrid-facet__field-sub-label {
+    font-size: 1.2rem !important;
   }
 }
 .collectionMain .collectionPage-category .collectionPage-list {

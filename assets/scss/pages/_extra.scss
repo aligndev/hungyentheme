@@ -601,7 +601,10 @@ a {
               }
               .piotnetgrid-facet__field-sub-label {
                 @include max(1440px) {
-                  font-size: 1.3rem !important;
+                  font-size: 1.4rem !important;
+                }
+                @include max(1280px) {
+                  font-size: 1.2rem !important;
                 }
               }
             }

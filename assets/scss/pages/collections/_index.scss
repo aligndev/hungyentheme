@@ -322,7 +322,12 @@
       text-align: center;
       @include max(1440px) {
         padding: 0.7rem 0.8rem;
+        font-size: 2rem;
       }
+      @include max(1080px) {
+        font-size: 1.8rem;
+      }
+      
       @include max(769px) {
         font-size: 1.6rem;
       }
@@ -332,6 +337,12 @@
       .collectionPage-fabric__material {
         font-size: 1.4rem;
         line-height: 110%;
+        @include max(1440px) {
+          font-size: 1.2rem;
+        }
+        @include max(1080px) {
+          font-size: 1.1rem;
+        }
       }
     }
     &__number {
