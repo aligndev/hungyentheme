@@ -132,10 +132,10 @@ a {
         height: 14vw;
         transition: all 150ms ease-out;
         cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
         // @include max(1440px) {
         //   height: 20vw;
         // }
@@ -155,10 +155,7 @@ a {
           }
         }
         &:hover {
-          // background-color: #000;
-          .collection-fabric__image {
-            background-color: #000;
-          }
+          background-color: #000;
           .collection-fabric__title {
             color: #000;
             font-weight: 700;
