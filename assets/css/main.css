@@ -792,6 +792,12 @@ body {
   width: 100%;
   background-color: #fff;
 }
+@media screen and (max-width: 1440px) {
+  .collection-wrapper {
+    margin-top: 0;
+    height: 100%;
+  }
+}
 .collection-wrapper::after {
   position: absolute;
   content: "";
@@ -848,7 +854,7 @@ body {
   cursor: pointer;
 }
 .collection-fabric__item:hover {
-  background-color: #8cb675;
+  background-color: transparent;
 }
 @media screen and (max-width: 1440px) {
   .collection-fabric__item {
@@ -4275,6 +4281,10 @@ a:hover {
   height: 14vw;
   transition: all 150ms ease-out;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 1180px) {
   .collection-wrapper .collection-inner .menuCats .collection-fabric__item {
@@ -4291,7 +4301,7 @@ a:hover {
   object-fit: contain;
   -o-object-fit: contain;
 }
-.collection-wrapper .collection-inner .menuCats .collection-fabric__item:hover {
+.collection-wrapper .collection-inner .menuCats .collection-fabric__item:hover .collection-fabric__image {
   background-color: #000;
 }
 .collection-wrapper .collection-inner .menuCats .collection-fabric__item:hover .collection-fabric__title {
@@ -4302,7 +4312,6 @@ a:hover {
   background-color: #fff042;
   font-weight: 700;
   position: absolute;
-  left: 35%;
   top: 1rem;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
@@ -4699,6 +4708,7 @@ a:hover {
   align-self: stretch;
   flex-grow: 1;
   height: 15vw;
+  min-height: 21rem;
 }
 body.term-digital-print .collectionMain .collectionPage-category .collectionPage-list #piotnetgrid .piotnetgrid-card .collectionPage-fabric__image {
   display: none;

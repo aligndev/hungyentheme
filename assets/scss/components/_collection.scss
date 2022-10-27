@@ -35,6 +35,10 @@
     height: 90%;
     width: 100%;
     background-color: #fff;
+    @include max(1440px) {
+      margin-top: 0;
+      height: 100%;
+    }
     &::after {
       position: absolute;
       content: "";
@@ -93,7 +97,9 @@
       transition: all 150ms ease-out;
       cursor: pointer;
       &:hover {
-        background-color: $green-2;
+        // background-color: $green-2;
+        background-color: transparent;
+
       }
       @include max(1440px) {
         height: 20vw;
