@@ -1017,12 +1017,6 @@ body {
   margin: 1rem 0;
   padding-left: 0;
 }
-@media screen and (max-width: 769px) {
-  .content-config p img {
-    max-width: 8rem;
-  }
-}
-
 .fadeJs > .swiper-container > .swiper-wrapper > .swiper-slide:not(.swiper-slide-active) {
   opacity: 0 !important;
 }
@@ -2658,12 +2652,12 @@ body {
 @media screen and (max-width: 1440px) {
   .collectionPage-fabric__desc .collectionPage-fabric__number {
     padding: 0.7rem 0.8rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 1080px) {
   .collectionPage-fabric__desc .collectionPage-fabric__number {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 769px) {
@@ -4218,6 +4212,10 @@ a:hover {
   color: #000;
 }
 
+a.hero-button:hover {
+  color: #fff;
+}
+
 .scrollTopbtn {
   height: 5rem;
   width: 5rem;
@@ -4452,6 +4450,15 @@ a:hover {
   .mobile-hidden {
     display: none !important;
   }
+}
+
+.logoSlider {
+  position: relative;
+  z-index: 2;
+}
+.logoSlider .download-item {
+  position: absolute;
+  bottom: 3rem;
 }
 
 .career-content__wrapper .container h4 {
