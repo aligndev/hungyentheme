@@ -9,6 +9,7 @@
   height: 11rem;
   @include max(769px) {
     height: 9rem;
+    z-index: 12;
   }
 }
 .nav-inner {

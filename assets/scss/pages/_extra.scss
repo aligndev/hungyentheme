@@ -340,9 +340,16 @@ a.hero-button {
 .logoSlider {
   position: relative;
   z-index: 2;
+  @include max(769px) {
+    min-height: 10rem;
+  }
   .download-item {
     position: absolute;
     bottom: 3rem;
+    @include max(769px) {
+      padding-left: 0;
+width: 90%;
+    }
   }
 }
 //Career

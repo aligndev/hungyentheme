@@ -400,6 +400,7 @@ body {
 @media screen and (max-width: 769px) {
   .nav {
     height: 9rem;
+    z-index: 12;
   }
 }
 
@@ -2285,7 +2286,7 @@ body {
     text-overflow: ellipsis;
     overflow: auto;
     -webkit-line-clamp: unset;
-    padding-top: 10rem;
+    padding-top: 15rem;
   }
 }
 .circle-inner__list {
@@ -4456,9 +4457,20 @@ a.hero-button:hover {
   position: relative;
   z-index: 2;
 }
+@media screen and (max-width: 769px) {
+  .logoSlider {
+    min-height: 10rem;
+  }
+}
 .logoSlider .download-item {
   position: absolute;
   bottom: 3rem;
+}
+@media screen and (max-width: 769px) {
+  .logoSlider .download-item {
+    padding-left: 0;
+    width: 90%;
+  }
 }
 
 .career-content__wrapper .container h4 {
