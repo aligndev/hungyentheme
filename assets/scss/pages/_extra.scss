@@ -67,6 +67,12 @@ a {
     // font-weight: 400;
   }
 }
+a.hero-button {
+  &:hover {
+    color: #fff;
+    // font-weight: 400;
+  }
+}
 
 .scrollTopbtn {
   height: 5rem;
@@ -328,6 +334,15 @@ a {
 .mobile-hidden {
   @include max(769px) {
     display: none !important;
+  }
+}
+
+.logoSlider {
+  position: relative;
+  z-index: 2;
+  .download-item {
+    position: absolute;
+    bottom: 3rem;
   }
 }
 //Career

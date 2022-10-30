@@ -62,7 +62,7 @@
     <section class="logoSlider">
         <div class="container">
             <div class="download-item">
-                <a href="<?php echo $process_button_download_url; ?>" class="process-download btn btn-green col-9 hide-on-desktop">
+                <a href="javascript:event.preventDefault(); <?php echo $process_button_download_url; ?>" class="process-download btn btn-green">
                     <?php echo $process_button_text; ?>
                 </a>
             </div>
@@ -124,7 +124,7 @@
                         <?php the_field('materials_tab_heading') ?>
                     </h2>
                     <div class="tabs-content__video">
-                        <video playsinline muted autoplay loop controls>
+                        <video playsinline autoplay loop controls>
                             <source src="<?php the_field("materials_tab_video"); ?>" />
                         </video>
                     </div>

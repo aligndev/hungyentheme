@@ -353,7 +353,7 @@
     .piotnetgrid-facet__field-sub
     .piotnetgrid-facet__field-sub-label {
     font-size: 1.8rem;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
   }
 }
 
