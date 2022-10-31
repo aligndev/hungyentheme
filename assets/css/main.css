@@ -4238,6 +4238,60 @@ a.hero-button:hover {
   display: flex;
 }
 
+@media screen and (max-width: 1025px) {
+  .nav-bar {
+    justify-content: space-between;
+  }
+  .nav-bar .menu-main-menu-container {
+    height: 100%;
+  }
+  .nav-bar .menu-main-menu-container .nav-bar__inner {
+    height: 60%;
+  }
+}
+.nav-bar .menu-item {
+  position: relative;
+  padding: 10px 0;
+}
+.nav-bar .menu-item a {
+  font-size: 0.833vw;
+  line-height: 120%;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 0;
+}
+@media screen and (max-width: 1025px) {
+  .nav-bar .menu-item a {
+    font-size: 2rem;
+  }
+}
+.nav-bar .menu-item a::after {
+  left: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.4s;
+  background-color: #ffffff;
+}
+.nav-bar .menu-item a:hover {
+  color: #fff;
+}
+.nav-bar .menu-item a:hover::after {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+.nav-bar .menu-item a.active {
+  color: #fff;
+}
+.nav-bar .menu-item a.active::after {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+
 .nav-link:hover, .nav-link:focus {
   color: #fcfff5;
 }

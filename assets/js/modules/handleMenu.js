@@ -13,7 +13,7 @@ const handleMenu = () => {
     });
   });
 
-  const openFabric = document.getElementById("fabric-collection");
+  const openFabric = document.querySelector(".fabric-collection");
   // const closeFabric = document.querySelector(".collection-button");
   const collectionMenu = document.querySelector(".collection-wrapper");
   const fabricCollection = document.querySelector(".collection");

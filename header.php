@@ -123,7 +123,7 @@
 
                 <div class="nav-bar">
 
-                    <ul class="nav-bar__inner">
+                    <!-- <ul class="nav-bar__inner">
                         <?php
                         ?>
                         <li class="nav-bar__item">
@@ -149,8 +149,9 @@
                             <a href="<?php echo esc_url(get_page_link('20'));
                                         ?>" class="nav-link nav-text">Contact</a>
                         </li>
-                    </ul>
-                    <?php //wp_nav_menu(array('theme_location' => 'primary_menu', 'menu_class' => 'nav-bar__inner', 'add_li_class'  => 'nav-bar__item'));
+                    </ul> -->
+
+                    <?php echo wp_nav_menu(array('theme_location' => 'primary_menu', 'menu_class' => 'nav-bar__inner', 'add_li_class'  => 'nav-bar__item'));
                     ?>
                     <div class="nav-search hide-on-desktop">
                         <div class="nav-search__inner">
