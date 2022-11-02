@@ -222,21 +222,21 @@ a.hero-button {
         }
         p.collection-notify {
           background-color: #fff042;
-          font-weight: 700;
           position: absolute;
-          left: 35%;
-          top: 1rem;
-          padding: 0.5rem 1rem;
-          font-size: 1.4rem;
+          padding: 0.2rem 1rem;
+          font-size: 1.2rem;
           font-weight: 600;
           z-index: 1;
+          bottom: 2px;
+          right: 2px;
+          margin-bottom: 0;
           @include max(1440px) {
-            left: 28%;
-            font-size: 1.3rem;
-            padding: 0.2rem 1rem;
+            // left: 28%;
+            // font-size: 1.3rem;
+            // padding: 0.2rem 1rem;
           }
           @include max(1080px) {
-            left: 25%;
+            // left: 25%;
           }
         }
       }
@@ -392,7 +392,7 @@ a.hero-button {
 
 .logoSlider {
   position: relative;
-  z-index: 2;
+  z-index: 20;
   @include max(769px) {
     min-height: 10rem;
   }
