@@ -14,103 +14,7 @@
         <div class="collection-wrapper">
             <img src="<?php echo ASSETS . '/images/close-icon.svg'; ?>" alt="" class="collection-button" />
             <div class="container collection-inner">
-                <!-- <div class="logoJs"> -->
-                <!-- <div class="menuCats">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <a href="/collection/recycle" class="swiper-slide swiper-item collection-fabric__item">
-                                <div class="collection-fabric__image">
-                                    <img src="<?php echo ASSETS . '/images/fabric-icon-3.svg'; ?>" alt="" />
-                                </div>
-                                <div class="collection-fabric__title">Recycled</div>
-                            </a>
-                            <a href="/collection/Virgin" class="swiper-slide swiper-item collection-fabric__item">
-                                <div class="collection-fabric__image">
-                                    <img src="<?php echo ASSETS . '/images/fabric-icon-1.svg'; ?>" alt="" />
-                                </div>
-                                <div class="collection-fabric__title">Virgin</div>
-                            </a>
-                            <a href="/collection/shiny" class="swiper-slide swiper-item collection-fabric__item">
-                                <div class="collection-fabric__image">
-                                    <img src="/wp-content/uploads/2022/09/Shiny-logo.svg" alt="" />
-                                </div>
-                                <div class="collection-fabric__title">
-                                    Shiny
-                                </div>
-                            </a>
-                            <a href="/collection/Xlance" class="swiper-slide swiper-item collection-fabric__item">
-                                <div class="collection-fabric__image">
-                                    <img src="<?php echo ASSETS . '/images/fabric-icon-6.svg'; ?>" alt="" />
-                                </div>
-                                <div class="collection-fabric__title">Xlance</div>
-                            </a>
-                            <a href="/collection/digital-print" class="swiper-slide swiper-item collection-fabric__item">
-                                <div class="collection-fabric__image">
-                                    <img src="<?php echo ASSETS . '/images/fabric-icon-7.svg'; ?>" alt="" />
-                                </div>
-                                <div class="collection-fabric__title">Digital Print</div>
-                            </a>
-
-                            <a href="/collection/eco-and-circularity" class="swiper-slide swiper-item collection-fabric__item">
-                                <div class="collection-fabric__image">
-                                    <img src="<?php echo ASSETS . '/images/fabric-icon-5.svg'; ?>" alt="" />
-                                </div>
-                                <div class="collection-fabric__title">Eco & Circularity</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="collection-cta">
-                    <div class="collection-cta__col">
-                        <a href="/download-color-card/" class="btn btn-green collection-cta__text">
-                            Review Our Color Cards 2023
-                        </a>
-                    </div>
-                    <div class="collection-cta__col">
-                        <a href="/download-fabric-collections/" class="btn btn-green collection-cta__text">
-                            Review Our Collection Books
-                        </a>
-                    </div>
-                </div> -->
                 <?php if (is_active_sidebar('header-menu-logo-wrapper')) dynamic_sidebar('header-menu-logo-wrapper');  ?>
-                <!-- <div class="collection-logo logoJs">
-                    <div class="collection-row swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="/wp-content/uploads/2022/10/partnership-logo-1-min.png" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="wp-content/uploads/2022/10/partnership-logo-2-min.png" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="/wp-content/uploads/2022/10/partnership-logo-3-min.png" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="/wp-content/uploads/2022/10/partnership-logo-4-min.png" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="/wp-content/uploads/2022/10/partnership-logo-5-min.png" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="/wp-content/uploads/2022/10/partnership-logo-6-min.png" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="/wp-content/uploads/2022/10/partnership-logo-7-min.png" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="/wp-content/uploads/2022/10/partnership-logo-8-min.png" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="/wp-content/uploads/2022/10/partnership-logo-9-min.png" alt="" class="collection-logo__image" />
-                            </div>
-                            <div class="collection-logo__item swiper-slide swiper-item">
-                                <img src="/wp-content/uploads/2022/10/partnership-logo-10-min.png" alt="" class="collection-logo__image" />
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
@@ -122,35 +26,6 @@
                 </a>
 
                 <div class="nav-bar">
-
-                    <!-- <ul class="nav-bar__inner">
-                        <?php
-                        ?>
-                        <li class="nav-bar__item">
-                            <a href="<?php echo esc_url(get_home_url());
-                                        ?>" class="nav-link nav-text">Home</a>
-                        </li>
-                        <li class="nav-bar__item">
-                            <a href="<?php echo esc_url(get_page_link('9'));
-                                        ?>" class="nav-link nav-text">Who we are</a>
-                        </li>
-                        <li class="nav-bar__item">
-                            <a href="<?php echo esc_url(get_page_link('11'));
-                                        ?>" class="nav-link nav-text">Sustainability</a>
-                        </li>
-                        <li class="nav-bar__item">
-                            <a href='javascript:void(0)' id="fabric-collection" class="nav-link nav-text">Fabric Collection</a>
-                        </li>
-                        <li class="nav-bar__item">
-                            <a href="<?php echo esc_url(get_page_link('13'));
-                                        ?>" class="nav-link nav-text">HY News</a>
-                        </li>
-                        <li class="nav-bar__item">
-                            <a href="<?php echo esc_url(get_page_link('20'));
-                                        ?>" class="nav-link nav-text">Contact</a>
-                        </li>
-                    </ul> -->
-
                     <?php echo wp_nav_menu(array('theme_location' => 'primary_menu', 'menu_class' => 'nav-bar__inner', 'add_li_class'  => 'nav-bar__item'));
                     ?>
                     <div class="nav-search hide-on-desktop">
