@@ -35,30 +35,6 @@ function scrollTopFilter () {
 
 }
 
-//Hide option
-// function hideEmptyChoose() {
-//   let facetProducts = document.querySelectorAll(
-//     ".piotnetgrid-facet__field-subgroup",
-//   );
-//   jQuery(".piotnetgrid-facet__field-sub-label--disabled")
-//     .closest(".piotnetgrid-facet__field-sub")
-//     .addClass("disable");
-//   facetProducts.forEach((n) => {
-//     if (n.children.length == n.querySelectorAll(".disable").length) {
-//       n.classList.add("emptyFacet");
-//     }
-//   });
-// }
-
-// function addingCollectionClass () {
-//   let collectionGrid = document.querySelector(".collectionPage-list .piotnetgrid-grid");
-//   if(collectionGrid) {
-//     let collectValue = JSON.parse(collectionGrid.dataset.piotnetgridGridCurrentQuery);
-//     let collectionClass = collectValue.collection;
-//     collectionGrid.classList.add(collectionClass.replace(/\s/g, "").toLowerCase() + "-collection");
-//   }
-// }
-
 function addingCollectionClass () {
   let collectionGrid = document.querySelectorAll(".collectionPage-list .piotnetgrid-grid .piotnetgrid-card");
   if(collectionGrid) {
@@ -82,13 +58,18 @@ function addingActiveMenu() {
   });
 }
 
-// function editingMenusize() {
-//   let menuslides = document.querySelectorAll(".collection-fabric__item");
+// (jQuery)("video").each(function () {
+//   var myVideo = document.getElementById(this.id);
 
-//   menuslides.forEach((n)=> {
-//     n.style.height = n.offsetWidth + 'px';
+//   VisSense.VisMon.Builder(VisSense(myVideo, { fullyvisible: 0.5 }))
+//   .on('fullyvisible', function(monitor) {
+//     myVideo.play();
 //   })
-// }
+//   .on('hidden', function(monitor) {
+//     myVideo.pause();
+//   }).build().start();
+// });
+
 
 jQuery(document).ready(function() { 
   addingCollectionClass();

@@ -59,7 +59,7 @@
             </div>
         </section>
     <?php endif; ?>
-    <section class="">
+    <section class="logoSlider">
         <div class="container">
             <div class="download-item">
                 <a href="javascript:event.preventDefault(); <?php echo $process_button_download_url; ?>" class="process-download btn btn-green">
