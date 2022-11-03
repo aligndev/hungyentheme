@@ -1242,6 +1242,12 @@ body {
 
 .hero-cta {
   margin-top: 1rem;
+  max-width: 60vw;
+}
+@media screen and (max-width: 769px) {
+  .hero-cta {
+    max-width: none;
+  }
 }
 
 .hero-wave {

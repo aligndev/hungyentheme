@@ -55,6 +55,10 @@
 }
 .hero-cta {
   margin-top: 1rem;
+  max-width: 60vw;
+  @include max(769px) {
+    max-width: none;
+  }
   // position: absolute;
   // bottom: 18.51851851851852vh;
   // background: #000000;
