@@ -92,7 +92,7 @@ function alignvn_style()
   //Dflip js
   wp_enqueue_script('dflip-js', ASSETS . '/dflip/js/dflip.min.js', '', '', true);
   wp_enqueue_script('swiper-js', '//unpkg.com/swiper@8/swiper-bundle.min.js', '', '', true);
-  wp_enqueue_script('vissense-js', '//cdnjs.cloudflare.com/ajax/libs/vissense/0.10.0/vissense.min.js', '', '', true);
+  // wp_enqueue_script('inviewport-js', '//cdnjs.cloudflare.com/ajax/libs/is-in-viewport/3.0.4/isInViewport.min.js', '', '', true);
 
   //Barba js
   wp_enqueue_script('barba-script', '//cdn.jsdelivr.net/npm/@barba/core',  '', '', true);

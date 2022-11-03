@@ -124,7 +124,7 @@
                         <?php the_field('materials_tab_heading') ?>
                     </h2>
                     <div class="tabs-content__video">
-                        <video playsinline autoplay loop controls>
+                        <video playsinline autoplay loop controls id="myVid">
                             <source src="<?php the_field("materials_tab_video"); ?>" />
                         </video>
                     </div>
