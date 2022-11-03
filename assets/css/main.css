@@ -1241,32 +1241,7 @@ body {
 }
 
 .hero-cta {
-  position: absolute;
-  bottom: 18.5185185185vh;
-  background: #000000;
-  opacity: 0.7;
-  padding: 2rem 2.8rem;
-}
-@media screen and (max-width: 1024px) {
-  .hero-cta {
-    bottom: 6rem;
-  }
-}
-@media screen and (max-width: 769px) {
-  .hero-cta {
-    bottom: 16rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .hero-cta {
-    padding: 1.2rem;
-  }
-}
-
-.hero-desc {
-  color: #fff;
-  margin-bottom: 2.4rem;
-  text-shadow: 0 0 19px rgba(0, 0, 0, 0.4);
+  margin-top: 1rem;
 }
 
 .hero-wave {

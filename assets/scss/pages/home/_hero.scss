@@ -54,25 +54,26 @@
   object-fit: cover;
 }
 .hero-cta {
-  position: absolute;
-  bottom: 18.51851851851852vh;
-  background: #000000;
-  opacity: 0.7;
-  padding: 2rem 2.8rem;
-  @include max(1024px) {
-    bottom: 6rem;
-  }
-  @include max(769px) {
-    bottom: 16rem;
-  }
-  @include max(500px) {
-    padding: 1.2rem;
-  }
+  margin-top: 1rem;
+  // position: absolute;
+  // bottom: 18.51851851851852vh;
+  // background: #000000;
+  // opacity: 0.7;
+  // padding: 2rem 2.8rem;
+  // @include max(1024px) {
+  //   bottom: 6rem;
+  // }
+  // @include max(769px) {
+  //   bottom: 16rem;
+  // }
+  // @include max(500px) {
+  //   padding: 1.2rem;
+  // }
 }
 .hero-desc {
-  color: #fff;
-  margin-bottom: 2.4rem;
-  text-shadow: 0 0 19px rgba(0, 0, 0, 0.4);
+  // color: #fff;
+  // margin-bottom: 2.4rem;
+  // text-shadow: 0 0 19px rgba(0, 0, 0, 0.4);
 }
 .hero-wave {
   position: absolute;

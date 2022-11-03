@@ -24,8 +24,18 @@
                         <div class="swiper-slide">
                             <div class="container">
                                 <div class="hero-top">
-                                    <h2 class="h2 hero-sub"><?php echo $hero_sub; ?></h2>
-                                    <h1 class="h1 hero-title"><?php echo $hero_title; ?></h1>
+                                    <!-- <h2 class="h2 hero-sub"><?php  ?></h2> -->
+                                    <h2 class="hero-title h1 who-title"><?php echo $hero_sub . " " . $hero_title;
+                                                                        ?></h2>
+                                    <div class="hero-cta col-6">
+                                        <p class="hero-desc body">
+                                            <?php echo $hero_body; ?>
+                                        </p>
+
+                                        <a href="<?php echo $hero_link; ?>" class="col-4 hero-button body">
+                                            Learn More
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="hero-bottom">
                                     <div class="hero-wave">
@@ -37,15 +47,17 @@
                                     <div class="hero-image">
                                         <img src="<?php echo $hero_image['url']; ?>" alt="" />
                                     </div>
-                                    <div class="hero-cta col-6">
+                                    <!-- <div class="hero-cta col-6">
                                         <p class="hero-desc body">
-                                            <?php echo $hero_body; ?>
+                                            <?php //echo $hero_body; 
+                                            ?>
                                         </p>
 
-                                        <a href="<?php echo $hero_link; ?>" class="col-4 hero-button body">
+                                        <a href="<?php //echo $hero_link; 
+                                                    ?>" class="col-4 hero-button body">
                                             Learn More
                                         </a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
