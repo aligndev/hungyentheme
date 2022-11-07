@@ -148,7 +148,7 @@ const handleSliders = () => {
         effect: "fade",
         loop: true,
         autoplay: {
-          delay: 5000,
+          delay: 3000,
         },
         observer: true,
         observeParents: true,
@@ -187,7 +187,7 @@ const handleSliders = () => {
         effect: "fade",
         speed: 1200,
         autoplay: {
-          delay: 5000,
+          delay: 3000,
         },
         loop:true,
         watchOverflow: true,
