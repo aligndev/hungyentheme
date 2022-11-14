@@ -47,7 +47,6 @@
 
                 while ($loop->have_posts()) : $loop->the_post();
 
-
                 ?>
                     <a href="<?php echo get_permalink(); ?>" class="news-item col-4">
                         <div class="">
