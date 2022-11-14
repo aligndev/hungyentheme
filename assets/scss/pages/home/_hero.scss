@@ -3,7 +3,8 @@
   overflow: hidden;
   position: relative;
   @include max(769px) {
-    height: 80vh;
+    // height: 80vh;
+    height: 55rem;
 
     .swiper-container {
       height: 100%;
@@ -27,21 +28,30 @@
 }
 .hero-top {
   padding-bottom: 50px;
+  @include max(769px) {
+    min-height: 25rem;
+  }
 }
 .hero-bottom {
   height: 75.72222222222221vh;
   position: relative;
-}
-@media screen and (max-width: 1025px) {
-  .hero-bottom {
+  @include max(1025px) {
     height: 100%;
   }
+  @include max(769px) {
+    min-height: 25rem;
+  }
 }
+// @media screen and (max-width: 1025px) {
+//   .hero-bottom {
+//     height: 100%;
+//   }
+// }
 .hero-button {
   color: $green-2;
-  &:hover {
-    // color: #000000;
-  }
+  // &:hover {
+  //   // color: #000000;
+  // }
 }
 .hero-image {
   width: 100vw;
@@ -77,11 +87,11 @@
   //   padding: 1.2rem;
   // }
 }
-.hero-desc {
-  // color: #fff;
-  // margin-bottom: 2.4rem;
-  // text-shadow: 0 0 19px rgba(0, 0, 0, 0.4);
-}
+// .hero-desc {
+//   // color: #fff;
+//   // margin-bottom: 2.4rem;
+//   // text-shadow: 0 0 19px rgba(0, 0, 0, 0.4);
+// }
 .hero-wave {
   position: absolute;
   top: -1px;

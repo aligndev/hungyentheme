@@ -16,6 +16,9 @@
     @include max(1024px) {
       margin: 7rem auto;
     }
+    @include max(769px) {
+      margin: 0 auto;
+    }
   }
   .swiper-container {
     padding: 0 calc(100% * 0.5 / 12);

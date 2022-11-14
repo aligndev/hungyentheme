@@ -1182,7 +1182,7 @@ body {
 }
 @media screen and (max-width: 769px) {
   .hero {
-    height: 80vh;
+    height: 55rem;
   }
   .hero .swiper-container {
     height: 100%;
@@ -1208,20 +1208,31 @@ body {
 .hero-top {
   padding-bottom: 50px;
 }
+@media screen and (max-width: 769px) {
+  .hero-top {
+    min-height: 25rem;
+  }
+}
 
 .hero-bottom {
   height: 75.7222222222vh;
   position: relative;
 }
-
 @media screen and (max-width: 1025px) {
   .hero-bottom {
     height: 100%;
   }
 }
+@media screen and (max-width: 769px) {
+  .hero-bottom {
+    min-height: 25rem;
+  }
+}
+
 .hero-button {
   color: #8cb675;
 }
+
 .hero-image {
   width: 100vw;
   position: relative;
@@ -1447,6 +1458,7 @@ body {
 .process-sub {
   margin-bottom: 2rem;
   max-width: 41.6666666667%;
+  min-height: 21rem;
 }
 .process-sub > p {
   font-size: 1.6rem;
@@ -1630,6 +1642,11 @@ body {
 @media screen and (max-width: 1024px) {
   .logoSlider .process-download {
     margin: 7rem auto;
+  }
+}
+@media screen and (max-width: 769px) {
+  .logoSlider .process-download {
+    margin: 0 auto;
   }
 }
 .logoSlider .swiper-container {
