@@ -996,6 +996,42 @@ body {
     }
   }
 }
+.news {
+  .row {
+    #piotnetgrid {
+      .piotnetgrid-button {
+        border: 1px solid #71bf44;
+        color: #267541;
+        border-radius: 8px;
+        transition: all 150ms ease-out;
+        background-color: transparent;
+        display: block;
+        font-size: 1.042vw;
+        font-weight: 600;
+        padding: 0.938vw 0;
+        text-align: center;
+        line-height: 119%;
+        min-width: 25vw;
+        margin-top: 4rem;
+      }
+      .piotnetgrid-image {
+        min-height: 20vw;
+        .piotnetgrid-image__content {
+          height: 100%;
+          .piotnetgrid-image__tag {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .news-item__title {
+        margin-bottom: 1rem;
+      }
+    }
+
+  }
+
+}
 
 //Contact US
 

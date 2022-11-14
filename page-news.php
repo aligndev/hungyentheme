@@ -50,40 +50,46 @@
     <div class="container">
       <h1 class="h1 text-uppercase news-title">Hung Yen News</h1>
       <div class="row">
+        <?php echo do_shortcode('[piotnetgrid id=4454 type=grid]');
+        echo do_shortcode('[piotnetgrid id=4457 type=facet grid=4454]'); ?>
         <?php
-        $args = array(
-          'post_type' => 'post',
-          'post_status' => 'publish',
-          'posts_per_page' => 3,
-        );
+        // $args = array(
+        //   'post_type' => 'post',
+        //   'post_status' => 'publish',
+        //   'posts_per_page' => 3,
+        // );
 
-        $loop = new WP_Query($args);
+        // $loop = new WP_Query($args);
 
-        while ($loop->have_posts()) : $loop->the_post();
+        // while ($loop->have_posts()) : $loop->the_post();
 
 
         ?>
-          <div class="news-item col-4">
+        <!-- <div class="news-item col-4">
             <div class="rto-box news-item__image">
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+              <img src="<?php //echo get_the_post_thumbnail_url(); 
+                        ?>" alt="" />
             </div>
             <div class="news-item__content">
               <h5 class="news-item__title">
-                <?php print the_title(); ?>
+                <?php //print the_title(); 
+                ?>
               </h5>
               <p class="news-item__desc">
-                <?php echo wp_trim_words(get_the_content(), 50); ?>
+                <?php //echo wp_trim_words(get_the_content(), 50); 
+                ?>
               </p>
             </div>
-          </div>
+          </div> -->
         <?php
-        endwhile;
+        // endwhile;
 
-        wp_reset_postdata();  ?>
+        // wp_reset_postdata();  
+        ?>
       </div>
-      <a href="" class="btn btn-green col-4 mx-auto">
+      <!-- <a href="" class="btn btn-green col-4 mx-auto">
         Show more
-      </a>
+      </a> -->
     </div>
   </section>
 </main>

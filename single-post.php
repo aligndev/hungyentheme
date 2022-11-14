@@ -35,41 +35,49 @@
         <div class="container">
             <h2 class="h2 text-uppercase news-title">More recent news</h2>
             <div class="row">
+                <?php echo do_shortcode('[piotnetgrid id=3917 type=grid]');
+                echo do_shortcode('[piotnetgrid id=3918 type=facet grid=3917]'); ?>
                 <?php
-                $args = array(
-                    'post_type' => 'post',
-                    'post_status' => 'publish',
-                    'posts_per_page' => 3,
+                // $args = array(
+                //     'post_type' => 'post',
+                //     'post_status' => 'publish',
+                //     'posts_per_page' => 3,
 
-                );
+                // );
 
-                $loop = new WP_Query($args);
+                // $loop = new WP_Query($args);
 
-                while ($loop->have_posts()) : $loop->the_post();
+                // while ($loop->have_posts()) : $loop->the_post();
 
                 ?>
-                    <a href="<?php echo get_permalink(); ?>" class="news-item col-4">
+                <!-- <a href="<?php //echo get_permalink(); 
+                                ?>" class="news-item col-4">
                         <div class="">
                             <div class="rto-box news-item__image">
-                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+                                <img src="<?php //echo get_the_post_thumbnail_url(); 
+                                            ?>" alt="" />
                             </div>
                             <div class="news-item__content">
                                 <h5 class="news-item__title">
-                                    <?php print the_title(); ?>
+                                    <?php //print the_title(); 
+                                    ?>
                                 </h5>
                                 <p class="news-item__desc">
-                                    <?php echo wp_trim_words(get_the_content(), 50); ?>
+                                    <?php //echo wp_trim_words(get_the_content(), 50); 
+                                    ?>
                                 </p>
                             </div>
                         </div>
-                    </a>
+                    </a> -->
                 <?php
-                endwhile;
+                // endwhile;
 
-                wp_reset_postdata();  ?>
+                // wp_reset_postdata();  
+                ?>
             </div>
         </div>
     </section>
+
 
     <!-- <div class="sharebutton-wrapper">
         <a href="#" class=""><img src="/wp-content/uploads/2022/11/share-button-img_3.png"></a>
