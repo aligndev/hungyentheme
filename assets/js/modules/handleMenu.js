@@ -17,8 +17,9 @@ const handleMenu = () => {
   // const closeFabric = document.querySelector(".collection-button");
   const collectionMenu = document.querySelector(".collection-wrapper");
   const fabricCollection = document.querySelector(".collection");
-  openFabric.addEventListener("click", () => {
+  openFabric.addEventListener("click", (e) => {
     fabricCollection.classList.add("active");
+    e.preventDefault();
   });
   // closeFabric.addEventListener("click", (()=>{
   //   fabricCollection.classList.remove("active");
