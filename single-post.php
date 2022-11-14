@@ -35,8 +35,8 @@
         <div class="container">
             <h2 class="h2 text-uppercase news-title">More recent news</h2>
             <div class="row">
-                <?php echo do_shortcode('[piotnetgrid id=3917 type=grid]');
-                echo do_shortcode('[piotnetgrid id=3918 type=facet grid=3917]'); ?>
+                <?php echo do_shortcode('[piotnetgrid id=4454 type=grid]');
+                echo do_shortcode('[piotnetgrid id=4457 type=facet grid=4454]'); ?>
                 <?php
                 // $args = array(
                 //     'post_type' => 'post',
