@@ -64,7 +64,7 @@
 .slider-desc {
   margin-bottom: 3.3rem;
   line-height: 140%;
-  @include lc(5);
+  // @include lc(5);
 }
 @include min(769px) {
   .reviewSlider {

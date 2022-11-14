@@ -491,7 +491,6 @@ body {
 }
 
 .nav-logo {
-  width: 20.83333%;
   z-index: 2;
 }
 
@@ -1223,7 +1222,6 @@ body {
 .hero-button {
   color: #8cb675;
 }
-
 .hero-image {
   width: 100vw;
   position: relative;
@@ -1603,14 +1601,6 @@ body {
 .slider-desc {
   margin-bottom: 3.3rem;
   line-height: 140%;
-  /*! autoprefixer: off */
-  -webkit-box-orient: vertical;
-  /*! autoprefixer: on */
-  display: block;
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 769px) {
@@ -3930,8 +3920,12 @@ body {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-bottom: 8rem;
+  padding-left: 0;
+}
+.newsDetail-category .newsDetail-item {
+  margin-right: 1rem;
 }
 @media screen and (max-width: 1024px) {
   .newsDetail-category {
@@ -3956,7 +3950,7 @@ body {
   font-size: 1.4rem;
 }
 .newsDetail-hero {
-  padding-bottom: 13.8rem;
+  padding-bottom: 4vw;
 }
 .newsDetail-hero .rto-box {
   padding-top: 42.1743205248%;
@@ -4192,10 +4186,6 @@ body .a-owl-s > * + * {
 
 a:hover {
   color: #000;
-}
-
-a.hero-button:hover {
-  color: #fff;
 }
 
 .scrollTopbtn {
@@ -4985,4 +4975,42 @@ body .container .gspb_row {
     display: grid;
     grid-gap: 2rem;
   }
+}
+
+.newsDetail .newsDetail-body p {
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 769px) {
+  .newsDetail .newsDetail-body p {
+    margin-bottom: 1rem;
+  }
+}
+
+.contact-info-wrapper {
+  width: 100%;
+}
+.contact-info-wrapper label {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.contact-info-wrapper label input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0.5rem;
+  min-height: 5rem;
+}
+.contact-info-wrapper label input:focus-visible {
+  outline: none;
+}
+.contact-info-wrapper label textarea {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+.contact-info-wrapper label textarea:focus-visible {
+  outline: none;
+}
+.contact-info-wrapper input.btn {
+  min-width: 40%;
 }/*# sourceMappingURL=main.css.map */

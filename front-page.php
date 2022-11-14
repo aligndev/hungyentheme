@@ -132,9 +132,12 @@
     </section> -->
     <section class="homepage-sustainability-wrapper mt ">
         <div class="container">
-            <h2 class="title">
-                <?php the_field('home_page_slider_title'); ?>
-            </h2>
+            <?php $homepageSustainTitle = get_field('home_page_slider_title');
+            if ($homepageSustainTitle) { ?>
+                <h2 class="title">
+                    <?php echo $homepageSustainTitle; ?>
+                </h2>
+            <?php } ?>
             <div class="content-wrapper panel-type-content">
                 <?php if (have_rows('home_page_slide')) : ?>
                     <?php while (have_rows('home_page_slide')) : the_row();
@@ -276,19 +279,21 @@
 
 
                 ?>
-                    <div class="news-item col-4">
-                        <div class="rto-box news-item__image">
-                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+                    <a href="<?php echo get_permalink(); ?>" class="news-item col-4">
+                        <div class="">
+                            <div class="rto-box news-item__image">
+                                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+                            </div>
+                            <div class="news-item__content">
+                                <h5 class="news-item__title">
+                                    <?php print the_title(); ?>
+                                </h5>
+                                <p class="news-item__desc">
+                                    <?php echo wp_trim_words(get_the_content(), 50); ?>
+                                </p>
+                            </div>
                         </div>
-                        <div class="news-item__content">
-                            <h5 class="news-item__title">
-                                <?php print the_title(); ?>
-                            </h5>
-                            <p class="news-item__desc">
-                                <?php echo wp_trim_words(get_the_content(), 50); ?>
-                            </p>
-                        </div>
-                    </div>
+                    </a>
                 <?php
                 endwhile;
 

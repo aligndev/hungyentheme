@@ -12,7 +12,7 @@
                         Don't hesitate to contact us.
                     </h2>
 
-                    <a href="#" class="btn btn-green col-4 mx-auto">
+                    <a href="/contact" class="btn btn-green col-4 mx-auto">
                         Get to know us
                     </a>
                 </div>

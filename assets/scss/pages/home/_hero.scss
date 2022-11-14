@@ -39,6 +39,9 @@
 }
 .hero-button {
   color: $green-2;
+  &:hover {
+    // color: #000000;
+  }
 }
 .hero-image {
   width: 100vw;

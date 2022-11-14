@@ -144,8 +144,12 @@
     width: calc(100% * 6 / 12);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-bottom: 8rem;
+    padding-left: 0;
+    .newsDetail-item  {
+      margin-right: 1rem;
+    }
     @include max(1024px) {
       width: 60%;
       padding-bottom: 4rem;
@@ -166,7 +170,7 @@
     font-size: 1.4rem;
   }
   &-hero {
-    padding-bottom: 13.8rem;
+    padding-bottom: 4vw;
     .rto-box {
       padding-top: 42.17432052483599%;
 

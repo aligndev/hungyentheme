@@ -26,8 +26,8 @@
                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                 </div>
             </div>
-            <div class="content-config">
-              <?php echo get_the_content(); ?>
+            <div class="newsDetail-body content-config">
+                <?php echo get_the_content(); ?>
             </div>
         </div>
     </section>
@@ -69,6 +69,12 @@
             </div>
         </div>
     </section>
+
+    <!-- <div class="sharebutton-wrapper">
+        <a href="#" class=""><img src="/wp-content/uploads/2022/11/share-button-img_3.png"></a>
+        <a href="#" class=""><img src="/wp-content/uploads/2022/11/share-button-img_2.png"></a>
+        <a href="#" class=""><img src="/wp-content/uploads/2022/11/share-button-img_1.png"></a>
+    </div> -->
 </main>
 
 <?php get_footer(); ?>

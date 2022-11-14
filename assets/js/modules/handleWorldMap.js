@@ -614,6 +614,7 @@ const handleWorldMap = () => {
       });
       activeTitleNA.forEach((title) => {
         title.classList.add("active");
+        title.style.fontSize = "8px";
       });
       activeLocationsNA.forEach((location) => {
         location.classList.add("active");

@@ -12,7 +12,7 @@
             </h1>
             <div class="contact-row">
                 <div class="contact-info col-4">
-                    <form action="" class="contact-form">
+                    <!-- <form action="" class="contact-form">
                         <span class="contact-text body">Name*</span>
                         <input type="text" name="Name" id="Name">
                         <span class="contact-text body">Company*</span>
@@ -26,7 +26,11 @@
                     </form>
                     <a class="btn btn-green col-5">
                         Send
-                    </a>
+                    </a> -->
+                    <div class="contact-info-wrapper">
+                        <?php echo do_shortcode('[contact-form-7 id="4450" title="Contact"]'); ?>
+                    </div>
+
                     <!-- <div class="contact-message">
                         <img src="/wp-content/uploads/2022/07/contact-icon.svg" alt="">
                         <div class="contact-text">
@@ -47,6 +51,8 @@
                 </div>
                 <div class="contact-map col-7">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14906.669178962276!2d106.0625204!3d20.9257011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11a987dd4f25e566!2sHung%20Yen%20Knitting%20%26%20Dyeing%20Co.ltd!5e0!3m2!1svi!2s!4v1657625780096!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
                 </div>
             </div>
         </div>
