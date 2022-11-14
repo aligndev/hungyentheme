@@ -39,7 +39,7 @@
     height: 100%;
   }
   @include max(769px) {
-    min-height: 25rem;
+    height: 25rem;
   }
 }
 // @media screen and (max-width: 1025px) {
