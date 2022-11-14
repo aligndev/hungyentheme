@@ -189,7 +189,7 @@
                             if ($images) : ?>
                                 <?php foreach ($images as $image) : ?>
                                     <div class=" partner-item swiper-slide">
-                                        <img src="<?php echo $image; ?>" />
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                                     </div>
                                 <?php endforeach; ?>
                             <?php endif;
