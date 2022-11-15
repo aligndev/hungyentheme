@@ -81,12 +81,14 @@
   }
   &-sub {
     margin-bottom: 2rem;
-    max-width: calc(100% * 5 / 12);
-    min-height: 21rem;
+    max-width: calc(100% * 7 / 12);
+    // min-height: 21rem;
+    height: 18rem;
     > p {
       font-size: 1.6rem;
-      line-height: 110%;
+      line-height: 130%;
       display: block;
+      font-size: 1.8rem;
       @include max(769px) {
         font-size: 1.6rem;
       }

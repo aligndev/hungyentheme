@@ -1,11 +1,32 @@
 .collectionDetail {
-  padding-bottom: 6.250vw;
+  padding-bottom: 5.25vw;
+  padding-top: 5.5rem;
   &-title {
     text-transform: uppercase;
-    padding-bottom: 5vw;
+    padding-bottom: 3vw;
   }
   &-heading {
-    margin-bottom: 3.854vw;
+    margin-bottom: 2vw;
+    justify-content: space-between;
+    .collectionDetail-headingWrapper {
+      display: flex;
+    }
+    .backBtn-wrapper {
+      position: relative;
+      font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.77rem) * 1.6471)), 3.2rem);
+      a:after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 3px;
+        left: -1.5rem;
+      }
+    }
   }
   &-row {
     display: flex;
@@ -16,22 +37,27 @@
     }
   }
   &-content {
-    width: calc(100%*4/12);
+    width: calc(100% * 4 / 12);
     @include max(769px) {
       width: 100%;
     }
   }
   &-image {
-    width: calc(100%*7/12);
+    width: calc(100% * 7 / 12);
+    max-height: 70rem;
     @include max(769px) {
       width: 100%;
       margin-bottom: 4rem;
     }
+    .rto-box {
+      padding: 0;
+      height: 100%;
+    }
   }
   .rto-box {
-    padding-top: 95.12%;
+    // padding-top: 95.12%;
     @include max(1025px) {
-      padding-top: 113%;
+      // padding-top: 113%;
     }
     @include max(769px) {
       padding-top: 64.65324384787472%;
@@ -39,13 +65,13 @@
   }
   &-desc {
     &:nth-child(1) {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
       @include max(1025px) {
         margin-bottom: 2rem;
       }
     }
     &:nth-child(2) {
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
       @include max(1025px) {
         margin-bottom: 2.5rem;
       }
@@ -54,7 +80,7 @@
   &-info {
     &__content {
       width: fit-content;
-      padding-bottom: 5rem;
+      padding-bottom: 1.5rem;
       @include max(1025px) {
         padding-bottom: 2.5rem;
       }
@@ -63,13 +89,13 @@
       }
       &:not(:last-child) {
         border-bottom: 1px solid $dark-blue;
-        margin-bottom: 4.7rem;
+        margin-bottom: 2.7rem;
         @include max(1025px) {
           margin-bottom: 2.35rem;
         }
       }
       h4 {
-        padding-bottom: 2.5rem;
+        padding-bottom: 1.5rem;
         text-transform: uppercase;
       }
     }
@@ -89,7 +115,6 @@
 }
 
 .collectionFeatures {
-
   padding-bottom: 3.906vw;
   @include max(769px) {
     padding-bottom: 8rem;
@@ -104,7 +129,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin: auto;
-      
     }
   }
   &-item {
@@ -133,7 +157,7 @@
   .btn {
     margin: 0 auto;
     @include max(1025px) {
-      width: calc(100%*8/12);
+      width: calc(100% * 8 / 12);
     }
     @include max(600px) {
       width: 100%;
@@ -157,7 +181,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       background-color: $black;
       @include max(769px) {
         display: none;

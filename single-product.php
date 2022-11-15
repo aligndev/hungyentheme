@@ -12,29 +12,35 @@ $compositions = get_field('composizione');
   <section class="collectionDetail collectionPage">
     <div class="container">
       <div class="collectionPage-heading collectionDetail-heading">
-        <?php $terms = get_the_terms($post->ID, 'collection');
-        // print_r($terms);
-        if ($terms->count > 1) {
-          foreach ($terms as $term) {
-            if ($term->parent == 0) { ?>
-              <?php $logo = get_field('collection_logo', $term);
-              if ($logo) { ?>
-                <img src="<?php echo $logo; ?>" class="collectionPage-logo" />
-            <?php
+        <div class="collectionDetail-headingWrapper">
+          <?php $terms = get_the_terms($post->ID, 'collection');
+          // print_r($terms);
+          if ($terms->count > 1) {
+            foreach ($terms as $term) {
+              if ($term->parent == 0) { ?>
+                <?php $logo = get_field('collection_logo', $term);
+                if ($logo) { ?>
+                  <img src="<?php echo $logo; ?>" class="collectionPage-logo" />
+              <?php
+                }
               }
             }
+          } else {
+            $term = $terms[0];
+            $logo = get_field('collection_logo', $term);
+            if ($logo) { ?>
+              <img src="<?php echo $logo; ?>" class="collectionPage-logo" />
+          <?php
+            }
           }
-        } else {
-          $term = $terms[0];
-          $logo = get_field('collection_logo', $term);
-          if ($logo) { ?>
-            <img src="<?php echo $logo; ?>" class="collectionPage-logo" />
-        <?php
-          }
-        }
-        ?>
+          ?>
 
-        <h1 class="h1 collectionPage-title"><?php echo the_title(); ?></h1>
+          <h1 class="h1 collectionPage-title"><?php echo the_title(); ?></h1>
+        </div>
+        <div class="backBtn-wrapper">
+          <a href="javascript:history.back()">Back</a>
+        </div>
+
 
       </div>
 

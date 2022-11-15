@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 6rem;
+  padding-top: 5rem;
   overflow: hidden;
   position: relative;
   @include max(769px) {
@@ -27,7 +27,8 @@
   line-height: 110%;
 }
 .hero-top {
-  padding-bottom: 50px;
+  // padding-bottom: 50px;
+  padding-bottom: 3rem;
   @include max(769px) {
     min-height: 25rem;
   }
@@ -35,6 +36,7 @@
 .hero-bottom {
   height: 75.72222222222221vh;
   position: relative;
+  max-height: 65rem;
   @include max(1025px) {
     height: 100%;
   }

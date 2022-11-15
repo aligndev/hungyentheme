@@ -6,17 +6,17 @@
   z-index: 10;
   border-bottom: 1px solid $dark-blue;
   background-color: $black;
-  height: 11rem;
+  height: 9rem;
   @include max(769px) {
-    height: 9rem;
+    height: 8rem;
     z-index: 12;
   }
 }
 .nav-inner {
-  padding: 2.4rem 7.813vw;
+  padding: 0 7.813vw;
   max-width: 100%;
   width: 100%;
-  margin: 0 auto;
+  margin: auto auto;
   transition: padding .3s linear;
   &.active {
     padding: 1.2rem 7.813vw;
@@ -29,6 +29,8 @@
   align-items: center;
 }
 .nav-bar__inner {
+  margin-bottom: 0;
+  padding-left: 0;
   @include max(1025px) {
     flex-direction: column;
     align-items: flex-start;
