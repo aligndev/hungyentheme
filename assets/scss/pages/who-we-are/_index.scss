@@ -19,7 +19,8 @@
   }
   &-image {
     margin: 0 -7.813vw;
-    height: 38.698vw;
+    height: 32vw;
+    max-height: 63rem;
     position: relative;
     // background-color: rgb(0 0 0 / 50%);
     @include max(1025px) {

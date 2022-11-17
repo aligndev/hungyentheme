@@ -791,7 +791,7 @@ body {
 }
 .collection-wrapper {
   position: relative;
-  margin-top: 11rem;
+  margin-top: 9rem;
   height: 90%;
   width: 100%;
   background-color: #fff;
@@ -1214,7 +1214,7 @@ body {
 }
 @media screen and (max-width: 769px) {
   .hero-top {
-    min-height: 25rem;
+    min-height: 21rem;
   }
 }
 
@@ -3188,7 +3188,8 @@ body {
 }
 .who-image {
   margin: 0 -7.813vw;
-  height: 38.698vw;
+  height: 32vw;
+  max-height: 63rem;
   position: relative;
 }
 @media screen and (max-width: 1025px) {
