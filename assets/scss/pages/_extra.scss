@@ -589,6 +589,7 @@ width: 90%;
     }
   }
   .collectionPage-hero {
+    margin-bottom: 0rem;
     &.desktop-hidden {
       border: none;
       padding: 0;
@@ -857,7 +858,7 @@ body {
   }
   &.term-digital-print {
     section.gspb_container {
-      padding-top: 0;
+      // padding-top: 0;
     }
   }
 }

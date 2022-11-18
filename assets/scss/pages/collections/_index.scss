@@ -52,7 +52,8 @@
       height: 100%;
     }
     .rto-box {
-      padding-top: 38.6979166667%;
+      // padding-top: 38.6979166667%;
+      padding-top: 32%;
 
       @include max(769px) {
         padding-top: 94%;
