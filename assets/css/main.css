@@ -5027,6 +5027,12 @@ body .container .gspb_row {
     margin-bottom: 1rem;
   }
 }
+.newsDetail .newsDetail-hero .rto-box > img, .newsDetail .newsDetail-hero .rto-box video {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
 
 .news .row #piotnetgrid .piotnetgrid-button {
   border: 1px solid #71bf44;

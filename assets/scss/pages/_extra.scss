@@ -997,13 +997,15 @@ body {
     }
   }
   .newsDetail-hero {
-    .rto-box>img, .rto-box video {
-      object-fit: contain;
-      object-position: left;
-    }
+    .rto-box > img, .rto-box video {
+        object-fit: contain;
+        object-position: left;
+      }
+  
   }
 }
 .news {
+
   .row {
     #piotnetgrid {
       .piotnetgrid-button {

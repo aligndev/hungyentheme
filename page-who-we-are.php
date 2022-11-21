@@ -412,7 +412,7 @@ get_header(); ?>
               <p class="modal-number">
                 60%
               </p>
-              <p class="modal-name">in usa,canada and south america</p>
+              <p class="modal-name">in usa, canada and south america</p>
             </div>
             <div class="modal-item modal-two">
               <p class="modal-number">
@@ -451,7 +451,7 @@ get_header(); ?>
         </div>
         <div class="worldMobile-accordion__body">
           <div class="worldMobile-accordion__flex">
-            <h2 class="worldMobile-accordion__title">Usa</h2>
+            <h2 class="worldMobile-accordion__title">in usa, canada and south america</h2>
             <p class="worldMobile-accordion__number">
               60%
             </p>
@@ -463,7 +463,7 @@ get_header(); ?>
             </p>
           </div>
           <div class="worldMobile-accordion__flex">
-            <h2 class="worldMobile-accordion__title">asia</h2>
+            <h2 class="worldMobile-accordion__title">in asia and rest of the world</h2>
             <p class="worldMobile-accordion__number">
               10%
             </p>
