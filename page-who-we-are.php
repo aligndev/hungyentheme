@@ -412,7 +412,7 @@ get_header(); ?>
               <p class="modal-number">
                 60%
               </p>
-              <p class="modal-name">in usa</p>
+              <p class="modal-name">in usa,canada and south america</p>
             </div>
             <div class="modal-item modal-two">
               <p class="modal-number">
@@ -424,7 +424,7 @@ get_header(); ?>
               <p class="modal-number">
                 10%
               </p>
-              <p class="modal-name">in asia</p>
+              <p class="modal-name">in asia and rest of the world</p>
             </div>
           </div>
         </div>

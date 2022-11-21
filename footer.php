@@ -8,8 +8,7 @@
             <div class="footer-cta col-8 mx-auto">
                 <div class="footer-cta__inner">
                     <h2 class="h2 footer-cta__h1">
-                        We're here to provide the best fabric for your business. <br />
-                        Don't hesitate to contact us.
+                        We are here to provide the best quality and service for your business. <br> Contact us if you have any question.
                     </h2>
 
                     <a href="/contact" class="btn btn-green col-4 mx-auto">
