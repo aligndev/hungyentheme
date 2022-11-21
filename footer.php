@@ -8,7 +8,7 @@
             <div class="footer-cta col-8 mx-auto">
                 <div class="footer-cta__inner">
                     <h2 class="h2 footer-cta__h1">
-                        We are here to provide the best quality and service for your business. <br> Contact us if you have any question.
+                        We are here to provide the best quality and service for your business. Contact us if you have any question.
                     </h2>
 
                     <a href="/contact" class="btn btn-green col-4 mx-auto">
