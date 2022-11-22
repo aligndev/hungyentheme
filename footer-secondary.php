@@ -32,9 +32,10 @@
                 <a href="" class="footer-social__item">
                     <img src="<?php echo ASSETS . '/images/footer-pinterest.svg' ?>" alt="" />
                 </a>
-                <a href="" class="footer-social__item">
-                    <img src="<?php echo ASSETS . '/images/footer-whatsapp.svg' ?>" alt="" />
-                </a>
+                <!-- <a href="" class="footer-social__item">
+                    <img src="<?php //echo ASSETS . '/images/footer-whatsapp.svg' 
+                                ?>" alt="" />
+                </a> -->
             </div>
             <p class="footer-desc">Website by Align.vn</p>
         </div>
