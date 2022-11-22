@@ -1882,7 +1882,6 @@ body {
 .tabs-info__item:last-child {
   text-transform: uppercase;
   font-weight: bold;
-  padding-left: 3.125vw;
 }
 .tabs-info__item:last-child .body {
   font-weight: 800;
@@ -1895,7 +1894,7 @@ body {
     max-width: 7rem;
   }
 }
-.tabs-info__item .tabs-info__logo {
+.tabs-info__item .tabs-info__logo img {
   width: 5rem;
 }
 .tabs-info__logo {
