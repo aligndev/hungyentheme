@@ -1895,6 +1895,9 @@ body {
     max-width: 7rem;
   }
 }
+.tabs-info__item .tabs-info__logo {
+  width: 5rem;
+}
 .tabs-info__logo {
   margin-right: 3.2rem;
 }

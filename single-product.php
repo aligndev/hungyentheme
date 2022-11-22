@@ -97,17 +97,19 @@ $compositions = get_field('composizione');
             </div>
           </div>
         </div>
-        <div class="collectionDetail-image">
-          <div class="rto-box">
-            <?php
-            $productimg = get_the_post_thumbnail_url();
-            if ($productimg) {
-            ?>
-              <img src="<?php echo $productimg; ?>" alt="">
-            <?php } ?>
+        <?php
+        $productimg = get_the_post_thumbnail_url();
+        if ($productimg) {
+        ?>
+          <div class="collectionDetail-image">
+            <div class="rto-box">
 
+              <img src="<?php echo $productimg; ?>" alt="">
+
+
+            </div>
           </div>
-        </div>
+        <?php } ?>
       </div>
     </div>
   </section>

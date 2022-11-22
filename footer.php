@@ -7,7 +7,7 @@
         <div class="row">
             <div class="footer-cta col-8 mx-auto">
                 <div class="footer-cta__inner">
-                    <h2 class="h2 footer-cta__h1">
+                    <h2 class="h3 footer-cta__h1">
                         We are here to provide the best quality and service for your business. Contact us if you have any question.
                     </h2>
 
