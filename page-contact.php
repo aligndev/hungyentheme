@@ -43,10 +43,10 @@
                             <i class="far fa-envelope"></i>
                             Email contact
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=02216273535" class="contact-whatsapp-wrapper">
+                        <!-- <a href="https://api.whatsapp.com/send?phone=02216273535" class="contact-whatsapp-wrapper">
                             <i class="fab fa-whatsapp" aria-hidden="true"></i>
                             Whatsapp contact
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 <div class="contact-map col-7">

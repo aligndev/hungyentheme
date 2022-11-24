@@ -38,13 +38,13 @@
                 </div>
             </div>
             <div class="footer-social">
-                <a href="https://www.linkedin.com/company/hungyen-kd/" class="footer-social__item">
+                <a href="https://www.linkedin.com/company/hungyen-kd/" class="footer-social__item" target="_blank">
                     <img src="<?php echo ASSETS . '/images/footer-linkedin.svg' ?>" alt="" />
                 </a>
-                <a href="https://instagram.com/marketing_hungyenkd?igshid=YmMyMTA2M2Y=" class="footer-social__item">
+                <a href="https://instagram.com/marketing_hungyenkd?igshid=YmMyMTA2M2Y=" class="footer-social__item" target="_blank">
                     <img src="<?php echo ASSETS . '/images/footer-instagram.svg' ?>" alt="" />
                 </a>
-                <a href="https://pin.it/10vtJVn" class="footer-social__item">
+                <a href="https://pin.it/10vtJVn" class="footer-social__item" target="_blank">
                     <img src="<?php echo ASSETS . '/images/footer-pinterest.svg' ?>" alt="" />
                 </a>
                 <!-- <a href="https://api.whatsapp.com/send?phone=02216273535" class="footer-social__item">
