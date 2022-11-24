@@ -10,12 +10,12 @@
     z-index: -1;
     pointer-events: none;
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 770px) {
     .footer-cta {
         // background-color: $bg-green;
         border-radius: 20px;
         // backdrop-filter: blur(500px);
-        margin-bottom: 19.3rem;
+        margin-bottom: 15rem;
     }
 }
 .footer-cta__inner {

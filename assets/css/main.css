@@ -655,10 +655,10 @@ body {
   pointer-events: none;
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 770px) {
   .footer-cta {
     border-radius: 20px;
-    margin-bottom: 19.3rem;
+    margin-bottom: 15rem;
   }
 }
 .footer-cta__inner {
