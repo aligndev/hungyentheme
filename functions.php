@@ -97,7 +97,6 @@ function alignvn_style()
   //Barba js
   wp_enqueue_script('barba-script', '//cdn.jsdelivr.net/npm/@barba/core',  '', '', true);
   //ThreeJS
-  // wp_enqueue_script('threejs-script', '//cdnjs.cloudflare.com/ajax/libs/three.js/0.145.0/three.min.js',  '', '', true);
   wp_enqueue_script('threejs-script', '//cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js',  '', '', true);
   // https://cdnjs.cloudflare.com/ajax/libs/three.js/0.145.0/three.min.js
   wp_enqueue_script('isotope-script', '//unpkg.com/isotope-layout@3/dist/isotope.pkgd.js',  '', '', true);
