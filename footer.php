@@ -32,7 +32,7 @@
             </div>
             <div class="">
                 <div class="footer-desc">
-                    <a href="/career" class="footer-carrer">Career</a>
+                    <!-- <a href="/career" class="footer-carrer">Career</a> -->
                     <!-- <a href="" class="footer-number">+84 221 6273 535</a>
                     <a href="" class="footer-mail"> info@hungyen-kd.com</a> -->
                 </div>
