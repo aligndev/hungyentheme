@@ -755,6 +755,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.footer-social img {
+  width: 90%;
+}
 
 .collection {
   position: fixed;
@@ -4160,6 +4163,10 @@ body {
     padding-top: 6rem;
     height: 50vh;
   }
+}
+
+:root {
+  color-scheme: only light;
 }
 
 h1 {
