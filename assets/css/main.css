@@ -1323,13 +1323,13 @@ body {
   border-top: 1px solid #002d74;
   border-bottom: 1px solid #002d74;
 }
-
 @media screen and (max-width: 769px) {
   .partner-inner {
     border: none;
-    padding: 4.5rem 0;
+    padding: 3rem 0;
   }
 }
+
 .partner-item {
   width: 16.6666666667%;
   padding: 0 4rem;
@@ -1337,6 +1337,11 @@ body {
 @media screen and (max-width: 1025px) {
   .partner-item {
     width: 50%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .partner-item {
+    padding: 0;
   }
 }
 
@@ -1360,6 +1365,11 @@ body {
 
 .partner-content {
   margin-bottom: 7.7rem;
+}
+@media screen and (max-width: 769px) {
+  .partner-content {
+    margin-bottom: 3rem;
+  }
 }
 
 .partner-content,

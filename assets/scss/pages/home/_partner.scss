@@ -6,19 +6,21 @@
   padding: 13.3rem 0;
   border-top: 1px solid #002d74;
   border-bottom: 1px solid #002d74;
-}
-@media screen and (max-width: 769px) {
-  .partner-inner {
+  @include max(769px) {
     border: none;
-    padding: 4.5rem 0;
+    padding: 3rem 0;
   }
 }
+
 .partner-item {
   width: calc(100% * 2 / 12);
   padding: 0 4rem;
 
   @include max(1025px) {
     width: 50%;
+  }
+  @include max (769px) {
+    padding: 0;
   }
 }
 .partner-item img {
@@ -37,6 +39,9 @@
 }
 .partner-content {
   margin-bottom: 7.7rem;
+  @include max(769px) {
+    margin-bottom: 3rem;
+  }
 }
 .partner-content,
 .partner-list {
