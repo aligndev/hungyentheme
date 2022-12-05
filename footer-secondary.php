@@ -32,6 +32,9 @@
                 <a href="https://pin.it/10vtJVn" class="footer-social__item" target="_blank">
                     <img src="<?php echo ASSETS . '/images/footer-pinterest.svg' ?>" alt="" />
                 </a>
+                <a href="#" class="footer-social__item" target="_blank">
+                    <img src="<?php echo ASSETS . '/images/footer-facebook.svg' ?>" alt="" />
+                </a>
                 <!-- <a href="" class="footer-social__item">
                     <img src="<?php //echo ASSETS . '/images/footer-whatsapp.svg' 
                                 ?>" alt="" />
