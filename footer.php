@@ -47,7 +47,7 @@
                 <a href="https://pin.it/10vtJVn" class="footer-social__item" target="_blank">
                     <img src="<?php echo ASSETS . '/images/footer-pinterest.svg' ?>" alt="" />
                 </a>
-                <a href="#" class="footer-social__item" target="_blank">
+                <a href="https://www.facebook.com/profile.php?id=100088235831842&mibextid=ZbWKwL" class="footer-social__item" target="_blank">
                     <img src="<?php echo ASSETS . '/images/footer-facebook.svg' ?>" alt="" />
                 </a>
 
