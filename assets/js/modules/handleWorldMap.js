@@ -79,13 +79,21 @@ const handleWorldMap = () => {
     //   name.classList.add("north-america");
     //   country.parentNode.append(name);
     // }
-    // if (country.id === "Colombia") {
-    //   name.setAttribute("x", cx - 10);
-    //   name.setAttribute("y", cy + 8);
-    //   name.innerHTML = country.id;
-    //   name.classList.add("north-america");
-    //   country.parentNode.append(name);
-    // }
+    if (country.id === "Colombia") {
+      name.setAttribute("x", cx - 10);
+      name.setAttribute("y", cy + 8);
+      name.innerHTML = country.id;
+      name.classList.add("north-america");
+      country.parentNode.append(name);
+    }
+    if (country.id === "Venezuela") {
+      name.setAttribute("x", cx );
+      name.setAttribute("y", cy );
+      name.innerHTML = country.id;
+      name.classList.add("north-america");
+      country.parentNode.append(name);
+    }
+    
     if (
       country.id === "Dominican Republic" 
       //country.id === "Guatemala" ||
