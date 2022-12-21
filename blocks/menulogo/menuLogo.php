@@ -108,7 +108,7 @@ if (!empty($block['align'])) {
     </div>
     <div class="collection-cta__col">
         <a href="/download-fabric-collections/" class="btn btn-green collection-cta__text">
-            Collection Book Preview
+            Books Collection Preview
         </a>
     </div>
 </div>
