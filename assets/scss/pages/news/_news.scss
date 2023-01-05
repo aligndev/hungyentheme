@@ -133,7 +133,7 @@
 
 .newsDetail {
   &-h1 {
-    padding-bottom: 2.5rem;
+    // padding-bottom: 2.5rem;
     width: 60%;
     text-transform: uppercase;
     @include max(769px) {
@@ -146,6 +146,7 @@
     align-items: center;
     justify-content: flex-start;
     padding-bottom: 3rem;
+    padding-top: 2rem;
     padding-left: 0;
     .newsDetail-item  {
       margin-right: 1rem;
@@ -159,6 +160,9 @@
       width: 100%;
       gap: 1.5rem 0;
     }
+  }
+  &-newsDetail-excerpt {
+    font-weight: 700;
   }
   &-hashtag {
     font-size: 1.4rem;

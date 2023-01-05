@@ -3965,7 +3965,6 @@ body {
 }
 
 .newsDetail-h1 {
-  padding-bottom: 2.5rem;
   width: 60%;
   text-transform: uppercase;
 }
@@ -3980,6 +3979,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   padding-bottom: 3rem;
+  padding-top: 2rem;
   padding-left: 0;
 }
 .newsDetail-category .newsDetail-item {
@@ -3997,6 +3997,9 @@ body {
     width: 100%;
     gap: 1.5rem 0;
   }
+}
+.newsDetail-newsDetail-excerpt {
+  font-weight: 700;
 }
 .newsDetail-hashtag {
   font-size: 1.4rem;
