@@ -6,7 +6,7 @@
                 <?php the_title(); ?>
             </h2>
             <?php if (the_excerpt()) { ?>
-                <p class="newsDetail-excerpt"><?php the_excerpt(); ?></p>
+                <p class="newsDetail-excerpt"><?php echo get_the_excerpt(); ?></p>
             <?php } ?>
             <ul class="newsDetail-category">
                 <li class="newsDetail-item newsDetail-time">
