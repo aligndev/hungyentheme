@@ -21,13 +21,14 @@
                     }
                 } ?>
             </ul>
-            <div class="newsDetail-hero">
+            <!-- <div class="newsDetail-hero">
                 <div class="rto-box">
-                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                    <img src="<?php //echo get_the_post_thumbnail_url(); 
+                                ?>" alt="">
                 </div>
-            </div>
+            </div> -->
             <div class="newsDetail-body">
-                <?php echo get_the_content(); ?>
+                <?php the_content(); ?>
             </div>
         </div>
     </section>
