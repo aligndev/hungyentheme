@@ -5,6 +5,9 @@
             <h2 class="h2 newsDetail-h1">
                 <?php the_title(); ?>
             </h2>
+            <?php if (the_excerpt()) { ?>
+                <p><strong><?php the_excerpt(); ?></strong></p>
+            <?php } ?>
             <ul class="newsDetail-category">
                 <li class="newsDetail-item newsDetail-time">
                     AD | <?php echo get_the_date('d M Y'); ?>
